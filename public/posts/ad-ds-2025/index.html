@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=33725&amp;path=livereload" data-no-instant defer></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
@@ -70,12 +70,12 @@ Nutzer: Lokalrolf/Zensiert Rolf Lokal/Zensiert">
     
 
     
-      <link rel="canonical" href="//localhost:1313/posts/ad-ds-2025/">
+      <link rel="canonical" href="//localhost:33725/posts/ad-ds-2025/">
     
 
     
     
-    <meta property="og:url" content="//localhost:1313/posts/ad-ds-2025/">
+    <meta property="og:url" content="//localhost:33725/posts/ad-ds-2025/">
   <meta property="og:site_name" content="Keeks IT-Blog">
   <meta property="og:title" content="Active Directory  Domain Services 2026">
   <meta property="og:description" content="Windows Server - AD DS 2025 Dokumentation Ziel: Einrichten der Domänendienste in einem kleinen privaten Netzwerk inklusive Windows und Linux Clienten und Gruppenrichtlinienerstellung
@@ -124,7 +124,7 @@ IPV4: 10.10.0.6
 Nutzer: Lokalrolf/Zensiert Rolf Lokal/Zensiert">
   <meta itemprop="datePublished" content="2026-03-19T07:41:56+00:00">
   <meta itemprop="dateModified" content="2026-03-19T07:41:56+00:00">
-  <meta itemprop="wordCount" content="1998">
+  <meta itemprop="wordCount" content="1938">
   <meta itemprop="keywords" content="Active Directory,Projekt,Testumgebung">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Active Directory  Domain Services 2026">
@@ -292,43 +292,28 @@ Nutzer: Lokalrolf/Zensiert Rolf Lokal/Zensiert">
 </ul>
 </li>
 </ul>
-<h3 id="ou-struktur-erstentwurf-veraltet">OU-Struktur Erstentwurf (veraltet)</h3>
-<ul>
-<li>Labor (Haupt-OU)
+<h3 id="server--clienten">Server &amp; Clienten</h3>
 <ul>
 <li>
-<p>Administration (1)</p>
-<p>Zensiert</p>
-</li>
-<li>
-<p>Benutzer (2)</p>
-<p>Marketing</p>
-<p>Vertrieb</p>
-<p>Extern</p>
-</li>
-<li>
-<p>Server (3)</p>
+<p>Server</p>
 <ul>
 <li>
 <p>Domänencontroller</p>
 <p>DC-01-SRV-V</p>
 <p>DC-02-SRV-V</p>
-</li>
+<ul>
 <li>
-<p>Member</p>
+<p>Member (RRAS Gateway)</p>
 <p>GT-01-SRV-P</p>
 </li>
 </ul>
 </li>
+</ul>
+</li>
 <li>
-<p>Clients (4)</p>
+<p>Clients</p>
 <p>Suse-Clie-01-V</p>
 <p>Win-Clie-01-V</p>
-</li>
-<li>
-<p>Ressourcen (Drucker, Fileshares, etc.) (5)</p>
-</li>
-</ul>
 </li>
 </ul>
 <h2 id="vorgehensweise">Vorgehensweise</h2>
@@ -342,7 +327,7 @@ Nutzer: Lokalrolf/Zensiert Rolf Lokal/Zensiert">
 <p>Grafikkartentreiber (wenn nötig für zweiten Bildschirm) installieren</p>
 <ul>
 <li>
-<p><strong>Einmalig:</strong> Installation <strong>generalisieren</strong> mit <strong>sysprep</strong> und <strong>mode:vm →</strong> dieser spezielle Parameter sollte nur verwendet werden, wenn die virtuelle Maschine auf dem gleichen Host verbleibt. <del>Als weitere Zusatz bietet sich /s /0 an für Herunterfahren in 0 Sekunden →</del>  Gillt nur im eigenständigen CMDlet: shutdown</p>
+<p><strong>Einmalig:</strong> Installation <strong>generalisieren</strong> mit <strong>sysprep</strong> und <strong>mode:vm →</strong> dieser spezielle Parameter sollte nur verwendet werden, wenn die virtuelle Maschine auf dem gleichen Host verbleibt.</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># **Wichtig: Den genauen Pfad von Sysprep angeben!**</span>
 </span></span><span style="display:flex;"><span>C:\Windows\System32\Sysprep\sysprep.<span style="color:#79c0ff">exe</span> /generalize /oobe /vm /shutdown
 </span></span></code></pre></div></li>
@@ -354,24 +339,17 @@ Nutzer: Lokalrolf/Zensiert Rolf Lokal/Zensiert">
 <p>IP-Konfiguration für Rechner vergeben</p>
 <p>Zuerst DC Statisch mit IP versorgen</p>
 <p>Virtuelle switche erstellen. Einmal intern (NATintern) und extern(NATextern)</p>
-<ul>
-<li>
-<p><del>Eventuell nötige IP-FritzBox Konfiguration:</del></p>
-<p><del>IP Adresse von GT-01-SRV-P im DNS-Rebind Schutz des Routers angeben</del></p>
-<p><del>Eventuell auch den Verweis zum verwendeten DNS-Server ändern →</del>  <strong>nicht nötig</strong></p>
-</li>
-</ul>
 </li>
 <li>
-<p>Installieren von Remotedesktopdiensten mit RRAS  auf <del>Physischem</del>  virtuellem Server</p>
+<p>Installieren von Remotedesktopdiensten mit RRAS  auf  virtuellem Server</p>
 </li>
 </ul>
-<p>Achten auf: Secure Boot, TPM, Angemessene Anzahl an Prozessorkernen und RAM</p>
+<p><strong>Achten auf: Secure Boot, TPM, Angemessene Anzahl an Prozessorkernen und RAM</strong></p>
 <h2 id="einrichten-der-virtuellen-maschinen-mit-sofortiger-prüfpunkterstellung-nach-einrichtung">Einrichten der Virtuellen Maschinen mit sofortiger Prüfpunkterstellung nach Einrichtung.</h2>
-<p><strong>J</strong>ede Maschine zuerst Updaten und Installation des Grafiktreibers überprüfen, sollte zweiter Bildschirm benötigt werden.
+<p>Jede Maschine zuerst Updaten und Installation des Grafiktreibers überprüfen, sollte zweiter Bildschirm benötigt werden.
 <strong>PC-NAMEN ÄNDERN</strong></p>
-<p>Deaktivieren der Automatischen Prüfpunkte nicht vergessen! -&gt; nicht unendlich Platz auf Platte.</p>
-<p>Beim Konfigurieren der DNS-Server, muss in einer Domäne mit mehr als einem DC der erste Eintrag zwingend auf den zweiten DC mit DNS verweisen</p>
+<p><strong>Deaktivieren</strong> der Automatischen Prüfpunkte nicht vergessen! -&gt; nicht unendlich Platz auf Platte.</p>
+<p>Beim Konfigurieren der DNS-Server, muss in einer Domäne mit mehr als einem DC der erste DNS-Eintrag zwingend auf den zweiten Domänencontroller mit aktivem DNS verweisen.</p>
 <ul>
 <li>
 <p><strong>DC-01-SRV-V</strong></p>
@@ -819,7 +797,7 @@ SOFTWARE\Policies\Microsoft\Windows\Personalization und SOFTWARE\Microsoft\Windo
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="//localhost:1313/" >
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="//localhost:33725/" >
     &copy;  Keeks IT-Blog 2026 
   </a>
     <div><div class="ananke-socials"></div>
