@@ -129,28 +129,31 @@
       <h2 id="projektübersicht">Projektübersicht</h2>
 <p>Ziel war der Aufbau eines IT-Blogs mit dem Static Side Generator Hugo in einem GitHub Codespace.</p>
 <h2 id="die-herausforderung">Die Herausforderung</h2>
-<p>Die Standard-Installation von Hugo im Codespace war veraltet. Das Theme &ldquo;Ananke&rdquo; benötigt jedoch die <strong>Extended-Version</strong>, um CSS-Dateien zu verarbeiten. Ein Update mit get-apt liefert keine Ergebnisse.</p>
-<h2 id="meine-lösungsschritte">Meine Lösungsschritte</h2>
-<ol>
-<li><strong>Analyse:</strong></li>
-</ol>
+<p>Die Standard-Installation von Hugo im Codespace war veraltet. Das Theme &ldquo;Ananke&rdquo; benötigt jedoch die <strong>Extended-Version</strong>, um CSS-Dateien zu verarbeiten. Ein Update der integriereten Hugo-Version mit get-apt liefert keine zufriedenstellenden Ergebnisse.</p>
+<h2 id="meine-herangehensweise">Meine Herangehensweise</h2>
+<h3 id="1-analyse">1. <strong>Analyse:</strong></h3>
 <ul>
 <li>Identifikation der benötigten Version (0.146.0 Extended).</li>
+<li>Der Fehler äußerte sich durch folgenden Abbruch beim Start des Servers:
+<code>Error: failed to transform &quot;ananke/css/main.css&quot; (text/x-scss): this feature is not available in your current Hugo version</code></li>
+<li>Mit dem Befehl <code>hugo version</code> wurde festgestellt, dass eine Standard-Version installiert war. Für SCSS-Support wird zwingend die <strong>Extended-Version</strong> benötigt. Da im GitHub Codespace keine Administratorrechte für <code>apt-get</code> vorlagen, war eine manuelle Installation der Binary erforderlich.</li>
 </ul>
-<ol start="2">
-<li><strong>Installation:</strong></li>
-</ol>
+<h3 id="2-installation">2. <strong>Installation:</strong></h3>
 <ul>
 <li>Manueller Download der Binary von GitHub und Speichern in Codespace</li>
 </ul>
-<ol start="3">
-<li><strong>Ausführung:</strong></li>
-</ol>
-<ul>
-<li>Start des Servers mit <code>./hugo server</code>.</li>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ wget https://github.com/gohugoio/hugo/releases/download/v0.146.0/hugo_extended_0.146.0_linux-amd64.tar.gz
+</span></span></code></pre></div><ul>
+<li>Das tar-Archiv entpacken</li>
 </ul>
-<h2 id="fazit">Fazit</h2>
-<p>Hierbei habe ich gelernt, wie man binäre Abhängigkeiten in Linux-Umgebungen verwaltet. Und wie man Porgramme in abweichenden Pfaden außerhalb des /PATH ausführen kann</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ tar -xvf hugo_extended_0.146.0_linux-amd64.tar.gz hugo
+</span></span></code></pre></div><h3 id="3-ausführung">3. <strong>Ausführung:</strong></h3>
+<ul>
+<li>Start des Servers mit ab jetzt aus dem Hauptverzeichnis heraus mit</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./hugo server
+</span></span></code></pre></div><h2 id="fazit">Fazit</h2>
+<p>Es ist grundlegened hilfreich, wenn man sich im Vorraus im Klaren darüber ist, welche version man benötigt um Abhängigkeitskonflikte direkt zu vermeiden. Das Systematische analysieren der Fehlerausgabe ist hierbei das wichtigste Tool, um zum Ziel zu kommen. Systemrepositories können veraltet sein, oder die falsche Version liefern. Eine Manuelle Installation umsetzen zu können ist hierbei besonders wichtig.</p>
     </div>
   <a href="/posts/troubleshooting-hugo-extended/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">weiterlesen</a>
   </div>
