@@ -38,12 +38,12 @@
     
 
     
-      <link rel="canonical" href="http://localhost:1313/">
+      <link rel="canonical" href="//localhost:1313/">
     
 
     
     
-    <meta property="og:url" content="http://localhost:1313/">
+    <meta property="og:url" content="//localhost:1313/">
   <meta property="og:site_name" content="Keeks IT-Blog">
   <meta property="og:title" content="Keeks IT-Blog">
   <meta property="og:description" content="Sebastian Failing&#39;s persoenliche website">
@@ -133,15 +133,87 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/about/" class="color-inherit dim link">
-            About
+          <a href="/posts/ad-ds-2025/" class="color-inherit dim link">
+            Active Directory  Domain Services 2026
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          <p><img src="/images/generic/Me.JPG" alt="Das bin ich!"></p>
+          <h1 id="windows-server---ad-ds-2025-dokumentation">Windows Server - AD DS 2025 Dokumentation</h1>
+<p>Ziel: Einrichten der Domänendienste in einem kleinen privaten Netzwerk inklusive Windows und Linux Clienten und Gruppenrichtlinienerstellung</p>
+<h2 id="struktur-und-topologie">Struktur und Topologie</h2>
+<h3 id="domänenname">Domänenname</h3>
+<p>test.lab</p>
+<h3 id="server">Server</h3>
+<ul>
+<li>
+<p>RRAS Router Server als Gateway</p>
+<p>Windows Server 2022 Desktop</p>
+<p>Name: GT-01-SRV-V</p>
+<p>Externe IPv4: 192.168.178.2/24</p>
+<p>Interne IP: 10.10.0.1/24</p>
+</li>
+<li>
+<ol>
+<li>Domänencontroller</li>
+</ol>
+<p>Windows Server 2022 Desktop</p>
+<p>DC-01-SRV-V</p>
+<p>IPv4: 10.10.0.2/24</p>
+</li>
+<li>
+<ol start="2">
+<li>Domänencontroller</li>
+</ol>
+<p>Windows Server 2022 Core</p>
+<p>DC-02-SRV-V</p>
+<p>IPv4: 10.10.0.3/24</p>
+</li>
+</ul>
+<h3 id="clienten">Clienten</h3>
+<ul>
+<li>
+<p>Linux OpenSuse</p>
+<p>Suse-Clie-01-V</p>
+<p>IPV4: 10.10.0.6</p>
+<p>Nutzer: Lokalrolf/Zensiert Rolf Lokal/Zensiert</p>
         </div>
         
-          <p class="f6 lh-copy mv0">By Sebastian Failing</p><a href="/about/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">weiterlesen</a>
+          <p class="f6 lh-copy mv0">By Sebastian Failing</p><a href="/posts/ad-ds-2025/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">weiterlesen</a>
+      </div>
+    </div>
+  </div>
+</article>
+
+          </div>
+        
+          <div class="w-100 mb4 relative">
+            
+<article class="bb b--black-10">
+  <div class="db pv4 ph3 ph0-l dark-gray no-underline">
+    <div class="flex-column flex-row-ns flex">
+      
+      <div class="blah w-100">
+        <h1 class="f3 fw1 athelas mt0 lh-title">
+          <a href="/posts/troubleshooting-hugo-extended/" class="color-inherit dim link">
+            Troubleshooting: Hugo Extended Setup
+            </a>
+        </h1>
+        <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
+          <h2 id="projektübersicht">Projektübersicht</h2>
+<p>Ziel war der Aufbau eines IT-Blogs mit dem Static Side Generator Hugo in einem GitHub Codespace.</p>
+<h2 id="die-herausforderung">Die Herausforderung</h2>
+<p>Die Standard-Installation von Hugo im Codespace war veraltet. Das Theme &ldquo;Ananke&rdquo; benötigt jedoch die <strong>Extended-Version</strong>, um CSS-Dateien zu verarbeiten. Ein Update mit get-apt liefert keine Ergebnisse.</p>
+<h2 id="meine-lösungsschritte">Meine Lösungsschritte</h2>
+<ol>
+<li><strong>Analyse:</strong> Identifikation der benötigten Version (0.146.0 Extended).</li>
+<li><strong>Installation:</strong> Manueller Download der Binary von GitHub.</li>
+<li><strong>Ausführung:</strong> Start des Servers mit <code>./hugo server</code>.</li>
+</ol>
+<h2 id="fazit">Fazit</h2>
+<p>Hierbei habe ich gelernt, wie man binäre Abhängigkeiten in Linux-Umgebungen verwaltet. Und wie man Porgramme in abweichenden Pfaden außerhalb des /PATH ausführen kann</p>
+        </div>
+        
+          <p class="f6 lh-copy mv0">By Sebastian Failing</p><a href="/posts/troubleshooting-hugo-extended/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">weiterlesen</a>
       </div>
     </div>
   </div>
@@ -159,7 +231,7 @@
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
-  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/" >
+  <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="//localhost:1313/" >
     &copy;  Keeks IT-Blog 2026 
   </a>
     <div><div class="ananke-socials"></div>

@@ -2,80 +2,101 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Keeks IT-Blog</title>
-    <link>http://localhost:41291/tags/</link>
+    <link>//localhost:1313/tags/</link>
     <description>Recent content in Tags on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de</language>
     <lastBuildDate>Thu, 19 Mar 2026 07:41:56 +0000</lastBuildDate>
-    <atom:link href="http://localhost:41291/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Active Directory</title>
-      <link>http://localhost:41291/tags/active-directory/</link>
+      <link>//localhost:1313/tags/active-directory/</link>
       <pubDate>Thu, 19 Mar 2026 07:41:56 +0000</pubDate>
-      <guid>http://localhost:41291/tags/active-directory/</guid>
+      <guid>//localhost:1313/tags/active-directory/</guid>
       <description></description>
     </item>
     <item>
       <title>Projekt</title>
-      <link>http://localhost:41291/tags/projekt/</link>
+      <link>//localhost:1313/tags/projekt/</link>
       <pubDate>Thu, 19 Mar 2026 07:41:56 +0000</pubDate>
-      <guid>http://localhost:41291/tags/projekt/</guid>
+      <guid>//localhost:1313/tags/projekt/</guid>
       <description></description>
     </item>
     <item>
       <title>Testumgebung</title>
-      <link>http://localhost:41291/tags/testumgebung/</link>
+      <link>//localhost:1313/tags/testumgebung/</link>
       <pubDate>Thu, 19 Mar 2026 07:41:56 +0000</pubDate>
-      <guid>http://localhost:41291/tags/testumgebung/</guid>
+      <guid>//localhost:1313/tags/testumgebung/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>//localhost:1313/tags/hugo/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>//localhost:1313/tags/linux/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Troubleshooting</title>
+      <link>//localhost:1313/tags/troubleshooting/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/troubleshooting/</guid>
       <description></description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:41291/tags/about/</link>
+      <link>//localhost:1313/tags/about/</link>
       <pubDate>Wed, 18 Mar 2026 10:49:15 +0000</pubDate>
-      <guid>http://localhost:41291/tags/about/</guid>
+      <guid>//localhost:1313/tags/about/</guid>
       <description></description>
     </item>
     <item>
       <title>About Me</title>
-      <link>http://localhost:41291/tags/about-me/</link>
+      <link>//localhost:1313/tags/about-me/</link>
       <pubDate>Wed, 18 Mar 2026 10:49:15 +0000</pubDate>
-      <guid>http://localhost:41291/tags/about-me/</guid>
+      <guid>//localhost:1313/tags/about-me/</guid>
       <description></description>
     </item>
     <item>
       <title>Failing</title>
-      <link>http://localhost:41291/tags/failing/</link>
+      <link>//localhost:1313/tags/failing/</link>
       <pubDate>Wed, 18 Mar 2026 10:49:15 +0000</pubDate>
-      <guid>http://localhost:41291/tags/failing/</guid>
+      <guid>//localhost:1313/tags/failing/</guid>
       <description></description>
     </item>
     <item>
       <title>Persönliche Informationen</title>
-      <link>http://localhost:41291/tags/pers%C3%B6nliche-informationen/</link>
+      <link>//localhost:1313/tags/pers%C3%B6nliche-informationen/</link>
       <pubDate>Wed, 18 Mar 2026 10:49:15 +0000</pubDate>
-      <guid>http://localhost:41291/tags/pers%C3%B6nliche-informationen/</guid>
+      <guid>//localhost:1313/tags/pers%C3%B6nliche-informationen/</guid>
       <description></description>
     </item>
     <item>
       <title>Sebastian</title>
-      <link>http://localhost:41291/tags/sebastian/</link>
+      <link>//localhost:1313/tags/sebastian/</link>
       <pubDate>Wed, 18 Mar 2026 10:49:15 +0000</pubDate>
-      <guid>http://localhost:41291/tags/sebastian/</guid>
+      <guid>//localhost:1313/tags/sebastian/</guid>
       <description></description>
     </item>
     <item>
       <title>Sebastian Failing</title>
-      <link>http://localhost:41291/tags/sebastian-failing/</link>
+      <link>//localhost:1313/tags/sebastian-failing/</link>
       <pubDate>Wed, 18 Mar 2026 10:49:15 +0000</pubDate>
-      <guid>http://localhost:41291/tags/sebastian-failing/</guid>
+      <guid>//localhost:1313/tags/sebastian-failing/</guid>
       <description></description>
     </item>
     <item>
       <title>Über Mich</title>
-      <link>http://localhost:41291/tags/%C3%BCber-mich/</link>
+      <link>//localhost:1313/tags/%C3%BCber-mich/</link>
       <pubDate>Wed, 18 Mar 2026 10:49:15 +0000</pubDate>
-      <guid>http://localhost:41291/tags/%C3%BCber-mich/</guid>
+      <guid>//localhost:1313/tags/%C3%BCber-mich/</guid>
       <description></description>
     </item>
   </channel>

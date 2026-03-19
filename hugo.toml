@@ -1,4 +1,4 @@
-baseurl = "http://www.example.com"
+baseurl = "Meine.Domain.de"
 title = "Keeks IT-Blog"
 theme = "ananke"
 languagecode = "de"
@@ -21,12 +21,12 @@ style = "github-dark"
   info = "Systemintegrator"
   description = "Sebastian Failing's persoenliche website"
   keywords = "blog,sysadmin,Leipzig IT,IT,Netzwerke,Systemintegration"
-  avatarurl = "images/avatar.jpg"
-  #gravatar = "john.doe@example.com"
+  avatarurl = ""
+  #gravatar = ""
 
-  faviconSVG = "/img/favicon.svg"
-  favicon_32 = "/img/favicon-32x32.png"
-  favicon_16 = "/img/favicon-16x16.png"
+  faviconSVG = ""
+  favicon_32 = ""
+  favicon_16 = ""
 
   since = 2026
 

@@ -16,11 +16,10 @@ tags: ["Linux", "Netzwerk", "Hardware"]
 
 ## Meine Lösungsschritte
 1. **Schritt 1:** Analyse der Fehlermeldung
-2. **Schritt 2:** Recherche in der Dokumentation
+2. **Schritt 3:** Recherche in der Dokumentation
 3. **Schritt 3:** Umsetzung der Lösung
 
 ## Fazit & Lernerfolg
 *Was habe ich bei diesem Projekt gelernt, das mir in der Systemintegration hilft?*
 
----
 ![Projektbild](/images/platzhalter.jpg)

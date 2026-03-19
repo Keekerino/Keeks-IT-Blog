@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projekte on Keeks IT-Blog</title>
+    <link>//localhost:1313/categories/projekte/</link>
+    <description>Recent content in Projekte on Keeks IT-Blog</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/projekte/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Troubleshooting: Hugo Extended Setup</title>
+      <link>//localhost:1313/posts/troubleshooting-hugo-extended/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/troubleshooting-hugo-extended/</guid>
+      <description>&lt;h2 id=&#34;projektübersicht&#34;&gt;Projektübersicht&lt;/h2&gt;&#xA;&lt;p&gt;Ziel war der Aufbau eines IT-Portfolios mit Hugo in einem GitHub Codespace.&lt;/p&gt;&#xA;&lt;h2 id=&#34;die-herausforderung&#34;&gt;Die Herausforderung&lt;/h2&gt;&#xA;&lt;p&gt;Die Standard-Installation von Hugo war veraltet. Das Theme &amp;ldquo;Ananke&amp;rdquo; benötigt jedoch die &lt;strong&gt;Extended-Version&lt;/strong&gt;, um CSS-Dateien zu verarbeiten.&lt;/p&gt;&#xA;&lt;h2 id=&#34;meine-lösungsschritte&#34;&gt;Meine Lösungsschritte&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;Analyse:&lt;/strong&gt; Identifikation der benötigten Version (0.146.0 Extended).&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Installation:&lt;/strong&gt; Manueller Download der Binary von GitHub.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Ausführung:&lt;/strong&gt; Start des Servers mit &lt;code&gt;./hugo server&lt;/code&gt;.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;fazit&#34;&gt;Fazit&lt;/h2&gt;&#xA;&lt;p&gt;Ich habe gelernt, wie man binäre Abhängigkeiten in Linux-Umgebungen verwaltet.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

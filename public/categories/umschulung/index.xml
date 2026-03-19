@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Umschulung on Keeks IT-Blog</title>
+    <link>//localhost:1313/categories/umschulung/</link>
+    <description>Recent content in Umschulung on Keeks IT-Blog</description>
+    <generator>Hugo</generator>
+    <language>de</language>
+    <lastBuildDate>Thu, 19 Mar 2026 09:03:49 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/categories/umschulung/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Troubleshooting Hugo Extended</title>
+      <link>//localhost:1313/posts/troubleshooting-hugo-extended/</link>
+      <pubDate>Thu, 19 Mar 2026 09:03:49 +0000</pubDate>
+      <guid>//localhost:1313/posts/troubleshooting-hugo-extended/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h2 id=&#34;tags-hugo-linux-github-codespaces-troubleshooting&#34;&gt;title: &amp;ldquo;Troubleshooting: Hugo Extended Setup im Cloud-Container&amp;rdquo;&#xA;date: 2026-03-19&#xA;draft: false&#xA;author: &amp;ldquo;Dein Name&amp;rdquo;&#xA;description: &amp;ldquo;Wie ich Versionskonflikte und SCSS-Fehler beim Aufbau meines IT-Blogs gelöst habe.&amp;rdquo;&#xA;categories: [&amp;ldquo;Projekte&amp;rdquo;, &amp;ldquo;Infrastruktur&amp;rdquo;]&#xA;tags: [&amp;ldquo;Hugo&amp;rdquo;, &amp;ldquo;Linux&amp;rdquo;, &amp;ldquo;GitHub Codespaces&amp;rdquo;, &amp;ldquo;Troubleshooting&amp;rdquo;]&lt;/h2&gt;&#xA;&lt;h2 id=&#34;projektübersicht&#34;&gt;Projektübersicht&lt;/h2&gt;&#xA;&lt;p&gt;Ziel war der Aufbau eines professionellen IT-Portfolios auf Basis von Hugo (Static Site Generator) innerhalb eines GitHub Codespaces. Dabei sollte das Theme &amp;ldquo;Ananke&amp;rdquo; zum Einsatz kommen, um meine Erfahrungen aus der Gastronomie und meinen Weg in die Systemintegration zu präsentieren.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
