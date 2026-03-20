@@ -13,6 +13,9 @@ pagerSize = 20
 [services.disqus]
 shortname = "yourdiscussshortname"
 
+[markup.goldmark.renderer]
+  unsafe = true
+
 [markup.highlight]
 style = "github-dark"
 
@@ -30,7 +33,7 @@ style = "github-dark"
 
   since = 2026
 
-  enableTwemoji = true
+  enableEmoji = true
 
   colorScheme = "auto"
   hidecolorschemetoggle = false

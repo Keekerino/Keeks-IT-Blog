@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
-draft: true
+draft: false
 author: "Sebastian Failing"
 description: "Kurze Zusammenfassung des IT-Projekts"
 categories: ["Umschulung", "Projekte"]

@@ -39,4 +39,4 @@ $ tar -xvf hugo_extended_0.146.0_linux-amd64.tar.gz hugo
 ```
 
 ## Fazit
-Es ist grundlegened hilfreich, wenn man sich im Vorraus im Klaren darüber ist, welche version man benötigt um Abhängigkeitskonflikte direkt zu vermeiden. Das Systematische analysieren der Fehlerausgabe ist hierbei das wichtigste Tool, um zum Ziel zu kommen. Systemrepositories können veraltet sein, die falsche Version liefern, oder man besitzt nicht genügend Rechte im Zielsystem, ws vor Allem bei online Platformen häufig der Fall sein kann. Eine Manuelle Installation der benötigten Software umsetzen zu können ist hierbei besonders wichtig. 
+Es ist grundlegened hilfreich, wenn man sich im Vorraus im Klaren darüber ist, welche version man benötigt um Abhängigkeitskonflikte direkt zu vermeiden. Das Systematische analysieren der Fehlerausgabe ist hierbei das wichtigste Tool, um zum Ziel zu kommen. Systemrepositories können veraltet sein, die falsche Version liefern, oder man besitzt nicht genügend Rechte im Zielsystem, ws vor Allem bei online Platformen häufig der Fall sein kann. Eine Manuelle Installation der benötigten Software umsetzen zu können ist hierbei besonders wichtig.
