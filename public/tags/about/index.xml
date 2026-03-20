@@ -13,7 +13,7 @@
       <link>//localhost:1313/about/</link>
       <pubDate>Wed, 18 Mar 2026 10:49:15 +0000</pubDate>
       <guid>//localhost:1313/about/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;//localhost:1313/images/generic/Me.JPG&#34;&gt;Das bin ich!&lt;/a&gt;&#xA;&lt;a href=&#34;//localhost:1313/images/generic/Budget_Gaming.JPG&#34;&gt;Projekt Budget Gaming&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;img src=&#34;//localhost:1313/images/generic/Me.JPG&#34; alt=&#34;Das bin ich!&#34;&gt;&lt;/p&gt;&#xA;&lt;!-- ![Projekt Budget Gaming](/images/generic/Budget_Gaming.JPG) --&gt;&#xA;&lt;p&gt;Ich bin angehender IT-Systemintegrator mit Linux Vorliebe und hang zu Scripten.&#xA;Auf diesem Blog veröffentliche ich einige meiner bisher durchgeführten Projekte und Troubleshooting Ideen.&lt;/p&gt;&#xA;&lt;p&gt;Früher bin ich in einigen anderen Jobs unterwegs gewesen, vor allem meinem gelernten Beruf des Restaurantfachmanns.&#xA;Persönliche Interessen und das Bedürfnis mich intellektuell weiterzuentwickeln haben mich nun, im Mittelpunkt meines Lebens, dazu gebracht den Einstieg in die professionelle IT-Welt zu wagen und ich könnte nicht glücklicher darüber sein.&#xA;Ich freue mich auf spannende Projekte und die damit in Verbindung stehenden Menschen kenn zu lernen.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

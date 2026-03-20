@@ -6,96 +6,7 @@
     
     <title>Active Directory Domain Services 2026 | Keeks IT-Blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Einrichten von Windows Server
-AD DS 2026 Dokumentation
-Ziel: Einrichten der Windows Active Directory Domänendienste in einem kleinen privaten Netzwerk inklusive Windows und Linux Clienten, sowie Gruppenrichtlinienerstellung zur Durchsetzung eines Domänenweit einheitlichem Sperrbildschirms.
-Domänenname
-test.lab
-Netzwerk-Infrastruktur
-
-  
-      
-          Hostname
-          Betriebssystem
-          Rolle / Funktion
-          IPv4-Adresse
-      
-  
-  
-      
-          GT-01-SRV-V
-          Win Server 2022 Desktop
-          RRAS Gateway / Router
-          192.168.178.2 (Ext) / 10.10.0.1 (Int)
-      
-      
-          DC-01-SRV-V
-          Win Server 2022 Desktop
-          1. Domänencontroller (PDC)
-          10.10.0.2 /24
-      
-      
-          DC-02-SRV-V
-          Win Server 2022 Core
-          2. Domänencontroller (ADC)
-          10.10.0.3 /24
-      
-      
-          Suse-Clie-01-V
-          OpenSuse Linux
-          Linux Test-Client
-          10.10.0.6 /24
-      
-      
-          Win-Clie-01-V
-          Windows 11
-          Windows Test-Client
-          10.10.0.7 /24
-      
-  
-
-Identitätsverwaltung
-Benutzerkonten
-
-  
-      
-          Kategorie
-          Name / Account
-          Info / Gruppe
-      
-  
-  
-      
-          Admin
-          S3bbl3r
-          Domänen-Administrator
-      
-      
-          Extern
-          Ben Utzer
-          Test-User
-      
-      
-          Extern
-          Karsten Knall
-          Test-User
-      
-      
-          Lokal
-          FreeSeb
-          Lokaler Admin (Workstation)
-      
-  
-
-Sicherheitsgruppen
-
-Reudnitz: Globale Sicherheitsgruppe
-Shadow Password Group: Globale Sicherheitsgruppe
-
-Vorgehensweise
-
-
-Windows Server unter Windows 11 mit Hyper-V installieren">
+    <meta name="description" content="Zu implementierender Sperrbildschirm">
     <meta name="generator" content="Hugo 0.146.0">
     
     
@@ -122,17 +33,15 @@ Windows Server unter Windows 11 mit Hyper-V installieren">
     
 
     
-      <link rel="canonical" href="//localhost:1313/posts/ad-ds-2025/">
+      <link rel="canonical" href="//localhost:1313/posts/ad-ds-2026/">
     
 
     
     
-    <meta property="og:url" content="//localhost:1313/posts/ad-ds-2025/">
+    <meta property="og:url" content="//localhost:1313/posts/ad-ds-2026/">
   <meta property="og:site_name" content="Keeks IT-Blog">
   <meta property="og:title" content="Active Directory Domain Services 2026">
-  <meta property="og:description" content="Einrichten von Windows Server AD DS 2026 Dokumentation Ziel: Einrichten der Windows Active Directory Domänendienste in einem kleinen privaten Netzwerk inklusive Windows und Linux Clienten, sowie Gruppenrichtlinienerstellung zur Durchsetzung eines Domänenweit einheitlichem Sperrbildschirms.
-Domänenname test.lab
-Netzwerk-Infrastruktur Hostname Betriebssystem Rolle / Funktion IPv4-Adresse GT-01-SRV-V Win Server 2022 Desktop RRAS Gateway / Router 192.168.178.2 (Ext) / 10.10.0.1 (Int) DC-01-SRV-V Win Server 2022 Desktop 1. Domänencontroller (PDC) 10.10.0.2 /24 DC-02-SRV-V Win Server 2022 Core 2. Domänencontroller (ADC) 10.10.0.3 /24 Suse-Clie-01-V OpenSuse Linux Linux Test-Client 10.10.0.6 /24 Win-Clie-01-V Windows 11 Windows Test-Client 10.10.0.7 /24 Identitätsverwaltung Benutzerkonten Kategorie Name / Account Info / Gruppe Admin S3bbl3r Domänen-Administrator Extern Ben Utzer Test-User Extern Karsten Knall Test-User Lokal FreeSeb Lokaler Admin (Workstation) Sicherheitsgruppen Reudnitz: Globale Sicherheitsgruppe Shadow Password Group: Globale Sicherheitsgruppe Vorgehensweise Windows Server unter Windows 11 mit Hyper-V installieren">
+  <meta property="og:description" content="Zu implementierender Sperrbildschirm">
   <meta property="og:locale" content="de">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -143,21 +52,17 @@ Netzwerk-Infrastruktur Hostname Betriebssystem Rolle / Funktion IPv4-Adresse GT-
     <meta property="article:tag" content="Testumgebung">
 
   <meta itemprop="name" content="Active Directory Domain Services 2026">
-  <meta itemprop="description" content="Einrichten von Windows Server AD DS 2026 Dokumentation Ziel: Einrichten der Windows Active Directory Domänendienste in einem kleinen privaten Netzwerk inklusive Windows und Linux Clienten, sowie Gruppenrichtlinienerstellung zur Durchsetzung eines Domänenweit einheitlichem Sperrbildschirms.
-Domänenname test.lab
-Netzwerk-Infrastruktur Hostname Betriebssystem Rolle / Funktion IPv4-Adresse GT-01-SRV-V Win Server 2022 Desktop RRAS Gateway / Router 192.168.178.2 (Ext) / 10.10.0.1 (Int) DC-01-SRV-V Win Server 2022 Desktop 1. Domänencontroller (PDC) 10.10.0.2 /24 DC-02-SRV-V Win Server 2022 Core 2. Domänencontroller (ADC) 10.10.0.3 /24 Suse-Clie-01-V OpenSuse Linux Linux Test-Client 10.10.0.6 /24 Win-Clie-01-V Windows 11 Windows Test-Client 10.10.0.7 /24 Identitätsverwaltung Benutzerkonten Kategorie Name / Account Info / Gruppe Admin S3bbl3r Domänen-Administrator Extern Ben Utzer Test-User Extern Karsten Knall Test-User Lokal FreeSeb Lokaler Admin (Workstation) Sicherheitsgruppen Reudnitz: Globale Sicherheitsgruppe Shadow Password Group: Globale Sicherheitsgruppe Vorgehensweise Windows Server unter Windows 11 mit Hyper-V installieren">
+  <meta itemprop="description" content="Zu implementierender Sperrbildschirm">
   <meta itemprop="datePublished" content="2026-03-19T07:41:56+00:00">
   <meta itemprop="dateModified" content="2026-03-19T07:41:56+00:00">
   <meta itemprop="wordCount" content="2004">
   <meta itemprop="keywords" content="Active Directory,Projekt,Testumgebung">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Active Directory Domain Services 2026">
-  <meta name="twitter:description" content="Einrichten von Windows Server AD DS 2026 Dokumentation Ziel: Einrichten der Windows Active Directory Domänendienste in einem kleinen privaten Netzwerk inklusive Windows und Linux Clienten, sowie Gruppenrichtlinienerstellung zur Durchsetzung eines Domänenweit einheitlichem Sperrbildschirms.
-Domänenname test.lab
-Netzwerk-Infrastruktur Hostname Betriebssystem Rolle / Funktion IPv4-Adresse GT-01-SRV-V Win Server 2022 Desktop RRAS Gateway / Router 192.168.178.2 (Ext) / 10.10.0.1 (Int) DC-01-SRV-V Win Server 2022 Desktop 1. Domänencontroller (PDC) 10.10.0.2 /24 DC-02-SRV-V Win Server 2022 Core 2. Domänencontroller (ADC) 10.10.0.3 /24 Suse-Clie-01-V OpenSuse Linux Linux Test-Client 10.10.0.6 /24 Win-Clie-01-V Windows 11 Windows Test-Client 10.10.0.7 /24 Identitätsverwaltung Benutzerkonten Kategorie Name / Account Info / Gruppe Admin S3bbl3r Domänen-Administrator Extern Ben Utzer Test-User Extern Karsten Knall Test-User Lokal FreeSeb Lokaler Admin (Workstation) Sicherheitsgruppen Reudnitz: Globale Sicherheitsgruppe Shadow Password Group: Globale Sicherheitsgruppe Vorgehensweise Windows Server unter Windows 11 mit Hyper-V installieren">
+  <meta name="twitter:description" content="Zu implementierender Sperrbildschirm">
 
 	
-  </head><body class="ma0 avenir bg-near-white development is-page is-page page-ad-ds-2025">
+  </head><body class="ma0 avenir bg-near-white development is-page is-page page-ad-ds-2026">
     
    
   
@@ -178,13 +83,13 @@ Netzwerk-Infrastruktur Hostname Betriebssystem Rolle / Funktion IPv4-Adresse GT-
         <ul class="pl0 mr3">
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="posts/" title="Blog Seite">
+            <a class="hover-white white-90 no-underline" href="/posts/" title="Blog Seite">
               Blog
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="about/" title="About Seite">
+            <a class="hover-white white-90 no-underline" href="/about/" title="About Seite">
               About
             </a>
           </li>
@@ -206,7 +111,7 @@ Netzwerk-Infrastruktur Hostname Betriebssystem Rolle / Funktion IPv4-Adresse GT-
       
   
 
-  <article class="page-ad-ds-2025 flex-l mw7 center ph3 flex-wrap justify-between">
+  <article class="page-ad-ds-2026 flex-l mw7 center ph3 flex-wrap justify-between">
     <header class="mt4 w-100">
       <aside class="instapaper_ignoref b helvetica tracked ttu">
           
@@ -225,7 +130,8 @@ Netzwerk-Infrastruktur Hostname Betriebssystem Rolle / Funktion IPv4-Adresse GT-
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><h1 id="einrichten-von-windows-server">Einrichten von Windows Server</h1>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><!-- Vorlage zu garantiert funktionierendem Pfad ![policies2.png](/images/adds-2026/grafik.png) -->
+<h1 id="einrichten-von-windows-server">Einrichten von Windows Server</h1>
 <h1 id="ad-ds-2026-dokumentation">AD DS 2026 Dokumentation</h1>
 <p><strong>Ziel:</strong> Einrichten der Windows Active Directory Domänendienste in einem kleinen privaten Netzwerk inklusive Windows und Linux Clienten, sowie Gruppenrichtlinienerstellung zur Durchsetzung eines Domänenweit einheitlichem Sperrbildschirms.</p>
 <h2 id="domänenname">Domänenname</h2>
@@ -771,7 +677,7 @@ Freigabe : \DC-01-SRV-V\Pictures\backgroundGG.png</p>
             return;
         }
         var d = document, s = d.createElement('script'); s.async = true;
-        s.src = '//' + "yourdiscussshortname" + '.disqus.com/embed.js';
+        s.src = '//' + "Seb" + '.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
     })();

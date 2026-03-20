@@ -78,13 +78,13 @@
         <ul class="pl0 mr3">
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="posts/" title="Blog Seite">
+            <a class="hover-white white-90 no-underline" href="/posts/" title="Blog Seite">
               Blog
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="about/" title="About Seite">
+            <a class="hover-white white-90 no-underline" href="/about/" title="About Seite">
               About
             </a>
           </li>
@@ -133,13 +133,15 @@
       
       <div class="blah w-100">
         <h1 class="f3 fw1 athelas mt0 lh-title">
-          <a href="/posts/ad-ds-2025/" class="color-inherit dim link">
+          <a href="/posts/ad-ds-2026/" class="color-inherit dim link">
             Active Directory Domain Services 2026
             </a>
         </h1>
         <div class="f6 f5-l lh-copy nested-copy-line-height nested-links">
-          <h1 id="windows-server---ad-ds-2025-dokumentation">Windows Server - AD DS 2025 Dokumentation</h1>
-<p><strong>Ziel:</strong> Einrichten der Domänendienste in einem kleinen privaten Netzwerk inklusive Windows und Linux Clienten, sowie Gruppenrichtlinienerstellung zur Durchsetzung eines Domänenweit einheitlichem Sperrbildschirms.</p>
+          <!-- Vorlage zu garantiert funktionierendem Pfad ![policies2.png](/images/adds-2026/grafik.png) -->
+<h1 id="einrichten-von-windows-server">Einrichten von Windows Server</h1>
+<h1 id="ad-ds-2026-dokumentation">AD DS 2026 Dokumentation</h1>
+<p><strong>Ziel:</strong> Einrichten der Windows Active Directory Domänendienste in einem kleinen privaten Netzwerk inklusive Windows und Linux Clienten, sowie Gruppenrichtlinienerstellung zur Durchsetzung eines Domänenweit einheitlichem Sperrbildschirms.</p>
 <h2 id="domänenname">Domänenname</h2>
 <p><strong>test.lab</strong></p>
 <h2 id="netzwerk-infrastruktur">Netzwerk-Infrastruktur</h2>
@@ -229,7 +231,7 @@
 <p><strong>Windows Server unter Windows 11 mit Hyper-V installieren</strong></p>
         </div>
         
-          <p class="f6 lh-copy mv0">By Sebastian Failing</p><a href="/posts/ad-ds-2025/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">weiterlesen</a>
+          <p class="f6 lh-copy mv0">By Sebastian Failing</p><a href="/posts/ad-ds-2026/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">weiterlesen</a>
       </div>
     </div>
   </div>
@@ -277,7 +279,7 @@
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./hugo server
 </span></span></code></pre></div><h2 id="fazit">Fazit</h2>
-<p>Es ist grundlegened hilfreich, wenn man sich im Vorraus im Klaren darüber ist, welche version man benötigt um Abhängigkeitskonflikte direkt zu vermeiden. Das Systematische analysieren der Fehlerausgabe ist hierbei das wichtigste Tool, um zum Ziel zu kommen. Systemrepositories können veraltet sein, die falsche Version liefern, oder man besitzt nicht genügend Rechte im Zielsystem, ws vor Allem bei online Platformen häufig der Fall sein kann. Eine Manuelle Installation der benötigten Software umsetzen zu können ist hierbei besonders wichtig.</p>
+<p>Wer moderne Hugo-Themes in Cloud-Umgebungen nutzt, muss die Versions-Abhängigkeiten im Blick behalten. Dass die Standard-Installation im Codespace für das Ananke-Theme nicht ausreicht, ließ sich erst durch einen Blick in die Log-Files und den Abgleich der Hugo-Features klären. Die Lösung liegt in der Unabhängigkeit vom System-Repository: Der manuelle Download der Extended-Version ermöglicht die volle Kontrolle über die Build-Pipeline, ungeachtet restriktiver Benutzerrechte.</p>
         </div>
         
           <p class="f6 lh-copy mv0">By Sebastian Failing</p><a href="/posts/troubleshooting-hugo-extended/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">weiterlesen</a>

@@ -1,17 +1,25 @@
-baseurl = "Meine.Domain.de"
+baseurl = "/"
 title = "Keeks IT-Blog"
 theme = "ananke"
 languagecode = "de"
 defaultcontentlanguage = "de"
 locale = 'de-DE'
+since = 2026
+enableEmoji = true  # war mal enableTwoEmojy (o.ä) - veraltet!
+
+colorScheme = "auto"
+hidecolorschemetoggle = false
+
+
+
 
 
 [pagination]
-pagerSize = 20
+  pagerSize = 20
 
 [services]
 [services.disqus]
-shortname = "yourdiscussshortname"
+  shortname = "Seb"
 
 [markup.goldmark.renderer]
   unsafe = true
@@ -24,19 +32,14 @@ style = "github-dark"
   info = "Systemintegrator"
   description = "Sebastian Failing's persoenliche website"
   keywords = "blog,sysadmin,Leipzig IT,IT,Netzwerke,Systemintegration"
+  featured_image = "/images/Me.JPG" # Standardbild, falls nichts konfiguriert wurde. Funktioniert nicht
   avatarurl = ""
   #gravatar = ""
 
-  faviconSVG = ""
-  favicon_32 = ""
-  favicon_16 = ""
 
-  since = 2026
+  
 
-  enableEmoji = true
-
-  colorScheme = "auto"
-  hidecolorschemetoggle = false
+ 
 
   # customCSS = ["css/custom.css"]
   # customSCSS = ["scss/custom.scss"]
@@ -61,9 +64,9 @@ style = "github-dark"
 [[menu.main]]
   name = "Blog"
   weight = 1
-  url  = "posts/"
+  url  = "/posts/"  # muss im absoluten pfad angegeben werden
 
 [[menu.main]]
   name = "About"
   weight = 2
-  url = "about/"
+  url = "/about/"    # muss im absoluten pfad angegeben werden

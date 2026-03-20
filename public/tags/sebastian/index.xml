@@ -6,14 +6,6 @@
     <description>Recent content in Sebastian on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de</language>
-    <lastBuildDate>Wed, 18 Mar 2026 10:49:15 +0000</lastBuildDate>
     <atom:link href="//localhost:1313/tags/sebastian/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>//localhost:1313/about/</link>
-      <pubDate>Wed, 18 Mar 2026 10:49:15 +0000</pubDate>
-      <guid>//localhost:1313/about/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;//localhost:1313/images/generic/Me.JPG&#34;&gt;Das bin ich!&lt;/a&gt;&#xA;&lt;a href=&#34;//localhost:1313/images/generic/Budget_Gaming.JPG&#34;&gt;Projekt Budget Gaming&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
   </channel>
 </rss>
