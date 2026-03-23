@@ -11,9 +11,6 @@ colorScheme = "auto"
 hidecolorschemetoggle = false
 
 
-
-
-
 [pagination]
   pagerSize = 20
 
@@ -35,6 +32,7 @@ style = "github-dark"
   featured_image = "/images/Me.JPG" # Standardbild, falls nichts konfiguriert wurde. Funktioniert nicht
   avatarurl = ""
   #gravatar = ""
+  custom_css = ["css/custom.css"]
 
 
   

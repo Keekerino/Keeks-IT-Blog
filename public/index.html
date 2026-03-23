@@ -21,6 +21,10 @@
 
 
 
+  
+    <link rel="stylesheet" href="/css/custom.css">
+  
+
 
     
 
@@ -141,94 +145,8 @@
           <!-- Vorlage zu garantiert funktionierendem Pfad ![policies2.png](/images/adds-2026/grafik.png) -->
 <h1 id="einrichten-von-windows-server">Einrichten von Windows Server</h1>
 <h1 id="ad-ds-2026-dokumentation">AD DS 2026 Dokumentation</h1>
-<p><strong>Ziel:</strong> Einrichten der Windows Active Directory Domänendienste in einem kleinen privaten Netzwerk inklusive Windows und Linux Clienten, sowie Gruppenrichtlinienerstellung zur Durchsetzung eines Domänenweit einheitlichem Sperrbildschirms.</p>
-<h2 id="domänenname">Domänenname</h2>
-<p><strong>test.lab</strong></p>
-<h2 id="netzwerk-infrastruktur">Netzwerk-Infrastruktur</h2>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Hostname</th>
-          <th style="text-align: left">Betriebssystem</th>
-          <th style="text-align: left">Rolle / Funktion</th>
-          <th style="text-align: left">IPv4-Adresse</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left"><strong>GT-01-SRV-V</strong></td>
-          <td style="text-align: left">Win Server 2022 Desktop</td>
-          <td style="text-align: left">RRAS Gateway / Router</td>
-          <td style="text-align: left">192.168.178.2 (Ext) / 10.10.0.1 (Int)</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>DC-01-SRV-V</strong></td>
-          <td style="text-align: left">Win Server 2022 Desktop</td>
-          <td style="text-align: left">1. Domänencontroller (PDC)</td>
-          <td style="text-align: left">10.10.0.2 /24</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>DC-02-SRV-V</strong></td>
-          <td style="text-align: left">Win Server 2022 Core</td>
-          <td style="text-align: left">2. Domänencontroller (ADC)</td>
-          <td style="text-align: left">10.10.0.3 /24</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Suse-Clie-01-V</strong></td>
-          <td style="text-align: left">OpenSuse Linux</td>
-          <td style="text-align: left">Linux Test-Client</td>
-          <td style="text-align: left">10.10.0.6 /24</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Win-Clie-01-V</strong></td>
-          <td style="text-align: left">Windows 11</td>
-          <td style="text-align: left">Windows Test-Client</td>
-          <td style="text-align: left">10.10.0.7 /24</td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="identitätsverwaltung">Identitätsverwaltung</h2>
-<h3 id="benutzerkonten">Benutzerkonten</h3>
-<table>
-  <thead>
-      <tr>
-          <th style="text-align: left">Kategorie</th>
-          <th style="text-align: left">Name / Account</th>
-          <th style="text-align: left">Info / Gruppe</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td style="text-align: left"><strong>Admin</strong></td>
-          <td style="text-align: left">S3bbl3r</td>
-          <td style="text-align: left">Domänen-Administrator</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Extern</strong></td>
-          <td style="text-align: left">Ben Utzer</td>
-          <td style="text-align: left">Test-User</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Extern</strong></td>
-          <td style="text-align: left">Karsten Knall</td>
-          <td style="text-align: left">Test-User</td>
-      </tr>
-      <tr>
-          <td style="text-align: left"><strong>Lokal</strong></td>
-          <td style="text-align: left">FreeSeb</td>
-          <td style="text-align: left">Lokaler Admin (Workstation)</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="sicherheitsgruppen">Sicherheitsgruppen</h3>
-<ul>
-<li><strong>Reudnitz</strong>: Globale Sicherheitsgruppe</li>
-<li><strong>Shadow Password Group</strong>: Globale Sicherheitsgruppe</li>
-</ul>
-<h2 id="vorgehensweise">Vorgehensweise</h2>
-<ul>
-<li>
-<p><strong>Windows Server unter Windows 11 mit Hyper-V installieren</strong></p>
+<h2 id="projektbeschreibung">Projektbeschreibung:</h2>
+<p>Projektbeschreibung: Implementierung einer Active Directory Domänenstruktur (AD DS) zur zentralen Verwaltung heterogener Windows- und Linux-Clients. Der Fokus lag auf der GPO-gesteuerten Durchsetzung von Sicherheitsrichtlinien (Lockscreen-Policy) sowie der Workflow-Optimierung mittels Sysprep-Imaging. Das Projekt diente primär als Referenzszenario zur Erarbeitung einer technischen Dokumentation, wobei die systematische Erfassung komplexer Deployment-Prozesse sowie die Identifikation und Aufarbeitung von Dokumentationslücken im Vordergrund standen.</p>
         </div>
         
           <p class="f6 lh-copy mv0">By Sebastian Failing</p><a href="/posts/ad-ds-2026/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">weiterlesen</a>

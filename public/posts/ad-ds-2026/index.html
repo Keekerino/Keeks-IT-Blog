@@ -21,6 +21,10 @@
 
 
 
+  
+    <link rel="stylesheet" href="/css/custom.css">
+  
+
 
     
 
@@ -55,7 +59,7 @@
   <meta itemprop="description" content="Zu implementierender Sperrbildschirm">
   <meta itemprop="datePublished" content="2026-03-19T07:41:56+00:00">
   <meta itemprop="dateModified" content="2026-03-19T07:41:56+00:00">
-  <meta itemprop="wordCount" content="2004">
+  <meta itemprop="wordCount" content="2044">
   <meta itemprop="keywords" content="Active Directory,Projekt,Testumgebung">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Active Directory Domain Services 2026">
@@ -133,11 +137,13 @@
     <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><!-- Vorlage zu garantiert funktionierendem Pfad ![policies2.png](/images/adds-2026/grafik.png) -->
 <h1 id="einrichten-von-windows-server">Einrichten von Windows Server</h1>
 <h1 id="ad-ds-2026-dokumentation">AD DS 2026 Dokumentation</h1>
-<p><strong>Ziel:</strong> Einrichten der Windows Active Directory Domänendienste in einem kleinen privaten Netzwerk inklusive Windows und Linux Clienten, sowie Gruppenrichtlinienerstellung zur Durchsetzung eines Domänenweit einheitlichem Sperrbildschirms.</p>
+<h2 id="projektbeschreibung">Projektbeschreibung:</h2>
+<p>Projektbeschreibung: Implementierung einer Active Directory Domänenstruktur (AD DS) zur zentralen Verwaltung heterogener Windows- und Linux-Clients. Der Fokus lag auf der GPO-gesteuerten Durchsetzung von Sicherheitsrichtlinien (Lockscreen-Policy) sowie der Workflow-Optimierung mittels Sysprep-Imaging. Das Projekt diente primär als Referenzszenario zur Erarbeitung einer technischen Dokumentation, wobei die systematische Erfassung komplexer Deployment-Prozesse sowie die Identifikation und Aufarbeitung von Dokumentationslücken im Vordergrund standen.</p>
 <h2 id="domänenname">Domänenname</h2>
 <p><strong>test.lab</strong></p>
 <h2 id="netzwerk-infrastruktur">Netzwerk-Infrastruktur</h2>
-<table>
+<div class="table-wrapper">
+  <table>
   <thead>
       <tr>
           <th style="text-align: left">Hostname</th>
@@ -179,9 +185,11 @@
       </tr>
   </tbody>
 </table>
+</div>
 <h2 id="identitätsverwaltung">Identitätsverwaltung</h2>
 <h3 id="benutzerkonten">Benutzerkonten</h3>
-<table>
+<div class="table-wrapper">
+  <table>
   <thead>
       <tr>
           <th style="text-align: left">Kategorie</th>
@@ -192,7 +200,7 @@
   <tbody>
       <tr>
           <td style="text-align: left"><strong>Admin</strong></td>
-          <td style="text-align: left">S3bbl3r</td>
+          <td style="text-align: left">Administrator</td>
           <td style="text-align: left">Domänen-Administrator</td>
       </tr>
       <tr>
@@ -212,6 +220,7 @@
       </tr>
   </tbody>
 </table>
+</div>
 <h3 id="sicherheitsgruppen">Sicherheitsgruppen</h3>
 <ul>
 <li><strong>Reudnitz</strong>: Globale Sicherheitsgruppe</li>
@@ -224,13 +233,13 @@
 <p>Achten auf die Konfiguration des virtuellen Switches. Bei Win11 übernimmt der Default Switch NAT und DHCP, bei WinServer nicht.</p>
 </li>
 <li>
-<p><strong>Alle verfügbaren Sicherheitsupdates Installieren und neu starten</strong></p>
+<p>Alle verfügbaren Sicherheitsupdates Installieren und neu starten</p>
 </li>
 <li>
-<p><strong>Grafikkartentreiber (wenn nötig für zweiten Bildschirm) installieren</strong></p>
+<p>Grafikkartentreiber (wenn nötig für zweiten Bildschirm) installieren</p>
 </li>
 <li>
-<p><strong>Einmalig:</strong> Installation <strong>generalisieren</strong> mit <em>sysprep</em> und <em>mode:vm →</em> dieser spezielle Parameter sollte nur verwendet werden, wenn die virtuelle Maschine auf dem gleichen Host verbleibt.</p>
+<p><strong>Einmalig:</strong> Installation generalisieren mit <em>sysprep</em> und <em>mode:vm →</em> dieser spezielle Parameter sollte nur verwendet werden, wenn die virtuelle Maschine auf dem gleichen Host verbleibt.</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># **Wichtig: Den genauen Pfad von Sysprep angeben!**</span>
 </span></span><span style="display:flex;"><span>C:\Windows\System32\Sysprep\sysprep.<span style="color:#79c0ff">exe</span> /generalize /oobe /vm /shutdown
 </span></span></code></pre></div></li>
@@ -241,7 +250,7 @@
 <li>
 <p><strong>IP-Konfiguration für Rechner vergeben</strong></p>
 <p>Zuerst DC Statisch mit IP versorgen</p>
-<p>Virtuelle switche erstellen. Einmal intern (NATintern) und extern(NATextern)</p>
+<p>Virtuelle switche in Hyper-V erstellen. Einmal intern (NATintern) und extern(NATextern)</p>
 </li>
 <li>
 <p><strong>Installieren von Remotedesktopdiensten mit RRAS  auf  virtuellem Server</strong></p>
@@ -322,7 +331,7 @@ DC-02-SRV-V</strong></p>
 </span></span></code></pre></div><ul>
 <li>AD Domänendienste , DNS Konfiguration über PwerShell vornehmen.
 Diese Aktion führt immer wieder zu Problemen. Auch bei dieser Installation. Die folgenden Schritte sind Teil der Fehleranalyse und Fehlerbeseitigung.
-Die Lösung war in diesem Fall den zweiten DC neu aufzusetzen und ihn <em>NICHT</em> manuell zur Domäne hinzuzufügen, sondern den Beitritt zur Domäne über die Hochstufung zum Domänencontroller zu realisieren. Vor allem die Vergabe der <em>“Credentials”</em> im nächsten Schritt ist sehr wichtig</li>
+Die Lösung war in diesem Fall den zweiten DC neu aufzusetzen und ihn <em>NICHT</em> manuell zur Domäne hinzuzufügen, sondern den Beitritt zur Domäne über die Hochstufung zum Domänencontroller zu realisieren. Vor allem die Vergabe der <em>“Credentials”</em> im nächsten Schritt nach der hier aufklappbaren Fehleranalyse ist sehr wichtig!</li>
 </ul>
 <details>
   <summary><b style="color: #d9534f;"> Fehlersuche / Troubleshooting (Hier klicken)</b></summary>
