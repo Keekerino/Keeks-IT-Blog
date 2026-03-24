@@ -59,7 +59,7 @@
   <meta itemprop="description" content="Zu implementierender Sperrbildschirm">
   <meta itemprop="datePublished" content="2026-03-19T07:41:56+00:00">
   <meta itemprop="dateModified" content="2026-03-19T07:41:56+00:00">
-  <meta itemprop="wordCount" content="2055">
+  <meta itemprop="wordCount" content="2062">
   <meta itemprop="keywords" content="Active Directory,Projekt,Testumgebung">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Active Directory Domain Services 2026">
@@ -134,11 +134,12 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><!-- Vorlage zu garantiert funktionierendem Pfad ![policies2.png](/images/adds-2026/grafik.png) -->
-<h1 id="einrichten-von-windows-server">Einrichten von Windows Server</h1>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><h1 id="einrichten-von-windows-server">Einrichten von Windows Server</h1>
 <h1 id="ad-ds-2026-dokumentation">AD DS 2026 Dokumentation</h1>
-<h2 id="projektbeschreibung">Projektbeschreibung:</h2>
-<p>Projektbeschreibung: Implementierung einer Active Directory Domänenstruktur (AD DS) zur zentralen Verwaltung heterogener Windows- und Linux-Clients. Der Fokus lag auf der GPO-gesteuerten Durchsetzung von Sicherheitsrichtlinien (Lockscreen-Policy) sowie der Workflow-Optimierung mittels Sysprep-Imaging. Das Projekt diente primär als Referenzszenario zur Erarbeitung einer technischen Dokumentation, wobei die systematische Erfassung komplexer Deployment-Prozesse sowie die Identifikation und Aufarbeitung von Dokumentationslücken im Vordergrund standen.</p>
+<div class="notice Projektbeschreibung" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
+  <strong style="text-transform: uppercase;">Projektbeschreibung:</strong>
+  <p>Projektbeschreibung: Implementierung einer Active Directory Domänenstruktur (AD DS) zur zentralen Verwaltung heterogener Windows- und Linux-Clients. Der Fokus lag auf der GPO-gesteuerten Durchsetzung von Sicherheitsrichtlinien (Lockscreen-Policy) sowie der Workflow-Optimierung mittels Sysprep-Imaging. Das Projekt diente primär als Referenzszenario zur Erarbeitung einer technischen Dokumentation, wobei die systematische Erfassung komplexer Deployment-Prozesse sowie die Identifikation und Aufarbeitung von Dokumentationslücken im Vordergrund standen.</p>
+</div>
 <h2 id="domänenname">Domänenname</h2>
 <p><strong>test.lab</strong></p>
 <h2 id="netzwerk-infrastruktur">Netzwerk-Infrastruktur</h2>
@@ -222,12 +223,30 @@
 </table>
 </div>
 <h3 id="sicherheitsgruppen">Sicherheitsgruppen</h3>
-<ul>
-<li><strong>Reudnitz</strong>: Globale Sicherheitsgruppe</li>
-<li><strong>Shadow Password Group</strong>: Globale Sicherheitsgruppe</li>
-</ul>
+<div class="table-wrapper">
+  <table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Name</th>
+          <th style="text-align: left">Info</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Reudnitz</strong></td>
+          <td style="text-align: left">Globale Sicherheitsgruppe</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Shadow Password Group</strong></td>
+          <td style="text-align: left">Globale Sicherheitsgruppe</td>
+      </tr>
+  </tbody>
+</table>
+</div>
 <h2 id="vorgehensweise">Vorgehensweise</h2>
-<ul>
+<div class="notice Erste Schritte" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
+  <strong style="text-transform: uppercase;">Erste Schritte:</strong>
+  <p><ul>
 <li>
 <p><strong>Windows Server unter Windows 11 mit Hyper-V installieren</strong></p>
 <p>Besonders achten auf die Konfiguration des virtuellen Switches.
@@ -258,8 +277,12 @@ Bei Windows 11 übernimmt der Default Switch NAT und DHCP, bei Windows Server is
 <p><em>Achten auf: Secure Boot, TPM, Angemessene Anzahl an Prozessorkernen und RAM</em></p>
 </li>
 </ul>
+</p>
+</div>
 <h2 id="einrichten-der-virtuellen-maschinen-mit-sofortiger-prüfpunkterstellung-nach-einrichtung">Einrichten der Virtuellen Maschinen mit sofortiger Prüfpunkterstellung nach Einrichtung.</h2>
-<ul>
+<div class="notice Schritte" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
+  <strong style="text-transform: uppercase;">Schritte:</strong>
+  <p><ul>
 <li>
 <p>Jede Maschine zuerst Updaten und Installation des Grafiktreibers überprüfen, sollte zweiter Bildschirm benötigt werden.
 Außerdem den PC-Namen ändern, dazu in <em>Einstellungen &gt; System &gt; Info</em> auf &ldquo;Diesen PC umbennen&rdquo; klicken und den geforderten Neustart ausführen.</p>
@@ -515,11 +538,12 @@ Secure Boot muss deaktiviert werden.</p>
 </span></span><span style="display:flex;"><span>            
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Import starten über Netzwerkfreigabe</span>
 </span></span><span style="display:flex;"><span>sudo smbget smb://&lt;Nutzername&gt;@dc-01-srv-v/Pictures/backgroundGG.jpg -o /usr/share/wallpapers/custom/backgroundGG.png
-</span></span></code></pre></div><h2 id="ad-ds-konfiguration">AD-DS Konfiguration</h2>
-<ul>
-<li>
-<p><strong>Wichtige Ports in Active-Directory (Firewall Ausnahmen)</strong></p>
-<table>
+</span></span></code></pre></div></p>
+</div>
+<h2 id="ad-ds-konfiguration">AD-DS Konfiguration</h2>
+<h3 id="wichtige-ports-in-active-directory-firewall-ausnahmen">Wichtige Ports in Active-Directory (Firewall Ausnahmen)</h3>
+<div class="table-wrapper">
+  <table>
   <thead>
       <tr>
           <th>Dienst</th>
@@ -550,19 +574,23 @@ Secure Boot muss deaktiviert werden.</p>
       </tr>
   </tbody>
 </table>
-</li>
-<li>
-<p><em>ms-DS-MachineAccountQuota</em> attribute sollte mit PowerShell auf Null gesetzt werden.  Ansonsten können normale Computer Accounts bis zu 10 Computer Objekte in AD anlegen.</p>
-</li>
+</div>
+<div class="notice info" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
+  <strong style="text-transform: uppercase;">Info:</strong>
+  <p><ul>
+<li><em>ms-DS-MachineAccountQuota</em> attribute sollte mit PowerShell auf Null gesetzt werden.  Ansonsten können normale Computer Accounts bis zu 10 Computer Objekte in AD anlegen.</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>    
-</span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Prũfen des wertes ms-DS-MachineAccountQuota</span>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Prũfen des wertes ms-DS-MachineAccountQuota</span>
 </span></span><span style="display:flex;"><span>Get-ADObject -Identity ((Get-ADDomain).distinguishedname) -Properties ms-DS-MachineAccountQuota
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Wert auf Null setzen</span>
 </span></span><span style="display:flex;"><span>Set-ADDomain -Identity (Get-ADDomain).<span style="color:#79c0ff">distinguishedname</span> <span style="color:#ff7b72;font-weight:bold">-Replace</span> @{<span style="color:#a5d6ff">&#34;ms-DS-MachineAccountQuota&#34;</span>=<span style="color:#a5d6ff">&#34;0&#34;</span>} 
-</span></span></code></pre></div><h3 id="erstellen-gruppenrichtlinien-teil-1">Erstellen Gruppenrichtlinien Teil 1</h3>
-<p>Da die Gruppenrichtlinien für den Start- und Sperrbildschirm, welche ich unbedingt umsetzen möchte aus Gründen, nicht so ohne weiteres auf windows Pro wirken, verwende ich drei Registry Einträge mit Verweis unter <em>Computerkonfiguration → Einstellungen → Windows Einstellungen → Registrierung</em> wobei die Verweise zur Zieldatei auf die lokalen Verzeichnisse geändert werden müssen.
+</span></span></code></pre></div></p>
+</div>
+<h3 id="erstellen-gruppenrichtlinien-teil-1">Erstellen Gruppenrichtlinien Teil 1</h3>
+<div class="notice Schritte" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
+  <strong style="text-transform: uppercase;">Schritte:</strong>
+  <p><p>Da die Gruppenrichtlinien für den Start- und Sperrbildschirm, welche ich unbedingt umsetzen möchte aus Gründen, nicht so ohne weiteres auf windows Pro wirken, verwende ich drei Registry Einträge mit Verweis unter <em>Computerkonfiguration → Einstellungen → Windows Einstellungen → Registrierung</em> wobei die Verweise zur Zieldatei auf die lokalen Verzeichnisse geändert werden müssen.
 Freigabe : \DC-01-SRV-V\Pictures\backgroundGG.png</p>
 <p><em>lokaler Pfad: %Systemroot%\Web\Screen\backgroundGG.png</em></p>
 <p><strong>Die Pfade für die Werte (Freigabe und Speicherort) müssen eventuell geändert werden und sind hier nur symbolisch</strong></p>
@@ -656,6 +684,8 @@ Freigabe : \DC-01-SRV-V\Pictures\backgroundGG.png</p>
 <p>Da die verzweigten PowerShell Befehle nach mehrstündiger Fehlersuche keinen Erfolg bringen, wir das Projekt erstmal pausiert.</p>
 </li>
 </ul>
+</p>
+</div>
 <ul class="pa0">
   
    <li class="list di">
