@@ -59,7 +59,7 @@
   <meta itemprop="description" content="Zu implementierender Sperrbildschirm">
   <meta itemprop="datePublished" content="2026-03-19T07:41:56+00:00">
   <meta itemprop="dateModified" content="2026-03-19T07:41:56+00:00">
-  <meta itemprop="wordCount" content="2044">
+  <meta itemprop="wordCount" content="2055">
   <meta itemprop="keywords" content="Active Directory,Projekt,Testumgebung">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Active Directory Domain Services 2026">
@@ -230,7 +230,8 @@
 <ul>
 <li>
 <p><strong>Windows Server unter Windows 11 mit Hyper-V installieren</strong></p>
-<p>Achten auf die Konfiguration des virtuellen Switches. Bei Win11 übernimmt der Default Switch NAT und DHCP, bei WinServer nicht.</p>
+<p>Besonders achten auf die Konfiguration des virtuellen Switches.
+Bei Windows 11 übernimmt der Default Switch NAT und DHCP, bei Windows Server ist diese Konfiguration nicht vorhanden.</p>
 </li>
 <li>
 <p>Alle verfügbaren Sicherheitsupdates Installieren und neu starten</p>
@@ -329,20 +330,20 @@ DC-02-SRV-V</strong></p>
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">#DNS auf ersten DC setzen und als zweiten Loopback</span>
 </span></span><span style="display:flex;"><span>Set-DnsClientServerAddress -InterfaceIndex <span style="color:#a5d6ff">6</span> -ServerAddresses (<span style="color:#a5d6ff">&#34;10.10.0.2&#34;</span>, <span style="color:#a5d6ff">&#34;127.0.0.1&#34;</span>)
 </span></span></code></pre></div><ul>
-<li>AD Domänendienste , DNS Konfiguration über PwerShell vornehmen.
-Diese Aktion führt immer wieder zu Problemen. Auch bei dieser Installation. Die folgenden Schritte sind Teil der Fehleranalyse und Fehlerbeseitigung.
-Die Lösung war in diesem Fall den zweiten DC neu aufzusetzen und ihn <em>NICHT</em> manuell zur Domäne hinzuzufügen, sondern den Beitritt zur Domäne über die Hochstufung zum Domänencontroller zu realisieren. Vor allem die Vergabe der <em>“Credentials”</em> im nächsten Schritt nach der hier aufklappbaren Fehleranalyse ist sehr wichtig!</li>
+<li>AD Domänendienste , DNS Konfiguration über PwerShell vornehmen.</li>
 </ul>
-<details>
-  <summary><b style="color: #d9534f;"> Fehlersuche / Troubleshooting (Hier klicken)</b></summary>
-  <p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># 1. DSRM Passwort (für diesen neuen DC) festlegen</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#79c0ff">$dsrmSafe</span> = ConvertTo-SecureString <span style="color:#a5d6ff">&#34;DeinPasswort123!&#34;</span> -AsPlainText -Force
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># 2. Den Befehl in einer einzigen Zeile ausführen</span>
 </span></span><span style="display:flex;"><span>Install-ADDSDomainController -DomainName <span style="color:#a5d6ff">&#34;test.lab&#34;</span> -InstallDns:$true -Credential (Get-Credential) -SafeModeAdministratorPassword <span style="color:#79c0ff">$dsrmSafe</span>
-</span></span></code></pre></div><ul>
+</span></span></code></pre></div><p>Diese Aktion führte auch bei vorherigen Installationen immer wieder zu Problemen. Auch bei dieser Installation. Die folgenden Schritte sind Teil der Fehleranalyse und Fehlerbeseitigung.</p>
+<p>Die Lösung war in diesem Fall den zweiten DC neu aufzusetzen und ihn <em>NICHT</em> manuell zur Domäne hinzuzufügen, sondern den Beitritt zur Domäne über die Hochstufung zum Domänencontroller zu realisieren. Vor allem die Vergabe der <em>“Credentials”</em> im nächsten Schritt nach der hier aufklappbaren Fehleranalyse ist sehr wichtig!</p>
+<details>
+  <summary><b style="color: #d9534f;"> Fehlersuche / Troubleshooting (Hier klicken)</b></summary>
+  <p>
+<ul>
 <li>Beim weiteren Installationsprozess treten Fehler auf. Nach Rechereche und Auslesen des Fehler-logs  konnte ich folgendes finden:</li>
 </ul>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>    Get-Content C:\Windows\debug\dcpromo.<span style="color:#79c0ff">log</span> -Tail <span style="color:#a5d6ff">50</span>
