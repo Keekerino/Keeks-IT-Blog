@@ -35,7 +35,7 @@ Früher bin ich in zahlreichen anderen Berufsfeldern unterwegs gewesen, vor alle
 Persönliche Interessen und das Bedürfnis mich intellektuell weiterzuentwickeln haben mich nun, im Mittelpunkt meines Lebens, dazu gebracht den Einstieg in die professionelle IT-Welt zu wagen und ich könnte nicht glücklicher darüber sein.
 Ich freue mich auf spannende Projekte und die damit in Verbindung stehenden Menschen kenn zu lernen.
 
-Vielleicht arbeiten wir schon bald zusammen an einem Projekt! 
+Vielleicht arbeiten Sie und ich schon bald zusammen an einem Projekt! 
 
 
 

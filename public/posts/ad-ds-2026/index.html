@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Active Directory Domain Services 2026 | Keeks IT-Blog</title>
+    <title>Implementierung von Active Directory Domain Services unter Windows Server 2022 | Keeks IT-Blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="Zu implementierender Sperrbildschirm">
+    <meta name="description" content="Implementieren von Active Directory in heterogener Netzwerkumgebung">
     <meta name="generator" content="Hugo 0.146.0">
     
     
@@ -44,8 +44,8 @@
     
     <meta property="og:url" content="//localhost:1313/posts/ad-ds-2026/">
   <meta property="og:site_name" content="Keeks IT-Blog">
-  <meta property="og:title" content="Active Directory Domain Services 2026">
-  <meta property="og:description" content="Zu implementierender Sperrbildschirm">
+  <meta property="og:title" content="Implementierung von Active Directory Domain Services unter Windows Server 2022">
+  <meta property="og:description" content="Implementieren von Active Directory in heterogener Netzwerkumgebung">
   <meta property="og:locale" content="de">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
@@ -55,15 +55,15 @@
     <meta property="article:tag" content="Projekt">
     <meta property="article:tag" content="Testumgebung">
 
-  <meta itemprop="name" content="Active Directory Domain Services 2026">
-  <meta itemprop="description" content="Zu implementierender Sperrbildschirm">
+  <meta itemprop="name" content="Implementierung von Active Directory Domain Services unter Windows Server 2022">
+  <meta itemprop="description" content="Implementieren von Active Directory in heterogener Netzwerkumgebung">
   <meta itemprop="datePublished" content="2026-03-19T07:41:56+00:00">
   <meta itemprop="dateModified" content="2026-03-19T07:41:56+00:00">
-  <meta itemprop="wordCount" content="2062">
+  <meta itemprop="wordCount" content="2188">
   <meta itemprop="keywords" content="Active Directory,Projekt,Testumgebung">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Active Directory Domain Services 2026">
-  <meta name="twitter:description" content="Zu implementierender Sperrbildschirm">
+  <meta name="twitter:title" content="Implementierung von Active Directory Domain Services unter Windows Server 2022">
+  <meta name="twitter:description" content="Implementieren von Active Directory in heterogener Netzwerkumgebung">
 
 	
   </head><body class="ma0 avenir bg-near-white development is-page is-page page-ad-ds-2026">
@@ -121,7 +121,7 @@
           
         Posts
       </aside><div id="sharing" class="mt3 ananke-socials"></div>
-<h1 class="f1 athelas mt3 mb1">Active Directory Domain Services 2026</h1>
+<h1 class="f1 athelas mt3 mb1">Implementierung von Active Directory Domain Services unter Windows Server 2022</h1>
       
       <p class="tracked"><strong>Sebastian Failing</strong>
       </p>
@@ -134,16 +134,20 @@
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><h1 id="einrichten-von-windows-server">Einrichten von Windows Server</h1>
-<h1 id="ad-ds-2026-dokumentation">AD DS 2026 Dokumentation</h1>
-<div class="notice Projektbeschreibung" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><div class="notice Projektbeschreibung" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
   <strong style="text-transform: uppercase;">Projektbeschreibung:</strong>
-  <p>Projektbeschreibung: Implementierung einer Active Directory Domänenstruktur (AD DS) zur zentralen Verwaltung heterogener Windows- und Linux-Clients. Der Fokus lag auf der GPO-gesteuerten Durchsetzung von Sicherheitsrichtlinien (Lockscreen-Policy) sowie der Workflow-Optimierung mittels Sysprep-Imaging. Das Projekt diente primär als Referenzszenario zur Erarbeitung einer technischen Dokumentation, wobei die systematische Erfassung komplexer Deployment-Prozesse sowie die Identifikation und Aufarbeitung von Dokumentationslücken im Vordergrund standen.</p>
+  <p><p>Projektbeschreibung: Implementierung einer Active Directory Domänenstruktur (AD DS) zur zentralen Verwaltung heterogener Windows- und Linux-Clients. Der Fokus lag auf der GPO-gesteuerten Durchsetzung von Sicherheitsrichtlinien (Lockscreen-Policy) sowie der Workflow-Optimierung mittels Sysprep-Imaging. Das Projekt diente primär als Referenzszenario zur Erarbeitung einer technischen Dokumentation, wobei die systematische Erfassung komplexer Deployment-Prozesse sowie die Identifikation und Aufarbeitung von Dokumentationslücken im Vordergrund standen.</p>
+<h3 id="domänenname">Domänenname</h3>
+<p>test.lab</p>
+</p>
 </div>
-<h2 id="domänenname">Domänenname</h2>
-<p><strong>test.lab</strong></p>
 <h2 id="netzwerk-infrastruktur">Netzwerk-Infrastruktur</h2>
-<div class="table-wrapper">
+<details style="border: 1px solid #ccc; border-radius: 8px; margin: 1rem 0; padding: 0.5rem 1rem; background-color: #fdfdfd;">
+    <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0;">
+        Details anzeigen
+    </summary>
+    <div style="padding: 1rem 0; border-top: 1px solid #eee;">
+        <div class="table-wrapper">
   <table>
   <thead>
       <tr>
@@ -243,6 +247,9 @@
   </tbody>
 </table>
 </div>
+
+    </div>
+</details>
 <h2 id="vorgehensweise">Vorgehensweise</h2>
 <div class="notice Erste Schritte" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
   <strong style="text-transform: uppercase;">Erste Schritte:</strong>
@@ -253,50 +260,55 @@
 Bei Windows 11 übernimmt der Default Switch NAT und DHCP, bei Windows Server ist diese Konfiguration nicht vorhanden.</p>
 </li>
 <li>
-<p>Alle verfügbaren Sicherheitsupdates Installieren und neu starten</p>
+<p><strong>Alle verfügbaren Sicherheitsupdates Installieren und neu starten</strong></p>
 </li>
 <li>
-<p>Grafikkartentreiber (wenn nötig für zweiten Bildschirm) installieren</p>
-</li>
-<li>
-<p><strong>Einmalig:</strong> Installation generalisieren mit <em>sysprep</em> und <em>mode:vm →</em> dieser spezielle Parameter sollte nur verwendet werden, wenn die virtuelle Maschine auf dem gleichen Host verbleibt.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># **Wichtig: Den genauen Pfad von Sysprep angeben!**</span>
-</span></span><span style="display:flex;"><span>C:\Windows\System32\Sysprep\sysprep.<span style="color:#79c0ff">exe</span> /generalize /oobe /vm /shutdown
-</span></span></code></pre></div></li>
-<li>
-<p><strong>Computernamen vergeben</strong></p>
-<p>GT-01-SRV-V</p>
+<p><strong>Grafikkartentreiber (wenn nötig für zweiten Bildschirm) installieren</strong></p>
 </li>
 <li>
 <p><strong>IP-Konfiguration für Rechner vergeben</strong></p>
-<p>Zuerst DC Statisch mit IP versorgen</p>
-<p>Virtuelle switche in Hyper-V erstellen. Einmal intern (NATintern) und extern(NATextern)</p>
+<p>Server mit statischen IP&rsquo;s versorgen entsprechend der <a href="#netzwerk-infrastruktur">Netzwerk-Infrastruktur</a></p>
 </li>
 <li>
-<p><strong>Installieren von Remotedesktopdiensten mit RRAS  auf  virtuellem Server</strong></p>
-<p><em>Achten auf: Secure Boot, TPM, Angemessene Anzahl an Prozessorkernen und RAM</em></p>
+<p><strong>Virtuelle Netzwerkschnittstelln in Hyper-V erstellen</strong></p>
+<p>Einmal intern (NATintern) und extern(NATextern)</p>
 </li>
 </ul>
 </p>
 </div>
 <h2 id="einrichten-der-virtuellen-maschinen-mit-sofortiger-prüfpunkterstellung-nach-einrichtung">Einrichten der Virtuellen Maschinen mit sofortiger Prüfpunkterstellung nach Einrichtung.</h2>
-<div class="notice Schritte" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
-  <strong style="text-transform: uppercase;">Schritte:</strong>
+<div class="notice Für alle Maschinen ausführen" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
+  <strong style="text-transform: uppercase;">Für alle Maschinen ausführen:</strong>
   <p><ul>
 <li>
-<p>Jede Maschine zuerst Updaten und Installation des Grafiktreibers überprüfen, sollte zweiter Bildschirm benötigt werden.
-Außerdem den PC-Namen ändern, dazu in <em>Einstellungen &gt; System &gt; Info</em> auf &ldquo;Diesen PC umbennen&rdquo; klicken und den geforderten Neustart ausführen.</p>
+<p>Jede Maschine zuerst Updaten und Installation des Grafiktreibers überprüfen, sollte zweiter Bildschirm benötigt werden.</p>
+</li>
+<li>
+<p>Außerdem den PC-Namen ändern, dazu in <em>Einstellungen &gt; System &gt; Info</em> auf &ldquo;Diesen PC umbennen&rdquo; klicken und den geforderten Neustart ausführen.</p>
 </li>
 <li>
 <p>Deaktivieren der Automatischen Prüfpunkte zum Sparen von Festplattenkapazität im begrenzten Home-Setup. Produktive Systeme sollten hier auf      Sicherungskonzepte setzen.</p>
 </li>
-<li>
-<p>Beim Konfigurieren der DNS-Server, muss in einer Domäne mit mehr als einem DC der erste DNS-Eintrag zwingend auf den zweiten Domänencontroller mit aktivem DNS    verweisen.</p>
-</li>
+</ul>
+<span style="color: red; background-color: transparent;">
+  <ul>
+<li>Das Konfigurieren der DNS-Server,  setzt vorraus dass in einer Domäne mit mehr als einem DC der erste DNS-Eintrag zwingend auf den zweiten Domänencontroller mit aktivem DNS verweisen muss.</li>
+</ul>
+</span>
+</p>
+</div>
+<div class="notice Einzelkonfiguration" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
+  <strong style="text-transform: uppercase;">Einzelkonfiguration:</strong>
+  <p><p><strong>Gatewayserver GT-01-SRV-V</strong></p>
+<ul>
+<li>Um die Kommunikation zwischen den einzelnen Rechnern im eigenen Netz zu ermöglichen, wird zuerst ein  Gatewayserver Mit RRAS (Routing und RAS)
+konfiguriert. Genaue Einstellungen hierzu sind in meinen Unterlagen leider nicht mehr vorhanden.
+Generell reicht es aus einen Headless Server zu konfigurieren mit Ip-Konfiguration  192.168.178.2 (Externe Schnittstelle) / 10.10.0.1 (Interne Schnittstelle).
+Detailierte Beschreibungen bitte im Netz nachschlagen :)</li>
 </ul>
 <p><strong>Erster Domänen controller DC-01-SRV-V</strong></p>
 <ul>
-<li>AD Domänendienste, DNS
+<li>Im server Manager AD Domänendienste, DNS
 und  Weiterleitungen im DNS Konfigurieren hier bietet sich z.B.: 86.54.11.1 → DNS4EU als Europäischer anbieter an.
 Ich habe zum Testen der Konfiguration erstmal google DNS genutzt ( 8.8.8.8)</li>
 </ul>
@@ -362,7 +374,7 @@ DC-02-SRV-V</strong></p>
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># 2. Den Befehl in einer einzigen Zeile ausführen</span>
 </span></span><span style="display:flex;"><span>Install-ADDSDomainController -DomainName <span style="color:#a5d6ff">&#34;test.lab&#34;</span> -InstallDns:$true -Credential (Get-Credential) -SafeModeAdministratorPassword <span style="color:#79c0ff">$dsrmSafe</span>
 </span></span></code></pre></div><p>Diese Aktion führte auch bei vorherigen Installationen immer wieder zu Problemen. Auch bei dieser Installation. Die folgenden Schritte sind Teil der Fehleranalyse und Fehlerbeseitigung.</p>
-<p>Die Lösung war in diesem Fall den zweiten DC neu aufzusetzen und ihn <em>NICHT</em> manuell zur Domäne hinzuzufügen, sondern den Beitritt zur Domäne über die Hochstufung zum Domänencontroller zu realisieren. Vor allem die Vergabe der <em>“Credentials”</em> im nächsten Schritt nach der hier aufklappbaren Fehleranalyse ist sehr wichtig!</p>
+<hr>
 <details>
   <summary><b style="color: #d9534f;"> Fehlersuche / Troubleshooting (Hier klicken)</b></summary>
   <p>
@@ -411,6 +423,10 @@ Im nächsten Anlauf im NET-BIOS Format anmelden:
 </span></span><span style="display:flex;"><span>Restart-Computer -Force
 </span></span></code></pre></div>  </p>
 </details>
+<hr>
+<span style="color: green; background-color: transparent;">
+  Die Lösung war in diesem Fall den zweiten DC neu aufzusetzen und ihn <em>NICHT</em> manuell zur Domäne hinzuzufügen, sondern den Beitritt zur Domäne über die Hochstufung zum Domänencontroller zu realisieren. Vor allem die Vergabe der <em>“Credentials”</em> im nächsten Schritt nach der Fehleranalyse ist sehr wichtig!
+</span>
 <p><strong>Zweiten DC erneut sauber installieren mit:</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">#Dieser Einzeiler hat nun den gewünschten Effekt</span>
 </span></span><span style="display:flex;"><span>Install-ADDSDomainController -DomainName <span style="color:#a5d6ff">&#34;test.lab&#34;</span> -InstallDns:$true -NoGlobalCatalog:$false -NoRebootOnCompletion:$true -Force:$true -SafeModeAdministratorPassword (ConvertTo-SecureString <span style="color:#a5d6ff">&#39;DeinPasswort123!&#39;</span> -AsPlainText -Force) -Credential (Get-Credential <span style="color:#a5d6ff">&#34;test.lab\&lt;Nutzername&gt;&#34;</span>) -Verbose
@@ -423,7 +439,7 @@ repadmin /replsummary - &gt; Keine Sicherheitskonflikte mehr.</p>
 </span></span></code></pre></div><p><strong>Win-Clie-01-V</strong></p>
 <ul>
 <li>
-<p>Windows Installation normal über Hyper-V</p>
+<p>Windows Installation standardmäßig über Hyper-V</p>
 </li>
 <li>
 <p>Nachträgliche Netzwerkkarteneinstellung während Installation durch drücken von <em>Shift+F10</em> über <em>get-netadapter</em> und dann <em>new-netipaddress</em> und <em>set-dnsclient</em></p>
@@ -587,13 +603,14 @@ Secure Boot muss deaktiviert werden.</p>
 </span></span><span style="display:flex;"><span>Set-ADDomain -Identity (Get-ADDomain).<span style="color:#79c0ff">distinguishedname</span> <span style="color:#ff7b72;font-weight:bold">-Replace</span> @{<span style="color:#a5d6ff">&#34;ms-DS-MachineAccountQuota&#34;</span>=<span style="color:#a5d6ff">&#34;0&#34;</span>} 
 </span></span></code></pre></div></p>
 </div>
-<h3 id="erstellen-gruppenrichtlinien-teil-1">Erstellen Gruppenrichtlinien Teil 1</h3>
-<div class="notice Schritte" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
+<h2 id="erstellen-gruppenrichtlinien-teil-1">Erstellen Gruppenrichtlinien Teil 1</h2>
+<p><div class="notice Schritte" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
   <strong style="text-transform: uppercase;">Schritte:</strong>
-  <p><p>Da die Gruppenrichtlinien für den Start- und Sperrbildschirm, welche ich unbedingt umsetzen möchte aus Gründen, nicht so ohne weiteres auf windows Pro wirken, verwende ich drei Registry Einträge mit Verweis unter <em>Computerkonfiguration → Einstellungen → Windows Einstellungen → Registrierung</em> wobei die Verweise zur Zieldatei auf die lokalen Verzeichnisse geändert werden müssen.
-Freigabe : \DC-01-SRV-V\Pictures\backgroundGG.png</p>
+  <p><p>Viele Richtlinien unter Administrative Vorlagen -&gt; Kontrollpanel -&gt; Personalisierung (wie z. B. &ldquo;Ein bestimmtes Standard-Sperrbildschirm- und Anmeldebild&rdquo; oder &ldquo;Sperrbildschirm nicht anzeigen&rdquo;) werden von Windows 11 Pro schlicht ignoriert. In der GPO-Verwaltung kann man eisntellungen vornehmen und die EInstellungen sehen auch valide aus.
+Daher verwende ich drei Registry Einträge mit Verweis unter <em>Computerkonfiguration → Einstellungen → Windows Einstellungen → Registrierung</em> wobei die Verweise zur Zieldatei auf die lokalen Verzeichnisse geändert werden müssen.</p>
+<p>Freigabe : \DC-01-SRV-V\Pictures\backgroundGG.png</p>
 <p><em>lokaler Pfad: %Systemroot%\Web\Screen\backgroundGG.png</em></p>
-<p><strong>Die Pfade für die Werte (Freigabe und Speicherort) müssen eventuell geändert werden und sind hier nur symbolisch</strong></p>
+<p><strong>Die Pfade für die Werte (Freigabe und Speicherort) müssen eventuell in anderen Windows-Installationen geändert werden und sind hier nur symbolisch zu verstehen</strong></p>
 <ul>
 <li>
 <p>Registry Einträge in
@@ -622,17 +639,30 @@ Freigabe : \DC-01-SRV-V\Pictures\backgroundGG.png</p>
 </li>
 </ul>
 <h3 id="erfolg">ERFOLG!</h3>
-<p>Der Firmenweite Sperrbildschirm ist implementiert
-<img src="/images/adds-2026/image3.png" alt="newLockScreen.png"></p>
-<h3 id="gmsas-group-managed-service-accounts-erstellen">gMSa’s (Group Managed Service Accounts) Erstellen</h3>
-<h2 id="work-in-progress">Work in Progress</h2>
-<ul>
+<p>Der Firmenweite Sperrbildschirm ist implementiert</p>
+<details style="border: 1px solid #ccc; border-radius: 8px; margin: 1rem 0; padding: 0.5rem 1rem; background-color: #fdfdfd;">
+    <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0;">
+        LockScreenOfficial
+    </summary>
+    <div style="padding: 1rem 0; border-top: 1px solid #eee;">
+        <img src="/images/adds-2026/image3.png" alt="newLockScreen.png">
+    </div>
+</details>
+</p>
+</div>
+<div class="notice gMSa’s (Group Managed Service Accounts) Erstellen" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
+  <strong style="text-transform: uppercase;">gMSa’s (Group Managed Service Accounts) Erstellen:</strong>
+  <p><h2></h2>
+<details style="border: 1px solid #ccc; border-radius: 8px; margin: 1rem 0; padding: 0.5rem 1rem; background-color: #fdfdfd;">
+    <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0;">
+        Troubleshooting Work in Progress
+    </summary>
+    <div style="padding: 1rem 0; border-top: 1px solid #eee;">
+        <ul>
 <li>
 <p><strong>Voraussetzungen und Vorgehensweise:</strong></p>
-<ul>
-<li>Admin muss Mitglied in “Organisations-Admins” sein</li>
-</ul>
 <ol>
+<li>Admin muss Mitglied in “Organisations-Admins” sein</li>
 <li>KDS Root Key erstellen</li>
 <li>Sicherheitsgruppe anlegen</li>
 <li>gMSA erstellen</li>
@@ -679,13 +709,17 @@ Freigabe : \DC-01-SRV-V\Pictures\backgroundGG.png</p>
 </li>
 </ul>
 </li>
-<li>
-<p><strong>Fazit</strong></p>
-<p>Da die verzweigten PowerShell Befehle nach mehrstündiger Fehlersuche keinen Erfolg bringen, wir das Projekt erstmal pausiert.</p>
-</li>
 </ul>
+<span style="color: red; background-color: transparent;">
+  Projekt wird hier erstmal auf undefinierte Zeit pausiert, da andere Projekte und Tagesschwerpunkte anliegen
+</span>
+<pre><code>&lt;/div&gt;
+</code></pre>
+</details>
 </p>
-</div>
+</div></p>
+<h2 id="fazit">Fazit</h2>
+<p>Die Implementierung der AD DS Umgebung unter Windows Server 2022 wurde erfolgreich abgeschlossen. Durch den Aufbau einer logischen OU-Struktur und die Anwendung zentraler Gruppenrichtlinien lässt sich die Infrastruktur effizient verwalten. Besondere Aufmerksamkeit galt der Kompatibilität mit Windows 11 Pro: Da Standard-GPOs für die Personalisierung in dieser Edition oft nicht greifen, wurde die Konfiguration über Group Policy Preferences (GPP) und gezielte Registry-Einträge realisiert. Dies stellt sicher, dass Design-Vorgaben und Sicherheitsrichtlinien auch ohne Enterprise-Lizenzierung zuverlässig auf den Clients angewendet werden. Die Integration eines Clienten unter Linux verlief Problemlos und eignet sich gut als Template für zukünftige Systemintegration.</p>
 <ul class="pa0">
   
    <li class="list di">
