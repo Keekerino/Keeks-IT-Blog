@@ -1,19 +1,31 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Hugo on Keeks IT-Blog</title>
-    <link>http://localhost:1313/tags/hugo/</link>
-    <description>Recent content in Hugo on Keeks IT-Blog</description>
-    <generator>Hugo</generator>
-    <language>de</language>
-    <lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Troubleshooting: Hugo Extended Setup</title>
-      <link>http://localhost:1313/posts/troubleshooting-hugo-extended/</link>
-      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/troubleshooting-hugo-extended/</guid>
-      <description>&lt;div class=&#34;notice Projektbeschreibung&#34; style=&#34;padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;&#34;&gt;&#xA;  &lt;strong style=&#34;text-transform: uppercase;&#34;&gt;Projektbeschreibung:&lt;/strong&gt;&#xA;  &lt;p&gt;&lt;h2 id=&#34;projektübersicht&#34;&gt;Projektübersicht&lt;/h2&gt;&#xA;&lt;p&gt;Ziel war der Aufbau eines IT-Blogs mit dem Static Side Generator Hugo in einem GitHub Codespace.&lt;/p&gt;&lt;/p&gt;&#xA;&lt;/div&gt;&#xA;&lt;h2 id=&#34;die-herausforderung&#34;&gt;Die Herausforderung&lt;/h2&gt;&#xA;&lt;p&gt;Die Standard-Installation von Hugo im Codespace war veraltet. Das Theme &amp;ldquo;Ananke&amp;rdquo; benötigt jedoch die &lt;strong&gt;Extended-Version&lt;/strong&gt;, um CSS-Dateien zu verarbeiten. Ein Update der integriereten Hugo-Version mit get-apt liefert keine zufriedenstellenden Ergebnisse.&lt;/p&gt;&#xA;&lt;h2 id=&#34;meine-herangehensweise&#34;&gt;Meine Herangehensweise&lt;/h2&gt;&#xA;&lt;h3 id=&#34;1-analyse&#34;&gt;1. &lt;strong&gt;Analyse:&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Identifikation der benötigten Version (0.146.0 Extended).&lt;/li&gt;&#xA;&lt;li&gt;Der Fehler äußerte sich durch folgenden Abbruch beim Start des Servers:&#xA;&lt;code&gt;Error: failed to transform &amp;quot;ananke/css/main.css&amp;quot; (text/x-scss): this feature is not available in your current Hugo version&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;Mit dem Befehl &lt;code&gt;hugo version&lt;/code&gt; wurde festgestellt, dass eine Standard-Version installiert war. Für SCSS-Support wird zwingend die &lt;strong&gt;Extended-Version&lt;/strong&gt; benötigt. Da im GitHub Codespace keine Administratorrechte für &lt;code&gt;apt-get&lt;/code&gt; vorlagen, war eine manuelle Installation der Binary erforderlich.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;2-installation&#34;&gt;2. &lt;strong&gt;Installation:&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Manueller Download der Binary von GitHub und Speichern in Codespace&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ wget https://github.com/gohugoio/hugo/releases/download/v0.146.0/hugo_extended_0.146.0_linux-amd64.tar.gz&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;&#xA;&lt;li&gt;Das tar-Archiv entpacken&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;$ tar -xvf hugo_extended_0.146.0_linux-amd64.tar.gz hugo&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;3-ausführung&#34;&gt;3. &lt;strong&gt;Ausführung:&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Start des Servers mit ab jetzt aus dem Hauptverzeichnis heraus mit&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;./hugo server&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;fazit&#34;&gt;Fazit&lt;/h2&gt;&#xA;&lt;p&gt;Wer moderne Hugo-Themes in Cloud-Umgebungen nutzt, muss die Versions-Abhängigkeiten im Blick behalten. Dass die Standard-Installation im Codespace für das Ananke-Theme nicht ausreicht, ließ sich erst durch einen Blick in die Log-Files und den Abgleich der Hugo-Features klären. Die Lösung liegt in der Unabhängigkeit vom System-Repository: Der manuelle Download der Extended-Version ermöglicht die volle Kontrolle über die Build-Pipeline, ungeachtet restriktiver Benutzerrechte.&lt;/p&gt;</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on Keeks IT-Blog</title><link>https://keeks-it-blog.de/tags/hugo/</link><description>Recent content in Hugo on Keeks IT-Blog</description><generator>Hugo</generator><language>de</language><lastBuildDate>Thu, 19 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://keeks-it-blog.de/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Troubleshooting: Hugo Extended Setup</title><link>https://keeks-it-blog.de/posts/troubleshooting-hugo-extended/</link><pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate><guid>https://keeks-it-blog.de/posts/troubleshooting-hugo-extended/</guid><description>&lt;div class="notice Projektbeschreibung" style="padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;">
+ &lt;strong style="text-transform: uppercase;">Projektbeschreibung:&lt;/strong>
+ &lt;p>&lt;h2 id="projektübersicht">Projektübersicht&lt;/h2>
+&lt;p>Ziel war der Aufbau eines IT-Blogs mit dem Static Side Generator Hugo in einem GitHub Codespace.&lt;/p>&lt;/p>
+&lt;/div>
+&lt;h2 id="die-herausforderung">Die Herausforderung&lt;/h2>
+&lt;p>Die Standard-Installation von Hugo im Codespace war veraltet. Das Theme &amp;ldquo;Ananke&amp;rdquo; benötigt jedoch die &lt;strong>Extended-Version&lt;/strong>, um CSS-Dateien zu verarbeiten. Ein Update der integriereten Hugo-Version mit get-apt liefert keine zufriedenstellenden Ergebnisse.&lt;/p>
+&lt;h2 id="meine-herangehensweise">Meine Herangehensweise&lt;/h2>
+&lt;h3 id="1-analyse">1. &lt;strong>Analyse:&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Identifikation der benötigten Version (0.146.0 Extended).&lt;/li>
+&lt;li>Der Fehler äußerte sich durch folgenden Abbruch beim Start des Servers:
+&lt;code>Error: failed to transform &amp;quot;ananke/css/main.css&amp;quot; (text/x-scss): this feature is not available in your current Hugo version&lt;/code>&lt;/li>
+&lt;li>Mit dem Befehl &lt;code>hugo version&lt;/code> wurde festgestellt, dass eine Standard-Version installiert war. Für SCSS-Support wird zwingend die &lt;strong>Extended-Version&lt;/strong> benötigt. Da im GitHub Codespace keine Administratorrechte für &lt;code>apt-get&lt;/code> vorlagen, war eine manuelle Installation der Binary erforderlich.&lt;/li>
+&lt;/ul>
+&lt;h3 id="2-installation">2. &lt;strong>Installation:&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Manueller Download der Binary von GitHub und Speichern in Codespace&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ wget https://github.com/gohugoio/hugo/releases/download/v0.146.0/hugo_extended_0.146.0_linux-amd64.tar.gz
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;ul>
+&lt;li>Das tar-Archiv entpacken&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ tar -xvf hugo_extended_0.146.0_linux-amd64.tar.gz hugo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="3-ausführung">3. &lt;strong>Ausführung:&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>Start des Servers mit ab jetzt aus dem Hauptverzeichnis heraus mit&lt;/li>
+&lt;/ul>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>./hugo server
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="fazit">Fazit&lt;/h2>
+&lt;p>Wer moderne Hugo-Themes in Cloud-Umgebungen nutzt, muss die Versions-Abhängigkeiten im Blick behalten. Dass die Standard-Installation im Codespace für das Ananke-Theme nicht ausreicht, ließ sich erst durch einen Blick in die Log-Files und den Abgleich der Hugo-Features klären. Die Lösung liegt in der Unabhängigkeit vom System-Repository: Der manuelle Download der Extended-Version ermöglicht die volle Kontrolle über die Build-Pipeline, ungeachtet restriktiver Benutzerrechte.&lt;/p></description></item></channel></rss>

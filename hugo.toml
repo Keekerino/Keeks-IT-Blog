@@ -1,4 +1,6 @@
 baseurl = "https://keeks-it-blog.de/"
+canonifyURLs = false
+
 title = "Keeks IT-Blog"
 theme = "ananke"
 languagecode = "de"
@@ -34,7 +36,7 @@ style = "github-dark"
   featured_image = "images/Me.JPG" 
   
   # Ananke nutzt oft dieses Format für zusätzliches CSS
-  custom_css = ["static/css/custom.css"]
+  custom_css = ["css/custom.css"]
 
  
 
