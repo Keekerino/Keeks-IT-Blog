@@ -1,12 +1,11 @@
 baseurl = "https://keeks-it-blog.de/"
-canonifyURLs = false
+
 
 title = "Keeks IT-Blog"
 theme = "ananke"
-languagecode = "de"
-defaultcontentlanguage = "de"
-locale = 'de-DE'
+languageCode = "de-de"
 since = 2026
+
 enableEmoji = true  # war mal enableTwoEmojy (o.ä) - veraltet!
 
 colorScheme = "auto"
