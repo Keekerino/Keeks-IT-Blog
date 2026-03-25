@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projekt on Keeks IT-Blog</title>
-    <link>https://fuzzy-orbit-pjvgq46qpjjrf7pw-1313.app.github.dev/tags/projekt/</link>
+    <link>https://keeks-it-blog.de/tags/projekt/</link>
     <description>Recent content in Projekt on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de</language>
     <lastBuildDate>Thu, 19 Mar 2026 07:41:56 +0000</lastBuildDate>
-    <atom:link href="https://fuzzy-orbit-pjvgq46qpjjrf7pw-1313.app.github.dev/tags/projekt/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://keeks-it-blog.de/tags/projekt/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implementierung von Active Directory Domain Services unter Windows Server 2022</title>
-      <link>https://fuzzy-orbit-pjvgq46qpjjrf7pw-1313.app.github.dev/posts/ad-ds-2026/</link>
+      <link>https://keeks-it-blog.de/posts/ad-ds-2026/</link>
       <pubDate>Thu, 19 Mar 2026 07:41:56 +0000</pubDate>
-      <guid>https://fuzzy-orbit-pjvgq46qpjjrf7pw-1313.app.github.dev/posts/ad-ds-2026/</guid>
+      <guid>https://keeks-it-blog.de/posts/ad-ds-2026/</guid>
       <description>&lt;div class=&#34;notice Projektbeschreibung&#34; style=&#34;padding: 15px; margin: 10px 0; border-left: 5px solid; background-color: #f9f9f9;&#34;&gt;&#xA;  &lt;strong style=&#34;text-transform: uppercase;&#34;&gt;Projektbeschreibung:&lt;/strong&gt;&#xA;  &lt;p&gt;&lt;p&gt;Projektbeschreibung: Implementierung einer Active Directory Domänenstruktur (AD DS) zur zentralen Verwaltung heterogener Windows- und Linux-Clients. Der Fokus lag auf der GPO-gesteuerten Durchsetzung von Sicherheitsrichtlinien (Lockscreen-Policy) sowie der Workflow-Optimierung mittels Sysprep-Imaging. Das Projekt diente primär als Referenzszenario zur Erarbeitung einer technischen Dokumentation, wobei die systematische Erfassung komplexer Deployment-Prozesse sowie die Identifikation und Aufarbeitung von Dokumentationslücken im Vordergrund standen.&lt;/p&gt;&#xA;&lt;h3 id=&#34;domänenname&#34;&gt;Domänenname&lt;/h3&gt;&#xA;&lt;p&gt;test.lab&lt;/p&gt;</description>
     </item>
   </channel>
