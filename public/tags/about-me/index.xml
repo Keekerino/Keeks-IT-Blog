@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About Me on Keeks IT-Blog</title>
-    <link>https://keeks-it-blog.de/tags/about-me/</link>
+    <link>http://localhost:1313/tags/about-me/</link>
     <description>Recent content in About Me on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de</language>
     <lastBuildDate>Wed, 18 Mar 2026 10:49:15 +0000</lastBuildDate>
-    <atom:link href="https://keeks-it-blog.de/tags/about-me/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/about-me/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
-      <link>https://keeks-it-blog.de/about/</link>
+      <link>http://localhost:1313/about/</link>
       <pubDate>Wed, 18 Mar 2026 10:49:15 +0000</pubDate>
-      <guid>https://keeks-it-blog.de/about/</guid>
-      <description>&lt;hr&gt;&#xA;&lt;div style=&#34;text-align: center; margin-bottom: 2rem;&#34;&gt;&#xA;  &lt;img src=&#34;https://keeks-it-blog.de/images/generic/Me.JPG&#34; &#xA;       alt=&#34;Das bin ich!&#34; &#xA;       title=&#34;Me&#34; &#xA;       style=&#34;max-width: 600px; border-radius: 12px; height: auto; margin-bottom: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);&#34;&gt;&#xA;  &#xA;  &#xA;    &lt;p&gt;&lt;em&gt;Das bin ich!&lt;/em&gt;&lt;/p&gt;&#xA;  &#xA;&lt;/div&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;about-me&#34;&gt;About me&lt;/h2&gt;&#xA;&lt;p&gt;Ich bin angehender IT-Systemintegrator mit Linux Vorliebe und hang zu Scripten.&#xA;Auf diesem Blog veröffentliche ich einige meiner bisher durchgeführten Projekte und Troubleshooting Prozesse.&lt;/p&gt;&#xA;&lt;p&gt;Früher bin ich in zahlreichen anderen Berufsfeldern unterwegs gewesen, vor allem in meinem gelernten Beruf des Restaurantfachmanns.&#xA;Persönliche Interessen und das Bedürfnis mich intellektuell weiterzuentwickeln haben mich nun, im Mittelpunkt meines Lebens, dazu gebracht den Einstieg in die professionelle IT-Welt zu wagen und ich könnte nicht glücklicher darüber sein.&#xA;Ich freue mich auf spannende Projekte und die damit in Verbindung stehenden Menschen kenn zu lernen.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;div style=&#34;text-align: center; margin-bottom: 2rem;&#34;&gt;&#xA;  &lt;img src=&#34;http://localhost:1313/images/generic/Me.JPG&#34; &#xA;       alt=&#34;Das bin ich!&#34; &#xA;       title=&#34;Me&#34; &#xA;       style=&#34;max-width: 600px; border-radius: 12px; height: auto; margin-bottom: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);&#34;&gt;&#xA;  &#xA;  &#xA;    &lt;p&gt;&lt;em&gt;Das bin ich!&lt;/em&gt;&lt;/p&gt;&#xA;  &#xA;&lt;/div&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;about-me&#34;&gt;About me&lt;/h2&gt;&#xA;&lt;p&gt;Ich bin angehender IT-Systemintegrator mit Linux Vorliebe und hang zu Scripten.&#xA;Auf diesem Blog veröffentliche ich einige meiner bisher durchgeführten Projekte und Troubleshooting Prozesse.&lt;/p&gt;&#xA;&lt;p&gt;Früher bin ich in zahlreichen anderen Berufsfeldern unterwegs gewesen, vor allem in meinem gelernten Beruf des Restaurantfachmanns.&#xA;Persönliche Interessen und das Bedürfnis mich intellektuell weiterzuentwickeln haben mich nun, im Mittelpunkt meines Lebens, dazu gebracht den Einstieg in die professionelle IT-Welt zu wagen und ich könnte nicht glücklicher darüber sein.&#xA;Ich freue mich auf spannende Projekte und die damit in Verbindung stehenden Menschen kenn zu lernen.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

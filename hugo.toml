@@ -25,17 +25,16 @@ hidecolorschemetoggle = false
 style = "github-dark"
 
 [params]
-  author = "Sebastian Failing"
+ author = "Sebastian Failing"
   info = "Systemintegrator"
   description = "Sebastian Failing's persoenliche website"
   keywords = "blog,sysadmin,Leipzig IT,IT,Netzwerke,Systemintegration"
-  featured_image = "/images/Me.JPG" # Standardbild, falls nichts konfiguriert wurde. Funktioniert nicht
-  avatarurl = ""
-  #gravatar = ""
-  custom_css = ["css/custom.css"]
-
-
   
+  # Achte auf exakte Groß/Kleinschreibung der Datei im Ordner static/images/
+  featured_image = "images/Me.JPG" 
+  
+  # Ananke nutzt oft dieses Format für zusätzliches CSS
+  custom_css = ["css/custom.css"]
 
  
 
@@ -57,8 +56,8 @@ style = "github-dark"
   url = "https://github.com/Keekerino/Keekerino"
 
 
-
 # Menu links
+
 [[menu.main]]
   name = "Blog"
   weight = 1

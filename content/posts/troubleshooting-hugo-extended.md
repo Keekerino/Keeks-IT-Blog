@@ -6,7 +6,7 @@ author: "Sebastian Failing"
 description: "Wie ich Versionskonflikte beim Aufbau meines IT-Blogs gelöst habe."
 categories: ["Projekte"]
 tags: ["Hugo", "Linux", "Troubleshooting"]
-featured_image: "images/generic/Budget_Gaming.JPG"
+featured_image: ""
 ---
 
 {{< notice "Projektbeschreibung" >}}
