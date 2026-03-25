@@ -1,182 +1,67 @@
-/* =========================
-   Tabellen-Wrapper
-   ========================= */
+/* ============================================================
+   VARIANTE 1: CLEAN TECH (Systemintegrator-Fokus)
+   ============================================================ */
 
 .table-wrapper {
   width: 100%;
   overflow-x: auto;
-  margin: 2rem 0;
+  margin: 2.5rem 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); /* Sanfter Schatten für Tiefe */
 }
-
-/* =========================
-   Tabelle (Hauptstil)
-   ========================= */
 
 .table-wrapper table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.95rem;
-  line-height: 1.5;
+  line-height: 1.6;
   min-width: 600px;
   background-color: #ffffff;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
 
-/* =========================
-   Tabellenkopf
-   ========================= */
-
 .table-wrapper thead {
-  background-color: #2c3e50;
+  background-color: #0f172a; /* Sehr dunkles Blau/Grau */
 }
 
 .table-wrapper th {
-  color: #ffffff;
+  color: #f8fafc;
   text-align: left;
-  padding: 0.75rem 1rem;
+  padding: 1rem;
   font-weight: 600;
-  letter-spacing: 0.03em;
-  border-bottom: 2px solid #1a252f;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
 }
 
-/* =========================
-   Tabellenzellen
-   ========================= */
-
 .table-wrapper td {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid #e0e0e0;
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
   vertical-align: top;
 }
 
-/* =========================
-   Zebra-Streifen
-   ========================= */
-
 .table-wrapper tbody tr:nth-child(even) {
-  background-color: #fafafa;
+  background-color: #f8fafc;
 }
-
-/* =========================
-   Hover-Effekt
-   ========================= */
 
 .table-wrapper tbody tr:hover {
-  background-color: #f1f5f9;
-  transition: background-color 0.2s ease-in-out;
+  background-color: #e0e7ff; /* Sanftes Indigoblau beim Hover */
+  transition: background-color 0.15s ease;
 }
-
-/* =========================
-   Letzte Zeile ohne Border
-   ========================= */
-
-.table-wrapper tbody tr:last-child td {
-  border-bottom: none;
-}
-
-/* =========================
-   Responsive Anpassung
-   ========================= */
 
 @media (max-width: 768px) {
-  .table-wrapper table {
-    font-size: 0.85rem;
-  }
+  .table-wrapper table { font-size: 0.85rem; }
+  .table-wrapper th, .table-wrapper td { padding: 0.75rem; }
 }
-
-/* =========================
-   Dark Mode Support
-   ========================= */
 
 @media (prefers-color-scheme: dark) {
-
-  .table-wrapper table {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-  }
-
-  .table-wrapper thead {
-    background-color: #1a252f;
-  }
-
-  .table-wrapper th {
-    border-bottom: 2px solid #000;
-  }
-
-  .table-wrapper td {
-    border-bottom: 1px solid #444;
-  }
-
-  .table-wrapper tbody tr:nth-child(even) {
-    background-color: #252525;
-  }
-
-  .table-wrapper tbody tr:hover {
-    background-color: #2f2f2f;
-  }
+  .table-wrapper { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5); }
+  .table-wrapper table { background-color: #1e293b; color: #cbd5e1; }
+  .table-wrapper thead { background-color: #0f172a; border-bottom: 2px solid #334155; }
+  .table-wrapper th { color: #f1f5f9; }
+  .table-wrapper td { border-bottom: 1px solid #334155; color: #cbd5e1; }
+  .table-wrapper tbody tr:nth-child(even) { background-color: #0f172a; }
+  .table-wrapper tbody tr:hover { background-color: #334155; }
 }
 
-/* ======================================================
-   FIX: Ananke schneidet Post-Previews ab
-   ====================================================== */
-
-/* Hauptcontainer darf nicht limitieren */
-main,
-article,
-.nested-copy-line-height,
-.measure {
-  max-width: 100% !important;
-  overflow: visible !important;
-}
-
-/* Flex Grid (Post-Liste) */
-.flex {
-  align-items: stretch;
-}
-
-/* Einzelne Karten */
-.flex .pa2 {
-  height: auto !important;
-  display: flex;
-}
-
-/* Artikel innerhalb der Karte */
-.flex .pa2 article {
-  height: auto !important;
-  overflow: visible !important;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Inhalt darf wachsen */
-.flex .pa2 .nested-copy-line-height {
-  overflow: visible !important;
-}
-
-/* Entfernt Abschneiden von Text */
-.flex .pa2 p {
-  overflow: visible !important;
-  white-space: normal !important;
-}
-
-/* Entfernt harte Höhenlimits */
-.flex .pa2 * {
-  max-height: none !important;
-}
-
-/* Optional: sorgt für gleichmäßige Kartenhöhe */
-.flex .pa2 article > div {
-  flex-grow: 1;
-}
-
-/* ======================================================
-   DEBUG (bei Bedarf aktivieren)
-   ====================================================== */
-/*
-.table-wrapper {
-  border: 3px solid red;
-}
-
-.flex .pa2 {
-  border: 2px solid blue;
-}
-*/

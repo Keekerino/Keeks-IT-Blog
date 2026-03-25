@@ -23,7 +23,7 @@ Auf diesem Blog veröffentliche ich einige meiner bisher durchgeführten Projekt
 
 Früher bin ich in zahlreichen anderen Berufsfeldern unterwegs gewesen, vor allem in meinem gelernten Beruf des Restaurantfachmanns.
 Persönliche Interessen und das Bedürfnis mich intellektuell weiterzuentwickeln haben mich nun, im Mittelpunkt meines Lebens, dazu gebracht den Einstieg in die professionelle IT-Welt zu wagen und ich könnte nicht glücklicher darüber sein.
-Ich freue mich auf spannende Projekte und die damit in Verbindung stehenden Menschen kenn zu lernen.
+Ich freue mich auf spannende Projekte und die damit in Verbindung stehenden Menschen kennen zu lernen.
 
 Vielleicht arbeiten Sie und ich schon bald zusammen an einem Projekt! 
 
