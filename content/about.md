@@ -8,22 +8,12 @@ featured_image: ""
 description: ""
 ---
 
+---
 
-
-
-
-<h2 style="text-align: center;">Herzlich willkommen auf meiner Seite</h2>
-
-<div style="text-align: center;">
-  <img src="/images/generic/Me.JPG" alt="Das bin ich!" style="max-width: 300px; border-radius: 12px; margin-bottom: 10px;">
-  <p><em>Das bin ich!</em></p>
-</div>
+{{< image src="/images/generic/Me.JPG" caption="Das bin ich!" title="Me" 
+    width="600px" >}}
 
 ---
-<div style="text-align: center;">
-  <img src="/images/generic/Budget_Gaming.JPG" alt="Mein Budget Gaming PC" style="max-width: 400px; border-radius: 12px; margin-bottom: 10px;">
-  <p><em>Einer meiner selbstgebauten Budget-Gaming-PC's</em></p>
-</div>
 
 
 ## About me
@@ -38,4 +28,9 @@ Ich freue mich auf spannende Projekte und die damit in Verbindung stehenden Mens
 Vielleicht arbeiten Sie und ich schon bald zusammen an einem Projekt! 
 
 
+---
 
+{{< image src="/images/generic/Budget_Gaming.JPG" caption="Budget-Gaming-PC" title="Bastelprojekt" 
+    width="200px" >}}
+
+---

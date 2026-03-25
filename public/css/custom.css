@@ -1,125 +1,30 @@
-/* =========================
-   Basis / Reset für Tabellen
-   ========================= */
+/* Fix für die Listenansicht (Posts-Seite) */
 
-.table-wrapper {
-  width: 100%;
-  overflow-x: auto;
-  margin: 2rem 0;
+/* 1. Die Teaser-Container auf volle Breite zwingen */
+.relative.w-100.mb4.mb5-l {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
 }
 
-/* =========================
-   Tabelle (Hauptstil)
-   ========================= */
-
-.table-wrapper table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  min-width: 600px;
-  background-color: #ffffff;
+/* 2. Die Spalten-Logik aushebeln */
+/* Ananke nutzt 'w-60-l' für Text neben einem (fehlenden) Bild */
+.w-100.w-60-l.pr3-ns {
+    width: 100% !important;
+    padding-right: 0 !important;
 }
 
-/* =========================
-   Tabellenkopf
-   ========================= */
-
-.table-wrapper thead {
-  background-color: #2c3e50;
+/* 3. Abstände zwischen den Posts korrigieren */
+article.bb.b--black-10 {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
 }
 
-.table-wrapper th {
-  color: #ffffff;
-  text-align: left;
-  padding: 0.75rem 1rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  border-bottom: 2px solid #1a252f;
+/* 4. Titel-Farbe (Gegen das Blasse) */
+.f3.fw1.athelas.mt0.lh-title a {
+    color: #000 !important;
+    opacity: 1 !important;
+    text-decoration: none;
 }
-
-/* =========================
-   Tabellenzellen
-   ========================= */
-
-.table-wrapper td {
-  padding: 0.75rem 1rem;
-  border-bottom: 1px solid #e0e0e0;
-  vertical-align: top;
-}
-
-/* =========================
-   Zebra-Streifen
-   ========================= */
-
-.table-wrapper tbody tr:nth-child(even) {
-  background-color: #fafafa;
-}
-
-/* =========================
-   Hover-Effekt
-   ========================= */
-
-.table-wrapper tbody tr:hover {
-  background-color: #f1f5f9;
-  transition: background-color 0.2s ease-in-out;
-}
-
-/* =========================
-   Letzte Zeile ohne Border
-   ========================= */
-
-.table-wrapper tbody tr:last-child td {
-  border-bottom: none;
-}
-
-/* =========================
-   Responsive Anpassung
-   ========================= */
-
-@media (max-width: 768px) {
-  .table-wrapper table {
-    font-size: 0.85rem;
-  }
-}
-
-/* =========================
-   Dark Mode Support
-   ========================= */
-
-@media (prefers-color-scheme: dark) {
-
-  .table-wrapper table {
-    background-color: #1e1e1e;
-    color: #e0e0e0;
-  }
-
-  .table-wrapper thead {
-    background-color: #1a252f;
-  }
-
-  .table-wrapper th {
-    border-bottom: 2px solid #000;
-  }
-
-  .table-wrapper td {
-    border-bottom: 1px solid #444;
-  }
-
-  .table-wrapper tbody tr:nth-child(even) {
-    background-color: #252525;
-  }
-
-  .table-wrapper tbody tr:hover {
-    background-color: #2f2f2f;
-  }
-}
-
-/* =========================
-   Debug (bei Bedarf aktivieren)
-   ========================= */
-/*
-.table-wrapper {
-  border: 3px solid red;
-}
-*/

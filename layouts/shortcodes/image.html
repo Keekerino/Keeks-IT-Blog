@@ -1,4 +1,10 @@
-<figure style="text-align: center;">
-  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" style="max-width: {{ .Get "width" | default "100%" }}; height: auto;">
-  <figcaption><small>{{ .Get "caption" }}</small></figcaption>
-</figure>
+<div style="text-align: center; margin-bottom: 2rem;">
+  <img src="{{ .Get "src" }}" 
+       alt="{{ .Get "alt" | default (.Get "caption") }}" 
+       title="{{ .Get "title" | default (.Get "caption") }}" 
+       style="max-width: {{ .Get "width" | default "400px" }}; border-radius: 12px; height: auto; margin-bottom: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  
+  {{ if .Get "caption" }}
+    <p><em>{{ .Get "caption" | markdownify }}</em></p>
+  {{ end }}
+</div>
