@@ -34,7 +34,7 @@ style = "github-dark"
   featured_image = "images/Me.JPG" 
   
   # Ananke nutzt oft dieses Format für zusätzliches CSS
-  custom_css = ["css/custom.css"]
+  custom_css = ["static/css/custom.css"]
 
  
 
