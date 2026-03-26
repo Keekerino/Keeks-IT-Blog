@@ -1,0 +1,27 @@
+<button id="back-to-top" title="Nach oben scrollen">↑ Top</button>
+
+<script>
+    const btt = document.getElementById("back-to-top");
+    
+    // Test-Modus: Zeige den Button sofort an
+    btt.style.display = "block";
+
+    // Klick-Funktion bleibt erhalten
+    btt.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+     
+    // Wenn die Testphase vorbei ist, aktiviere diesen Block wieder für das Scroll-Verhalten:
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btt.style.display = "block";
+        } else {
+            btt.style.display = "none";
+        }
+    };
+    
+</script>

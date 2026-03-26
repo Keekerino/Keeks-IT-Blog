@@ -1,13 +1,30 @@
 .
-├── Home Systeme Dokumentation 2e367c3c19ab80a2845adae08d5e0af6.md
+├── README.md
+├── Struktur.txt
 ├── archetypes
-│   └── default.md
 ├── content
+│   ├── _index.md
 │   ├── about.md
 │   └── posts
-│       └── ad-ds-2025.md
+│       ├── ad-ds-2026.md
+│       └── troubleshooting-hugo-extended.md
 ├── hugo
 ├── hugo.toml
+├── layouts
+│   ├── _default
+│   │   ├── baseof.html
+│   │   ├── list.html
+│   │   └── summary-with-image.html
+│   ├── partials
+│   │   └── back-to-top.html
+│   └── shortcodes
+│       ├── color.html
+│       ├── expand.html
+│       ├── image.html
+│       ├── linkcard.html
+│       ├── linkgrid.html
+│       ├── notice.html
+│       └── table.html
 ├── public
 │   ├── 404.html
 │   ├── about
@@ -22,27 +39,116 @@
 │   │   └── index.xml
 │   ├── categories
 │   │   ├── index.html
-│   │   └── index.xml
+│   │   ├── index.xml
+│   │   └── projekte
+│   │       ├── index.html
+│   │       └── index.xml
+│   ├── css
+│   │   └── custom.css
 │   ├── images
-│   │   ├── AD-DS-2026
-│   │   ├── Budget_Gaming.JPG
-│   │   ├── IMG_0220.JPG
-│   │   ├── IMG_0251.JPG
-│   │   ├── Me.JPG
+│   │   ├── OfficialMSIcons
+│   │   │   ├── 00009-icon-service-Log-Analytics-Workspaces.svg
+│   │   │   ├── 00028-icon-service-Batch-AI.svg
+│   │   │   ├── 00030-icon-service-Machine-Learning-Studio-(Classic)-Web-Services.svg
+│   │   │   ├── 00031-icon-service-Genomics.svg
+│   │   │   ├── 00039-icon-service-Event-Hubs.svg
+│   │   │   ├── 00042-icon-service-Stream-Analytics-Jobs.svg
+│   │   │   ├── 00046-icon-service-App-Service-Plans.svg
+│   │   │   ├── 00049-icon-service-App-Service-Certificates.svg
+│   │   │   ├── 00050-icon-service-App-Service-Domains.svg
+│   │   │   ├── 00056-icon-service-CDN-Profiles.svg
+│   │   │   ├── 00562-icon-service-Endpoint-Analytics.svg
+│   │   │   ├── 00606-icon-service-Azure-Synapse-Analytics.svg
+│   │   │   ├── 00792-icon-service-Computer-Vision.svg
+│   │   │   ├── 00793-icon-service-Custom-Vision.svg
+│   │   │   ├── 00794-icon-service-Face-APIs.svg
+│   │   │   ├── 00795-icon-service-Content-Moderators.svg
+│   │   │   ├── 00796-icon-service-Personalizers.svg
+│   │   │   ├── 00797-icon-service-Speech-Services.svg
+│   │   │   ├── 00799-icon-service-QnA-Makers.svg
+│   │   │   ├── 00800-icon-service-Translator-Text.svg
+│   │   │   ├── 00801-icon-service-Language-Understanding.svg
+│   │   │   ├── 00812-icon-service-Immersive-Readers.svg
+│   │   │   ├── 00814-icon-service-Anomaly-Detector.svg
+│   │   │   ├── 00819-icon-service-Form-Recognizers.svg
+│   │   │   ├── 01239-icon-service-Azure-Experimentation-Studio.svg
+│   │   │   ├── 01688-icon-service-Azure-Object-Understanding.svg
+│   │   │   ├── 02189-icon-service-Azure-Workbooks.svg
+│   │   │   ├── 02209-icon-service-Private-Link-Services.svg
+│   │   │   ├── 02409-icon-service-Metrics-Advisor.svg
+│   │   │   ├── 02749-icon-service-Azure-Applied-AI-Services.svg
+│   │   │   ├── 02876-icon-service-Language.svg
+│   │   │   ├── 03173-icon-service-Cognitive-Services-Decisions.svg
+│   │   │   ├── 03321-icon-service-Serverless-Search.svg
+│   │   │   ├── 03332-icon-service-Power-BI-Embedded.svg
+│   │   │   ├── 03335-icon-service-Power-Platform.svg
+│   │   │   ├── 03337-icon-service-Bonsai.svg
+│   │   │   ├── 03390-icon-service-Content-Safety.svg
+│   │   │   ├── 03438-icon-service-Azure-OpenAI.svg
+│   │   │   ├── 03513-icon-service-AI-Studio.svg
+│   │   │   ├── 10035-icon-service-App-Services.svg
+│   │   │   ├── 10044-icon-service-Cognitive-Search.svg
+│   │   │   ├── 10126-icon-service-Data-Factories.svg
+│   │   │   ├── 10142-icon-service-HD-Insight-Clusters.svg
+│   │   │   ├── 10143-icon-service-Data-Lake-Analytics.svg
+│   │   │   ├── 10145-icon-service-Azure-Data-Explorer-Clusters.svg
+│   │   │   ├── 10148-icon-service-Analysis-Services.svg
+│   │   │   ├── 10149-icon-service-Event-Hub-Clusters.svg
+│   │   │   ├── 10150-icon-service-Data-Lake-Store-Gen1.svg
+│   │   │   ├── 10162-icon-service-Cognitive-Services.svg
+│   │   │   ├── 10164-icon-service-Genomics-Accounts.svg
+│   │   │   ├── 10165-icon-service-Bot-Services.svg
+│   │   │   ├── 10166-icon-service-Machine-Learning.svg
+│   │   │   ├── 10167-icon-service-Machine-Learning-Studio-Workspaces.svg
+│   │   │   ├── 10168-icon-service-Machine-Learning-Studio-Web-Service-Plans.svg
+│   │   │   ├── 10787-icon-service-Azure-Databricks.svg
+│   │   │   ├── Azure_Icons_FAQ.pdf
+│   │   │   ├── Microsoft Entra BW icon (product family).svg
+│   │   │   ├── Microsoft Entra Branding Playbook - Visual Identity.pptx
+│   │   │   ├── Microsoft Entra ID BW icon.svg
+│   │   │   ├── Microsoft Entra ID Governance BW icon.svg
+│   │   │   ├── Microsoft Entra ID Governance color icon.svg
+│   │   │   ├── Microsoft Entra ID color icon.svg
+│   │   │   ├── Microsoft Entra ID filled BW icon.svg
+│   │   │   ├── Microsoft Entra Internet Access BW icon.svg
+│   │   │   ├── Microsoft Entra Internet Access color icon.svg
+│   │   │   ├── Microsoft Entra Private Access BW icon.svg
+│   │   │   ├── Microsoft Entra Private Access color icon.svg
+│   │   │   ├── Microsoft Entra Product Family.svg
+│   │   │   ├── Microsoft Entra Verified ID BW icon.svg
+│   │   │   ├── Microsoft Entra Verified ID color icon.svg
+│   │   │   ├── Microsoft Entra Workload ID color icon.svg
+│   │   │   ├── Microsoft Terms of Use.docx
+│   │   │   └── Microsoft_Terms_of_Use.pdf
+│   │   ├── adds-2026
+│   │   │   ├── grafik.png
+│   │   │   ├── grafik1.png
+│   │   │   ├── grafik2.png
+│   │   │   ├── grafik3.png
+│   │   │   ├── image.png
+│   │   │   ├── image1.png
+│   │   │   ├── image2.png
+│   │   │   ├── image3.png
+│   │   │   ├── image4.png
+│   │   │   └── image5.png
 │   │   ├── generic
 │   │   │   ├── Budget_Gaming.JPG
 │   │   │   └── Me.JPG
-│   │   └── gohugo-default-sample-hero-image.jpg
+│   │   ├── gohugo-default-sample-hero-image.jpg
+│   │   └── hugo
+│   │       └── hugo-icon.svg
 │   ├── index.html
 │   ├── index.xml
 │   ├── posts
-│   │   ├── ad-ds-2025
+│   │   ├── ad-ds-2026
 │   │   │   └── index.html
 │   │   ├── index.html
 │   │   ├── index.xml
-│   │   └── page
-│   │       └── 1
-│   │           └── index.html
+│   │   ├── page
+│   │   │   └── 1
+│   │   │       └── index.html
+│   │   └── troubleshooting-hugo-extended
+│   │       └── index.html
 │   ├── series
 │   │   ├── index.html
 │   │   └── index.xml
@@ -50,78 +156,42 @@
 │   └── tags
 │       ├── about
 │       │   ├── index.html
-│       │   ├── index.xml
-│       │   └── page
-│       │       └── 1
-│       │           └── index.html
+│       │   └── index.xml
 │       ├── about-me
 │       │   ├── index.html
-│       │   ├── index.xml
-│       │   └── page
-│       │       └── 1
-│       │           └── index.html
+│       │   └── index.xml
 │       ├── active-directory
 │       │   ├── index.html
-│       │   ├── index.xml
-│       │   └── page
-│       │       └── 1
-│       │           └── index.html
-│       ├── failing
+│       │   └── index.xml
+│       ├── hugo
 │       │   ├── index.html
-│       │   ├── index.xml
-│       │   └── page
-│       │       └── 1
-│       │           └── index.html
+│       │   └── index.xml
 │       ├── index.html
 │       ├── index.xml
-│       ├── perso
+│       ├── linux
 │       │   ├── index.html
-│       │   ├── index.xml
-│       │   └── page
-│       │       └── 1
-│       │           └── index.html
-│       ├── personal
-│       │   ├── index.html
-│       │   ├── index.xml
-│       │   └── page
-│       │       └── 1
-│       │           └── index.html
+│       │   └── index.xml
 │       ├── persönliche-informationen
 │       │   ├── index.html
-│       │   ├── index.xml
-│       │   └── page
-│       │       └── 1
-│       │           └── index.html
+│       │   └── index.xml
 │       ├── projekt
 │       │   ├── index.html
-│       │   ├── index.xml
-│       │   └── page
-│       │       └── 1
-│       │           └── index.html
-│       ├── sebastian
+│       │   └── index.xml
+│       ├── sebastian-f.
 │       │   ├── index.html
-│       │   ├── index.xml
-│       │   └── page
-│       │       └── 1
-│       │           └── index.html
+│       │   └── index.xml
 │       ├── sebastian-failing
 │       │   ├── index.html
-│       │   ├── index.xml
-│       │   └── page
-│       │       └── 1
-│       │           └── index.html
+│       │   └── index.xml
 │       ├── testumgebung
 │       │   ├── index.html
-│       │   ├── index.xml
-│       │   └── page
-│       │       └── 1
-│       │           └── index.html
+│       │   └── index.xml
+│       ├── troubleshooting
+│       │   ├── index.html
+│       │   └── index.xml
 │       └── über-mich
 │           ├── index.html
-│           ├── index.xml
-│           └── page
-│               └── 1
-│                   └── index.html
+│           └── index.xml
 ├── resources
 │   └── _gen
 │       └── assets
@@ -132,11 +202,99 @@
 │                   ├── main.css_c23e60d80d9e9820d4a62ccadab8decb.content
 │                   └── main.css_c23e60d80d9e9820d4a62ccadab8decb.json
 ├── static
+│   ├── css
+│   │   └── custom.css
 │   └── images
-│       ├── AD-DS-2026
-│       └── generic
-│           ├── Budget_Gaming.JPG
-│           └── Me.JPG
+│       ├── OfficialMSIcons
+│       │   ├── 00009-icon-service-Log-Analytics-Workspaces.svg
+│       │   ├── 00028-icon-service-Batch-AI.svg
+│       │   ├── 00030-icon-service-Machine-Learning-Studio-(Classic)-Web-Services.svg
+│       │   ├── 00031-icon-service-Genomics.svg
+│       │   ├── 00039-icon-service-Event-Hubs.svg
+│       │   ├── 00042-icon-service-Stream-Analytics-Jobs.svg
+│       │   ├── 00046-icon-service-App-Service-Plans.svg
+│       │   ├── 00049-icon-service-App-Service-Certificates.svg
+│       │   ├── 00050-icon-service-App-Service-Domains.svg
+│       │   ├── 00056-icon-service-CDN-Profiles.svg
+│       │   ├── 00562-icon-service-Endpoint-Analytics.svg
+│       │   ├── 00606-icon-service-Azure-Synapse-Analytics.svg
+│       │   ├── 00792-icon-service-Computer-Vision.svg
+│       │   ├── 00793-icon-service-Custom-Vision.svg
+│       │   ├── 00794-icon-service-Face-APIs.svg
+│       │   ├── 00795-icon-service-Content-Moderators.svg
+│       │   ├── 00796-icon-service-Personalizers.svg
+│       │   ├── 00797-icon-service-Speech-Services.svg
+│       │   ├── 00799-icon-service-QnA-Makers.svg
+│       │   ├── 00800-icon-service-Translator-Text.svg
+│       │   ├── 00801-icon-service-Language-Understanding.svg
+│       │   ├── 00812-icon-service-Immersive-Readers.svg
+│       │   ├── 00814-icon-service-Anomaly-Detector.svg
+│       │   ├── 00819-icon-service-Form-Recognizers.svg
+│       │   ├── 01239-icon-service-Azure-Experimentation-Studio.svg
+│       │   ├── 01688-icon-service-Azure-Object-Understanding.svg
+│       │   ├── 02189-icon-service-Azure-Workbooks.svg
+│       │   ├── 02209-icon-service-Private-Link-Services.svg
+│       │   ├── 02409-icon-service-Metrics-Advisor.svg
+│       │   ├── 02749-icon-service-Azure-Applied-AI-Services.svg
+│       │   ├── 02876-icon-service-Language.svg
+│       │   ├── 03173-icon-service-Cognitive-Services-Decisions.svg
+│       │   ├── 03321-icon-service-Serverless-Search.svg
+│       │   ├── 03332-icon-service-Power-BI-Embedded.svg
+│       │   ├── 03335-icon-service-Power-Platform.svg
+│       │   ├── 03337-icon-service-Bonsai.svg
+│       │   ├── 03390-icon-service-Content-Safety.svg
+│       │   ├── 03438-icon-service-Azure-OpenAI.svg
+│       │   ├── 03513-icon-service-AI-Studio.svg
+│       │   ├── 10035-icon-service-App-Services.svg
+│       │   ├── 10044-icon-service-Cognitive-Search.svg
+│       │   ├── 10126-icon-service-Data-Factories.svg
+│       │   ├── 10142-icon-service-HD-Insight-Clusters.svg
+│       │   ├── 10143-icon-service-Data-Lake-Analytics.svg
+│       │   ├── 10145-icon-service-Azure-Data-Explorer-Clusters.svg
+│       │   ├── 10148-icon-service-Analysis-Services.svg
+│       │   ├── 10149-icon-service-Event-Hub-Clusters.svg
+│       │   ├── 10150-icon-service-Data-Lake-Store-Gen1.svg
+│       │   ├── 10162-icon-service-Cognitive-Services.svg
+│       │   ├── 10164-icon-service-Genomics-Accounts.svg
+│       │   ├── 10165-icon-service-Bot-Services.svg
+│       │   ├── 10166-icon-service-Machine-Learning.svg
+│       │   ├── 10167-icon-service-Machine-Learning-Studio-Workspaces.svg
+│       │   ├── 10168-icon-service-Machine-Learning-Studio-Web-Service-Plans.svg
+│       │   ├── 10787-icon-service-Azure-Databricks.svg
+│       │   ├── Azure_Icons_FAQ.pdf
+│       │   ├── Microsoft Entra BW icon (product family).svg
+│       │   ├── Microsoft Entra Branding Playbook - Visual Identity.pptx
+│       │   ├── Microsoft Entra ID BW icon.svg
+│       │   ├── Microsoft Entra ID Governance BW icon.svg
+│       │   ├── Microsoft Entra ID Governance color icon.svg
+│       │   ├── Microsoft Entra ID color icon.svg
+│       │   ├── Microsoft Entra ID filled BW icon.svg
+│       │   ├── Microsoft Entra Internet Access BW icon.svg
+│       │   ├── Microsoft Entra Internet Access color icon.svg
+│       │   ├── Microsoft Entra Private Access BW icon.svg
+│       │   ├── Microsoft Entra Private Access color icon.svg
+│       │   ├── Microsoft Entra Product Family.svg
+│       │   ├── Microsoft Entra Verified ID BW icon.svg
+│       │   ├── Microsoft Entra Verified ID color icon.svg
+│       │   ├── Microsoft Entra Workload ID color icon.svg
+│       │   ├── Microsoft Terms of Use.docx
+│       │   └── Microsoft_Terms_of_Use.pdf
+│       ├── adds-2026
+│       │   ├── grafik.png
+│       │   ├── grafik1.png
+│       │   ├── grafik2.png
+│       │   ├── grafik3.png
+│       │   ├── image.png
+│       │   ├── image1.png
+│       │   ├── image2.png
+│       │   ├── image3.png
+│       │   ├── image4.png
+│       │   └── image5.png
+│       ├── generic
+│       │   ├── Budget_Gaming.JPG
+│       │   └── Me.JPG
+│       └── hugo
+│           └── hugo-icon.svg
 ├── struktur.txt
 └── themes
     └── ananke
@@ -794,4 +952,4 @@
         │       └── gohugo-default-sample-hero-image.jpg
         └── theme.toml
 
-105 directories, 690 files
+93 directories, 860 files
