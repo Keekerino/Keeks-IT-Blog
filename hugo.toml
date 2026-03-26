@@ -26,9 +26,9 @@ hidecolorschemetoggle = false
 style = "github-dark"
 
 [params]
- author = "Sebastian Failing"
+ author = "Sebastian F."
   info = "Systemintegrator"
-  description = "Sebastian Failing's persoenliche website"
+  description = "Sebastian F.'s persoenliche website"
   keywords = "blog,sysadmin,Leipzig IT,IT,Netzwerke,Systemintegration"
   
   # Achte auf exakte Groß/Kleinschreibung der Datei im Ordner static/images/

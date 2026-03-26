@@ -2,8 +2,8 @@
 title: "About"
 date: 2026-03-18T10:49:15Z
 draft: false
-author: "Sebastian Failing"
-tags: [About me,About,Über mich,Persönliche Informationen,Sebastian Failing]
+author: "Sebastian F."
+tags: [About me,About,Über mich,Persönliche Informationen,Sebastian F.]
 featured_image: ""
 description: ""
 ---

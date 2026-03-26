@@ -2,15 +2,14 @@
 title: "Troubleshooting: Hugo Extended Setup"
 date: 2026-03-19
 draft: false
-author: "Sebastian Failing"
+author: "Sebastian F."
 description: "Wie ich Versionskonflikte beim Aufbau meines IT-Blogs gelöst habe."
 categories: ["Projekte"]
-tags: ["Hugo", "Linux", "Troubleshooting"]
+tags: []
 featured_image: ""
 ---
 
 {{< notice "Projektbeschreibung" >}}
-## Projektübersicht
 Ziel war der Aufbau eines IT-Blogs mit dem Static Side Generator Hugo in einem GitHub Codespace.
 {{< /notice >}}
 

@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: false
-author: "Sebastian Failing"
+author: "Sebastian F."
 description: "Kurze Zusammenfassung des IT-Projekts"
 categories: ["Umschulung", "Projekte"]
 tags: ["Linux", "Netzwerk", "Hardware"]
