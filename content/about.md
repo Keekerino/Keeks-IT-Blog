@@ -3,34 +3,30 @@ title: "About"
 date: 2026-03-18T10:49:15Z
 draft: false
 author: "Sebastian F."
-tags: [About me,About,Über mich,Persönliche Informationen,Sebastian F.]
+tags: []
 featured_image: ""
 description: ""
 ---
 
 ---
 
-{{< image src="/images/generic/Me.JPG" caption="Das bin ich!" title="Me" 
-    width="600px" >}}
-
----
-
-
 ## About me
 
-Ich bin angehender IT-Systemintegrator mit Linux Vorliebe und hang zu Scripten.
-Auf diesem Blog veröffentliche ich einige meiner bisher durchgeführten Projekte und Troubleshooting Prozesse.
+{{< image "/images/generic/Me.JPG" "right" "Me" "200px" "right" >}}
 
-Früher bin ich in zahlreichen anderen Berufsfeldern unterwegs gewesen, vor allem in meinem gelernten Beruf des Restaurantfachmanns.
-Persönliche Interessen und das Bedürfnis mich intellektuell weiterzuentwickeln haben mich nun, im Mittelpunkt meines Lebens, dazu gebracht den Einstieg in die professionelle IT-Welt zu wagen und ich könnte nicht glücklicher darüber sein.
+
+Ich bin angehender IT-Systemintegrator mit Linux Vorliebe und hang zu PC-Hardware.
+Auf diesem Blog veröffentliche ich einige meiner bisher durchgeführten Projekte und Troubleshooting Prozesse meiner bisherigen IT-Laufbahn. 
+
+Früher bin ich in vielfältigen anderen Berufsfeldern unterwegs gewesen, vor allem in meinem gelernten Beruf des Restaurantfachmanns.
+Persönliche Interessen und das Bedürfnis mich weiterzuentwickeln haben mich nun, im Mittelpunkt meines Lebens, dazu gebracht den Einstieg in die professionelle IT-Welt zu wagen und ich könnte bisher nicht glücklicher darüber sein.
 Ich freue mich auf spannende Projekte und die damit in Verbindung stehenden Menschen kennen zu lernen.
 
 Vielleicht arbeiten Sie und ich schon bald zusammen an einem Projekt! 
 
 
 ---
-
-{{< image src="/images/generic/Budget_Gaming.JPG" caption="Budget-Gaming-PC" title="Bastelprojekt" 
-    width="200px" >}}
+## Bastelprojekte
+{{< image "/images/generic/Budget_Gaming.JPG" "center" "Budget Gaming - Blue" "200px" "none" >}}
 
 ---

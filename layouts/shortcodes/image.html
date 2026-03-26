@@ -1,10 +1,15 @@
-<div style="text-align: center; margin-bottom: 2rem;">
-  <img src="{{ .Get "src" }}" 
-       alt="{{ .Get "alt" | default (.Get "caption") }}" 
-       title="{{ .Get "title" | default (.Get "caption") }}" 
-       style="max-width: {{ .Get "width" | default "400px" }}; border-radius: 12px; height: auto; margin-bottom: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<div style="float: {{ .Get 4 | default "none" }}; 
+            text-align: {{ .Get 1 | default "center" }}; 
+            margin: {{ if .Get 4 }} 0 20px 20px 20px {{ else }} 0 auto 2rem auto {{ end }}; 
+            max-width: {{ .Get 3 | default "400px" }};">
   
-  {{ if .Get "caption" }}
-    <p><em>{{ .Get "caption" | markdownify }}</em></p>
+  <img src="{{ .Get 0 }}" 
+       alt="{{ .Get 2 | default "Bild" }}" 
+       style="width: 100%; border-radius: 12px; height: auto; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+  
+  {{ if .Get 2 }}
+    <p style="text-align: center;"><em>{{ .Get 2 | markdownify }}</em></p>
   {{ end }}
+
+  {{ if .Get 4 }}<div style="clear: both;"></div>{{ end }}
 </div>
