@@ -1,0 +1,7 @@
+<div class="pa3 w-100 w-50-l">
+  <div class="link-card">
+    <h4 class="card-category">{{ .Get "category" }}</h4>
+    <a href="{{ .Get "url" | safeURL }}" target="_blank" class="card-link">{{ .Get "title" }}</a>
+    <p class="card-desc">{{ .Inner }}</p>
+  </div>
+</div>

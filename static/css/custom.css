@@ -79,10 +79,14 @@ article img {
   transition: background-color 0.15s ease;
 }
 
+
+
 @media (max-width: 768px) {
   .table-wrapper table { font-size: 0.85rem; }
   .table-wrapper th, .table-wrapper td { padding: 0.75rem; }
 }
+
+/*Dark mode unterstützung*/
 
 @media (prefers-color-scheme: dark) {
   .table-wrapper { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5); }
