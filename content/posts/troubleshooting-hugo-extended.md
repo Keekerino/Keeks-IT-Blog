@@ -1,6 +1,6 @@
 ---
 title: "Troubleshooting: Hugo Extended Setup"
-date: 2026-03-19
+date: 2026-03-15
 draft: false
 author: "Sebastian F."
 description: "Wie ich Versionskonflikte beim Aufbau meines IT-Blogs gelöst habe."
