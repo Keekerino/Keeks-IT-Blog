@@ -6,15 +6,19 @@ author: "Sebastian F."
 description: "Wie ich Versionskonflikte beim Aufbau meines IT-Blogs gelöst habe."
 categories: ["Projekte"]
 tags: []
-featured_image: ""
+featured_image: "/images/hugo/hugo-icon.svg"
 ---
 
 {{< notice "Projektbeschreibung" >}}
-Ziel war der Aufbau eines IT-Blogs mit dem Static Side Generator Hugo in einem GitHub Codespace.
+Beheben der Konfigurationsprobleme mit dem Theme "Ananke" im Framework Hugo im Codespace von GitHub
 {{< /notice >}}
+
+<!--more-->
 
 ## Die Herausforderung
 Die Standard-Installation von Hugo im Codespace war veraltet. Das Theme "Ananke" benötigt jedoch die **Extended-Version**, um CSS-Dateien zu verarbeiten. Ein Update der integriereten Hugo-Version mit get-apt liefert keine zufriedenstellenden Ergebnisse.
+
+
 
 ## Meine Herangehensweise
 

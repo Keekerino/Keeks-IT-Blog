@@ -1,7 +1,36 @@
-/* ============================================================
-   VARIANTE 1: CLEAN TECH (Systemintegrator-Fokus)
-   ============================================================ */
 
+
+
+/* Haupttitel der Seite (h1) */
+h1 {
+  color: #0f172a; /* Dein dunkles Blau aus der Tabelle */
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+/* Unterüberschriften (h2, h3), falls gewünscht */
+h2, h3 {
+  color: #1e293b;
+  margin-top: 2rem;
+}
+
+/* Thumbnail Anpassungen */
+/* Vergrößert das Vorschaubild in der Artikel-Liste */
+.relative.w-100.w-30-l.mb4.mb0-l {
+    width: 40% !important; /* Erhöht den Platz für das Bild von 30% auf 40% */
+}
+
+/* Sorgt dafür, dass das Icon selbst den verfügbaren Platz ausfüllt */
+article img {
+    width: 100% !important;
+    max-width: 250px; /* Hier kannst du die gewünschte Größe feinjustieren */
+    height: auto !important;
+}
+
+
+/* Tabellenformatierungen */
 .table-wrapper {
   width: 100%;
   overflow-x: auto;

@@ -31,6 +31,7 @@ style = "github-dark"
   description = "Sebastian F.'s persoenliche website"
   keywords = "blog,sysadmin,Leipzig IT,IT,Netzwerke,Systemintegration"
   
+  
   # Achte auf exakte Groß/Kleinschreibung der Datei im Ordner static/images/
   featured_image = "images/Me.JPG" 
   
