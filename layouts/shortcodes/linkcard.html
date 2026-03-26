@@ -1,7 +1,13 @@
-<div class="pa3 w-100 w-50-l">
-  <div class="link-card">
-    <h4 class="card-category">{{ .Get "category" }}</h4>
-    <a href="{{ .Get "url" | safeURL }}" target="_blank" class="card-link">{{ .Get "title" }}</a>
-    <p class="card-desc">{{ .Inner }}</p>
+<div class="w-100 w-50-m w-33-l pa2 flex">
+  <div class="link-card w-100 pa3 bg-white br2 ba b--black-10 shadow-4 flex flex-column">
+    {{ if .Get "category" }}
+      <span class="f7 ttu tracked gray mb1">{{ .Get "category" }}</span>
+    {{ end }}
+    <a href="{{ .Get "url" | safeURL }}" target="_blank" class="link blue hover-dark-blue fw6 f5 mb2">
+      {{ .Get "title" }}
+    </a>
+    <p class="f7 i gray lh-copy mb0 mt1">
+      {{ .Inner }}
+    </p>
   </div>
 </div>

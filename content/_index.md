@@ -2,8 +2,6 @@
 title: "Willkommen auf meinem IT-Blog"
 description: "Ressourcen, Dokumentationen und nützliche Links"
 ---
----
-
 
 ### Nützliche IT-Ressourcen
 {{< linkgrid >}}
@@ -23,12 +21,12 @@ Suchmaschine für das Internet der Dinge
 Sucht Hosts, Websites und Zertifikate
 {{< /linkcard >}}
 
-{{< linkcard title="Virustotal" url="https://www.virustotal.com/gui/home/upload" category="" >}}
+{{< linkcard title="Virustotal" url="https://www.virustotal.com/gui/home/upload" category="Searchengines" >}}
 Untersucht Dateien mit mehreren Anti-Virenprogrammen nach Schadcode
 {{< /linkcard >}}
 
 
-{{< linkcard title="Exploit Database" url="https://www.exploit-db.com/" category="" >}}
+{{< linkcard title="Exploit Database" url="https://www.exploit-db.com/" category="Searchengines" >}}
 Datenbank an bekannten Exploits
 {{< /linkcard >}}
 {{< /linkgrid >}}
@@ -37,9 +35,10 @@ Datenbank an bekannten Exploits
 ### Tools & Helfer
 {{< linkgrid >}}
 
+In Arbeit...
 
 {{< /linkgrid >}}
 
 ---
 
-## Neueste Beiträge
+# Neueste Beiträge

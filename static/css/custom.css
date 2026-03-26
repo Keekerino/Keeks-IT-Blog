@@ -30,6 +30,38 @@ article img {
 }
 
 
+/* Den Hauptbereich der Startseite bündig halten */
+.home main {
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+}
+
+/* Sicherstellen, dass die Link-Sektion die volle Breite des Containers nutzt */
+.link-grid-wrapper {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block;
+}
+
+/* Die Beitrags-Liste (Posts) von Ananke bündig ausrichten */
+.home section.flex-ns {
+    justify-content: flex-start !important;
+    margin-left: -1rem !important; /* Gleicht das Padding der Karten aus */
+}
+
+/* Hero-Text (Überschrift) ebenfalls bündig */
+.home header, .home .pa3.pa4-ns {
+    text-align: left !important;
+    max-width: 1200px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
 /* Tabellenformatierungen */
 .table-wrapper {
   width: 100%;
@@ -79,6 +111,24 @@ article img {
   transition: background-color 0.15s ease;
 }
 
+/*Hyperlink Karten Styling*/
+.link-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    min-height: 100px;
+    text-align: left !important; /* Sorgt für Bündigkeit */
+}
+
+.link-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-color: #357edd;
+}
+
+/* Fix für die Überschriften in den Karten */
+.link-card a {
+    display: block;
+    border-bottom: none !important;
+}
 
 
 @media (max-width: 768px) {
