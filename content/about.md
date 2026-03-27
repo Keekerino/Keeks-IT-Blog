@@ -25,6 +25,7 @@ Ich freue mich auf spannende Projekte und die damit in Verbindung stehenden Mens
 
 Vielleicht arbeiten Du und ich schon bald zusammen an einem Projekt! 
 
+{{< email >}}
 
 ---
 ## Bastelprojekte
