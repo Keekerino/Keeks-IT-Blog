@@ -11,8 +11,8 @@ description: ""
 ---
 
 ## About me
+{{< image src="/images/generic/Me.JPG" alt="Keeks" caption="Das bin ich" width="400px" align="right" >}}
 
-{{< image "/images/generic/Me.JPG" "right" "Me" "200px" "right" >}}
 
 
 Ich bin angehender IT-Systemintegrator mit Linux Vorliebe und hang zu PC-Hardware.
@@ -27,6 +27,7 @@ Vielleicht arbeiten Du und ich schon bald zusammen an einem Projekt!
 
 ---
 ## Bastelprojekte
-{{< image "/images/generic/Budget_Gaming.JPG" "center" "Budget Gaming - Blue" "200px" "none" >}}
+{{< image src="/images/generic/Budget_Gaming.JPG" alt="Budget Gaming PC" caption="Budget Gaming Pc - Blue" width="800px" >}}
+
 
 ---
