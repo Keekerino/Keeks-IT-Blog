@@ -12,7 +12,7 @@ description: "Über mich"
 
 
 
-Angehender Fachinformatiker für Systemintegration mit technischem Schwerpunkt auf Linux-Umgebungen und PC-Hardware. Auf diesem Blog dokumentiere ich praxisnahe IT-Projekte und Troubleshooting-Prozesse meiner aktuellen Laufbahn. 
+Angehender Fachinformatiker für Systemintegration mit technischem Schwerpunkt auf Linux-Umgebungen und Widerverwertung von PC-Hardware. Auf diesem Blog dokumentiere ich praxisnahe IT-Projekte und Troubleshooting-Prozesse meiner aktuellen Laufbahn. 
 
 {{< image src="/images/generic/Me.JPG" alt="Keeks" caption="Das bin ich" width="200px" float="left" >}}
 
@@ -24,13 +24,12 @@ Vielleicht arbeiten Sie und ich schon bald zusammen an einem Projekt!
 {{< email >}}
 
 ---
-## Bastelprojekte
+
 {{< grid >}}
 
-{{< image src="/images/generic/BudgetBlue.JPG" alt="Budget Gaming PC" caption="Budget Gaming Pc - Blue" width="200px" >}}
-
-
-{{< image src="/images/generic/BudgetGreen.jpg" alt="Budget Gaming PC" caption="Budget Gaming Pc - Green" width="200px" >}}
+{{< image src="/images/generic/BudgetBlue.JPG" alt="Budget Gaming PC" caption="Budget Gaming PC - Blue Line" width="200px" >}}
+{{< image src="/images/generic/BudgetGreen.jpg" alt="Budget CAD-PC" caption="Budget CAD Office PC - Green Line" width="200px" >}}
+{{< image src="/images/generic/BudgetRef.jpg" alt="Budget Gaming PC" caption="Budget Gaming PC - Red Line" width="200px" >}}
 
 {{< /grid >}}
 
