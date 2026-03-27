@@ -21,7 +21,7 @@ Suchmaschine für das Internet der Dinge
 Sucht Hosts, Websites und Zertifikate
 {{< /linkcard >}}
 
-{{< linkcard title="Virustotal" url="https://borncity.com/blog/" category="IT-News" >}}
+{{< linkcard title="Born City It Blog" url="https://borncity.com/blog/" category="IT-News" >}}
 Immer auf dem neuesten Stand was Windows angeht, ebenfalls mit großem Linux-Wissensfundus auf Borns It blog
 {{< /linkcard >}}
 
@@ -39,8 +39,12 @@ Datenbank an bekannten Exploits
 Übersichtlichere Man-Pages für Linux. 
 {{< /linkcard >}}
 
-{{< linkcard title="" url="https://www.w3schools.com/" category="Lernen" >}}
+{{< linkcard title="W3Schools" url="https://www.w3schools.com/" category="Lernen" >}}
 Eine der weltweit größten und bekanntesten kostenlosen E-Learning-Plattformen für Webentwicklung und Programmierung. 
+{{< /linkcard >}}
+
+{{< linkcard title="Virus Total" url="https://www.virustotal.com/gui/home/upload" category="Lernen" >}}
+Analyse von Dateien, Domänen, IP's und URL's auf Viren und Kompromittierung
 {{< /linkcard >}}
 
 {{< /linkgrid >}}
