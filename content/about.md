@@ -5,25 +5,21 @@ draft: false
 author: "Sebastian F."
 tags: []
 featured_image: "/images/generic/camp.JPG"
-description: ""
+description: "Über mich"
 ---
 
 ---
 
-## About me
+
 {{< image src="/images/generic/Me.JPG" alt="Keeks" caption="Das bin ich" width="400px" align="right" >}}
 
 
+Angehender Fachinformatiker für Systemintegration mit technischem Schwerpunkt auf Linux-Umgebungen und PC-Hardware. Auf diesem Blog dokumentiere ich praxisnahe IT-Projekte und Troubleshooting-Prozesse meiner aktuellen Laufbahn. 
 
-Ich bin begeisterter IT-Nutzer mit Linux Vorliebe, sowie hang zu PC-Hardware und befinde mich gerade in einer Umschulung zum Fachmann für Systemintegration.
-
-Auf diesem Blog veröffentliche ich einige der durchgeführten Projekte und Troubleshooting Prozesse meiner bisherigen IT-Laufbahn. 
-
-Früher bin ich in vielfältigen anderen Berufsfeldern unterwegs gewesen, vor allem in meinem gelernten Beruf des Restaurantfachmanns.
-Persönliche Interessen und das Bedürfnis mich weiterzuentwickeln haben mich nun, im Mittelpunkt meines Lebens, dazu gebracht den Einstieg in die professionelle IT-Welt zu wagen und ich könnte bisher nicht glücklicher darüber sein.
+Persönliche Interessen und das Bedürfnis mich beruflich weiterzuentwickeln haben mich nun, im Mittelpunkt meines Lebens, dazu gebracht den Einstieg in die professionelle IT-Welt zu wagen und ich könnte bisher nicht glücklicher darüber sein.
 Ich freue mich auf spannende Projekte und die damit in Verbindung stehenden Menschen kennen zu lernen.
 
-Vielleicht arbeiten Du und ich schon bald zusammen an einem Projekt! 
+Vielleicht arbeiten Sie und ich schon bald zusammen an einem Projekt! 
 
 {{< email >}}
 
