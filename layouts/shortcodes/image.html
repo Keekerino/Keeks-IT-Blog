@@ -1,19 +1,26 @@
-{{- $width := .Get "width" | default "300px" -}}
+{{- $width := .Get "width" | default "100%" -}}
 {{- $float := .Get "float" | default "none" -}}
+{{- $hover := .Get "hover" | default (.Get "alt" | default "Bild") -}}
 
-<span style='display: inline-block; 
-            float: {{ $float }}; 
-            width: {{ $width }} !important; 
-            max-width: 100%; 
-            margin: {{ if eq $float "left" }}0.5rem 1.5rem 0.5rem 0{{ else if eq $float "right" }}0.5rem 0 0.5rem 1.5rem{{ end }};'>
-    
+<figure style='
+    display: {{ if eq $float "none" }}block{{ else }}inline-block{{ end }}; 
+    float: {{ $float }}; 
+    width: {{ $width }} !important; 
+    max-width: 100%; 
+    margin: {{ if eq $float "left" }}0.5rem 1.5rem 1rem 0{{ else if eq $float "right" }}0.5rem 0 1rem 1.5rem{{ else }}2rem auto{{ end }};
+    padding: 0;
+    vertical-align: top;
+'>
     <img src="{{ .Get "src" | safeURL }}" 
          alt="{{ .Get "alt" | default "Bild" }}" 
-         style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-
+         title="{{ $hover }}"
+         style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block;">
+    
     {{ with .Get "caption" }}
-        <span style="display: block; text-align: center; font-size: 0.8rem; margin-top: 0.4rem; font-style: italic; color: #666;">
-            {{ . | markdownify }}
-        </span>
+    <figcaption style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.6rem; font-style: italic; line-height: 1.3; display: block;">
+        {{ . | markdownify }}
+    </figcaption>
     {{ end }}
-</span>
+</figure>
+
+{{ if ne $float "none" }}<div style="clear: none;"></div>{{ end }}
