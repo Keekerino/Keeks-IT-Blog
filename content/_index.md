@@ -44,7 +44,7 @@ Datenbank an bekannten Exploits
 Eine der weltweit größten und bekanntesten kostenlosen E-Learning-Plattformen für Webentwicklung und Programmierung. 
 {{< /linkcard >}}
 
-{{< linkcard title="Virus Total" url="https://www.virustotal.com/gui/home/upload" category="Lernen" >}}
+{{< linkcard title="Virus Total" url="https://www.virustotal.com/gui/home/upload" category="Tools" >}}
 Analyse von Dateien, Domänen, IP's und URL's auf Viren und Kompromittierung
 {{< /linkcard >}}
 

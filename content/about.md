@@ -17,7 +17,7 @@ description: ""
 
 Ich bin begeisterter IT-Nutzer mit Linux Vorliebe, sowie hang zu PC-Hardware und befinde mich gerade in einer Umschulung zum Fachmann für Systemintegration.
 
-Auf diesem Blog veröffentliche ich einige meiner bisher durchgeführten Projekte und Troubleshooting Prozesse meiner bisherigen IT-Laufbahn. 
+Auf diesem Blog veröffentliche ich einige der durchgeführten Projekte und Troubleshooting Prozesse meiner bisherigen IT-Laufbahn. 
 
 Früher bin ich in vielfältigen anderen Berufsfeldern unterwegs gewesen, vor allem in meinem gelernten Beruf des Restaurantfachmanns.
 Persönliche Interessen und das Bedürfnis mich weiterzuentwickeln haben mich nun, im Mittelpunkt meines Lebens, dazu gebracht den Einstieg in die professionelle IT-Welt zu wagen und ich könnte bisher nicht glücklicher darüber sein.
