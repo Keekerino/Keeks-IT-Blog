@@ -26,21 +26,23 @@ hidecolorschemetoggle = false
 style = "github-dark"
 
 [params]
- author = "Sebastian F."
+  author = "Sebastian F."
   info = "Systemintegrator"
   description = "Sebastian F.'s persoenliche website"
   keywords = "blog,sysadmin,Leipzig IT,IT,Netzwerke,Systemintegration"
+  date_format = "02.01.2006"
+  # Legt die Hauptsektion des Blogs fest
+  mainSections = ["posts"]
   
-  
-  # Achte auf exakte Groß/Kleinschreibung der Datei im Ordner static/images/
+ 
   featured_image = "images/Me.JPG" 
   
-  # Ananke nutzt oft dieses Format für zusätzliches CSS
+  
   custom_css = ["css/custom.css"]
 
  
 
-  # customCSS = ["css/custom.css"]
+ 
   # customSCSS = ["scss/custom.scss"]
   # customJS = ["js/custom.js"]
 

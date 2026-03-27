@@ -3,7 +3,7 @@ title: "Willkommen auf meinem IT-Blog"
 description: "Ressourcen, Dokumentationen und nützliche Links"
 ---
 
-### Nützliche IT-Ressourcen
+# Nützliche IT-Ressourcen
 {{< linkgrid >}}
 {{< linkcard title="Heise Online" url="https://www.heise.de" category="News & Security" >}}
 Deutsche IT-News, Security-Ticker und Hintergründe aus der Tech-Welt.
@@ -32,7 +32,7 @@ Datenbank an bekannten Exploits
 {{< /linkgrid >}}
 
 
-### Tools & Helfer
+# Tools & Helfer
 {{< linkgrid >}}
 
 {{< linkcard title="Too Long, Didn't Read" url="https://tldr.sh/" category="Cheat Sheet" >}}
