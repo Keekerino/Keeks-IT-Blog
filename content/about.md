@@ -4,7 +4,7 @@ date: 2026-03-18T10:49:15Z
 draft: false
 author: "Sebastian F."
 tags: []
-featured_image: ""
+featured_image: "/images/generic/camp.JPG"
 description: ""
 ---
 
@@ -15,7 +15,8 @@ description: ""
 
 
 
-Ich bin angehender IT-Systemintegrator mit Linux Vorliebe und hang zu PC-Hardware.
+Ich bin begeisterter IT-Nutzer mit Linux Vorliebe, sowie hang zu PC-Hardware und befinde mich gerade in einer Umschulung zum Fachmann für Systemintegration.
+
 Auf diesem Blog veröffentliche ich einige meiner bisher durchgeführten Projekte und Troubleshooting Prozesse meiner bisherigen IT-Laufbahn. 
 
 Früher bin ich in vielfältigen anderen Berufsfeldern unterwegs gewesen, vor allem in meinem gelernten Beruf des Restaurantfachmanns.
@@ -27,7 +28,10 @@ Vielleicht arbeiten Du und ich schon bald zusammen an einem Projekt!
 
 ---
 ## Bastelprojekte
-{{< image src="/images/generic/Budget_Gaming.JPG" alt="Budget Gaming PC" caption="Budget Gaming Pc - Blue" width="800px" >}}
+{{< image src="/images/generic/BudgetBlue.JPG" alt="Budget Gaming PC" caption="Budget Gaming Pc - Blue" width="800px" >}}
+
+{{< image src="/images/generic/BudgetGreen.jpg" alt="Budget Gaming PC" caption="Budget Gaming Pc - Green" width="800px" >}}
+
 
 
 ---

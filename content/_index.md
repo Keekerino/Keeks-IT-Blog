@@ -1,6 +1,7 @@
 ---
-title: "Willkommen auf meinem IT-Blog"
+title: "Herzlich willkommen auf meinem IT-Blog"
 description: "Ressourcen, Dokumentationen und nützliche Links"
+featured_image: "/images/generic/BlueInside.jpg"
 ---
 
 # Nützliche IT-Ressourcen
