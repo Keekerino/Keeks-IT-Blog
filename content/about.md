@@ -28,10 +28,13 @@ Vielleicht arbeiten Du und ich schon bald zusammen an einem Projekt!
 
 ---
 ## Bastelprojekte
+{{< grid >}}
+
 {{< image src="/images/generic/BudgetBlue.JPG" alt="Budget Gaming PC" caption="Budget Gaming Pc - Blue" width="800px" >}}
 
 {{< image src="/images/generic/BudgetGreen.jpg" alt="Budget Gaming PC" caption="Budget Gaming Pc - Green" width="800px" >}}
 
+{{< /grid >}}
 
 
 ---
