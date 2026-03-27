@@ -6,7 +6,7 @@ description: "Ressourcen, Dokumentationen und nützliche Links"
 ### Nützliche IT-Ressourcen
 {{< linkgrid >}}
 {{< linkcard title="Heise Online" url="https://www.heise.de" category="News & Security" >}}
-IT-News, Security-Ticker und Hintergründe aus der Tech-Welt.
+Deutsche IT-News, Security-Ticker und Hintergründe aus der Tech-Welt.
 {{< /linkcard >}}
 
 {{< linkcard title="Lwn.net" url="https://lwn.net/" category="Linux" >}}
@@ -21,8 +21,8 @@ Suchmaschine für das Internet der Dinge
 Sucht Hosts, Websites und Zertifikate
 {{< /linkcard >}}
 
-{{< linkcard title="Virustotal" url="https://www.virustotal.com/gui/home/upload" category="Searchengines" >}}
-Untersucht Dateien mit mehreren Anti-Virenprogrammen nach Schadcode
+{{< linkcard title="Virustotal" url="https://borncity.com/blog/" category="IT-News" >}}
+Immer auf dem neuesten Stand was Windows angeht, ebenfalls mit großem Linux-Wissensfundus auf Borns It blog
 {{< /linkcard >}}
 
 
@@ -35,7 +35,13 @@ Datenbank an bekannten Exploits
 ### Tools & Helfer
 {{< linkgrid >}}
 
-In Arbeit...
+{{< linkcard title="Too Long, Didn't Read" url="https://tldr.sh/" category="Cheat Sheet" >}}
+Übersichtlichere Man-Pages für Linux. 
+{{< /linkcard >}}
+
+{{< linkcard title="" url="https://www.w3schools.com/" category="Lernen" >}}
+Eine der weltweit größten und bekanntesten kostenlosen E-Learning-Plattformen für Webentwicklung und Programmierung. 
+{{< /linkcard >}}
 
 {{< /linkgrid >}}
 
