@@ -36,6 +36,7 @@ Um SSH auf einem Arch-Linux-System, wie CachyOS eines ist, zu aktivieren, wie fo
 
 ### Firewall-Einstellung
 
+{{< notice >}}
 1. Falls eine Firewall genutzt wird (dringend empfohlen!), muss noch eine Ausnahme für den Zugriff auf TCP Port 22 erstellt werden. Sollte eine andere Firewall als UFW genutzt werden, muss das Kommando entsprechend angepasst werden.
 ```bash
     sudo ufw allow 22/tcp
@@ -45,9 +46,11 @@ Um SSH auf einem Arch-Linux-System, wie CachyOS eines ist, zu aktivieren, wie fo
     sudo firewall-cmd --permanent --add-service=ssh
     sudo firewall-cmd --reload
 ```
+{{< /notice >}}
 
 ### Verbindungsherstellung
 
+{{< notice >}}
 Nun kann man sich von einem anderen Rechner, der sich im gleichen loaklen Netz befindet, verbinden. Dazu muss ein Terminal geöffnet werden und mit der richtigen IP-Adresse verbunden werden. Die IP-Adresse findet man so heraus:
 ```bash
     ip addr show
@@ -61,5 +64,6 @@ Nach Aufforderungsdialog Passwort eingeben.
 ```bash
     ssh benutzername@ip-adresse
 ```
+{{< /notice >}}
 
-Das war's auch schon. Nun sollte der Zugriff per SSH eingerichtet sein.
+**Das war's auch schon. Nun sollte der Zugriff per SSH eingerichtet sein.**
