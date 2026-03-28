@@ -1,7 +1,7 @@
 ---
 title: "Secure Shell Unter CachyOS"
-date: 2026-03-28T09:24:58Z
-draft: true
+date: 2026-03-28
+draft: false
 tags: []
 featured_image: "/images/Linux/CachyOS_Logo.svg"
 description: ""
