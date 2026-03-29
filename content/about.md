@@ -4,7 +4,7 @@ date: 2026-03-18T10:49:15Z
 draft: false
 author: "Sebastian F."
 tags: []
-featured_image: "/images/generic/camp.JPG"
+featured_image: "/images/generic/Keeks2.png"
 description: "Über mich"
 ---
 
