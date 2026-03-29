@@ -1,3 +1,4 @@
+{{- $src := .Get "src" | safeURL -}}
 {{- $width := .Get "width" | default "100%" -}}
 {{- $float := .Get "float" | default "none" -}}
 {{- $hover := .Get "hover" | default (.Get "alt" | default "Bild") -}}
@@ -11,15 +12,17 @@
     padding: 0;
     vertical-align: top;
 '>
-    <img src="{{ .Get "src" | safeURL }}" 
-         alt="{{ .Get "alt" | default "Bild" }}" 
-         title="{{ $hover }}"
-         style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block;">
+    <a href="{{ $src }}" target="_blank" title="In voller Größe öffnen">
+        <img src="{{ $src }}" 
+             alt="{{ .Get "alt" | default "Bild" }}" 
+             title="{{ $hover }}"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
     
     {{ with .Get "caption" }}
-    <figcaption style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.6rem; font-style: italic; line-height: 1.3; display: block;">
-        {{ . | markdownify }}
-    </figcaption>
+        <figcaption style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.6rem; font-style: italic; line-height: 1.3; display: block;">
+            {{ . | markdownify }}
+        </figcaption>
     {{ end }}
 </figure>
 
