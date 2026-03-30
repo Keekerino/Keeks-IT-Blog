@@ -15,6 +15,9 @@
     {{ else }}
       <meta name="robots" content="noindex, nofollow">
     {{ end }}
+    {{ if eq .RelPermalink "/impressum/" }}
+    <meta name="robots" content="noindex, nofollow">
+    {{ end }}
     {{ with .Params.author | compare.Default .Site.Params.author }}
       {{- $author := . -}}
       {{- if reflect.IsSlice . -}}

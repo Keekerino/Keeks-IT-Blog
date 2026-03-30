@@ -2,7 +2,7 @@
 title: "About"
 date: 2026-03-18T10:49:15Z
 draft: false
-author: "Sebastian F."
+author: "Keeks"
 tags: []
 featured_image: "/images/generic/Keeks2.png"
 description: "Über mich"
