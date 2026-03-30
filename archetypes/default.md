@@ -5,8 +5,8 @@ draft: false
 author: "Sebastian F."
 description: ""
 featured_image: "/images/generic/Keeks2.png"
-tags: [""]
-categories: [""]
+tags: []
+categories: []
 ---
 
 
