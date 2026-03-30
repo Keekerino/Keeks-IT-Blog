@@ -26,9 +26,9 @@ hidecolorschemetoggle = false
 style = "github-dark"
 
 [params]
-  author = "Sebastian F."
+  author = "Keeks"
   info = "Systemintegrator"
-  description = "Sebastian F.'s persoenliche website"
+  description = "Keeks's persoenliche website"
   keywords = "blog,sysadmin,Leipzig IT,IT,Netzwerke,Systemintegration"
   date_format = "02.01.2006"
   # Legt die Hauptsektion des Blogs fest
