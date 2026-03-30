@@ -5,6 +5,7 @@ featured_image: "/images/generic/BlueInside.jpg"
 ---
 
 # Nützliche IT-Ressourcen
+
 {{< linkgrid >}}
 {{< linkcard title="Heise Online" url="https://www.heise.de" category="News & Security" >}}
 Deutsche IT-News, Security-Ticker und Hintergründe aus der Tech-Welt.
@@ -51,5 +52,7 @@ Analyse von Dateien, Domänen, IP's und URL's auf Viren und Kompromittierung
 {{< /linkgrid >}}
 
 ---
+
+
 
 # Neueste Beiträge
