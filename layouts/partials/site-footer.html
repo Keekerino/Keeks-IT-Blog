@@ -1,0 +1,18 @@
+<footer class="{{ .Site.Params.background_color_class | compare.Default "bg-black" }} bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between items-center">
+    <div class="flex items-center">
+      <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="{{ .Site.Home.Permalink }}">
+        &copy; {{ with .Site.Copyright | compare.Default .Site.Title }} {{ . | safe.HTML }} {{ now.Format "2006"}} {{ end }}
+      </a>
+
+      <span class="white-30 dn dib-ns">|</span>
+      <a class="f6 fw4 hover-white white-70 ml3 pv2 ph3 no-underline" href="{{ "impressum" | relURL }}">
+        Impressum
+      </a>
+    </div>
+
+    <div>
+      {{ partials.IncludeCached "social/follow.html" . }}
+    </div>
+  </div>
+</footer>
