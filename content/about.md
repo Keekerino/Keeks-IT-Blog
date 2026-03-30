@@ -29,9 +29,9 @@ Vielleicht arbeiten Sie und ich schon bald zusammen an einem Projekt!
 
 {{< grid >}}
 
-{{< image src="/images/generic/BudgetBlue.JPG" alt="Budget Gaming PC" caption="Budget Gaming PC - Blue Line" width="200px" >}}
-{{< image src="/images/generic/BudgetGreen.jpg" alt="Budget CAD-PC" caption="Budget CAD Office PC - Green Line" width="200px" >}}
-{{< image src="/images/generic/BudgetRef.jpg" alt="Budget Gaming PC" caption="Budget Gaming PC - Red Line" width="200px" >}}
+{{< image src="/images/generic/BudgetBlue.JPG" alt="Budget Gaming PC" caption="Budget Gaming PC " width="200px" >}}
+{{< image src="/images/generic/BudgetGreen.jpg" alt="Budget CAD-PC" caption="CAD Office PC" width="200px" >}}
+{{< image src="/images/generic/BudgetRef.jpg" alt="Budget Gaming PC" caption="Budget Gaming PC" width="200px" >}}
 
 {{< /grid >}}
 

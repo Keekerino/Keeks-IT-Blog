@@ -2,7 +2,7 @@
 title: "{{ replace .Name "-" " " | title }}"
 date: {{ .Date }}
 draft: false
-author: "Keeks"
+author: "Sebastian F."
 description: ""
 featured_image: "/images/generic/Keeks2.png"
 tags: [""]
