@@ -14,3 +14,9 @@ categories: []
 {{< notice Titel2 >}}
 Hier könnte deine Beschreibung stehen
 {{< /notice >}}
+
+**Wer Tips und Tricks hat, schreibt es gerne in die Kommentare!**
+
+Vielen Dank fürs Lesen
+
+Euer Keeks
