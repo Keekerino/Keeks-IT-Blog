@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+  {{/* 1. SEKTION: NEUESTE BEITRÄGE (2er Raster) */}}
+  {{ $mainSections := site.Params.mainSections | compare.Default (collections.Slice "post") }}
+  {{ $show_recent_posts := site.Params.ananke.show_recent_posts }}
+  {{ $section := collections.Where $.Site.RegularPages "Section" "in" $mainSections }}
+  {{ $section_count := len $section }}
+
+  {{ if and ($show_recent_posts) (compare.Ge $section_count 1) }}
+    <div class="pa3 pa4-ns w-100 mw8 center">
+      <h1 class="f2 fw8 mb4 {{ $.Param "text_color" | compare.Default "mid-gray" }}">Neueste Beiträge</h1>
+      
+      {{/* Limit auf 4 Artikel */}}
+      {{ $n_posts := 4 }}
+
+      {{/* Der Container erzwingt jetzt die Reihenbildung */}}
+      <div class="flex-l flex-wrap-l mw8 ml-n3 mr-n3">
+        {{ range (collections.First $n_posts $section) }}
+          <div class="w-100 w-50-l ph3 mb5">
+            <div class="relative">
+              {{ .Render "summary-with-image" }}
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+
+  {{/* TRENNLINIE */}}
+  <hr class="mw8 center b--light-gray mt4 mb4">
+
+  {{/* 2. SEKTION: DEIN CONTENT / LINKS (MITTE) */}}
+  {{- $config := site.Params.ananke.home -}}
+  {{- $text_alignment := "tc-l" -}}
+  {{- if eq $config.content_alignment "left" -}}
+    {{- $text_alignment = "tl-l" -}}
+  {{- end -}}
+
+  <article class="cf ph3 ph5-l pv3 pv4-l f4 {{ $text_alignment }} center measure-wide lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+    {{ .Content }}
+  </article>
+
+  {{/* 3. SEKTION: MORE / ARCHIV (Ganz unten) */}}
+  {{ if compare.Ge $section_count 5 }}
+    <section class="mw8 center pa3 pa4-ns bt b--light-gray mt5">
+      <h1 class="f4 mb3 gray">Weitere Themen</h1>
+      <div class="flex flex-wrap">
+        {{ range (collections.First 4 (collections.After 4 $section))  }}
+          <h2 class="f5 fw4 mb3 dib mr3">
+            <a href="{{ .RelPermalink }}" class="link black dim ba ph2 pv1 br2 b--light-gray">
+              {{ .Title }}
+            </a>
+          </h2>
+        {{ end }}
+      </div>
+      <div class="mt4">
+         {{/* Korrigierter Link zum Posts-Verzeichnis */}}
+         <a href="{{ "/posts/" | relURL }}" class="f6 link dim br2 ph3 pv2 mb2 dib white bg-near-black">
+           Alle Beiträge in Posts →
+         </a>
+      </div>
+    </section>
+  {{ end }}
+
+{{ end }}
