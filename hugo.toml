@@ -1,75 +1,90 @@
-baseurl = "https://keeks-it-blog.de/"
-
-
+# ==========================================
+# BASIS EINSTELLUNGEN
+# ==========================================
+baseURL = "https://keeks-it-blog.de/"
 title = "Keeks IT-Blog"
 theme = "ananke"
 languageCode = "de-de"
 since = 2026
 
+# SEO & Funktionen (Muss auf der Root-Ebene stehen)
 enableRobotsTXT = true
+enableEmoji = true
 
-enableEmoji = true  # war mal enableTwoEmojy (o.ä) - veraltet!
-
+# Design / Dark Mode (Ananke/Theme spezifisch)
 colorScheme = "auto"
 hidecolorschemetoggle = false
 
-
+# ==========================================
+# INHALTS-STEUERUNG (MARKUP & PAGINATION)
+# ==========================================
 [pagination]
   pagerSize = 20
 
-[services]
-[services.disqus]
-  shortname = "Seb"
-
 [markup.goldmark.renderer]
+  # Erlaubt HTML in Markdown (Wichtig für deine Shortcodes!)
   unsafe = true
 
 [markup.highlight]
-style = "github-dark"
+  # Code-Highlighting Style
+  style = "github-dark"
 
-[params]
-  author = "Keeks"
-  info = "Systemintegrator"
-  description = "Keeks's persoenliche website"
-  keywords = "blog,sysadmin,Leipzig IT,IT,Netzwerke,Systemintegration"
-  date_format = "02.01.2006"
-  # Legt die Hauptsektion des Blogs fest
-  mainSections = ["posts"]
-  
- 
-  featured_image = "images/Me.JPG" 
-  
-  
-  custom_css = ["css/custom.css"]
-
- 
-
- 
-  # customSCSS = ["scss/custom.scss"]
-  # customJS = ["js/custom.js"]
-
+# ==========================================
+# TAXONOMIEN (SORTIERUNG)
+# ==========================================
 [taxonomies]
   category = "categories"
   series = "series"
   tag = "tags"
   author = "authors"
 
-# Social links
+# ==========================================
+# EXTERNE DIENSTE
+# ==========================================
+[services.disqus]
+  shortname = "Seb"
+
+# ==========================================
+# THEME PARAMETER (ANANKE SPEZIFISCH)
+# ==========================================
+[params]
+  author = "Keeks"
+  info = "Systemintegrator"
+  description = "Keeks's persönliche Webseite über Systemintegration & Netzwerke"
+  keywords = "blog, sysadmin, Leipzig IT, IT, Netzwerke, Systemintegration"
+  
+  # Datumsformat für die Anzeige (Deutsch)
+  date_format = "02.01.2006"
+  
+  # Legt fest, welche Sektion auf der Startseite erscheint
+  mainSections = ["posts"]
+  
+  # Globales Beitragsbild (Standard leer)
+  featured_image = "" 
+  
+  # Eigene Styles & Scripte
+  custom_css = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+# ==========================================
+# SOCIAL LINKS
+# ==========================================
 [[params.social]]
   name = "Github"
   icon = "fa-brands fa-github fa-2x"
   weight = 1
   url = "https://github.com/Keekerino/Keekerino"
 
-
-# Menu links
-
+# ==========================================
+# HAUPTMENÜ (NAVIGATION)
+# ==========================================
 [[menu.main]]
   name = "Blog"
   weight = 1
-  url  = "/posts/"  # muss im absoluten pfad angegeben werden
+  url = "/posts/"
 
 [[menu.main]]
   name = "About"
   weight = 2
-  url = "/about/"    # muss im absoluten pfad angegeben werden
+  url = "/about/"
