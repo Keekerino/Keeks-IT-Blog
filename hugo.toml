@@ -6,6 +6,8 @@ theme = "ananke"
 languageCode = "de-de"
 since = 2026
 
+enableRobotsTXT = true
+
 enableEmoji = true  # war mal enableTwoEmojy (o.ä) - veraltet!
 
 colorScheme = "auto"
