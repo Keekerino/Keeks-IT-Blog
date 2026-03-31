@@ -7,8 +7,8 @@ featured_image: "/images/Linux/linux-logo.svg"
 description: "Farbakzente in CachyOS zum eigenen Vorteil nutzen"
 ---
 
-{{< notice >}}
-Wer kennt das nicht beim Remote arbeiten: Man fährt nach getaner Arbeit wie immer über das Terminal die  Workstation per Befehl  herunter und wundert sich , wieso sich die Gehäuselüfter nicht aufhören zu drehen.
+{{< notice "Wer kennt das nicht beim Remote arbeiten" >}}
+Man fährt nach getaner Arbeit wie immer über das Terminal die  Workstation per Befehl  herunter und wundert sich , wieso sich die Gehäuselüfter nicht aufhören zu drehen.
 {{< /notice >}}
 
 <!--more-->
