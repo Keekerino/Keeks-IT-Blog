@@ -5,7 +5,7 @@ url: "/impressum"
 # Verhindert, dass die Seite in der Sitemap auftaucht und von Google indiziert wird
 sitemap:
   disable: true
-_build:
+  build:
   list: never
   render: always
 featured_image: "/images/generic/Keeks2.png"
