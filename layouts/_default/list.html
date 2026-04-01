@@ -1,15 +1,46 @@
 {{ define "main" }}
-  <article class="pa3 pa4-ns nested-copy-line-height">
-    
-    <h1 class="f2">Posts</h1>
+<div class="pa3 pa4-ns w-100 mw8 center">
 
-    <div class="flex flex-wrap">
-      {{ range .Pages }}
-        <div class="w-100 w-50-ns pa2">
-          {{ .Render "summary-with-image" }}
-        </div>
-      {{ end }}
-    </div>
+  <h1 class="f2 fw8 mb4">{{ .Title }}</h1>
 
-  </article>
+  <div class="flex flex-wrap nl3 nr3">
+    {{ range .Pages }}
+      <div class="w-100 w-50-l ph3 mb4">
+
+        <article class="bg-white br2 shadow-1 overflow-hidden h-100">
+
+          <!-- 🔹 Bild sauber oben -->
+          {{ if .Params.featured_image }}
+            <img src="{{ .Params.featured_image }}"
+                 alt="{{ .Title }}"
+                 class="w-100">
+          {{ end }}
+
+          <!-- 🔹 Content sauber getrennt -->
+          <div class="pa3">
+
+            <h2 class="f4 fw6 mt0 mb2">
+              <a href="{{ .RelPermalink }}" class="link dark-blue dim">
+                {{ .Title }}
+              </a>
+            </h2>
+
+            <p class="f6 gray mb2">
+              {{ .Date.Format "02.01.2006" }}
+            </p>
+
+            <!-- 🔹 WICHTIG: Summary statt Content -->
+            <p class="f5 lh-copy">
+              {{ .Summary }}
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+    {{ end }}
+  </div>
+
+</div>
 {{ end }}

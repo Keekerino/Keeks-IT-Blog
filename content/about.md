@@ -4,7 +4,7 @@ date: 2026-03-18T10:49:15Z
 draft: false
 author: "Keeks"
 tags: []
-featured_image: "/images/generic/Keeks2.png"
+featured_image: "/images/generic/BlueInside.jpg"
 description: "Über mich"
 ---
 

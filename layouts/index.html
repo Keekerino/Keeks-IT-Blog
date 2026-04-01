@@ -1,15 +1,14 @@
 {{ define "main" }}
 
-  {{/* DATENQUELLE */}}
   {{ $mainSections := site.Params.mainSections | compare.Default (collections.Slice "post") }}
   {{ $pages := where site.RegularPages "Section" "in" $mainSections }}
   {{ $section_count := len $pages }}
 
   <div class="pa3 pa4-ns w-100 mw8 center">
 
-    {{/* =========================
+    <!-- =========================
          1. NEUESTE BEITRÄGE
-    ========================== */}}
+    ========================== -->
     <h1 class="f2 fw8 mb4 {{ $.Param "text_color" | compare.Default "mid-gray" }}">
       Neueste Beiträge
     </h1>
@@ -24,23 +23,19 @@
       {{ end }}
     </div>
 
-    {{/* TRENNLINIE */}}
     <hr class="mv4 b--light-gray">
 
-    {{/* =========================
+    <!-- =========================
          2. WEITERE THEMEN
-    ========================== */}}
+    ========================== -->
     {{ if ge $section_count 5 }}
       <section>
-        <h2 class="f4 fw6 mb3 gray">
-          Weitere Themen
-        </h2>
+        <h2 class="f4 fw6 mb3 gray">Weitere Themen</h2>
 
-        {{/* Button-/Tag-Layout */}}
         <div class="flex flex-wrap">
           {{ range first 6 (after 4 $pages) }}
             <a href="{{ .RelPermalink }}"
-               class="f6 link dim ba ph3 pv2 mr2 mb2 br2 b--light-gray hover-bg-light-gray transition">
+               class="f6 link dim ba ph3 pv2 mr2 mb2 br2 b--light-gray">
               {{ .Title }}
             </a>
           {{ end }}
@@ -48,21 +43,37 @@
 
         <div class="mt3">
           <a href="{{ "/posts/" | relURL }}"
-             class="f6 link dim br2 ph3 pv2 dib white bg-near-black hover-bg-dark-gray transition">
+             class="f6 link dim br2 ph3 pv2 dib white bg-near-black">
             Alle Beiträge ansehen →
           </a>
         </div>
       </section>
 
-      {{/* zweite dezente Trennung */}}
       <hr class="mv4 b--light-gray">
     {{ end }}
 
+    <!-- =========================
+         3. RESSOURCEN LINK (NEU)
+    ========================== -->
+    <section class="tc pv4">
+      <h2 class="f3 fw6 mb3">Nützliche Ressourcen & Tools</h2>
+      <p class="gray mb4">
+        Einige meiner empfohlenen Tools, sowie hilfreiche Websites und praktische Helfer.
+      </p>
+
+      <a href="{{ "/links/" | relURL }}"
+         class="f5 link dim br2 ph3 pv3 dib white bg-dark-blue">
+        Zu den Links →
+      </a>
+    </section>
+
+    <hr class="mv4 b--light-gray">
+
   </div>
 
-  {{/* =========================
-       3. CONTENT (SEO / INTRO)
-  ========================== */}}
+  <!-- =========================
+       4. CONTENT (SEO / INTRO)
+  ========================== -->
   {{- $config := site.Params.ananke.home -}}
   {{- $text_alignment := "tc-l" -}}
   {{- if eq $config.content_alignment "left" -}}
