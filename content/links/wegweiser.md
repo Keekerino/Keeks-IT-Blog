@@ -1,7 +1,7 @@
 ---
-title: "Nützliche IT-Ressourcen"
+title: "News & Learning"
 date: 2026-04-01T18:21:59+02:00
-draft: true
+draft: false
 author: "Keeks"
 description: "Einige hilfreiche Websites"
 featured_image: ""
@@ -19,6 +19,8 @@ Deutsche IT-News, Security-Ticker und Hintergründe aus der Tech-Welt.
 {{< linkcard title="Lwn.net" url="https://lwn.net/" category="Linux" >}}
 Linux wissen und komplette kostenlose Bücher zum Thema.
 {{< /linkcard >}}
+
+<!--more-->
 
 {{< linkcard title="Shodan IO" url="https://www.shodan.io/search/examples" category="Searchengines" >}}
 Suchmaschine für das Internet der Dinge
