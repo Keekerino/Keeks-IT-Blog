@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://keeks-it-blog.de/sitemap.xml

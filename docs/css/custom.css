@@ -1,0 +1,149 @@
+/* ==========================================================================
+   1. VORSCHAU-BILDER (THUMBNAILS & SVGs)
+   ========================================================================== */
+
+/* Vergrößert den Container für das Vorschaubild in der Liste */
+.relative.w-100.w-30-l.mb4.mb0-l {
+    width: 35% !important; /* Gibt dem Bild genug Platz zum Atmen */
+}
+
+/* Zwingt SVGs und Bilder, den Container voll auszufüllen und zu skalieren */
+article img {
+    width: 100% !important; 
+    height: auto !important; 
+    max-width: 320px; /* Maximale Breite, damit SVGs nicht riesig werden */
+    display: block;
+    border-radius: 8px;
+}
+
+/* ==========================================================================
+   2. ÜBERSCHRIFTEN (HIERARCHIE)
+   ========================================================================== */
+
+h1 {
+  color: #0f172a;
+  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  color: #1e293b;
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0; /* Strukturgebende Linie */
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  color: #1e293b;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h4 {
+  color: #475569;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ==========================================================================
+   3. TABELLEN (TECHNIK-SLATE DESIGN)
+   ========================================================================== */
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin: 2rem 0;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: sans-serif;
+  background-color: #ffffff;
+  min-width: 600px;
+}
+
+.table-wrapper thead {
+  background-color: #0f172a;
+}
+
+.table-wrapper th {
+  color: #ffffff;
+  padding: 1rem;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.table-wrapper td {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.table-wrapper tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+.table-wrapper tr:hover {
+  background-color: #e0e7ff;
+  transition: background-color 0.2s ease;
+}
+
+/* ==========================================================================
+   4. BACK TO TOP (ORIGINAL-KONFIGURATION)
+   ========================================================================== */
+
+#back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    display: block;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 12px 18px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+#back-to-top:hover {
+    background-color: #334155;
+}
+
+
+
+/* ==========================================================================
+   4. Custom Ergaenzungen
+   ========================================================================== */
+
+
+
+
+/* ==========================================================================
+   5. DARK MODE
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  .table-wrapper table { background-color: #1e293b; color: #cbd5e1; }
+  .table-wrapper td { border-bottom: 1px solid #334155; color: #cbd5e1; }
+  .table-wrapper tr:nth-child(even) { background-color: #0f172a; }
+  .table-wrapper tr:hover { background-color: #334155; }
+}
