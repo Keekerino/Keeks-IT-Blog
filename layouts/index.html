@@ -1,24 +1,51 @@
 {{ define "main" }}
 
-  {{ $mainSections := site.Params.mainSections | compare.Default (collections.Slice "post") }}
+  {{/* =========================
+       DATENQUELLE
+  ========================== */}}
+  {{ $mainSections := site.Params.mainSections | default (slice "post") }}
   {{ $pages := where site.RegularPages "Section" "in" $mainSections }}
   {{ $section_count := len $pages }}
 
   <div class="pa3 pa4-ns w-100 mw8 center">
 
     <!-- =========================
-         1. NEUESTE BEITRÄGE
+         🆕 NEUESTE BEITRÄGE
     ========================== -->
-    <h1 class="f2 fw8 mb4 {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+    <h1 class="f2 fw8 mb4 {{ $.Param "text_color" | default "mid-gray" }}">
       Neueste Beiträge
     </h1>
 
     <div class="flex-l flex-wrap-l ml-n3 mr-n3">
       {{ range first 4 $pages }}
-        <div class="w-100 w-50-l ph3 mb5">
-          <div class="bg-white br2 shadow-1 h-100">
-            {{ .Render "summary-with-image" }}
-          </div>
+        <div class="w-100 w-50-l ph3 mb4">
+
+          <article class="bg-white br3 shadow-1 overflow-hidden h-100 post-card">
+
+            {{ if .Params.featured_image }}
+              <img src="{{ .Params.featured_image }}" 
+                   alt="{{ .Title }}" 
+                   class="w-100 card-image">
+            {{ end }}
+
+            <div class="pa3">
+              <h2 class="f4 fw6 mt0 mb2">
+                <a href="{{ .RelPermalink }}" class="link dark-blue dim">
+                  {{ .Title }}
+                </a>
+              </h2>
+
+              <p class="f6 gray mb2">
+                {{ .Date.Format "02.01.2006" }}
+              </p>
+
+              <p class="f5 lh-copy">
+                {{ .Summary }}
+              </p>
+            </div>
+
+          </article>
+
         </div>
       {{ end }}
     </div>
@@ -26,16 +53,18 @@
     <hr class="mv4 b--light-gray">
 
     <!-- =========================
-         2. WEITERE THEMEN
+         🧭 WEITERE THEMEN
     ========================== -->
     {{ if ge $section_count 5 }}
       <section>
-        <h2 class="f4 fw6 mb3 gray">Weitere Themen</h2>
+        <h2 class="f4 fw6 mb3 gray">
+          Weitere Themen
+        </h2>
 
         <div class="flex flex-wrap">
           {{ range first 6 (after 4 $pages) }}
             <a href="{{ .RelPermalink }}"
-               class="f6 link dim ba ph3 pv2 mr2 mb2 br2 b--light-gray">
+               class="f6 link dim ba ph3 pv2 mr2 mb2 br2 b--light-gray hover-bg-light-gray transition">
               {{ .Title }}
             </a>
           {{ end }}
@@ -43,7 +72,7 @@
 
         <div class="mt3">
           <a href="{{ "/posts/" | relURL }}"
-             class="f6 link dim br2 ph3 pv2 dib white bg-near-black">
+             class="f6 link dim br2 ph3 pv2 dib white bg-near-black hover-bg-dark-gray transition">
             Alle Beiträge ansehen →
           </a>
         </div>
@@ -53,35 +82,29 @@
     {{ end }}
 
     <!-- =========================
-         3. RESSOURCEN LINK (NEU)
+         🔗 RESSOURCEN CTA
     ========================== -->
-    <section class="tc pv4">
-      <h2 class="f3 fw6 mb3">Nützliche Ressourcen & Tools</h2>
+    <section class="tc mt5">
+      <h2 class="f3 fw7 mb3">Nützliche Ressourcen & Tools</h2>
       <p class="gray mb4">
-        Einige meiner empfohlenen Tools, sowie hilfreiche Websites und praktische Helfer.
+        Sammlung hilfreicher Tools, Dokumentationen und IT-Ressourcen.
       </p>
 
       <a href="{{ "/links/" | relURL }}"
-         class="f5 link dim br2 ph3 pv3 dib white bg-dark-blue">
-        Zu den Links →
+         class="f5 link dim br2 ph3 pv3 dib white bg-dark-blue hover-bg-blue transition">
+        Zu den Ressourcen →
       </a>
     </section>
-
-    <hr class="mv4 b--light-gray">
 
   </div>
 
   <!-- =========================
-       4. CONTENT (SEO / INTRO)
+       📄 OPTIONAL: SEO CONTENT
   ========================== -->
-  {{- $config := site.Params.ananke.home -}}
-  {{- $text_alignment := "tc-l" -}}
-  {{- if eq $config.content_alignment "left" -}}
-    {{- $text_alignment = "tl-l" -}}
-  {{- end -}}
-
-  <article class="cf ph3 ph5-l pv3 pv4-l f4 {{ $text_alignment }} center measure-wide lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
-    {{ .Content }}
-  </article>
+  {{ if .Content }}
+    <article class="cf ph3 ph5-l pv4 f4 center measure-wide lh-copy nested-links {{ $.Param "text_color" | default "mid-gray" }}">
+      {{ .Content }}
+    </article>
+  {{ end }}
 
 {{ end }}

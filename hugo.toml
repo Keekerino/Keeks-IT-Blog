@@ -6,6 +6,8 @@ title = "Keeks IT-Blog"
 theme = "ananke"
 languageCode = "de-de"
 since = 2026
+relativeURLs = true
+canonifyURLs = true
 
 # SEO & Funktionen (Muss auf der Root-Ebene stehen)
 enableRobotsTXT = true

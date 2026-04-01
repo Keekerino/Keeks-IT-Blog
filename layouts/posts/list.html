@@ -1,0 +1,44 @@
+{{ define "main" }}
+
+<div class="pa3 pa4-ns w-100 mw8 center">
+
+  <h1 class="f2 fw8 mb4">{{ .Title }}</h1>
+
+  <div class="flex flex-wrap nl3 nr3">
+    {{ range .Pages }}
+      <div class="w-100 w-50-l ph3 mb4">
+
+        <article class="bg-white br3 shadow-1 overflow-hidden h-100">
+
+          {{ if .Params.featured_image }}
+            <img src="{{ .Params.featured_image }}"
+                 class="w-100 card-image">
+          {{ end }}
+
+          <div class="pa3">
+
+            <h2 class="f4 fw6 mt0 mb2">
+              <a href="{{ .RelPermalink }}" class="link dark-blue dim">
+                {{ .Title }}
+              </a>
+            </h2>
+
+            <p class="f6 gray mb2">
+              {{ .Date.Format "02.01.2006" }}
+            </p>
+
+            <p class="f5 lh-copy">
+              {{ .Summary }}
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+    {{ end }}
+  </div>
+
+</div>
+
+{{ end }}
