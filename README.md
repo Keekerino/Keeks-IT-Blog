@@ -1,1 +1,4 @@
-Creating my First Blog in the IT-World sure is an awesome thing!
+Hi there.
+
+I am trying to make a website. Using Hugo and some AI-Tools. 
+
