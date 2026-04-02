@@ -2,9 +2,16 @@
 
 <script>
     const btt = document.getElementById("back-to-top");
-    
-    // Test-Modus: Zeige den Button sofort an
-    btt.style.display = "block";
+
+    // Konfigurierbare Parameter
+    const scrollThreshold = 500; // ab wieviel px scrollen der Knopf erscheint
+    const fadeDuration = 0.4;    // Sekunden für Ein-/Ausblenden
+
+    // Initial CSS für sanftes Ein-/Ausblenden
+    btt.style.transition = `opacity ${fadeDuration}s ease`;
+    btt.style.opacity = 0;
+    btt.style.pointerEvents = "none"; // verhindert Klicks, wenn unsichtbar
+    btt.style.display = "block"; // bleibt im Layout, unsichtbar durch opacity
 
     // Klick-Funktion bleibt erhalten
     btt.addEventListener("click", function() {
@@ -14,14 +21,14 @@
         });
     });
 
-     
-    // Wenn die Testphase vorbei ist, aktiviere diesen Block wieder für das Scroll-Verhalten:
-    window.onscroll = function() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            btt.style.display = "block";
+    // Scroll-Event
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > scrollThreshold) {
+            btt.style.opacity = 1;
+            btt.style.pointerEvents = "auto";
         } else {
-            btt.style.display = "none";
+            btt.style.opacity = 0;
+            btt.style.pointerEvents = "none";
         }
-    };
-    
+    });
 </script>
