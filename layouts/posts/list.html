@@ -11,7 +11,7 @@
         <article class="bg-white br3 shadow-1 overflow-hidden h-100">
 
           {{ if .Params.featured_image }}
-            <img src="{{ .Params.featured_image }}"
+            <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}"
                  class="w-100 card-image">
           {{ end }}
 

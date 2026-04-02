@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="de-de">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Lokale KI mit RX 7900 XT | Keeks IT-Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Erste Erfahrungen">
+    <meta name="generator" content="Hugo 0.152.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+    <meta name="author" content="Keeks">
+    
+
+    
+<link rel="stylesheet" href="../../ananke/css/main.min.css" >
+
+
+
+  
+    <link rel="stylesheet" href="../../css/custom.css">
+  
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/03.31.26/">
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/posts/03.31.26/">
+  <meta property="og:site_name" content="Keeks IT-Blog">
+  <meta property="og:title" content="Lokale KI mit RX 7900 XT">
+  <meta property="og:description" content="Erste Erfahrungen">
+  <meta property="og:locale" content="de_de">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-31T14:55:27+02:00">
+    <meta property="article:modified_time" content="2026-03-31T14:55:27+02:00">
+    <meta property="article:tag" content="KI">
+    <meta property="article:tag" content="LLM">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Arch Linux">
+    <meta property="article:tag" content="CachyOS">
+    <meta property="article:tag" content="AMD">
+
+  <meta itemprop="name" content="Lokale KI mit RX 7900 XT">
+  <meta itemprop="description" content="Erste Erfahrungen">
+  <meta itemprop="datePublished" content="2026-03-31T14:55:27+02:00">
+  <meta itemprop="dateModified" content="2026-03-31T14:55:27+02:00">
+  <meta itemprop="wordCount" content="1137">
+  <meta itemprop="keywords" content="KI,LLM,Linux,Arch Linux,CachyOS,AMD,RX 7900 XT,RDNA3">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Lokale KI mit RX 7900 XT">
+  <meta name="twitter:description" content="Erste Erfahrungen">
+
+	
+  </head><body class="ma0 avenir bg-near-white development is-page is-page page-03.31.26">
+    
+   
+  
+
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('http://localhost:1313/images/OfficialMSIcons/00028-icon-service-Batch-AI.svg');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="../../" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Keeks IT-Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="../../posts/" title="Blog page">
+              Blog
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="../../about/" title="About page">
+              About
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">Lokale KI mit RX 7900 XT</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Erste Erfahrungen
+            </div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+
+  <article class="page-03.31.26 flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">Lokale KI mit RX 7900 XT</h1>
+      
+      <p class="tracked"><strong>Keeks</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2026-03-31T14:55:27+02:00">31.03.2026</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><div class="notice-box In Zeiten der &#39;KI&#39; Begeisterung" style="
+    padding: 15px; 
+    margin: 20px 0; 
+    border-left: 5px solid; 
+    background-color: #f9f9f9;
+    border-radius: 4px;
+">
+    
+        <strong style="text-transform: uppercase; display: block; margin-bottom: 5px;">
+            In Zeiten der &#39;KI&#39; Begeisterung:
+        </strong>
+    
+
+    <div class="notice-content">
+        <p>&hellip;scheint es sich doch anzubieten selber, voll lokal und absolut Datenschutzkonform einen eigenen Agenten aufzusetzen, der im täglichen Workflow unterstützt und sensible Daten handlen kann (nein, nicht clawbot).
+Mit meinem momentanen Setup unter Nutzung der RDNA3-Architektur einer AMD RX 7900 XT schien ich bestens vorbereitet.</p>
+<p>Auch mein kürzlich vollzogener Wechsel von Windows zu CachyOS als meine Hauptdistribution stimmten mich zuversichtlich, dass ich problemlos KI auf diesem Systemen nutzen kann.
+Die Konfiguration erwies sich dann doch ein klein wenig weitläufiger als geplant.</p>
+<p>Was zunächst wie ein standardmäßiges Setup erschien, entwickelte sich
+schnell zu einem praxisnahen Einstieg in die Grenzen aktueller
+Software-Stacks, aktuellen Kompatibilitäten sowie technischen Möglichkeiten moderner KI-Systeme. – insbesondere im Zusammenspiel von AMD-Hardware <a href="https://rocm.docs.amd.com/en/latest/what-is-rocm.html">ROCm - RAdeon Open Compute</a> und gängigen LLM-Frameworks.
+Das Einrichten einer lokal betriebenen KI unter Nutzung der  <a href="https://www.amd.com/de/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7900xt.html">AMD RX 7900 XT</a>(RDNA3-Architektur) erwies sich als interessanter Einblick in den aktuellen Stand der KI-Infrastruktur. Insbesondere wurde mir deutlich, wie stark sich reale Implementierungen von theoretischen Möglichkeiten unterscheiden.
+Und eins schonmal vorweg:</p>
+<details style="border: 1px solid #ccc; border-radius: 8px; margin: 1rem 0; padding: 0.5rem 1rem; background-color: #fdfdfd;">
+    <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+        Spoiler
+    </summary>
+    Noch läuft keine <em>sinnvolle</em> Variante einer KI auf meinem System. Einen rein CPU Beschleunigten Agenten zu betreiben, wie es mir dann relativ schnell und problemlos gelingt, ist mit meiner CPU (AMD Ryzen 7 7800X3D 8-Core Processor) relativ spaßfrei. Zumindest mit <code>gemma2:27b</code>. Mehr dazu dann weiter unten
+</details>
+
+    </div>
+</div>
+<hr>
+<h2 id="ausgangspunkt-und-zielsetzung">Ausgangspunkt und Zielsetzung</h2>
+<p>Ziel war es, ein lokal betriebenes Sprachmodell (LLM) auf einem System mit folgender Charakteristik zu betreiben:</p>
+<ul>
+<li>AMD RX 7900 XT (20 GB VRAM, RDNA3)</li>
+<li>Schneller NVMe-Datenträger für Modelldaten</li>
+<li>Arch Linux-basierte Distribution (CachyOS)</li>
+<li>Nutzung moderner Tools wie <a href="https://docs.ollama.com/">Ollama</a> und <a href="https://openwebui.com/">Open WebUI</a></li>
+</ul>
+<p>Ein besonderer Fokus lag auf:</p>
+<ul>
+<li>Nutzung der GPU zur Beschleunigung</li>
+<li>Auslagerung der Modelldaten auf ein separates Laufwerk</li>
+<li>Integration in eine Weboberfläche</li>
+</ul>
+<hr>
+<h2 id="phase-1-einrichtung-mit-ollama-und-open-webui">Phase 1: Einrichtung mit Ollama und Open WebUI</h2>
+<p>Der erste Ansatz erfolgte über Ollama, ein weit verbreitetes Framework zur lokalen Ausführung von Sprachmodellen. Ich war zuerst begeistert von der unkomplizierten Installation - Ganz entsprechend der offiziellen <a href="https://docs.ollama.com/">Dokumentation</a>.</p>
+<p>Stark motiviert, dass ich ja wohl die 20 GB Grafikspeicher meiner Karte so gut wie möglich ausnutzen möchte und aufgrund meiner anfänglichen Recherche entschied ich mich zuerst für die Installation des Modells <code>gemma2:27b</code> von Google.
+Um ebenfalls meine schnelle M2.NVMe zu nutzen passte ich noch den Speicherort des Modells an. Dies erforderte Änderungen der systemd-Service-Konfiguration von Ollama.</p>
+<p>Anschließend wurde Open WebUI über Docker eingebunden, um eine komfortable Benutzeroberfläche bereitzustellen. Die Verbindung zwischen WebUI und Ollama konnte im Browser  erfolgreich hergestellt werden. Nach der ersten Accouint Erstellung war das Modell in der Oberfläche auswählbar und ausführbar. Zumindest in halbwegs..</p>
+<hr>
+<h3 id="erste-probleme-performance-und-cpu-last">Erste Probleme: Performance und CPU-Last</h3>
+<p>Bereits bei den ersten Interaktionen mit dem Modell fiel auf:</p>
+<ul>
+<li>
+<p>Sehr lange Antwortzeiten</p>
+</li>
+<li>
+<p>Hohe CPU-Auslastung</p>
+</li>
+<li>
+<p>Keine erkennbare GPU-Nutzung</p>
+</li>
+</ul>
+<figure style='
+    display: inline-block; 
+    float: right; 
+    width: 300px !important; 
+    max-width: 100%; 
+    margin: 0.5rem 0 1rem 1.5rem;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="../../images/03.31.26/btop.png" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/03.31.26/btop.png" 
+             alt="btop Beispiel" 
+             title="btop Beispiel"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+    
+    
+        <figcaption style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.6rem; font-style: italic; line-height: 1.3; display: block;">
+            btop Beispiel
+        </figcaption>
+    
+</figure>
+
+<div style="clear: none;"></div>
+<p>Zur Analyse wurde der Systemmonitor <em>btop</em>  eingesetzt. Ein Tool, das ich an dieser Stelle nochmal hervorheben will. Es besticht durch seine klaren Farben und schnell durchschaltbaren Ansichten.</p>
+<p>Btop bestätigte eindeutig, dass die gesamte Last ausschließlich über die CPU lief.</p>
+<hr>
+<h2 id="phase-2-analyse-der-gpu-nutzung">Phase 2: Analyse der GPU-Nutzung</h2>
+<p>Im nächsten Schritt wurde überprüft, ob die GPU grundsätzlich korrekt erkannt wird.</p>
+<p>Terminal Werkzeuge wie <code>rocminfo</code> und <code>rocm-smi</code> bestätigten:</p>
+<ul>
+<li>Die GPU wird vom System erkannt (gfx1100)</li>
+<li>ROCm ist grundsätzlich funktionsfähig</li>
+<li>Die GPU befindet sich jedoch während der Inferenz im Idle-Zustand</li>
+</ul>
+<figure style='
+    display: inline-block; 
+    float: right; 
+    width: 400px !important; 
+    max-width: 100%; 
+    margin: 0.5rem 0 1rem 1.5rem;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="../../images/03.31.26/rocm-smi.png" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/03.31.26/rocm-smi.png" 
+             alt="rocm-smi Beispiel" 
+             title="rocm-smi Beispiel"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+    
+    
+        <figcaption style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.6rem; font-style: italic; line-height: 1.3; display: block;">
+            rocm-smi Beispiel
+        </figcaption>
+    
+</figure>
+
+<div style="clear: none;"></div>
+<p>Die Hardware scheint korrekt eingebunden, wird jedoch von den verwendeten Frameworks nicht aktiv genutzt.</p>
+<hr>
+<h2 id="phase-3-manuelles-modell-handling-über-huggingface">Phase 3: Manuelles Modell-Handling über HuggingFace</h2>
+<p>Um mehr Kontrolle über die Modellverwendung zu erhalten, wechsle ich den Ansatz. Statt Ollama nun ein direkter Download eines GGUF-Modells von <a href="https://huggingface.co/">HuggingFace</a>.</p>
+<p>Hierfür wurde eine isolierte Python-Umgebung eingerichtet, um Konflikte mit dem System-Python zu vermeiden. Anschließend wurde die Bibliothek <code>huggingface-hub</code> installiert und ein Zugriffstoken konfiguriert.</p>
+<p>Der Download selbst erforderte mehrere Iterationen, da:</p>
+<ul>
+<li>einige Repositories nicht mehr existierten</li>
+<li>Dateinamen nicht korrekt waren</li>
+<li>Authentifizierung notwendig war</li>
+</ul>
+<p>Letztlich konnte ein kompatibles Modell von gemma erfolgreich in das gewünschte lokale Verzeichnis meiner NVMe geladen werden.
+Hier waren vor Allem die anfänglich verwirrenden Modellangaben und deren Pfade im <em>huggingface-hub</em>, sowie die korrekte Angabe derselben im Startsscript eine, für mich anscheinend immer wieder kehrende, Herausforderung. Auch die Tatsache, dass nicht alle Repositories gleichermaßen <em>public</em> - also für alle Nutzer gleichermaßen verfügbar sind - gillt es erstmal heraus zu finden und korrekt anzuwenden.</p>
+<hr>
+<h2 id="phase-4-einsatz-von-llamacpp">Phase 4: Einsatz von llama.cpp</h2>
+<p>Mit dem lokal vorliegenden Modell wurde anschließend <code>llama.cpp</code> eingesetzt, ein leichtgewichtiges Framework zur Ausführung von GGUF-Modellen.</p>
+<p>Der Build-Prozess erfolgte mittels CMake und aktivierter HIP-Unterstützung zur Erreichung der optimalen Nutzung meiner Grafikkarte.
+Hier war es nötig ein script zu erstellen, dass ich ehrlicherweise mit Hilfe einer andern KI erstellt habe. The circle of life?</p>
+<p>Nach erfolgreichem Kompilieren zeigte sich jedoch:</p>
+<ul>
+<li>Der Server startete korrekt</li>
+<li>Das Modell konnte geladen werden</li>
+<li>GPU-Parameter wurden ignoriert</li>
+</ul>
+<p>Eine Überprüfung der Build-Optionen ergab, dass keine aktive GPU-Unterstützung vorhanden war, obwohl diese explizit angefordert wurde.</p>
+<p>Ich stand wieder am Anfang..</p>
+<hr>
+<h2 id="technische-einordnung">Technische Einordnung</h2>
+<p>Nun begebe ich mich auf die Suche im Netz, um mögliche Konflikte meiner Hardware mit meinen genutzten Werkzeugen zu untersuchen.
+Die Ursache liegt nicht in einem einzelnen Fehler, sondern in der aktuellen Softwarelandschaft:</p>
+<ul>
+<li>Viele KI-Frameworks sind primär für NVIDIA CUDA entwickelt</li>
+<li>AMD ROCm wird im Steup nur eingeschränkt unterstützt</li>
+<li>RDNA3 (RX 7000 Serie) ist besonders schlecht integriert</li>
+<li>GPU-Offloading funktioniert häufig nur experimentell oder gar nicht</li>
+</ul>
+<p>Dies führt zu einer Situation, in der:</p>
+<ul>
+<li>die Hardware theoretisch geeignet ist</li>
+<li>die Software jedoch nicht in der Lage ist, diese effizient zu nutzen</li>
+</ul>
+<hr>
+<h2 id="fazit">Fazit</h2>
+<p>Das Einrichten einer lokalen KI unter den gegebenen Voraussetzungen stellte sich als anspruchsvolle, aber äußerst lehrreiche Übung dar.
+In einer perfekten Welt hätte ich mich wohl vorher korrekt informiert und direkt ein passendes Model installiert. Aber so hatte ich Spaß beim Tüfteln, habe einige Werkzeuge kennen gelernt und freue mich schon auf die nächsten Schritte auf meinem Weg zur unabängigen, lokalen KI!</p>
+<p>Zusammenfassend wurde deutlich, dass:</p>
+<ul>
+<li>die praktische Umsetzbarkeit stark von der Hardware-Unterstützung abhängt</li>
+<li>AMD-GPUs aktuell im KI-Bereich strukturelle Nachteile haben</li>
+<li>viele vermeintlich unterstützte Features in der Praxis nicht funktionieren</li>
+</ul>
+<p>Das Ergebnis war  ein funktionierendes, jedoch CPU-basiertes Setup, das zwar nutzbar ist, aber nicht annähernd die erwartete Performance liefert.
+Also quasi nutzlos für mehr als ein wenig Unterhaltung. Es ist jedoch schön, respekteinflößend und faszinierend gleichzeitig zu beaobachten wie die Maschine einfach zu &ldquo;leben&rdquo; beginnt.
+Der aktuelle Stand stellt eine solide Grundlage dar, auf der weiter aufgebaut werden kann.
+Ich werde in den kommenden Tagen und Wochen noch weiter erforschen wie ich meine Hardware effizient für zumindest einige KI-Modelle nutzen kann. Die Möglichkeit Daten lokal zu halten und einen persönlichen Kontext im Agenten zu speichern, ohne dass Big Tech darauf zugreifen kann, sind sehr verlockend.</p>
+<hr>
+<h2 id="ausblick">Ausblick</h2>
+<p>Ich denke über folgende nächste Schritte nach:</p>
+<ul>
+<li>Test kleinerer Modelle zur Reduktion der CPU-Last -&gt; Gemma2-7B-Q4_K, MPT‑7B oder LLaMA2-7B-Q4_K</li>
+<li>Beobachtung zukünftiger Entwicklungen in  <a href="https://rocm.docs.amd.com/en/docs-7.0.0/compatibility/ml-compatibility/llama-cpp-compatibility.html">ROCm</a>und llama.cpp</li>
+<li>Evaluierung alternativer Frameworks mit besserer AMD-Unterstützung</li>
+<li>mögliche Hybridlösungen (CPU + begrenztes GPU-Offloading)</li>
+<li>Die Integration mit <a href="https://lmstudio.ai/">LMStudio</a>, welches als Lösung vielversprechend klingt</li>
+</ul>
+<p><strong>Wer Tips und Tricks dafür hat, wie man CachyOS und AMD Hardware solide Konfiguriert, schreibt es gerene in die Kommentare!</strong></p>
+<p>Vielen Dank fürs Lesen</p>
+<p>Euer Keeks</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="../../tags/ki/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">KI</a>
+   </li>
+  
+   <li class="list di">
+     <a href="../../tags/llm/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">LLM</a>
+   </li>
+  
+   <li class="list di">
+     <a href="../../tags/linux/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Linux</a>
+   </li>
+  
+   <li class="list di">
+     <a href="../../tags/arch-linux/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Arch Linux</a>
+   </li>
+  
+   <li class="list di">
+     <a href="../../tags/cachyos/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">CachyOS</a>
+   </li>
+  
+   <li class="list di">
+     <a href="../../tags/amd/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">AMD</a>
+   </li>
+  
+   <li class="list di">
+     <a href="../../tags/rx-7900-xt/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">RX 7900 XT</a>
+   </li>
+  
+   <li class="list di">
+     <a href="../../tags/rdna3/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">RDNA3</a>
+   </li>
+  
+</ul>
+
+      <div class="mt6 instapaper_ignoref">
+        
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "Seb" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      
+      
+    </div></article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between items-center">
+    <div class="flex items-center">
+      <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/">
+        &copy;  Keeks IT-Blog 2026 
+      </a>
+
+      <span class="white-30 dn dib-ns">|</span>
+      <a class="f6 fw4 hover-white white-70 ml3 pv2 ph3 no-underline" href="../../impressum">
+        Impressum
+      </a>
+    </div>
+
+    <div>
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</footer>
+    <button id="back-to-top" title="Nach oben scrollen">↑ Top</button>
+
+<script>
+    const btt = document.getElementById("back-to-top");
+    
+    
+    btt.style.display = "block";
+
+    
+    btt.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+     
+    
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btt.style.display = "block";
+        } else {
+            btt.style.display = "none";
+        }
+    };
+    
+</script>
+  </body>
+</html>

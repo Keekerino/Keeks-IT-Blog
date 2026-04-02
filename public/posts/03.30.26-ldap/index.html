@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="de-de">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>YaST &amp; LDAP | Keeks IT-Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Wenn „Deprecated“ trotzdem zum Ziel führt">
+    <meta name="generator" content="Hugo 0.152.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+    <meta name="author" content="Keeks">
+    
+
+    
+<link rel="stylesheet" href="../../ananke/css/main.min.css" >
+
+
+
+  
+    <link rel="stylesheet" href="../../css/custom.css">
+  
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/03.30.26-ldap/">
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/posts/03.30.26-ldap/">
+  <meta property="og:site_name" content="Keeks IT-Blog">
+  <meta property="og:title" content="YaST & LDAP">
+  <meta property="og:description" content="Wenn „Deprecated“ trotzdem zum Ziel führt">
+  <meta property="og:locale" content="de_de">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-03-30T17:00:17+02:00">
+    <meta property="article:modified_time" content="2026-03-30T17:00:17+02:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="OpenSUSE">
+    <meta property="article:tag" content="Verzeichnisdienst">
+
+  <meta itemprop="name" content="YaST & LDAP">
+  <meta itemprop="description" content="Wenn „Deprecated“ trotzdem zum Ziel führt">
+  <meta itemprop="datePublished" content="2026-03-30T17:00:17+02:00">
+  <meta itemprop="dateModified" content="2026-03-30T17:00:17+02:00">
+  <meta itemprop="wordCount" content="474">
+  <meta itemprop="keywords" content="Linux,OpenSUSE,Verzeichnisdienst">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="YaST & LDAP">
+  <meta name="twitter:description" content="Wenn „Deprecated“ trotzdem zum Ziel führt">
+
+	
+  </head><body class="ma0 avenir bg-near-white development is-page is-page page-03.30.26-LDAP">
+    
+   
+  
+
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('http://localhost:1313/images/Linux/OpenSUSE_Logo.svg');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="../../" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Keeks IT-Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="../../posts/" title="Blog page">
+              Blog
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="../../about/" title="About page">
+              About
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">YaST &amp; LDAP</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Wenn „Deprecated“ trotzdem zum Ziel führt
+            </div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+
+  <article class="page-03.30.26-LDAP flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">YaST &amp; LDAP</h1>
+      
+      <p class="tracked"><strong>Keeks</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2026-03-30T17:00:17+02:00">30.03.2026</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><div class="notice-box Totgesagte leben länger" style="
+    padding: 15px; 
+    margin: 20px 0; 
+    border-left: 5px solid; 
+    background-color: #f9f9f9;
+    border-radius: 4px;
+">
+    
+        <strong style="text-transform: uppercase; display: block; margin-bottom: 5px;">
+            Totgesagte leben länger:
+        </strong>
+    
+
+    <div class="notice-content">
+        das gilt in der IT oft auch für Software-Tools. Heute schauen wir uns an, wie man trotz des Deprecated-Status von YaST einen LDAP-Server auf OpenSUSE Leap aufsetzt. Auch wenn die offizielle Empfehlung zunehmend Richtung Kommandozeile geht: Die YaST-Module funktionieren weiterhin erstaunlich gut. Ich zeige euch heute den Ablauf und erkläre, an welchen Stellen aufgepasst werden muss, um im Zweifelsfall auf die manuelle Terminal-Konfiguration ausweichen zu können.
+    </div>
+</div>
+<h2 id="vorgehensweise">Vorgehensweise</h2>
+<p>Zuerst wird die aktuelle Liste an benötigten Paketen laden. Entweder über den Yast Paketmanager oder diesen Code im Terminal:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Alle Pakete in einem Befehl laden</span>
+</span></span><span style="display:flex;"><span>sudo zypper in 389-ds sssd sssd-common sssd-ldap yast2-auth-server yast2-ldap yast2-auth-client openldap2-client
+</span></span></code></pre></div><h3 id="obacht-bei-der-konfiguration-über-yast">Obacht bei der Konfiguration über YaST</h3>
+<p><figure style='
+    display: inline-block; 
+    float: center; 
+    width: 800px !important; 
+    max-width: 100%; 
+    margin: 2rem auto;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="../../images/03.30.26/grafik.png" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/03.30.26/grafik.png" 
+             alt="YaST Beispieleinstellung" 
+             title="YaST Beispieleinstellung"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+    
+    
+</figure>
+
+<div style="clear: none;"></div> Das Root Passwort muss mindestens 8 Zeichen lang sein, ansonsten bricht die Installation ab und man ist gezwungen die entsprechende Fehlermeldung aus den log Dateien suchen, da YaST keine direkte Rückmeldung dazu gibt.</p>
+<p>Log dazu ist in /var/log/YaST2/y2log</p>
+<h3 id="datei-hosts-anpassen">Datei hosts anpassen</h3>
+<p>Den Host mit Ip Adresse, FQDN und Hostnamen in der letzten Zeile eintragen.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nano /etc/hosts
+</span></span></code></pre></div><pre><code> 192.168.xxx.xxx VM-Server.domäne.intern VM-Server
+</code></pre>
+<h3 id="in-yast">In Yast</h3>
+<p>Wechseln zu Netzwerkdienste → Benutzeranmeldung
+<figure style='
+    display: inline-block; 
+    float: center; 
+    width: 800px !important; 
+    max-width: 100%; 
+    margin: 2rem auto;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="../../images/03.30.26/grafik%281%29.png" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/03.30.26/grafik%281%29.png" 
+             alt="YaST Beispieleinstellung" 
+             title="YaST Beispieleinstellung"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+    
+    
+</figure>
+
+<div style="clear: none;"></div>
+Im nächsten Fenster eingetragene Werte überprüfen. Auf Einstellungen ändern klicken und entsprechend der nächsten Grafiken anpassen, wobei Domänenname und IP an die persönliche Domäne angepasst wird.
+Sollte in diesem Fenster “Name ist not resolvable” zu lesen sein, ist es eine gute Idee die Konfiguration in /etc/hosts erneut auf Korrektheit zu prüfen.
+<details style="border: 1px solid #ccc; border-radius: 8px; margin: 1rem 0; padding: 0.5rem 1rem; background-color: #fdfdfd;">
+    <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+        Grafiken
+    </summary>
+    <figure style='
+    display: inline-block; 
+    float: center; 
+    width: 400px !important; 
+    max-width: 100%; 
+    margin: 2rem auto;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="../../images/03.30.26/grafik%282%29.png" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/03.30.26/grafik%282%29.png" 
+             alt="YaST Beispieleinstellung" 
+             title="YaST Beispieleinstellung"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+</figure>
+<div style="clear: none;"></div>
+<figure style='
+    display: inline-block; 
+    float: center; 
+    width: 400px !important; 
+    max-width: 100%; 
+    margin: 2rem auto;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="../../images/03.30.26/grafik%283%29.png" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/03.30.26/grafik%283%29.png" 
+             alt="YaST Beispieleinstellung" 
+             title="YaST Beispieleinstellung"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+</figure>
+<div style="clear: none;"></div>
+<figure style='
+    display: inline-block; 
+    float: center; 
+    width: 400px !important; 
+    max-width: 100%; 
+    margin: 2rem auto;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="../../images/03.30.26/grafik%285%29.png" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/03.30.26/grafik%285%29.png" 
+             alt="YaST Beispieleinstellung" 
+             title="YaST Beispieleinstellung"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+</figure>
+<div style="clear: none;"></div>
+<figure style='
+    display: inline-block; 
+    float: center; 
+    width: 400px !important; 
+    max-width: 100%; 
+    margin: 2rem auto;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="../../images/03.30.26/grafik%284%29.png" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/03.30.26/grafik%284%29.png" 
+             alt="YaST Beispieleinstellung" 
+             title="YaST Beispieleinstellung"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+</figure>
+<div style="clear: none;"></div>
+
+</details>
+</p>
+<h3 id="so-sollte-die-konfiguration-dann-in-yast-aussehen">So sollte die Konfiguration dann in YaST aussehen</h3>
+<figure style='
+    display: inline-block; 
+    float: center; 
+    width: 400px !important; 
+    max-width: 100%; 
+    margin: 2rem auto;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="../../images/03.30.26/grafik%286%29.png" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/03.30.26/grafik%286%29.png" 
+             alt="YaST Beispieleinstellung" 
+             title="YaST Beispieleinstellung"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+    
+    
+</figure>
+
+<div style="clear: none;"></div>
+<h3 id="firewall-einstellungen-hinzufügen-um-verbindungen-zuzulassen">Firewall-Einstellungen hinzufügen, um Verbindungen zuzulassen</h3>
+<p>Damit der Server Verbindungen zulässt, muss die Firewall noch dementsprechend konfiguriert werden. Die bekannten ports für LDAP sind 389 und 636 LDAPS</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># LDAP (Port 389) und LDAPS (Port 636) permanent erlauben</span>
+</span></span><span style="display:flex;"><span>sudo firewall-cmd --zone<span style="color:#ff7b72;font-weight:bold">=</span>public --add-service<span style="color:#ff7b72;font-weight:bold">=</span>ldap --permanent
+</span></span><span style="display:flex;"><span>sudo firewall-cmd --zone<span style="color:#ff7b72;font-weight:bold">=</span>public --add-service<span style="color:#ff7b72;font-weight:bold">=</span>ldaps --permanent
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Dann die firewall  neustarten</span>
+</span></span><span style="display:flex;"><span>sudo firewall-cmd --reload
+</span></span></code></pre></div><h3 id="funktionsprüfung-des-dienstes">Funktionsprüfung des Dienstes</h3>
+<p>Um die bisherigen Auswirkungen der Konfiguration zu bestätigen, ist es ratsam den Dienst zu überprüfen</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Dienststatus prüfen</span>
+</span></span><span style="display:flex;"><span>systemctl status <span style="color:#a5d6ff">&#34;dirsrv@*&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># oder mit den integrierten Tool von 389-DS </span>
+</span></span><span style="display:flex;"><span>sudo dsctl --list
+</span></span><span style="display:flex;"><span>dsctl INSTANZNAME status
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># lauschende Ports abfragen (389,636 müssen offen sein)</span>
+</span></span><span style="display:flex;"><span>sudo ss -tulpn
+</span></span></code></pre></div><details style="border: 1px solid #ccc; border-radius: 8px; margin: 1rem 0; padding: 0.5rem 1rem; background-color: #fdfdfd;">
+    <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+        Systemctl Ausgabe nach erfolgreichem Starten des Dienstes
+    </summary>
+    <figure style='
+    display: inline-block; 
+    float: center; 
+    width: 800px !important; 
+    max-width: 100%; 
+    margin: 2rem auto;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="../../images/03.30.26/grafik%287%29.png" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/03.30.26/grafik%287%29.png" 
+             alt="Systemctl - Erfolg!" 
+             title="Systemctl - Erfolg!"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+</figure>
+<div style="clear: none;"></div>
+
+</details>
+
+<h3 id="verwaltung">Verwaltung</h3>
+<p>Ab hier bietet es sich an eine grafische Oberfläche zur Verwaltung zu Installieren auf die ich vielleicht in einem späteren BLog Post weiter eingehe. Gut geeignete Programme sind z.B.:</p>
+<ul>
+<li>Apache Directory Studio</li>
+<li>LDAP Account Manager (LAM)</li>
+<li>JXplorer</li>
+</ul>
+<h2 id="fazit">Fazit</h2>
+<p>Die Einrichtung eines LDAP-Servers über YaST mag unter OpenSUSE Leap nicht mehr der &ldquo;modernste&rdquo; Weg sein, aber sie ist für kleinere Setups zu Testzwecken und in Lab-Umgebungen nach wie vor unschlagbar schnell. Der größte Vorteil ist, dass YaST die komplexen Abhängigkeiten zwischen 389-ds und sssd im Hintergrund weitgehend automatisch auflöst.</p>
+<p>Wer jedoch plant, LDAP in einer großen Produktionsumgebung einzusetzen, sollte sich frühzeitig mit <strong>dsconf</strong> und <strong>dsctl</strong> auf der Kommandozeile vertraut machen, da YaST bei sehr spezifischen Schemata oder komplexen Replikationsszenarien an seine Grenzen stößt.</p><ul class="pa0">
+  
+   <li class="list di">
+     <a href="../../tags/linux/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Linux</a>
+   </li>
+  
+   <li class="list di">
+     <a href="../../tags/opensuse/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">OpenSUSE</a>
+   </li>
+  
+   <li class="list di">
+     <a href="../../tags/verzeichnisdienst/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Verzeichnisdienst</a>
+   </li>
+  
+</ul>
+
+      <div class="mt6 instapaper_ignoref">
+        
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "Seb" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      
+      
+    </div></article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between items-center">
+    <div class="flex items-center">
+      <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/">
+        &copy;  Keeks IT-Blog 2026 
+      </a>
+
+      <span class="white-30 dn dib-ns">|</span>
+      <a class="f6 fw4 hover-white white-70 ml3 pv2 ph3 no-underline" href="../../impressum">
+        Impressum
+      </a>
+    </div>
+
+    <div>
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</footer>
+    <button id="back-to-top" title="Nach oben scrollen">↑ Top</button>
+
+<script>
+    const btt = document.getElementById("back-to-top");
+    
+    
+    btt.style.display = "block";
+
+    
+    btt.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+     
+    
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            btt.style.display = "block";
+        } else {
+            btt.style.display = "none";
+        }
+    };
+    
+</script>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Keeks IT-Blog</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Keeks IT-Blog</description>
+    <generator>Hugo</generator>
+    <language>de-de</language>
+    <lastBuildDate>Tue, 31 Mar 2026 14:55:27 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AMD</title>
+      <link>http://localhost:1313/tags/amd/</link>
+      <pubDate>Tue, 31 Mar 2026 14:55:27 +0200</pubDate>
+      <guid>http://localhost:1313/tags/amd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Arch Linux</title>
+      <link>http://localhost:1313/tags/arch-linux/</link>
+      <pubDate>Tue, 31 Mar 2026 14:55:27 +0200</pubDate>
+      <guid>http://localhost:1313/tags/arch-linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>CachyOS</title>
+      <link>http://localhost:1313/tags/cachyos/</link>
+      <pubDate>Tue, 31 Mar 2026 14:55:27 +0200</pubDate>
+      <guid>http://localhost:1313/tags/cachyos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>KI</title>
+      <link>http://localhost:1313/tags/ki/</link>
+      <pubDate>Tue, 31 Mar 2026 14:55:27 +0200</pubDate>
+      <guid>http://localhost:1313/tags/ki/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Tue, 31 Mar 2026 14:55:27 +0200</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>http://localhost:1313/tags/llm/</link>
+      <pubDate>Tue, 31 Mar 2026 14:55:27 +0200</pubDate>
+      <guid>http://localhost:1313/tags/llm/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RDNA3</title>
+      <link>http://localhost:1313/tags/rdna3/</link>
+      <pubDate>Tue, 31 Mar 2026 14:55:27 +0200</pubDate>
+      <guid>http://localhost:1313/tags/rdna3/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RX 7900 XT</title>
+      <link>http://localhost:1313/tags/rx-7900-xt/</link>
+      <pubDate>Tue, 31 Mar 2026 14:55:27 +0200</pubDate>
+      <guid>http://localhost:1313/tags/rx-7900-xt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>OpenSUSE</title>
+      <link>http://localhost:1313/tags/opensuse/</link>
+      <pubDate>Mon, 30 Mar 2026 17:00:17 +0200</pubDate>
+      <guid>http://localhost:1313/tags/opensuse/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Verzeichnisdienst</title>
+      <link>http://localhost:1313/tags/verzeichnisdienst/</link>
+      <pubDate>Mon, 30 Mar 2026 17:00:17 +0200</pubDate>
+      <guid>http://localhost:1313/tags/verzeichnisdienst/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Guide</title>
+      <link>http://localhost:1313/tags/guide/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/guide/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Terminal</title>
+      <link>http://localhost:1313/tags/terminal/</link>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/terminal/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Active Directory</title>
+      <link>http://localhost:1313/tags/active-directory/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/active-directory/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projekt</title>
+      <link>http://localhost:1313/tags/projekt/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/projekt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>http://localhost:1313/tags/windows/</link>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/windows/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
