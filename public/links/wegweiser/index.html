@@ -7,7 +7,7 @@
     <title>News &amp; Learning | Keeks IT-Blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Einige hilfreiche Websites">
-    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Hugo 0.159.1">
     
     
     
@@ -289,9 +289,16 @@ Datenbank an bekannten Exploits
 
 <script>
     const btt = document.getElementById("back-to-top");
+
     
+    const scrollThreshold = 500; 
+    const fadeDuration = 0.4;    
+
     
-    btt.style.display = "block";
+    btt.style.transition = `opacity ${fadeDuration}s ease`;
+    btt.style.opacity = 0;
+    btt.style.pointerEvents = "none"; 
+    btt.style.display = "block"; 
 
     
     btt.addEventListener("click", function() {
@@ -301,16 +308,16 @@ Datenbank an bekannten Exploits
         });
     });
 
-     
     
-    window.onscroll = function() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            btt.style.display = "block";
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > scrollThreshold) {
+            btt.style.opacity = 1;
+            btt.style.pointerEvents = "auto";
         } else {
-            btt.style.display = "none";
+            btt.style.opacity = 0;
+            btt.style.pointerEvents = "none";
         }
-    };
-    
+    });
 </script>
   </body>
 </html>

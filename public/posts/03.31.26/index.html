@@ -7,7 +7,7 @@
     <title>Lokale KI mit RX 7900 XT | Keeks IT-Blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Erste Erfahrungen">
-    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Hugo 0.159.1">
     
     
     
@@ -50,8 +50,8 @@
   <meta property="og:locale" content="de_de">
   <meta property="og:type" content="article">
     <meta property="article:section" content="posts">
-    <meta property="article:published_time" content="2026-03-31T14:55:27+02:00">
-    <meta property="article:modified_time" content="2026-03-31T14:55:27+02:00">
+    <meta property="article:published_time" content="2026-04-03T00:00:00+00:00">
+    <meta property="article:modified_time" content="2026-04-03T00:00:00+00:00">
     <meta property="article:tag" content="KI">
     <meta property="article:tag" content="LLM">
     <meta property="article:tag" content="Linux">
@@ -61,8 +61,8 @@
 
   <meta itemprop="name" content="Lokale KI mit RX 7900 XT">
   <meta itemprop="description" content="Erste Erfahrungen">
-  <meta itemprop="datePublished" content="2026-03-31T14:55:27+02:00">
-  <meta itemprop="dateModified" content="2026-03-31T14:55:27+02:00">
+  <meta itemprop="datePublished" content="2026-04-03T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2026-04-03T00:00:00+00:00">
   <meta itemprop="wordCount" content="1137">
   <meta itemprop="keywords" content="KI,LLM,Linux,Arch Linux,CachyOS,AMD,RX 7900 XT,RDNA3">
   <meta name="twitter:card" content="summary">
@@ -145,7 +145,7 @@
       
       
       
-      <time class="f6 mv4 dib tracked" datetime="2026-03-31T14:55:27+02:00">31.03.2026</time>
+      <time class="f6 mv4 dib tracked" datetime="2026-04-03T00:00:00Z">03.04.2026</time>
       
 
       
@@ -332,9 +332,7 @@ In einer perfekten Welt hätte ich mich wohl vorher korrekt informiert und direk
 Also quasi nutzlos für mehr als ein wenig Unterhaltung. Es ist jedoch schön, respekteinflößend und faszinierend gleichzeitig zu beaobachten wie die Maschine einfach zu &ldquo;leben&rdquo; beginnt.
 Der aktuelle Stand stellt eine solide Grundlage dar, auf der weiter aufgebaut werden kann.
 Ich werde in den kommenden Tagen und Wochen noch weiter erforschen wie ich meine Hardware effizient für zumindest einige KI-Modelle nutzen kann. Die Möglichkeit Daten lokal zu halten und einen persönlichen Kontext im Agenten zu speichern, ohne dass Big Tech darauf zugreifen kann, sind sehr verlockend.</p>
-<hr>
-<h2 id="ausblick">Ausblick</h2>
-<p>Ich denke über folgende nächste Schritte nach:</p>
+<p>Als nächste Schritte stelle ich mir folgendes vor::</p>
 <ul>
 <li>Test kleinerer Modelle zur Reduktion der CPU-Last -&gt; Gemma2-7B-Q4_K, MPT‑7B oder LLaMA2-7B-Q4_K</li>
 <li>Beobachtung zukünftiger Entwicklungen in  <a href="https://rocm.docs.amd.com/en/docs-7.0.0/compatibility/ml-compatibility/llama-cpp-compatibility.html">ROCm</a>und llama.cpp</li>
@@ -432,9 +430,16 @@ Ich werde in den kommenden Tagen und Wochen noch weiter erforschen wie ich meine
 
 <script>
     const btt = document.getElementById("back-to-top");
+
     
+    const scrollThreshold = 500; 
+    const fadeDuration = 0.4;    
+
     
-    btt.style.display = "block";
+    btt.style.transition = `opacity ${fadeDuration}s ease`;
+    btt.style.opacity = 0;
+    btt.style.pointerEvents = "none"; 
+    btt.style.display = "block"; 
 
     
     btt.addEventListener("click", function() {
@@ -444,16 +449,16 @@ Ich werde in den kommenden Tagen und Wochen noch weiter erforschen wie ich meine
         });
     });
 
-     
     
-    window.onscroll = function() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            btt.style.display = "block";
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > scrollThreshold) {
+            btt.style.opacity = 1;
+            btt.style.pointerEvents = "auto";
         } else {
-            btt.style.display = "none";
+            btt.style.opacity = 0;
+            btt.style.pointerEvents = "none";
         }
-    };
-    
+    });
 </script>
   </body>
 </html>

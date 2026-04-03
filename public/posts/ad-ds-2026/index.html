@@ -7,7 +7,7 @@
     <title>Implementierung von Active Directory Domain Services unter Windows Server 2022 | Keeks IT-Blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Implementieren von Active Directory in heterogener Netzwerkumgebung">
-    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Hugo 0.159.1">
     
     
     
@@ -387,8 +387,8 @@ Ich habe zum Testen der Konfiguration erstmal google DNS genutzt (8.8.8.8).</li>
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Hier noch die Befehle für die Kommandozeile zur Domänenerstellung
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#f85149">“</span>Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools<span style="color:#f85149">”</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#79c0ff">$password</span> = ConvertTo-SecureString <span style="color:#a5d6ff">&#34;DeinPasswort123!&#34;</span> -AsPlainText -Force 
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#f85149">“</span>Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools<span style="color:#f85149">”</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#79c0ff">$password</span> = ConvertTo-SecureString <span style="color:#a5d6ff">&#34;DeinPasswort123!&#34;</span> -AsPlainText -Force 
 </span></span><span style="display:flex;"><span>Install-ADDSForest -DomainName <span style="color:#a5d6ff">&#34;test.lab&#34;</span> -DomainNetbiosName <span style="color:#a5d6ff">&#34;TEST&#34;</span> -InstallDns:<span style="color:#79c0ff">$true</span> -SafeModeAdministratorPassword <span style="color:#79c0ff">$password</span> -NoRebootOnCompletion:<span style="color:#79c0ff">$false</span>  
 </span></span></code></pre></div>
 </details>
@@ -396,7 +396,7 @@ Ich habe zum Testen der Konfiguration erstmal google DNS genutzt (8.8.8.8).</li>
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Zeitserver umlegen mit dem Befehlszeilentool w32tm. Konfigurieren der Zeitsynchronisierung per fester externer Quelle über die Befehlszeile für den PDC Primary Domain Controller zur Sicherstellung der korrekten Funktionalität von Kerberos und AD-Replikation
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Einstellungen setzen</span>
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Einstellungen setzen</span>
 </span></span><span style="display:flex;"><span>w32tm.<span style="color:#79c0ff">exe</span> /config /syncfromflags<span style="color:#f85149">:</span>manual /manualpeerlist<span style="color:#f85149">:</span><span style="color:#a5d6ff">131.107</span>.<span style="color:#79c0ff">13</span>.<span style="color:#a5d6ff">100</span>,0x8 /reliable<span style="color:#f85149">:</span>yes /update
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Updaten der config</span>
@@ -407,7 +407,7 @@ Ich habe zum Testen der Konfiguration erstmal google DNS genutzt (8.8.8.8).</li>
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Anlegen der OU&#39;s (Organisational Units&#39;s) in der Power Shell
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># 1. Haupt-OU Labor</span>
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># 1. Haupt-OU Labor</span>
 </span></span><span style="display:flex;"><span>New-ADOrganizationalUnit -Name <span style="color:#a5d6ff">&#34;Labor&#34;</span> -Path <span style="color:#a5d6ff">&#34;DC=test,DC=lab&#34;</span>
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Basispfad für die Unter-OUs</span>
@@ -444,7 +444,7 @@ DC-02-SRV-V</strong></p>
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         IPv4 Konfiguration über die PowerShell
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">#Neue IP-Konfig</span>
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">#Neue IP-Konfig</span>
 </span></span><span style="display:flex;"><span>New-NetIPAddress -InterfaceIndex <span style="color:#a5d6ff">6</span> -IPAddress <span style="color:#a5d6ff">10.10</span>.<span style="color:#79c0ff">0</span>.<span style="color:#79c0ff">3</span> -PrefixLength <span style="color:#a5d6ff">24</span> -DefaultGateway <span style="color:#a5d6ff">10.10</span>.<span style="color:#79c0ff">0</span>.<span style="color:#79c0ff">1</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">#DNS auf ersten DC setzen und als zweiten Loopback</span>
@@ -455,7 +455,7 @@ DC-02-SRV-V</strong></p>
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         AD Domänendienste , DNS Konfiguration über PwerShell vornehmen.
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># 1. DSRM Passwort (für diesen neuen DC) festlegen</span>
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># 1. DSRM Passwort (für diesen neuen DC) festlegen</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#79c0ff">$dsrmSafe</span> = ConvertTo-SecureString <span style="color:#a5d6ff">&#34;DeinPasswort123!&#34;</span> -AsPlainText -Force
 </span></span><span style="display:flex;"><span>
@@ -472,7 +472,7 @@ DC-02-SRV-V</strong></p>
     <ul>
 <li>Beim weiteren Installationsprozess treten Fehler auf. Nach Rechereche und Auslesen des Fehler-logs  konnte ich folgendes finden:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>    Get-Content C:\Windows\debug\dcpromo.<span style="color:#79c0ff">log</span> -Tail <span style="color:#a5d6ff">50</span>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>    Get-Content C:\Windows\debug\dcpromo.<span style="color:#79c0ff">log</span> -Tail <span style="color:#a5d6ff">50</span>
 </span></span></code></pre></div><blockquote>
 <p>&ldquo;01/11/2026 00:36:42 [INFO] EVENTLOG (Error): NTDS Database / Sicherung : 2542</p>
 <p>Vom Verzeichnisserver wurde festgestellt, dass die Datenbank ersetzt wurde. Dies ist ein
@@ -505,7 +505,7 @@ Im nächsten Anlauf im NET-BIOS Format anmelden:
 <ul>
 <li>Nun Erstmal alles Deinstallieren und die Verzeichnisse frei machen:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Uninstall-WindowsFeature AD-Domain-Services -Force
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Uninstall-WindowsFeature AD-Domain-Services -Force
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># 2. Datenbank- und Log-Ordner physisch löschen</span>
 </span></span><span style="display:flex;"><span>Remove-Item -Path <span style="color:#a5d6ff">&#34;C:\Windows\NTDS&#34;</span> -Recurse -Force -ErrorAction SilentlyContinue
@@ -527,9 +527,9 @@ repadmin /replsummary - &gt; Keine Sicherheitskonflikte mehr.</p>
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         PowerShell Befehle
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">#Dieser Einzeiler hat nun den gewünschten Effekt</span>
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">#Dieser Einzeiler hat nun den gewünschten Effekt</span>
 </span></span><span style="display:flex;"><span>Install-ADDSDomainController -DomainName <span style="color:#a5d6ff">&#34;test.lab&#34;</span> -InstallDns:<span style="color:#79c0ff">$true</span> -NoGlobalCatalog:<span style="color:#79c0ff">$false</span> -NoRebootOnCompletion:<span style="color:#79c0ff">$true</span> -Force:<span style="color:#79c0ff">$true</span> -SafeModeAdministratorPassword (ConvertTo-SecureString <span style="color:#a5d6ff">&#39;DeinPasswort123!&#39;</span> -AsPlainText -Force) -Credential (Get-Credential <span style="color:#a5d6ff">&#34;test.lab\&lt;Nutzername&gt;&#34;</span>) -Verbose
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">#Bericht über Replikation ergibt nun 0/5 Fehlern</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">#Bericht über Replikation ergibt nun 0/5 Fehlern</span>
 </span></span><span style="display:flex;"><span>repadmin /replsummary
 </span></span></code></pre></div>
 </details>
@@ -542,14 +542,14 @@ repadmin /replsummary - &gt; Keine Sicherheitskonflikte mehr.</p>
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Bei Installation den Online Account umgehen mit PowerShell SHIFT &#43; F10 während Installation
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>OOBE/BYPASSNRO
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>OOBE/BYPASSNRO
 </span></span></code></pre></div>
 </details>
  <details style="border: 1px solid #ccc; border-radius: 8px; margin: 1rem 0; padding: 0.5rem 1rem; background-color: #fdfdfd;">
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Nachträgliche Netzwerkkarteneinstellung während Installation in der Konsole
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Netzwerk-Konfiguration</span>
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Netzwerk-Konfiguration</span>
 </span></span><span style="display:flex;"><span>Get-NetAdapter
 </span></span><span style="display:flex;"><span>New-NetIPAddress -InterfaceIndex <span style="color:#a5d6ff">6</span> -IPAddress <span style="color:#a5d6ff">10.10</span>.<span style="color:#79c0ff">0</span>.<span style="color:#79c0ff">3</span> -PrefixLength <span style="color:#a5d6ff">24</span> -DefaultGateway <span style="color:#a5d6ff">10.10</span>.<span style="color:#79c0ff">0</span>.<span style="color:#79c0ff">1</span>   
 </span></span><span style="display:flex;"><span>Set-DnsClientServerAddress -InterfaceIndex <span style="color:#a5d6ff">6</span> -ServerAddresses (<span style="color:#a5d6ff">&#34;10.10.0.2&#34;</span>,<span style="color:#a5d6ff">&#34;10.10.0.3&#34;</span>)
@@ -562,7 +562,7 @@ repadmin /replsummary - &gt; Keine Sicherheitskonflikte mehr.</p>
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Bereinigen des Update Caches nach Updatets für saubere SysPrep Erstellung
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Stop-Service wuauserv
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>Stop-Service wuauserv
 </span></span><span style="display:flex;"><span>Remove-Item -Path C:\Windows\SoftwareDistribution\Download\* -Recurse -Force
 </span></span><span style="display:flex;"><span>Start-Service wuauserv
 </span></span></code></pre></div>
@@ -571,7 +571,7 @@ repadmin /replsummary - &gt; Keine Sicherheitskonflikte mehr.</p>
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Nach Anmeldung mit lokalem konto wird das Administratorkonto aktiviert um sich damit anzumelden. Dann wird der lokale Nutzer mit dem Administratorkonto gelöscht. Nun ist die Windows Version SysPrep bereit.
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span> <span style="color:#8b949e;font-style:italic"># 1. Das echte Administrator-Konto aktivieren</span>
 </span></span><span style="display:flex;"><span>net user administrator /active<span style="color:#f85149">:</span>yes
 </span></span><span style="display:flex;"><span>            
@@ -583,7 +583,7 @@ repadmin /replsummary - &gt; Keine Sicherheitskonflikte mehr.</p>
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Nun Sysprep durchführen
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>&amp; <span style="color:#79c0ff">$env:SystemRoot</span>\System32\Sysprep\sysprep.<span style="color:#79c0ff">exe</span> /oobe /generalize /shutdown /mode<span style="color:#f85149">:</span>vm
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>&amp; <span style="color:#79c0ff">$env:SystemRoot</span>\System32\Sysprep\sysprep.<span style="color:#79c0ff">exe</span> /oobe /generalize /shutdown /mode<span style="color:#f85149">:</span>vm
 </span></span></code></pre></div>
 </details>
 <ul>
@@ -608,7 +608,7 @@ Machine Owner Key (MOK) verifiziert werden müssen. Scheitert der Start, wurde d
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Die Grundeinstellungen für IP und Hostname werden über die grafische Oberfläche vorgenommen. Dabei Ping, DNS Konnektivität und Zeit prüfen. Wenn Ping zur Domäne gelingt und der Name aufgelöst werden kann, weiter mit nächstem Schritt.
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">#Status der NIC -&gt; &#34;up&#34; = gut</span>
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">#Status der NIC -&gt; &#34;up&#34; = gut</span>
 </span></span><span style="display:flex;"><span>ip link
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic">#Ip-Konfig abfragen</span>
@@ -631,7 +631,7 @@ Machine Owner Key (MOK) verifiziert werden müssen. Scheitert der Start, wurde d
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Nach der Vergabe der richtigen Searchdomain wird mit dem Linux Tool realm der Ad Beitritt vorbereitet und schlussendlich der Domäne beigetreten
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Installieren der Abhängigkeiten</span>
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Installieren der Abhängigkeiten</span>
 </span></span><span style="display:flex;"><span>        
 </span></span><span style="display:flex;"><span>sudo zypper install realmd adcli sssd sssd-ad
 </span></span><span style="display:flex;"><span>        
@@ -654,7 +654,7 @@ Machine Owner Key (MOK) verifiziert werden müssen. Scheitert der Start, wurde d
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Hier noch eine kleine Anleitung, damit keine FQDNS beim Anmelden genutzt werden müssen:
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Konfigurationsdatei öffnen</span>
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Konfigurationsdatei öffnen</span>
 </span></span><span style="display:flex;"><span>sudo nano /etc/sssd/sssd.conf
 </span></span><span style="display:flex;"><span>            
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Zeile suchen</span>
@@ -666,7 +666,7 @@ Machine Owner Key (MOK) verifiziert werden müssen. Scheitert der Start, wurde d
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Speichern mit Strg+O, Enter und Schließen mit Strg+X.</span>
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Dienst neu starten:</span>
 </span></span><span style="display:flex;"><span>sudo systemctl restart sssd
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Domänen-Admin zum lokalen Admin machen (optional)</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Domänen-Admin zum lokalen Admin machen (optional)</span>
 </span></span><span style="display:flex;"><span>sudo usermod -aG wheel &lt;Nutzername&gt;
 </span></span></code></pre></div>
 </details>
@@ -674,7 +674,7 @@ Machine Owner Key (MOK) verifiziert werden müssen. Scheitert der Start, wurde d
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Firmenlogo per Netzwerkfreigabe Importieren für Hintergrundbild
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Verzeichnis erstellen</span>
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Verzeichnis erstellen</span>
 </span></span><span style="display:flex;"><span>sudo mkdir -p /usr/share/wallpapers/custom
 </span></span><span style="display:flex;"><span>            
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Import starten über Netzwerkfreigabe</span>
@@ -737,7 +737,7 @@ Machine Owner Key (MOK) verifiziert werden müssen. Scheitert der Start, wurde d
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Der Wert ms-DS-MachineAccountQuota attribute sollte mit PowerShell auf Null gesetzt werden.  Ansonsten können normale Computer Accounts bis zu 10 Computer Objekte in AD anlegen.
     </summary>
-    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Prũfen des wertes ms-DS-MachineAccountQuota</span>
+    <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Prũfen des wertes ms-DS-MachineAccountQuota</span>
 </span></span><span style="display:flex;"><span>Get-ADObject -Identity ((Get-ADDomain).distinguishedname) -Properties ms-DS-MachineAccountQuota
 </span></span><span style="display:flex;"><span>    
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Wert auf Null setzen</span>
@@ -921,7 +921,7 @@ Daher verwende ich drei Registry Einträge mit Verweis unter <em>Computerkonfigu
 <ul>
 <li>
 <p>Der Container “Key Distribution Service” muss im AD vorhanden sein. Erstellung erfolgt normalerweise automatisch. Alternativ über ADSI  Editor → Namenskontext Konfiguration Pfad: CN = Services → hier “CN = Key Distribution Service” erstellen.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Powershell Erweiterung erneut korrekt im system registrieren </span>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Powershell Erweiterung erneut korrekt im system registrieren </span>
 </span></span><span style="display:flex;"><span>Install-WindowsFeature RSAT-AD-PowerShell
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Reparieren der lokalen Windows Datei </span>
@@ -1033,9 +1033,16 @@ Daher verwende ich drei Registry Einträge mit Verweis unter <em>Computerkonfigu
 
 <script>
     const btt = document.getElementById("back-to-top");
+
     
+    const scrollThreshold = 500; 
+    const fadeDuration = 0.4;    
+
     
-    btt.style.display = "block";
+    btt.style.transition = `opacity ${fadeDuration}s ease`;
+    btt.style.opacity = 0;
+    btt.style.pointerEvents = "none"; 
+    btt.style.display = "block"; 
 
     
     btt.addEventListener("click", function() {
@@ -1045,16 +1052,16 @@ Daher verwende ich drei Registry Einträge mit Verweis unter <em>Computerkonfigu
         });
     });
 
-     
     
-    window.onscroll = function() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            btt.style.display = "block";
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > scrollThreshold) {
+            btt.style.opacity = 1;
+            btt.style.pointerEvents = "auto";
         } else {
-            btt.style.display = "none";
+            btt.style.opacity = 0;
+            btt.style.pointerEvents = "none";
         }
-    };
-    
+    });
 </script>
   </body>
 </html>
