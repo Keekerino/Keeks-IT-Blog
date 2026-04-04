@@ -12,9 +12,10 @@ description: "Über mich"
 
 
 
-Angehender Fachinformatiker für Systemintegration mit technischem Schwerpunkt auf Linux-Umgebungen und Upcycling von PC-Hardware. Auf diesem Blog dokumentiere ich einige praxisnahe IT-Projekte und Troubleshooting-Prozesse meiner aktuellen Laufbahn. 
 
-{{< image src="/images/generic/Me.JPG" alt="Keeks" caption="Das bin ich" width="200px" float="left" >}}
+**Schön, dass Sie hier sind.** Als angehender Systemintegrator beschäftige ich mich intensiv mit der Administration von Linux-Systemen und der Frage, wie man Hardware durch gezieltes Upcycling länger und effizienter nutzen kann. 
+Auf diesem Blog dokumentiere ich einige meiner Projekte und Troubleshooting-Prozesse.
+{{< image src="/images/generic/Me2.jpg" alt="Keeks" caption="Das bin ich" width="200px" float="left" >}}
 
 Persönliche Interessen und das Bedürfnis mich beruflich weiterzuentwickeln haben mich nun, im Mittelpunkt meines Lebens, dazu gebracht den Einstieg in die professionelle IT-Welt zu wagen und ich könnte bisher nicht glücklicher darüber sein.
 Ich freue mich auf spannende Projekte und die damit in Verbindung stehenden Menschen kennen zu lernen.

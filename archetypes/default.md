@@ -4,7 +4,7 @@ date: {{ .Date }}
 draft: true
 author: "Keeks"
 description: ""
-featured_image: "/images/generic/Keeks2.png"
+featured_image: "/images/generic/Keeks4.png"
 tags: []
 categories: []
 ---

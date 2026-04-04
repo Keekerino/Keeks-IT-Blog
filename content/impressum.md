@@ -8,8 +8,13 @@ sitemap:
   build:
   list: never
   render: always
-featured_image: "/images/generic/Keeks2.png"
+featured_image: "/images/generic/Keeks4.png"
 ---
 
+{{< linkgrid >}}
 
-{{< image src="/images/generic/impressum.png" alt="Impressum" caption="Kontakt" width="200px"  >}}
+{{< image src="/images/generic/impressum.png" alt="Impressum" caption="" width="400px"  >}}
+
+{{< image src="/images/generic/Keeks4.png" alt="Logo" caption="" width="400px"  >}}
+
+{{< /linkgrid >}}

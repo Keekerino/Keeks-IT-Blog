@@ -2,6 +2,39 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/amd/</loc>
+    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/arch-linux/</loc>
+    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/cachyos/</loc>
+    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ki/</loc>
+    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/llm/</loc>
+    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/03.31.26/</loc>
+    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/rdna3/</loc>
+    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/rx-7900-xt/</loc>
+    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/links/werkzeuge/</loc>
     <lastmod>2026-04-01T18:23:54+02:00</lastmod>
   </url><url>
@@ -13,39 +46,6 @@
   </url><url>
     <loc>http://localhost:1313/links/</loc>
     <lastmod>2026-03-31T23:18:18+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/amd/</loc>
-    <lastmod>2026-03-31T14:55:27+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/arch-linux/</loc>
-    <lastmod>2026-03-31T14:55:27+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/cachyos/</loc>
-    <lastmod>2026-03-31T14:55:27+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/ki/</loc>
-    <lastmod>2026-03-31T14:55:27+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
-    <lastmod>2026-03-31T14:55:27+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/llm/</loc>
-    <lastmod>2026-03-31T14:55:27+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/03.31.26/</loc>
-    <lastmod>2026-03-31T14:55:27+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-03-31T14:55:27+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/rdna3/</loc>
-    <lastmod>2026-03-31T14:55:27+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/rx-7900-xt/</loc>
-    <lastmod>2026-03-31T14:55:27+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-03-31T14:55:27+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/opensuse/</loc>
     <lastmod>2026-03-30T17:00:17+02:00</lastmod>

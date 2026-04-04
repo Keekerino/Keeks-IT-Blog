@@ -6,12 +6,12 @@
     <description>Recent content in LLM on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
-    <lastBuildDate>Tue, 31 Mar 2026 14:55:27 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 03 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/llm/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lokale KI mit RX 7900 XT</title>
       <link>http://localhost:1313/posts/03.31.26/</link>
-      <pubDate>Tue, 31 Mar 2026 14:55:27 +0200</pubDate>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/03.31.26/</guid>
       <description>&lt;div class=&#34;notice-box In Zeiten der &amp;#39;KI&amp;#39; Begeisterung&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            In Zeiten der &amp;#39;KI&amp;#39; Begeisterung:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        &lt;p&gt;&amp;hellip;scheint es sich doch anzubieten selber, voll lokal und absolut Datenschutzkonform einen eigenen Agenten aufzusetzen, der im täglichen Workflow unterstützt und sensible Daten handlen kann (nein, nicht clawbot).&#xA;Mit meinem momentanen Setup unter Nutzung der RDNA3-Architektur einer AMD RX 7900 XT schien ich bestens vorbereitet.&lt;/p&gt;</description>
     </item>
