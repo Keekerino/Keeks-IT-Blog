@@ -1,7 +1,7 @@
 ---
 title: "Cockpit Auf OpenSuse "
 date: 2026-04-08T11:20:48Z
-draft: true
+draft: false
 author: "Keeks"
 description: "Weboberfläche Cockpit auf OpenSuse installieren zur übersichtlichen Verwaltung von Systemressourcen"
 featured_image: "/images/cockpit/cockpitLogo.avif"
