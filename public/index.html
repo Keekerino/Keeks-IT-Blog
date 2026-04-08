@@ -13,6 +13,7 @@
     
       <meta name="robots" content="noindex, nofollow">
     
+    
     <meta name="author" content="Keeks">
     
 
@@ -134,6 +135,50 @@
     </h1>
 
     <div class="flex-l flex-wrap-l ml-n3 mr-n3">
+      
+        <div class="w-100 w-50-l ph3 mb4">
+
+          <article class="bg-white br3 shadow-1 overflow-hidden h-100 post-card">
+
+            
+              <img src="./images/cockpit/cockpitLogo.avif" alt="Cockpit Auf OpenSuse " 
+                   alt="Cockpit Auf OpenSuse " 
+                   class="w-100 card-image">
+            
+
+            <div class="pa3">
+              <h2 class="f4 fw6 mt0 mb2">
+                <a href="./posts/weboberfl%C3%A4che-cockpit-auf-opensuse-installieren-zur-%C3%BCbersichtlichen-verwaltung-von-systemressourcen/" class="link dark-blue dim">
+                  Cockpit Auf OpenSuse 
+                </a>
+              </h2>
+
+              <p class="f6 gray mb2">
+                08.04.2026
+              </p>
+
+              <p class="f5 lh-copy">
+                <div class="notice-box Gibt es so etwas wie übersichtliche Ressourcenanzeigen in Linux?" style="
+    padding: 15px; 
+    margin: 20px 0; 
+    border-left: 5px solid; 
+    background-color: #f9f9f9;
+    border-radius: 4px;
+">
+    
+        <strong style="text-transform: uppercase; display: block; margin-bottom: 5px;">
+            Gibt es so etwas wie übersichtliche Ressourcenanzeigen in Linux?:
+        </strong>
+    
+
+    <div class="notice-content">
+        <p>Heute beschäftige ich mich mal mit dem Tool Cockpit, welches zur Serververwaltung mithilfe einer grafischen Oberfläche im Web-Interface lokal genutzt werden kann. Auch wenn hier schon das Wort “Server” erwähnt wird, so eignet sich das Tool Cockpit jedoch ebenfalls hervorragend für private PC’s.</p>
+              </p>
+            </div>
+
+          </article>
+
+        </div>
       
         <div class="w-100 w-50-l ph3 mb4">
 
@@ -271,54 +316,6 @@ Mit meinem momentanen Setup unter Nutzung der RDNA3-Architektur einer AMD RX 790
 
         </div>
       
-        <div class="w-100 w-50-l ph3 mb4">
-
-          <article class="bg-white br3 shadow-1 overflow-hidden h-100 post-card">
-
-            
-              <img src="./images/Linux/CachyOS_Logo.svg" alt="Secure Shell Unter CachyOS" 
-                   alt="Secure Shell Unter CachyOS" 
-                   class="w-100 card-image">
-            
-
-            <div class="pa3">
-              <h2 class="f4 fw6 mt0 mb2">
-                <a href="./posts/secure-shell-unter-cachyos/" class="link dark-blue dim">
-                  Secure Shell Unter CachyOS
-                </a>
-              </h2>
-
-              <p class="f6 gray mb2">
-                28.03.2026
-              </p>
-
-              <p class="f5 lh-copy">
-                <div class="notice-box SSH unter Arch Linux Konfigurieren - Eine Kurzanleitung" style="
-    padding: 15px; 
-    margin: 20px 0; 
-    border-left: 5px solid; 
-    background-color: #f9f9f9;
-    border-radius: 4px;
-">
-    
-        <strong style="text-transform: uppercase; display: block; margin-bottom: 5px;">
-            SSH unter Arch Linux Konfigurieren - Eine Kurzanleitung:
-        </strong>
-    
-
-    <div class="notice-content">
-        <p>Einrichten von SecureShell, lokal unter der Arch-Linix Distribution CachyOS. Diese Kurzanleitung sollte bei jeder Arc-Linux Variante funktional sein.</p>
-<p><strong>Hinweis:</strong> Diese Konfiguration ist nur für lokale Netzwerke geeignet. Sobald man das Netz verlassen will, oder von außerhaLb zugreifen möchte, sollten weitere Sicherheitsvorkehrungen getroffen werden (SSH-Keys, andere Ports, Fail2Ban,..).</p>
-
-    </div>
-</div>
-              </p>
-            </div>
-
-          </article>
-
-        </div>
-      
     </div>
 
     <hr class="mv4 b--light-gray">
@@ -331,6 +328,11 @@ Mit meinem momentanen Setup unter Nutzung der RDNA3-Architektur einer AMD RX 790
         </h2>
 
         <div class="flex flex-wrap">
+          
+            <a href="./posts/secure-shell-unter-cachyos/"
+               class="f6 link dim ba ph3 pv2 mr2 mb2 br2 b--light-gray hover-bg-light-gray transition">
+              Secure Shell Unter CachyOS
+            </a>
           
             <a href="./posts/ad-ds-2026/"
                class="f6 link dim ba ph3 pv2 mr2 mb2 br2 b--light-gray hover-bg-light-gray transition">
@@ -394,5 +396,39 @@ Mit meinem momentanen Setup unter Nutzung der RDNA3-Architektur einer AMD RX 790
     </div>
   </div>
 </footer>
+    <button id="back-to-top" title="Nach oben scrollen">↑ Top</button>
+
+<script>
+    const btt = document.getElementById("back-to-top");
+
+    
+    const scrollThreshold = 500; 
+    const fadeDuration = 0.4;    
+
+    
+    btt.style.transition = `opacity ${fadeDuration}s ease`;
+    btt.style.opacity = 0;
+    btt.style.pointerEvents = "none"; 
+    btt.style.display = "block"; 
+
+    
+    btt.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > scrollThreshold) {
+            btt.style.opacity = 1;
+            btt.style.pointerEvents = "auto";
+        } else {
+            btt.style.opacity = 0;
+            btt.style.pointerEvents = "none";
+        }
+    });
+</script>
   </body>
 </html>

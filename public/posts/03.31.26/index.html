@@ -13,6 +13,7 @@
     
       <meta name="robots" content="noindex, nofollow">
     
+    
     <meta name="author" content="Keeks">
     
 
@@ -425,5 +426,39 @@ Ich werde in den kommenden Tagen und Wochen noch weiter erforschen wie ich meine
     </div>
   </div>
 </footer>
+    <button id="back-to-top" title="Nach oben scrollen">↑ Top</button>
+
+<script>
+    const btt = document.getElementById("back-to-top");
+
+    
+    const scrollThreshold = 500; 
+    const fadeDuration = 0.4;    
+
+    
+    btt.style.transition = `opacity ${fadeDuration}s ease`;
+    btt.style.opacity = 0;
+    btt.style.pointerEvents = "none"; 
+    btt.style.display = "block"; 
+
+    
+    btt.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > scrollThreshold) {
+            btt.style.opacity = 1;
+            btt.style.pointerEvents = "auto";
+        } else {
+            btt.style.opacity = 0;
+            btt.style.pointerEvents = "none";
+        }
+    });
+</script>
   </body>
 </html>

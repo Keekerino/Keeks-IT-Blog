@@ -13,6 +13,7 @@
     
       <meta name="robots" content="noindex, nofollow">
     
+    
     <meta name="author" content="Keeks">
     
 
@@ -66,7 +67,7 @@
 
   
   
-  <header class="cover bg-top" style="background-image: url('http://localhost:1313/images/generic/Keeks2');">
+  <header class="cover bg-top" style="background-image: url('http://localhost:1313/images/generic/Keeks2.png');">
     
     <div class="bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
@@ -281,5 +282,39 @@
     </div>
   </div>
 </footer>
+    <button id="back-to-top" title="Nach oben scrollen">↑ Top</button>
+
+<script>
+    const btt = document.getElementById("back-to-top");
+
+    
+    const scrollThreshold = 500; 
+    const fadeDuration = 0.4;    
+
+    
+    btt.style.transition = `opacity ${fadeDuration}s ease`;
+    btt.style.opacity = 0;
+    btt.style.pointerEvents = "none"; 
+    btt.style.display = "block"; 
+
+    
+    btt.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > scrollThreshold) {
+            btt.style.opacity = 1;
+            btt.style.pointerEvents = "auto";
+        } else {
+            btt.style.opacity = 0;
+            btt.style.pointerEvents = "none";
+        }
+    });
+</script>
   </body>
 </html>

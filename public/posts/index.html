@@ -13,6 +13,7 @@
     
       <meta name="robots" content="noindex, nofollow">
     
+    
     <meta name="author" content="Keeks">
     
 
@@ -56,8 +57,8 @@
 
   <meta itemprop="name" content="Posts">
   <meta itemprop="description" content="Die gesammelten Posts">
-  <meta itemprop="datePublished" content="2026-04-03T00:00:00+00:00">
-  <meta itemprop="dateModified" content="2026-04-03T00:00:00+00:00">
+  <meta itemprop="datePublished" content="2026-04-08T11:20:48+00:00">
+  <meta itemprop="dateModified" content="2026-04-08T11:20:48+00:00">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Posts">
   <meta name="twitter:description" content="Die gesammelten Posts">
@@ -126,6 +127,51 @@
   <h1 class="f2 fw8 mb4">Posts</h1>
 
   <div class="flex flex-wrap nl3 nr3">
+    
+      <div class="w-100 w-50-l ph3 mb4">
+
+        <article class="bg-white br3 shadow-1 overflow-hidden h-100">
+
+          
+            <img src="../images/cockpit/cockpitLogo.avif" alt="Cockpit Auf OpenSuse "
+                 class="w-100 card-image">
+          
+
+          <div class="pa3">
+
+            <h2 class="f4 fw6 mt0 mb2">
+              <a href="../posts/weboberfl%C3%A4che-cockpit-auf-opensuse-installieren-zur-%C3%BCbersichtlichen-verwaltung-von-systemressourcen/" class="link dark-blue dim">
+                Cockpit Auf OpenSuse 
+              </a>
+            </h2>
+
+            <p class="f6 gray mb2">
+              08.04.2026
+            </p>
+
+            <p class="f5 lh-copy">
+              <div class="notice-box Gibt es so etwas wie übersichtliche Ressourcenanzeigen in Linux?" style="
+    padding: 15px; 
+    margin: 20px 0; 
+    border-left: 5px solid; 
+    background-color: #f9f9f9;
+    border-radius: 4px;
+">
+    
+        <strong style="text-transform: uppercase; display: block; margin-bottom: 5px;">
+            Gibt es so etwas wie übersichtliche Ressourcenanzeigen in Linux?:
+        </strong>
+    
+
+    <div class="notice-content">
+        <p>Heute beschäftige ich mich mal mit dem Tool Cockpit, welches zur Serververwaltung mithilfe einer grafischen Oberfläche im Web-Interface lokal genutzt werden kann. Auch wenn hier schon das Wort “Server” erwähnt wird, so eignet sich das Tool Cockpit jedoch ebenfalls hervorragend für private PC’s.</p>
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
     
       <div class="w-100 w-50-l ph3 mb4">
 
@@ -434,5 +480,39 @@ Mit meinem momentanen Setup unter Nutzung der RDNA3-Architektur einer AMD RX 790
     </div>
   </div>
 </footer>
+    <button id="back-to-top" title="Nach oben scrollen">↑ Top</button>
+
+<script>
+    const btt = document.getElementById("back-to-top");
+
+    
+    const scrollThreshold = 500; 
+    const fadeDuration = 0.4;    
+
+    
+    btt.style.transition = `opacity ${fadeDuration}s ease`;
+    btt.style.opacity = 0;
+    btt.style.pointerEvents = "none"; 
+    btt.style.display = "block"; 
+
+    
+    btt.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > scrollThreshold) {
+            btt.style.opacity = 1;
+            btt.style.pointerEvents = "auto";
+        } else {
+            btt.style.opacity = 0;
+            btt.style.pointerEvents = "none";
+        }
+    });
+</script>
   </body>
 </html>
