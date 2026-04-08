@@ -16,20 +16,6 @@
       <description>&lt;div class=&#34;notice-box In Zeiten der &amp;#39;KI&amp;#39; Begeisterung&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            In Zeiten der &amp;#39;KI&amp;#39; Begeisterung:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        &lt;p&gt;&amp;hellip;scheint es sich doch anzubieten selber, voll lokal und absolut Datenschutzkonform einen eigenen Agenten aufzusetzen, der im täglichen Workflow unterstützt und sensible Daten handlen kann (nein, nicht clawbot).&#xA;Mit meinem momentanen Setup unter Nutzung der RDNA3-Architektur einer AMD RX 7900 XT schien ich bestens vorbereitet.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Tools &amp; Helfer</title>
-      <link>http://localhost:1313/links/werkzeuge/</link>
-      <pubDate>Wed, 01 Apr 2026 18:23:54 +0200</pubDate>
-      <guid>http://localhost:1313/links/werkzeuge/</guid>
-      <description>&lt;div class=&#34;link-grid-wrapper pv4 mb2&#34;&gt;&#xA;    &lt;h3 class=&#34;f4 ttu tracked mt0 black bb b--black bw1 pb2 mb4&#34;&gt;&lt;/h3&gt;&#xA;    &lt;div class=&#34;flex flex-wrap nl2 nr2&#34;&gt;&#xA;        &#xA;&#xA;&lt;div class=&#34;w-100 w-50-m w-33-l pa2 flex&#34;&gt;&#xA;  &lt;div class=&#34;link-card w-100 pa3 bg-white br2 ba b--black-10 shadow-4 flex flex-column&#34;&gt;&#xA;    &#xA;      &lt;span class=&#34;f7 ttu tracked gray mb1&#34;&gt;Cheat Sheet&lt;/span&gt;&#xA;    &#xA;    &lt;a href=&#34;https://tldr.sh/&#34; target=&#34;_blank&#34; class=&#34;link blue hover-dark-blue fw6 f5 mb2&#34;&gt;&#xA;      Too Long, Didn&amp;#39;t Read&#xA;    &lt;/a&gt;&#xA;    &lt;p class=&#34;f7 i gray lh-copy mb0 mt1&#34;&gt;&#xA;      &#xA;Übersichtlichere Man-Pages für Linux. &#xA;&#xA;    &lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;w-100 w-50-m w-33-l pa2 flex&#34;&gt;&#xA;  &lt;div class=&#34;link-card w-100 pa3 bg-white br2 ba b--black-10 shadow-4 flex flex-column&#34;&gt;&#xA;    &#xA;      &lt;span class=&#34;f7 ttu tracked gray mb1&#34;&gt;Lernen&lt;/span&gt;&#xA;    &#xA;    &lt;a href=&#34;https://www.w3schools.com/&#34; target=&#34;_blank&#34; class=&#34;link blue hover-dark-blue fw6 f5 mb2&#34;&gt;&#xA;      W3Schools&#xA;    &lt;/a&gt;&#xA;    &lt;p class=&#34;f7 i gray lh-copy mb0 mt1&#34;&gt;&#xA;      &#xA;Eine der weltweit größten und bekanntesten kostenlosen E-Learning-Plattformen für Webentwicklung und Programmierung. &#xA;&#xA;    &lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>News &amp; Learning</title>
-      <link>http://localhost:1313/links/wegweiser/</link>
-      <pubDate>Wed, 01 Apr 2026 18:21:59 +0200</pubDate>
-      <guid>http://localhost:1313/links/wegweiser/</guid>
-      <description>&lt;div class=&#34;link-grid-wrapper pv4 mb2&#34;&gt;&#xA;    &lt;h3 class=&#34;f4 ttu tracked mt0 black bb b--black bw1 pb2 mb4&#34;&gt;&lt;/h3&gt;&#xA;    &lt;div class=&#34;flex flex-wrap nl2 nr2&#34;&gt;&#xA;        &#xA;&lt;div class=&#34;w-100 w-50-m w-33-l pa2 flex&#34;&gt;&#xA;  &lt;div class=&#34;link-card w-100 pa3 bg-white br2 ba b--black-10 shadow-4 flex flex-column&#34;&gt;&#xA;    &#xA;      &lt;span class=&#34;f7 ttu tracked gray mb1&#34;&gt;News &amp;amp; Security&lt;/span&gt;&#xA;    &#xA;    &lt;a href=&#34;https://www.heise.de&#34; target=&#34;_blank&#34; class=&#34;link blue hover-dark-blue fw6 f5 mb2&#34;&gt;&#xA;      Heise Online&#xA;    &lt;/a&gt;&#xA;    &lt;p class=&#34;f7 i gray lh-copy mb0 mt1&#34;&gt;&#xA;      &#xA;Deutsche IT-News, Security-Ticker und Hintergründe aus der Tech-Welt von Heise.&#xA;&#xA;    &lt;/p&gt;&#xA;  &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;w-100 w-50-m w-33-l pa2 flex&#34;&gt;&#xA;  &lt;div class=&#34;link-card w-100 pa3 bg-white br2 ba b--black-10 shadow-4 flex flex-column&#34;&gt;&#xA;    &#xA;      &lt;span class=&#34;f7 ttu tracked gray mb1&#34;&gt;News &amp;amp; Security&lt;/span&gt;&#xA;    &#xA;    &lt;a href=&#34;https://www.golem.de/&#34; target=&#34;_blank&#34; class=&#34;link blue hover-dark-blue fw6 f5 mb2&#34;&gt;&#xA;      Golem&#xA;    &lt;/a&gt;&#xA;    &lt;p class=&#34;f7 i gray lh-copy mb0 mt1&#34;&gt;&#xA;      &#xA;Deutsche IT-News, Security-Ticker und Hintergründe aus der Tech-Welt von Golem&#xA;&#xA;    &lt;/p&gt;</description>
-    </item>
-    <item>
       <title>YaST &amp; LDAP</title>
       <link>http://localhost:1313/posts/03.30.26-ldap/</link>
       <pubDate>Mon, 30 Mar 2026 17:00:17 +0200</pubDate>
@@ -72,11 +58,88 @@
       <description>&lt;div class=&#34;notice-box Projektbeschreibung&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            Projektbeschreibung:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        Beheben der Konfigurationsprobleme mit dem Theme &amp;ldquo;Ananke&amp;rdquo; im Framework Hugo im Codespace von GitHub&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
+      <title>Born City It Blog</title>
+      <link>http://localhost:1313/links/borncity/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/borncity/</guid>
+      <description>&lt;p&gt;Immer auf dem neuesten Stand was Windows angeht, ebenfalls mit großem Linux-Wissensfundus auf Borns It blog.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Censys</title>
+      <link>http://localhost:1313/links/censys/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/censys/</guid>
+      <description>&lt;p&gt;Sucht Hosts, Websites und Zertifikate.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Exploit Database</title>
+      <link>http://localhost:1313/links/exploitdb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/exploitdb/</guid>
+      <description>&lt;p&gt;Datenbank an bekannten Exploits.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Free DymDNS2</title>
+      <link>http://localhost:1313/links/ipv64/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/ipv64/</guid>
+      <description>&lt;p&gt;Deutscher Dyn-DNS-Server mit Werbefilter.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Golem</title>
+      <link>http://localhost:1313/links/golem/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/golem/</guid>
+      <description>&lt;p&gt;Deutsche IT-News, Security-Ticker und Hintergründe aus der Tech-Welt von Golem.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Heise Online</title>
+      <link>http://localhost:1313/links/heise/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/heise/</guid>
+      <description>&lt;p&gt;Deutsche IT-News, Security-Ticker und Hintergründe aus der Tech-Welt von Heise.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Impressum</title>
       <link>http://localhost:1313/impressum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/impressum/</guid>
       <description>&lt;div class=&#34;link-grid-wrapper pv4 mb2&#34;&gt;&#xA;    &lt;h3 class=&#34;f4 ttu tracked mt0 black bb b--black bw1 pb2 mb4&#34;&gt;&lt;/h3&gt;&#xA;    &lt;div class=&#34;flex flex-wrap nl2 nr2&#34;&gt;&#xA;        &#xA;&#xA;&lt;figure style=&#39;&#xA;    display: block; &#xA;    float: none; &#xA;    width: 400px !important; &#xA;    max-width: 100%; &#xA;    margin: 2rem auto;&#xA;    padding: 0;&#xA;    vertical-align: top;&#xA;&#39;&gt;&#xA;    &lt;a href=&#34;./images/generic/impressum.png&#34; target=&#34;_blank&#34; title=&#34;In voller Größe öffnen&#34;&gt;&#xA;        &lt;img src=&#34;./images/generic/impressum.png&#34; &#xA;             alt=&#34;Impressum&#34; &#xA;             title=&#34;Impressum&#34;&#xA;             style=&#34;width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;&#34;&gt;&#xA;    &lt;/a&gt;&#xA;    &#xA;    &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&lt;figure style=&#39;&#xA;    display: block; &#xA;    float: none; &#xA;    width: 400px !important; &#xA;    max-width: 100%; &#xA;    margin: 2rem auto;&#xA;    padding: 0;&#xA;    vertical-align: top;&#xA;&#39;&gt;&#xA;    &lt;a href=&#34;./images/generic/Keeks4.png&#34; target=&#34;_blank&#34; title=&#34;In voller Größe öffnen&#34;&gt;&#xA;        &lt;img src=&#34;./images/generic/Keeks4.png&#34; &#xA;             alt=&#34;Logo&#34; &#xA;             title=&#34;Logo&#34;&#xA;             style=&#34;width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;&#34;&gt;&#xA;    &lt;/a&gt;&#xA;    &#xA;    &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Lwn.net</title>
+      <link>http://localhost:1313/links/lwn/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/lwn/</guid>
+      <description>&lt;p&gt;Linux wissen und komplette kostenlose Bücher zum Thema.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Shodan IO</title>
+      <link>http://localhost:1313/links/shodan/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/shodan/</guid>
+      <description>&lt;p&gt;Suchmaschine für das Internet der Dinge.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Too Long, Didn&#39;t Read</title>
+      <link>http://localhost:1313/links/tldr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/tldr/</guid>
+      <description>&lt;p&gt;Übersichtlichere Man-Pages für Linux.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Virus Total</title>
+      <link>http://localhost:1313/links/virustotal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/virustotal/</guid>
+      <description>&lt;p&gt;Analyse von Dateien, Domänen, IPs und URLs auf Viren und Kompromittierung.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>W3Schools</title>
+      <link>http://localhost:1313/links/w3schools/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/w3schools/</guid>
+      <description>&lt;p&gt;Eine der weltweit größten und bekanntesten kostenlosen E-Learning-Plattformen für Webentwicklung und Programmierung.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

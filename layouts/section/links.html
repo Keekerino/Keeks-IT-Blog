@@ -1,0 +1,43 @@
+{{ define "main" }}
+<main class="pb7" role="main">
+  <article class="pa3 pa4-ns w-100 mw8 center">
+    <h1 class="f2 fw8 mb4">{{ .Title }}</h1>
+    
+    <style>
+      .link-page-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+      @media (max-width: 960px) { .link-page-grid { grid-template-columns: repeat(2, 1fr); } }
+      @media (max-width: 600px) { .link-page-grid { grid-template-columns: 1fr; } }
+
+      .link-card {
+        display: flex; flex-direction: column; padding: 1.25rem;
+        border: 1px solid rgba(0,0,0,0.1); border-radius: 8px;
+        background: white; text-decoration: none !important; color: #333 !important;
+        transition: transform 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      }
+      .link-card:hover { transform: translateY(-3px); box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+      .link-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+      .link-badge { font-size: 0.7rem; font-weight: bold; text-transform: uppercase; opacity: 0.6; }
+      .link-title { font-size: 1.1rem; margin: 0.5rem 0 !important; font-weight: bold; color: #00449e; }
+      .link-desc { font-size: 0.9rem; line-height: 1.4; margin: 0; opacity: 0.8; }
+    </style>
+
+    <div class="link-page-grid">
+      {{ range .Pages }}
+            <a href="{{ .Params.link | default .Permalink }}" target="_blank" class="link-card">
+          <div class="link-header">
+            <span class="link-badge">{{ .Params.category | default "Link" }}</span>
+            <span style="opacity: 0.5">↗</span>
+          </div>
+          <h3 class="link-title">{{ .Title }}</h3>
+          <p class="link-desc">{{ .Summary | plainify }}</p>
+        </a>
+      {{ end }}
+    </div>
+  </article>
+</main>
+{{ end }}

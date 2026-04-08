@@ -35,17 +35,8 @@
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/links/werkzeuge/</loc>
-    <lastmod>2026-04-01T18:23:54+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/links/wegweiser/</loc>
-    <lastmod>2026-04-01T18:21:59+02:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-03-31T23:26:26+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/links/</loc>
-    <lastmod>2026-03-31T23:18:18+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/opensuse/</loc>
     <lastmod>2026-03-30T17:00:17+02:00</lastmod>
@@ -94,6 +85,30 @@
   </url><url>
     <loc>http://localhost:1313/authors/</loc>
   </url><url>
+    <loc>http://localhost:1313/links/borncity/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/censys/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/exploitdb/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/ipv64/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/golem/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/heise/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/lwn/</loc>
+  </url><url>
     <loc>http://localhost:1313/series/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/shodan/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/tldr/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/virustotal/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/w3schools/</loc>
   </url>
 </urlset>
