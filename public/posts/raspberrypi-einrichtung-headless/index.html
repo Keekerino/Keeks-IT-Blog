@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="de-de">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>RaspberryPi Installation | Keeks IT-Blog</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Headless Installation über Netzwerk">
+    <meta name="generator" content="Hugo 0.152.2">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+    <meta name="author" content="Keeks">
+    
+
+    
+<link rel="stylesheet" href="../../ananke/css/main.min.css" >
+
+
+
+  
+    <link rel="stylesheet" href="../../css/custom.css">
+  
+
+
+    
+
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/posts/raspberrypi-einrichtung-headless/">
+    
+
+    
+    
+    <meta property="og:url" content="http://localhost:1313/posts/raspberrypi-einrichtung-headless/">
+  <meta property="og:site_name" content="Keeks IT-Blog">
+  <meta property="og:title" content="RaspberryPi Installation">
+  <meta property="og:description" content="Headless Installation über Netzwerk">
+  <meta property="og:locale" content="de_de">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2026-04-10T09:57:53+00:00">
+    <meta property="article:modified_time" content="2026-04-10T09:57:53+00:00">
+    <meta property="article:tag" content="RaspberrryPi">
+    <meta property="article:tag" content="Terminal">
+    <meta property="article:tag" content="DIY">
+    <meta property="article:tag" content="Projekte">
+
+  <meta itemprop="name" content="RaspberryPi Installation">
+  <meta itemprop="description" content="Headless Installation über Netzwerk">
+  <meta itemprop="datePublished" content="2026-04-10T09:57:53+00:00">
+  <meta itemprop="dateModified" content="2026-04-10T09:57:53+00:00">
+  <meta itemprop="wordCount" content="639">
+  <meta itemprop="keywords" content="RaspberrryPi,Terminal,DIY,Projekte">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="RaspberryPi Installation">
+  <meta name="twitter:description" content="Headless Installation über Netzwerk">
+
+	
+  </head><body class="ma0 avenir bg-near-white development is-page is-page page-RaspberryPi-Einrichtung-Headless">
+    
+   
+  
+
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('http://localhost:1313/images/generic/Raspberry_Pi_Logo.svg');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l center items-center justify-between">
+    <a href="../../" class="f3 fw2 hover-white white-90 dib no-underline">
+      
+        Keeks IT-Blog
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="../../posts/" title="Blog page">
+              Blog
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white white-90 no-underline" href="../../about/" title="About page">
+              About
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">RaspberryPi Installation</div>
+          
+            <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
+              Headless Installation über Netzwerk
+            </div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+
+  <article class="page-RaspberryPi-Einrichtung-Headless flex-l mw7 center ph3 flex-wrap justify-between">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Posts
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1">RaspberryPi Installation</h1>
+      
+      <p class="tracked"><strong>Keeks</strong>
+      </p>
+      
+      
+      
+      <time class="f6 mv4 dib tracked" datetime="2026-04-10T09:57:53Z">10.04.2026</time>
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-100-l"><div class="notice-box Die Reise beginnt" style="
+    padding: 15px; 
+    margin: 20px 0; 
+    border-left: 5px solid; 
+    background-color: #f9f9f9;
+    border-radius: 4px;
+">
+    
+        <strong style="text-transform: uppercase; display: block; margin-bottom: 5px;">
+            Die Reise beginnt:
+        </strong>
+    
+
+    <div class="notice-content">
+        <p>In diesem ersten Teil meiner neuen Raspberry-Pi-Serie zeige ich euch, wie ihr das System komplett „headless“ – also ohne Monitor und Tastatur – direkt über das Netzwerk aufsetzt, um somit einen möglichst geringen Reesourcenverbrauch des Gerätes sicherzustellen. Außerdem ist dies auch eine gute Übung für die Administration von Geräten über die SSH (Secure Shell).
+Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.</p>
+<p>Das langfristige Ziel ist die Einrichtung eines DNS-Sinkholes (Pi-hole) in Kombination mit einem lokalen DNS-Resolver Unbound. Damit blockieren wir Werbung und Tracking systemweit direkt auf Netzwerkebene, was nicht nur die Privatsphäre schützt, sondern auch die Ladezeiten beim Surfen verbessert -&gt; solange die Seite schon einmal abgerufen wurde und im lokalen Cache liegt. Also ab der zweiten Anfrage der Seite.</p>
+
+    </div>
+</div>
+<details style="border: 1px solid #ccc; border-radius: 8px; margin: 1rem 0; padding: 0.5rem 1rem; background-color: #fdfdfd;">
+    <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
+        Benötigte Hardware
+    </summary>
+    <div class="table-wrapper">
+  <table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Komponente</th>
+          <th style="text-align: left">Details</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Board</strong></td>
+          <td style="text-align: left">Raspberry Pi 4B</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Stromversorgung</strong></td>
+          <td style="text-align: left">Original USB-C Netzteil</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Speicher</strong></td>
+          <td style="text-align: left">SanDisk 32 GB Micro-SD-Karte und ein USB 3.0 Stick mit 64 GB</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Kühlung</strong></td>
+          <td style="text-align: left">Passivkühler „Armor Case“ von BerryBase</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+
+</details>
+
+<h2 id="schritt-1-den-raspberry-pi-imager-vorbereiten">Schritt 1: Den Raspberry Pi Imager vorbereiten</h2>
+<p>Zuerst laden wir das offizielle Tool von der <a href="https://www.raspberrypi.com/software/">Raspberry Pi Webseite</a> herunter. Da ich ein Arch-Linux-System (CachyOS) nutze, lade ich das AppImage herunter. Damit die Datei ausgeführt werden kann, müssen die Berechtigungen im Terminal angepasst werden</p>
+<p>Terminal  öffnen (<strong>STRG+ALT+T</strong>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># In das Verzeichnis mit der heruntergeladenen Datei wechseln</span>
+</span></span><span style="display:flex;"><span>cd Downloads/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Die Datei ausführbar machen</span>
+</span></span><span style="display:flex;"><span>chmod +x imager_2.0.7_amd64.AppImage
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Das Programm mit Root-Rechten starten</span>
+</span></span><span style="display:flex;"><span>sudo ./imager_2.0.7_amd64.AppImage
+</span></span></code></pre></div><h2 id="schritt-2-das-betriebssystem-konfigurieren">Schritt 2: Das Betriebssystem konfigurieren</h2>
+<p>Dazu muss nun das Medium, auf welches das Betriebssystem installiert werden soll im PC eingesteckt sein. In unserem Fall ist das der 64 GB USB 3.0 Stick von SanDisk.
+In der grafischen Oberfläche des Imagers wählen wir nun die passenden Einstellungen:</p>
+<div class="table-wrapper">
+  <table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Kategorie</th>
+          <th style="text-align: left">Auswahl / Details</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Gerät</strong></td>
+          <td style="text-align: left">Raspberry Pi 4</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Betriebssystem</strong></td>
+          <td style="text-align: left">Raspberry Pi OS Lite (64-bit)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Besonderheit</strong></td>
+          <td style="text-align: left">Ohne grafische Oberfläche</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Speichermedium</strong></td>
+          <td style="text-align: left">USB-Stick</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+<p>Bevor der Schreibvorgang startet, passen wir über das Zahnrad-Symbol (Einstellungen) die individuellen Parameter an:</p>
+ <div class="table-wrapper">
+  <table>
+  <thead>
+      <tr>
+          <th style="text-align: left">Einstellung</th>
+          <th style="text-align: left">Konfiguration / Wert</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: left"><strong>Hostname</strong></td>
+          <td style="text-align: left">raspServ</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Benutzer</strong></td>
+          <td style="text-align: left">Benutzername &amp; sicheres Passwort</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Schnittstellen</strong></td>
+          <td style="text-align: left">SSH aktivieren (Headless-Betrieb)</td>
+      </tr>
+      <tr>
+          <td style="text-align: left"><strong>Lokalisierung</strong></td>
+          <td style="text-align: left">Zeitzone &amp; Tastaturlayout (de)</td>
+      </tr>
+  </tbody>
+</table>
+</div>
+<p>Die Abfrage zu „Raspberry Pi Connect“ beantworten wir mit Nein, da wir die Verwaltung lokal und &ldquo;oldschool&rdquo; über das Terminal durchführen möchten. Wer hier Nutzerkomfort vorzieht kann sich Raspberry Pi Connect aber problemlos mitinstallieren und mit einem eifnach &ldquo;rpi-connect sign-in&rdquo; die Verbindung zum Raspberry aufbauen.
+Wir entscheiden uns wie gesagt für eine Installation ohne dieses Feature und bestätigen die Formatierung des Mediums.
+Dies sollte nach einigen Sekunden bis zu wenigen Minuten abgeschlossen sein.</p>
+<h2 id="schritt-3-feste-ip-und-erste-verbindung">Schritt 3: Feste IP und erste Verbindung</h2>
+<p>Für einen Server ist eine gleichbleibende Erreichbarkeit essenziell. Bevor der Pi nun weiter Konfiguriert wird, empfiehlt es sich, im Router (z. B. in der Fritz!Box) eine feste IPv4-Adresse für das Gerät zu reservieren. Eine flüchtige IP-Adresse kann dazu führen, dass die Geräte später das RAspberry-Pi nicht korrekt identifizieren können und die spätere Pi-Hole konfiguration somit umgehen.
+Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router verbunden werden. Die nötigen Eisntellungen sind dann in der Fritz.box unter <em>Netzwerkeinstellungen</em> zu finden. Andere Routerhersteller haben eventuell abweichende Namen für die Einstellungen. Es sollte allerdings ungefähr so heißen und aussehen wie hier
+<figure style='
+    display: inline-block; 
+    float: center; 
+    width: 400px !important; 
+    max-width: 100%; 
+    margin: 2rem auto;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="" target="_blank" title="In voller Größe öffnen">
+        <img src="" 
+             alt="Bild-Platzhalter" 
+             title="Bild-Platzhalter"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+    
+    
+</figure>
+
+<div style="clear: none;"></div></p>
+<p>Sobald der Pi hochgefahren ist, öffnen wir am PC ein Terminal und bauen eine Secure-Shell-Verbindung auf:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># verbinden mit Gerätenamen</span>
+</span></span><span style="display:flex;"><span>ssh dein-nutzername@raspServ.local
+</span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># oder mit der festgelegten IPv4 Adresse</span>
+</span></span><span style="display:flex;"><span>ssh dein-nutzername@&lt;Hier feste IP einfügen&gt;
+</span></span></code></pre></div><p>Beim ersten Verbindungsaufbau muss die Echtheit des Hosts durch die Eingabe von yes bestätigt werden. Nach der Eingabe des Passworts bist du erfolgreich mit deinem Raspberry Pi verbunden. Die weitere Konfiguration von Pi-Hole und unbound stelle ich in den nächsten BLog-Einträgen vor.</p>
+<h3 id="sinnvolle-idee-zum-abschluss">Sinnvolle Idee zum Abschluss</h3>
+<p>Nachdem das Basissystem läuft, ist es ratsam, direkt ein System-Update durchzuführen, um auf dem neuesten Stand zu sein</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>sudo apt update <span style="color:#ff7b72;font-weight:bold">&amp;&amp;</span> sudo apt upgrade -y
+</span></span></code></pre></div><p><strong>Wer Tips und Tricks hat, schreibt es gerne in die Kommentare!</strong></p>
+<p>Vielen Dank fürs Lesen</p>
+<p>Euer Keeks</p>
+<ul class="pa0">
+  
+   <li class="list di">
+     <a href="../../tags/raspberrrypi/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">RaspberrryPi</a>
+   </li>
+  
+   <li class="list di">
+     <a href="../../tags/terminal/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Terminal</a>
+   </li>
+  
+   <li class="list di">
+     <a href="../../tags/diy/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">DIY</a>
+   </li>
+  
+   <li class="list di">
+     <a href="../../tags/projekte/" class="link f5 grow br-pill ba ph3 pv2 mb2 dib black sans-serif no-underline">Projekte</a>
+   </li>
+  
+</ul>
+
+      <div class="mt6 instapaper_ignoref">
+        
+        <div id="disqus_thread"></div>
+<script>
+    window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "Seb" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      </div>
+      
+      
+    </div></article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between items-center">
+    <div class="flex items-center">
+      <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/">
+        &copy;  Keeks IT-Blog 2026 
+      </a>
+
+      <span class="white-30 dn dib-ns">|</span>
+      <a class="f6 fw4 hover-white white-70 ml3 pv2 ph3 no-underline" href="../../impressum">
+        Impressum
+      </a>
+    </div>
+
+    <div>
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</footer>
+    <button id="back-to-top" title="Nach oben scrollen">↑ Top</button>
+
+<script>
+    const btt = document.getElementById("back-to-top");
+
+    
+    const scrollThreshold = 500; 
+    const fadeDuration = 0.4;    
+
+    
+    btt.style.transition = `opacity ${fadeDuration}s ease`;
+    btt.style.opacity = 0;
+    btt.style.pointerEvents = "none"; 
+    btt.style.display = "block"; 
+
+    
+    btt.addEventListener("click", function() {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    
+    window.addEventListener("scroll", function() {
+        if (window.scrollY > scrollThreshold) {
+            btt.style.opacity = 1;
+            btt.style.pointerEvents = "auto";
+        } else {
+            btt.style.opacity = 0;
+            btt.style.pointerEvents = "none";
+        }
+    });
+</script>
+  </body>
+</html>

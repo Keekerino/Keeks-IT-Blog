@@ -6,8 +6,15 @@
     <description>Recent content on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
-    <lastBuildDate>Wed, 08 Apr 2026 11:20:48 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 09:57:53 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RaspberryPi Installation</title>
+      <link>http://localhost:1313/posts/raspberrypi-einrichtung-headless/</link>
+      <pubDate>Fri, 10 Apr 2026 09:57:53 +0000</pubDate>
+      <guid>http://localhost:1313/posts/raspberrypi-einrichtung-headless/</guid>
+      <description>&lt;div class=&#34;notice-box Die Reise beginnt&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            Die Reise beginnt:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        &lt;p&gt;In diesem ersten Teil meiner neuen Raspberry-Pi-Serie zeige ich euch, wie ihr das System komplett „headless“ – also ohne Monitor und Tastatur – direkt über das Netzwerk aufsetzt, um somit einen möglichst geringen Reesourcenverbrauch des Gerätes sicherzustellen. Außerdem ist dies auch eine gute Übung für die Administration von Geräten über die SSH (Secure Shell).&#xA;Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Cockpit Auf OpenSuse </title>
       <link>http://localhost:1313/posts/weboberfl%C3%A4che-cockpit-auf-opensuse-installieren-zur-%C3%BCbersichtlichen-verwaltung-von-systemressourcen/</link>

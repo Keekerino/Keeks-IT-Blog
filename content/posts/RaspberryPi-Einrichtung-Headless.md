@@ -1,0 +1,120 @@
+---
+title: "RaspberryPi Installation"
+date: 2026-04-10T09:57:53Z
+draft: true
+author: "Keeks"
+description: "Headless Installation über Netzwerk"
+featured_image: "/images/generic/Raspberry_Pi_Logo.svg"
+tags: [RaspberrryPi, Terminal, DIY, Projekte]
+categories: []
+---
+
+
+
+{{< notice "Die Reise beginnt" >}}
+In diesem ersten Teil meiner neuen Raspberry-Pi-Serie zeige ich euch, wie ihr das System komplett „headless“ – also ohne Monitor und Tastatur – direkt über das Netzwerk aufsetzt, um somit einen möglichst geringen Reesourcenverbrauch des Gerätes sicherzustellen. Außerdem ist dies auch eine gute Übung für die Administration von Geräten über die SSH (Secure Shell).
+Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.
+
+<!--more-->
+
+
+Das langfristige Ziel ist die Einrichtung eines DNS-Sinkholes (Pi-hole) in Kombination mit einem lokalen DNS-Resolver Unbound. Damit blockieren wir Werbung und Tracking systemweit direkt auf Netzwerkebene, was nicht nur die Privatsphäre schützt, sondern auch die Ladezeiten beim Surfen verbessert -> solange die Seite schon einmal abgerufen wurde und im lokalen Cache liegt. Also ab der zweiten Anfrage der Seite.
+
+{{< /notice >}}
+
+{{< expand "Benötigte Hardware" >}}
+
+{{% table %}}
+
+| Komponente | Details |
+| :--- | :--- |
+| **Board** | Raspberry Pi 4B |
+| **Stromversorgung** | Original USB-C Netzteil |
+| **Speicher** | SanDisk 32 GB Micro-SD-Karte und ein USB 3.0 Stick mit 64 GB |
+| **Kühlung** | Passivkühler „Armor Case“ von BerryBase |
+
+{{% /table %}}
+
+{{< /expand >}}
+
+## Schritt 1: Den Raspberry Pi Imager vorbereiten
+
+Zuerst laden wir das offizielle Tool von der [Raspberry Pi Webseite](https://www.raspberrypi.com/software/) herunter. Da ich ein Arch-Linux-System (CachyOS) nutze, lade ich das AppImage herunter. Damit die Datei ausgeführt werden kann, müssen die Berechtigungen im Terminal angepasst werden 
+
+Terminal  öffnen (**STRG+ALT+T**):
+
+```bash
+
+# In das Verzeichnis mit der heruntergeladenen Datei wechseln
+cd Downloads/
+
+# Die Datei ausführbar machen
+chmod +x imager_2.0.7_amd64.AppImage
+
+# Das Programm mit Root-Rechten starten
+sudo ./imager_2.0.7_amd64.AppImage
+
+```
+
+## Schritt 2: Das Betriebssystem konfigurieren
+
+Dazu muss nun das Medium, auf welches das Betriebssystem installiert werden soll im PC eingesteckt sein. In unserem Fall ist das der 64 GB USB 3.0 Stick von SanDisk.
+In der grafischen Oberfläche des Imagers wählen wir nun die passenden Einstellungen:
+
+{{% table %}}
+| Kategorie | Auswahl / Details |
+| :--- | :--- |
+| **Gerät** | Raspberry Pi 4 |
+| **Betriebssystem** | Raspberry Pi OS Lite (64-bit) |
+| **Besonderheit** | Ohne grafische Oberfläche |
+| **Speichermedium** | USB-Stick |
+{{% /table %}}
+
+Bevor der Schreibvorgang startet, passen wir über das Zahnrad-Symbol (Einstellungen) die individuellen Parameter an:
+
+ {{% table %}}   
+| Einstellung | Konfiguration / Wert |
+| :--- | :--- |
+| **Hostname** | raspServ |
+| **Benutzer** | Benutzername & sicheres Passwort |
+| **Schnittstellen** | SSH aktivieren (Headless-Betrieb) |
+| **Lokalisierung** | Zeitzone & Tastaturlayout (de) |
+{{% /table %}}
+
+Die Abfrage zu „Raspberry Pi Connect“ beantworten wir mit Nein, da wir die Verwaltung lokal und "oldschool" über das Terminal durchführen möchten. Wer hier Nutzerkomfort vorzieht kann sich Raspberry Pi Connect aber problemlos mitinstallieren und mit einem eifnach "rpi-connect sign-in" die Verbindung zum Raspberry aufbauen.
+Wir entscheiden uns wie gesagt für eine Installation ohne dieses Feature und bestätigen die Formatierung des Mediums.
+Dies sollte nach einigen Sekunden bis zu wenigen Minuten abgeschlossen sein.
+
+## Schritt 3: Feste IP und erste Verbindung
+
+Für einen Server ist eine gleichbleibende Erreichbarkeit essenziell. Bevor der Pi nun weiter Konfiguriert wird, empfiehlt es sich, im Router (z. B. in der Fritz!Box) eine feste IPv4-Adresse für das Gerät zu reservieren. Eine flüchtige IP-Adresse kann dazu führen, dass die Geräte später das RAspberry-Pi nicht korrekt identifizieren können und die spätere Pi-Hole konfiguration somit umgehen. 
+Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router verbunden werden. Die nötigen Eisntellungen sind dann in der Fritz.box unter *Netzwerkeinstellungen* zu finden. Andere Routerhersteller haben eventuell abweichende Namen für die Einstellungen. Es sollte allerdings ungefähr so heißen und aussehen wie hier 
+{{< image src="" alt="Bild-Platzhalter" caption="" width="400px" float="center" >}}
+
+Sobald der Pi hochgefahren ist, öffnen wir am PC ein Terminal und bauen eine Secure-Shell-Verbindung auf:
+
+```Bash
+# verbinden mit Gerätenamen
+ssh dein-nutzername@raspServ.local
+# oder mit der festgelegten IPv4 Adresse
+ssh dein-nutzername@<Hier feste IP einfügen>
+```
+
+Beim ersten Verbindungsaufbau muss die Echtheit des Hosts durch die Eingabe von yes bestätigt werden. Nach der Eingabe des Passworts bist du erfolgreich mit deinem Raspberry Pi verbunden. Die weitere Konfiguration von Pi-Hole und unbound stelle ich in den nächsten BLog-Einträgen vor. 
+
+### Sinnvolle Idee zum Abschluss
+
+Nachdem das Basissystem läuft, ist es ratsam, direkt ein System-Update durchzuführen, um auf dem neuesten Stand zu sein
+```Bash
+
+sudo apt update && sudo apt upgrade -y
+```
+
+
+
+
+**Wer Tips und Tricks hat, schreibt es gerne in die Kommentare!**
+
+Vielen Dank fürs Lesen
+
+Euer Keeks

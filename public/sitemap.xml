@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/cockpit/</loc>
+    <lastmod>2026-04-08T11:20:48+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/weboberfl%C3%A4che-cockpit-auf-opensuse-installieren-zur-%C3%BCbersichtlichen-verwaltung-von-systemressourcen/</loc>
+    <lastmod>2026-04-08T11:20:48+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2026-04-08T11:20:48+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/opensuse/</loc>
+    <lastmod>2026-04-08T11:20:48+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-04-08T11:20:48+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-04-08T11:20:48+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/verwaltung/</loc>
+    <lastmod>2026-04-08T11:20:48+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/amd/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
   </url><url>
@@ -14,16 +35,10 @@
     <loc>http://localhost:1313/tags/ki/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
-    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/llm/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/03.31.26/</loc>
-    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/rdna3/</loc>
@@ -32,14 +47,8 @@
     <loc>http://localhost:1313/tags/rx-7900-xt/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-04-03T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-03-31T23:26:26+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/opensuse/</loc>
-    <lastmod>2026-03-30T17:00:17+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/verzeichnisdienst/</loc>
     <lastmod>2026-03-30T17:00:17+02:00</lastmod>
