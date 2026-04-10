@@ -19,65 +19,79 @@ body {
    2. EINHEITLICHE KARTEN (POSTS & LINKS)
    ========================================================================== */
 
-.is-section article, 
-.link-card {
+/* Wir zielen auf alle unsere Karten-Typen ab */
+.post-card, 
+.link-card, 
+.is-section article {
     display: flex !important;
     flex-direction: column !important;
     height: 100% !important;
-    background-color: var(--card-bg) !important;
+    background-color: #ffffff !important;
     border-radius: 8px !important;
-    border: 1px solid var(--border-color) !important;
+    border: 1px solid rgba(0,0,0,0.1) !important;
     overflow: hidden;
     transition: transform 0.2s ease, box-shadow 0.2s ease !important;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
     text-decoration: none !important;
 }
 
-.is-section article:hover, 
-.link-card:hover {
+.post-card:hover, 
+.link-card:hover, 
+.is-section article:hover {
     transform: translateY(-5px) !important;
     box-shadow: 0 12px 20px rgba(0,0,0,0.1) !important;
-    border-color: var(--accent-blue) !important;
 }
 
-/* Bilder-Handling */
-.is-section article img, 
-.link-image {
+/* Bilder in den Karten */
+.card-image, 
+.link-image, 
+.is-section article img {
     width: 100% !important;
-    height: 200px !important;
-    object-fit: contain !important;
-    background-color: #ffffff !important; /* Weißer Hintergrund für Logos */
+    height: 220px !important;
+    object-fit: contain !important; /* Wichtig für deine Logos! */
+    background-color: #ffffff !important;
     padding: 15px !important;
-    border-bottom: 1px solid var(--border-color) !important;
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+    display: block;
 }
 
-/* Inhaltsbereich */
-.is-section .pa3, 
-.link-content {
-    padding: 1.25rem !important;
+/* Container für den Text */
+.card-content, 
+.link-content, 
+.is-section .pa3 {
+    padding: 1.5rem !important;
+    flex-grow: 1 !important;
     display: flex !important;
     flex-direction: column !important;
-    flex-grow: 1 !important;
 }
 
-/* Titel-Styling */
-.is-section h2.f4, 
-.link-title {
-    color: var(--accent-blue) !important;
-    font-size: 1.2rem !important;
+/* Titel-Design */
+.card-title a, 
+.link-title, 
+.is-section h2.f4 a {
+    color: #00449e !important;
+    text-decoration: none !important;
+    font-size: 1.25rem !important;
     font-weight: 700 !important;
-    margin: 0 0 0.5rem 0 !important;
     min-height: 2.8em;
-    line-height: 1.3 !important;
+    display: block;
 }
 
-/* Beschreibungstext (Kein Ausgrauen mehr!) */
-.is-section .f5.lh-copy, 
-.link-desc {
-    color: var(--text-muted) !important;
+/* Datum */
+.card-date, 
+.f6.gray {
+    font-size: 0.8rem !important;
+    color: #666 !important;
+    margin-bottom: 0.5rem !important;
+}
+
+/* Zusammenfassung */
+.card-summary, 
+.link-desc, 
+.is-section .f5.lh-copy {
+    color: #444 !important;
     font-size: 0.95rem !important;
     line-height: 1.5 !important;
-    opacity: 1 !important;
     display: -webkit-box !important;
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;

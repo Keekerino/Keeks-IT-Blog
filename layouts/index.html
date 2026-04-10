@@ -13,42 +13,38 @@
          🆕 NEUESTE BEITRÄGE
     ========================== -->
     <h1 class="f2 fw8 mb4 {{ $.Param "text_color" | default "mid-gray" }}">
-      Neueste Beiträge
+      Neueste Blog Beiträge
     </h1>
 
     <div class="flex-l flex-wrap-l ml-n3 mr-n3">
-      {{ range first 4 $pages }}
-        <div class="w-100 w-50-l ph3 mb4">
+  {{ range first 4 $pages }}
+    <div class="w-100 w-50-l ph3 mb4">
+      <article class="post-card">
 
-          <article class="bg-white br3 shadow-1 overflow-hidden h-100 post-card">
+        {{ if .Params.featured_image }}
+          <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}" class="card-image">
+        {{ end }}
 
-            {{ if .Params.featured_image }}
-              <img src="{{ .Params.featured_image | relURL }}" alt="{{ .Title }}" 
-                   alt="{{ .Title }}" 
-                   class="w-100 card-image">
-            {{ end }}
+        <div class="card-content">
+          <h2 class="card-title">
+            <a href="{{ .RelPermalink }}">
+              {{ .Title }}
+            </a>
+          </h2>
 
-            <div class="pa3">
-              <h2 class="f4 fw6 mt0 mb2">
-                <a href="{{ .RelPermalink }}" class="link dark-blue dim">
-                  {{ .Title }}
-                </a>
-              </h2>
+          <p class="card-date">
+            {{ .Date.Format "02.01.2006" }}
+          </p>
 
-              <p class="f6 gray mb2">
-                {{ .Date.Format "02.01.2006" }}
-              </p>
-
-              <p class="f5 lh-copy">
-                {{ .Summary }}
-              </p>
-            </div>
-
-          </article>
-
+          <p class="card-summary">
+            {{ .Summary }}
+          </p>
         </div>
-      {{ end }}
+
+      </article>
     </div>
+  {{ end }}
+</div>
 
     <hr class="mv4 b--light-gray">
 
