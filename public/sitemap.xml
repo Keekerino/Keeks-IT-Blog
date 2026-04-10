@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/diy/</loc>
+    <lastmod>2026-04-10T09:57:53+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-04-10T09:57:53+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/projekte/</loc>
+    <lastmod>2026-04-10T09:57:53+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/raspberrypi/</loc>
+    <lastmod>2026-04-10T09:57:53+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/raspberrypi-einrichtung-headless/</loc>
+    <lastmod>2026-04-10T09:57:53+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-04-10T09:57:53+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/terminal/</loc>
+    <lastmod>2026-04-10T09:57:53+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/cockpit/</loc>
     <lastmod>2026-04-08T11:20:48+00:00</lastmod>
   </url><url>
@@ -12,12 +33,6 @@
     <lastmod>2026-04-08T11:20:48+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/opensuse/</loc>
-    <lastmod>2026-04-08T11:20:48+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-04-08T11:20:48+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-04-08T11:20:48+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/verwaltung/</loc>
@@ -57,9 +72,6 @@
     <lastmod>2026-03-30T17:00:17+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/guide/</loc>
-    <lastmod>2026-03-29T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/terminal/</loc>
     <lastmod>2026-03-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/terminalpersonalisierung/</loc>

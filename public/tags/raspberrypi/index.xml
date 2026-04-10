@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projekte on Keeks IT-Blog</title>
-    <link>http://localhost:1313/tags/projekte/</link>
-    <description>Recent content in Projekte on Keeks IT-Blog</description>
+    <title>RaspberryPi on Keeks IT-Blog</title>
+    <link>http://localhost:1313/tags/raspberrypi/</link>
+    <description>Recent content in RaspberryPi on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
     <lastBuildDate>Fri, 10 Apr 2026 09:57:53 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/projekte/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/raspberrypi/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RaspberryPi Installation</title>
       <link>http://localhost:1313/posts/raspberrypi-einrichtung-headless/</link>

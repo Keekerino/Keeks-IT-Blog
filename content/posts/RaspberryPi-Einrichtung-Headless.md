@@ -5,7 +5,7 @@ draft: true
 author: "Keeks"
 description: "Headless Installation über Netzwerk"
 featured_image: "/images/generic/Raspberry_Pi_Logo.svg"
-tags: [RaspberrryPi, Terminal, DIY, Projekte]
+tags: [RaspberryPi, Terminal, DIY, Projekte]
 categories: []
 ---
 
@@ -108,7 +108,7 @@ Beim ersten Verbindungsaufbau muss die Echtheit des Hosts durch die Eingabe von 
 
 ### Sinnvolle Idee zum Abschluss
 
-Nachdem das Basissystem läuft, ist es ratsam, direkt ein System-Update durchzuführen, um auf dem neuesten Stand zu sein
+Nachdem das Basissystem läuft, ist es ratsam, direkt ein System-Update durchzuführen, um auf dem neuesten Stand zu sein. Befehle variieren hier, je nach Betriebssystem und Distribution. Diese heir gelten für Arch-Linux
 
 ```Bash
 
