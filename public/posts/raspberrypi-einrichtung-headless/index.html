@@ -61,7 +61,7 @@
   <meta itemprop="description" content="Headless Installation über Netzwerk">
   <meta itemprop="datePublished" content="2026-04-10T09:57:53+00:00">
   <meta itemprop="dateModified" content="2026-04-10T09:57:53+00:00">
-  <meta itemprop="wordCount" content="639">
+  <meta itemprop="wordCount" content="682">
   <meta itemprop="keywords" content="RaspberrryPi,Terminal,DIY,Projekte">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="RaspberryPi Installation">
@@ -165,7 +165,25 @@
     <div class="notice-content">
         <p>In diesem ersten Teil meiner neuen Raspberry-Pi-Serie zeige ich euch, wie ihr das System komplett „headless“ – also ohne Monitor und Tastatur – direkt über das Netzwerk aufsetzt, um somit einen möglichst geringen Reesourcenverbrauch des Gerätes sicherzustellen. Außerdem ist dies auch eine gute Übung für die Administration von Geräten über die SSH (Secure Shell).
 Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.</p>
-<p>Das langfristige Ziel ist die Einrichtung eines DNS-Sinkholes (Pi-hole) in Kombination mit einem lokalen DNS-Resolver Unbound. Damit blockieren wir Werbung und Tracking systemweit direkt auf Netzwerkebene, was nicht nur die Privatsphäre schützt, sondern auch die Ladezeiten beim Surfen verbessert -&gt; solange die Seite schon einmal abgerufen wurde und im lokalen Cache liegt. Also ab der zweiten Anfrage der Seite.</p>
+<p>Das langfristige Ziel ist die Einrichtung eines <a href="https://en.wikipedia.org/wiki/DNS_sinkhole">DNS-Sinkholes</a>, und zwar dem <a href="https://pi-hole.net/">Pi-hole</a>, in Kombination mit einem lokalen DNS-Resolver <a href="https://docs.pi-hole.net/guides/dns/unbound/">Unbound</a>. Damit blockieren wir Werbung und Tracking Netzwerkweit auf Systemebene, was nicht nur die Privatsphäre schützt, sondern auch die Ladezeiten beim Surfen verbessert -&gt; solange die Seite schon einmal abgerufen wurde und im lokalen Cache liegt. Also ab der zweiten Anfrage der Seite. Heute aber ertseinmal nur die Grundeinrichtung des Raspberry Pi&rsquo;s.
+Nach dem aufkleben der korrekten Kühlplättchen auf die entsprechenden Chips und verschrauben des Kühlers kann es auch schon losgehen. Dazu hier ein kleines <a href="https://www.youtube.com/watch?v=tWb03sZk4lI">Youtube Video von Geekworm</a></p>
+<figure style='
+    display: inline-block; 
+    float: center; 
+    width: 400px !important; 
+    max-width: 100%; 
+    margin: 2rem auto;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="" target="_blank" title="In voller Größe öffnen">
+        <img src="" 
+             alt="Bild-Platzhalter Armor" 
+             title="Bild-Platzhalter Armor"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+</figure>
+<div style="clear: none;"></div>
 
     </div>
 </div>
@@ -204,8 +222,8 @@ Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.<
 
 </details>
 
-<h2 id="schritt-1-den-raspberry-pi-imager-vorbereiten">Schritt 1: Den Raspberry Pi Imager vorbereiten</h2>
-<p>Zuerst laden wir das offizielle Tool von der <a href="https://www.raspberrypi.com/software/">Raspberry Pi Webseite</a> herunter. Da ich ein Arch-Linux-System (CachyOS) nutze, lade ich das AppImage herunter. Damit die Datei ausgeführt werden kann, müssen die Berechtigungen im Terminal angepasst werden</p>
+<h2 id="den-raspberry-pi-imager-vorbereiten">Den Raspberry Pi Imager vorbereiten</h2>
+<p>Zuerst laden wir das offizielle Tool von der <a href="https://www.raspberrypi.com/software/">Raspberry Pi Webseite</a> herunter. Da ich ein Arch-Linux-System (CachyOS) nutze, lade ich das AppImage herunter. Damit die Datei ausgeführt werden kann, müssen die entsprechenden  Berechtigungen im Terminal angepasst werden</p>
 <p>Terminal  öffnen (<strong>STRG+ALT+T</strong>):</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># In das Verzeichnis mit der heruntergeladenen Datei wechseln</span>
@@ -216,7 +234,7 @@ Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.<
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Das Programm mit Root-Rechten starten</span>
 </span></span><span style="display:flex;"><span>sudo ./imager_2.0.7_amd64.AppImage
-</span></span></code></pre></div><h2 id="schritt-2-das-betriebssystem-konfigurieren">Schritt 2: Das Betriebssystem konfigurieren</h2>
+</span></span></code></pre></div><h2 id="das-betriebssystem-konfigurieren">Das Betriebssystem konfigurieren</h2>
 <p>Dazu muss nun das Medium, auf welches das Betriebssystem installiert werden soll im PC eingesteckt sein. In unserem Fall ist das der 64 GB USB 3.0 Stick von SanDisk.
 In der grafischen Oberfläche des Imagers wählen wir nun die passenden Einstellungen:</p>
 <div class="table-wrapper">
@@ -276,12 +294,12 @@ In der grafischen Oberfläche des Imagers wählen wir nun die passenden Einstell
   </tbody>
 </table>
 </div>
-<p>Die Abfrage zu „Raspberry Pi Connect“ beantworten wir mit Nein, da wir die Verwaltung lokal und &ldquo;oldschool&rdquo; über das Terminal durchführen möchten. Wer hier Nutzerkomfort vorzieht kann sich Raspberry Pi Connect aber problemlos mitinstallieren und mit einem eifnach &ldquo;rpi-connect sign-in&rdquo; die Verbindung zum Raspberry aufbauen.
+<p>Die Abfrage zu „Raspberry Pi Connect“ beantworten wir mit Nein, da wir die Verwaltung lokal und &ldquo;oldschool&rdquo; über das Terminal durchführen möchten. Wer hier Nutzerkomfort vorzieht kann sich Raspberry Pi Connect aber problemlos mitinstallieren und mit dem Befehl  &ldquo;rpi-connect sign-in&rdquo; in einem Terminal vom PC die Verbindung zum Raspberry aufbauen.
 Wir entscheiden uns wie gesagt für eine Installation ohne dieses Feature und bestätigen die Formatierung des Mediums.
 Dies sollte nach einigen Sekunden bis zu wenigen Minuten abgeschlossen sein.</p>
-<h2 id="schritt-3-feste-ip-und-erste-verbindung">Schritt 3: Feste IP und erste Verbindung</h2>
+<h2 id="feste-ip-und-erste-verbindung">Feste IP und erste Verbindung</h2>
 <p>Für einen Server ist eine gleichbleibende Erreichbarkeit essenziell. Bevor der Pi nun weiter Konfiguriert wird, empfiehlt es sich, im Router (z. B. in der Fritz!Box) eine feste IPv4-Adresse für das Gerät zu reservieren. Eine flüchtige IP-Adresse kann dazu führen, dass die Geräte später das RAspberry-Pi nicht korrekt identifizieren können und die spätere Pi-Hole konfiguration somit umgehen.
-Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router verbunden werden. Die nötigen Eisntellungen sind dann in der Fritz.box unter <em>Netzwerkeinstellungen</em> zu finden. Andere Routerhersteller haben eventuell abweichende Namen für die Einstellungen. Es sollte allerdings ungefähr so heißen und aussehen wie hier
+Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router verbunden werden. Die nötigen Eisntellungen sind dann in der Fritz!box unter <em>Netzwerkeinstellungen</em> zu finden. Andere Routerhersteller haben eventuell abweichende Namen für die Einstellungen. Es sollte allerdings ungefähr so heißen und aussehen wie hier
 <figure style='
     display: inline-block; 
     float: center; 
@@ -293,8 +311,8 @@ Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router ver
 '>
     <a href="" target="_blank" title="In voller Größe öffnen">
         <img src="" 
-             alt="Bild-Platzhalter" 
-             title="Bild-Platzhalter"
+             alt="Bild-Platzhalter Interface" 
+             title="Bild-Platzhalter Interface"
              style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
     </a>
     
@@ -306,13 +324,16 @@ Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router ver
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># verbinden mit Gerätenamen</span>
 </span></span><span style="display:flex;"><span>ssh dein-nutzername@raspServ.local
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># oder mit der festgelegten IPv4 Adresse</span>
-</span></span><span style="display:flex;"><span>ssh dein-nutzername@&lt;Hier feste IP einfügen&gt;
-</span></span></code></pre></div><p>Beim ersten Verbindungsaufbau muss die Echtheit des Hosts durch die Eingabe von yes bestätigt werden. Nach der Eingabe des Passworts bist du erfolgreich mit deinem Raspberry Pi verbunden. Die weitere Konfiguration von Pi-Hole und unbound stelle ich in den nächsten BLog-Einträgen vor.</p>
+</span></span><span style="display:flex;"><span>ssh dein-nutzername@&lt;IPv4 Adresse im format www.xxx.yyy.zzz&gt;
+</span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Beispiel</span>
+</span></span><span style="display:flex;"><span>ssh piUser@192.168.121.66
+</span></span></code></pre></div><p>Beim ersten Verbindungsaufbau muss die Echtheit des Hosts durch die Eingabe von yes bestätigt werden. Nach der Eingabe des Passworts bist du erfolgreich mit deinem Raspberry Pi verbunden. Die weitere Konfiguration von Pi-Hole und unbound stelle ich in den nächsten Blog-Einträgen vor.</p>
 <h3 id="sinnvolle-idee-zum-abschluss">Sinnvolle Idee zum Abschluss</h3>
 <p>Nachdem das Basissystem läuft, ist es ratsam, direkt ein System-Update durchzuführen, um auf dem neuesten Stand zu sein</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>sudo apt update <span style="color:#ff7b72;font-weight:bold">&amp;&amp;</span> sudo apt upgrade -y
-</span></span></code></pre></div><p><strong>Wer Tips und Tricks hat, schreibt es gerne in die Kommentare!</strong></p>
+</span></span></code></pre></div><hr>
+<p><strong>Wer Tips und Tricks hat, schreibt es gerne in die Kommentare!</strong></p>
 <p>Vielen Dank fürs Lesen</p>
 <p>Euer Keeks</p>
 <ul class="pa0">
