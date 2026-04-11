@@ -1,7 +1,7 @@
 ---
 title: "RaspberryPi OS-Lite (64-bit) Installation"
 date: 2026-04-10T09:57:53Z
-draft: true
+draft: false
 author: "Keeks"
 description: "Headless Installation über Netzwerk"
 featured_image: "/images/generic/Raspberry_Pi_Logo.svg"
@@ -12,14 +12,14 @@ categories: []
 
 
 {{< notice "Die Reise beginnt" >}}
-In diesem ersten Teil meiner neuen Raspberry-Pi-Serie zeige ich euch, wie ihr das System komplett „headless“ – also ohne Monitor und Tastatur – direkt über das Netzwerk aufsetzt, um somit einen möglichst geringen Reesourcenverbrauch des Gerätes sicherzustellen. Außerdem ist dies auch eine gute Übung für die Administration von Geräten über die SSH (Secure Shell).
+In diesem ersten Teil meiner neuen Raspberry-Pi-Serie zeige ich euch, wie ihr das System komplett „headless“ – also ohne Monitor und Tastatur – direkt über das Netzwerk aufsetzt, um somit einen möglichst geringen Ressourcenverbrauch des Gerätes sicherzustellen. Außerdem ist dies auch eine gute Übung für die Administration von Geräten über die SSH (Secure Shell).
 Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.
 
 <!--more-->
 
 
 
-Das langfristige Ziel ist die Einrichtung eines [DNS-Sinkholes](https://en.wikipedia.org/wiki/DNS_sinkhole), und zwar dem [Pi-hole](https://pi-hole.net/), in Kombination mit einem lokalen DNS-Resolver [Unbound](https://docs.pi-hole.net/guides/dns/unbound/). Damit blockieren wir Werbung und Tracking Netzwerkweit auf Systemebene, was nicht nur die Privatsphäre schützt, sondern auch die Ladezeiten beim Surfen verbessert -> solange die Seite schon einmal abgerufen wurde und im lokalen Cache liegt. Also ab der zweiten Anfrage der Seite. Heute aber ertseinmal nur die Grundeinrichtung des Raspberry Pi's. {{< image src="/images/raspberry-pi/pi4-board2.jpg" alt="Kontaktplättchen auf korrekten Chips platzieren" caption="" width="150px" float="right" >}}
+Das langfristige Ziel ist die Einrichtung eines [DNS-Sinkholes](https://en.wikipedia.org/wiki/DNS_sinkhole), dem [Pi-hole](https://pi-hole.net/), in Kombination mit einem lokalen DNS-Resolver [Unbound](https://docs.pi-hole.net/guides/dns/unbound/). Damit blockieren wir Werbung und Tracking netzwerkweit auf Systemebene. Dies schützt die Privatssphäre und beschleunigt durch lokales Caching die Ladezeiten ab der zweiten Anfrage deutlich. Heute aber erst einmal nur die Grundeinrichtung des Raspberry Pi. {{< image src="/images/raspberry-pi/pi4-board2.jpg" alt="Kontaktplättchen auf korrekten Chips platzieren" caption="" width="150px" float="right" >}}
 Nach dem aufkleben der korrekten Kühlplättchen auf die entsprechenden Chips und verschrauben des Kühlers kann es auch schon losgehen. 
 
 Dazu hier ein kleines [Youtube Video von Geekworm](https://www.youtube.com/watch?v=tWb03sZk4lI).
@@ -78,13 +78,15 @@ In der grafischen Oberfläche des Imagers wählen wir nun die passenden Einstell
 
 Bevor der Schreibvorgang startet, passen wir über das Zahnrad-Symbol (Einstellungen) die individuellen Parameter an:
 
- {{% table %}}   
+ {{% table %}} 
+
 | Einstellung | Konfiguration / Wert |
 | :--- | :--- |
 | **Hostname** | raspServ |
 | **Benutzer** | Benutzername & sicheres Passwort |
 | **Schnittstellen** | SSH aktivieren (Headless-Betrieb) |
 | **Lokalisierung** | Zeitzone & Tastaturlayout (de) |
+
 {{% /table %}}
 
 Die Abfrage zu „Raspberry Pi Connect“ beantworten wir mit Nein, da wir die Verwaltung lokal und "oldschool" über das Terminal durchführen möchten. Wer hier Nutzerkomfort vorzieht kann sich Raspberry Pi Connect aber problemlos mitinstallieren und mit dem Befehl  "rpi-connect sign-in" in einem Terminal vom PC die Verbindung zum Raspberry aufbauen.
@@ -93,8 +95,8 @@ Dies sollte nach einigen Sekunden bis zu wenigen Minuten abgeschlossen sein.
 
 ## Feste IP und erste Verbindung
 
-Für einen Server ist eine gleichbleibende Erreichbarkeit essenziell. Bevor der Pi nun weiter Konfiguriert wird, empfiehlt es sich, im Router (z. B. in der Fritz!Box) eine feste IPv4-Adresse für das Gerät zu reservieren. Eine flüchtige IP-Adresse kann dazu führen, dass die Geräte später das RAspberry-Pi nicht korrekt identifizieren können und die spätere Pi-Hole konfiguration somit umgehen. {{< image src="/images/raspberry-pi/sameIp.png" alt="Festsetzen der Raspi IPv4-Adresse" caption="Festsetzen der Raspi IPv4-Adresse" width="300px" float="right" >}}
-Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router verbunden werden. Die nötigen Eisntellungen sind dann in der Fritz!box unter *Netzwerkeinstellungen* zu finden. Andere Routerhersteller haben eventuell abweichende Namen für die Einstellungen.  Es sollte allerdings ungefähr so heißen und aussehen wie hier abgebildet.
+Für einen Server ist eine gleichbleibende Erreichbarkeit essenziell. Bevor der Pi nun weiter Konfiguriert wird, empfiehlt es sich, im Router (z. B. in der Fritz!Box) eine feste IPv4-Adresse für das Gerät zu reservieren. Eine flüchtige IP-Adresse kann dazu führen, dass die Geräte später das Raspberry-Pi nicht korrekt identifizieren können und die spätere Pi-Hole konfiguration somit umgehen. {{< image src="/images/raspberry-pi/sameIp.png" alt="Festsetzen der Raspi IPv4-Adresse" caption="Festsetzen der Raspi IPv4-Adresse" width="300px" float="right" >}}
+Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router verbunden werden. Die nötigen Einstellungen sind dann in der Fritz!box unter *Netzwerkeinstellungen* zu finden. Andere Routerhersteller haben eventuell abweichende Namen für die Einstellungen.  Es sollte allerdings ungefähr so heißen und aussehen wie hier abgebildet.
 
 Sobald der Pi hochgefahren ist, öffnen wir am PC ein Terminal und bauen eine Secure-Shell-Verbindung auf:
 
@@ -111,7 +113,7 @@ Beim ersten Verbindungsaufbau muss die Echtheit des Hosts durch die Eingabe von 
 
 ### Sinnvolle Idee zum Abschluss
 
-Nachdem das Basissystem läuft, ist es ratsam, direkt ein System-Update durchzuführen, um auf dem neuesten Stand zu sein. Befehle variieren hier, je nach Betriebssystem und Distribution. Diese heir gelten für Arch-Linux
+Nachdem das Basissystem läuft, ist es ratsam, direkt ein System-Update in der SecureShell Verbindung durchzuführen, um auf dem neuesten Stand zu sein. Befehle variieren hier, je nach Betriebssystem und Distribution.
 
 ```Bash
 
