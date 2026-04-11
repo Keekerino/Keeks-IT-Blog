@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>RaspberryPi Installation | Keeks IT-Blog</title>
+    <title>RaspberryPi OS-Lite (64-bit) Installation | Keeks IT-Blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Headless Installation über Netzwerk">
-    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Hugo 0.160.0">
     
     
     
@@ -45,7 +45,7 @@
     
     <meta property="og:url" content="http://localhost:1313/posts/raspberrypi-einrichtung-headless/">
   <meta property="og:site_name" content="Keeks IT-Blog">
-  <meta property="og:title" content="RaspberryPi Installation">
+  <meta property="og:title" content="RaspberryPi OS-Lite (64-bit) Installation">
   <meta property="og:description" content="Headless Installation über Netzwerk">
   <meta property="og:locale" content="de_de">
   <meta property="og:type" content="article">
@@ -57,14 +57,14 @@
     <meta property="article:tag" content="DIY">
     <meta property="article:tag" content="Projekte">
 
-  <meta itemprop="name" content="RaspberryPi Installation">
+  <meta itemprop="name" content="RaspberryPi OS-Lite (64-bit) Installation">
   <meta itemprop="description" content="Headless Installation über Netzwerk">
   <meta itemprop="datePublished" content="2026-04-10T09:57:53+00:00">
   <meta itemprop="dateModified" content="2026-04-10T09:57:53+00:00">
-  <meta itemprop="wordCount" content="695">
+  <meta itemprop="wordCount" content="690">
   <meta itemprop="keywords" content="RaspberryPi,Terminal,DIY,Projekte">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="RaspberryPi Installation">
+  <meta name="twitter:title" content="RaspberryPi OS-Lite (64-bit) Installation">
   <meta name="twitter:description" content="Headless Installation über Netzwerk">
 
 	
@@ -92,13 +92,13 @@
         <ul class="pl0 mr3">
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="../../posts/" title="Blog page">
+            <a class="hover-white white-90 no-underline" href="../../posts/" title="Blog Seite">
               Blog
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="../../about/" title="About page">
+            <a class="hover-white white-90 no-underline" href="../../about/" title="About Seite">
               About
             </a>
           </li>
@@ -113,7 +113,7 @@
 
       <div class="tc-l pv6 ph3 ph4-ns">
         
-          <div class="f2 f1-l fw2 white-90 mb0 lh-title">RaspberryPi Installation</div>
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">RaspberryPi OS-Lite (64-bit) Installation</div>
           
             <div class="fw1 f5 f3-l white-80 measure-wide-l center lh-copy mt3 mb4">
               Headless Installation über Netzwerk
@@ -136,7 +136,7 @@
           
         Posts
       </aside><div id="sharing" class="mt3 ananke-socials"></div>
-<h1 class="f1 athelas mt3 mb1">RaspberryPi Installation</h1>
+<h1 class="f1 athelas mt3 mb1">RaspberryPi OS-Lite (64-bit) Installation</h1>
       
       <p class="tracked"><strong>Keeks</strong>
       </p>
@@ -165,25 +165,25 @@
     <div class="notice-content">
         <p>In diesem ersten Teil meiner neuen Raspberry-Pi-Serie zeige ich euch, wie ihr das System komplett „headless“ – also ohne Monitor und Tastatur – direkt über das Netzwerk aufsetzt, um somit einen möglichst geringen Reesourcenverbrauch des Gerätes sicherzustellen. Außerdem ist dies auch eine gute Übung für die Administration von Geräten über die SSH (Secure Shell).
 Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.</p>
-<p>Das langfristige Ziel ist die Einrichtung eines <a href="https://en.wikipedia.org/wiki/DNS_sinkhole">DNS-Sinkholes</a>, und zwar dem <a href="https://pi-hole.net/">Pi-hole</a>, in Kombination mit einem lokalen DNS-Resolver <a href="https://docs.pi-hole.net/guides/dns/unbound/">Unbound</a>. Damit blockieren wir Werbung und Tracking Netzwerkweit auf Systemebene, was nicht nur die Privatsphäre schützt, sondern auch die Ladezeiten beim Surfen verbessert -&gt; solange die Seite schon einmal abgerufen wurde und im lokalen Cache liegt. Also ab der zweiten Anfrage der Seite. Heute aber ertseinmal nur die Grundeinrichtung des Raspberry Pi&rsquo;s.
-Nach dem aufkleben der korrekten Kühlplättchen auf die entsprechenden Chips und verschrauben des Kühlers kann es auch schon losgehen. Dazu hier ein kleines <a href="https://www.youtube.com/watch?v=tWb03sZk4lI">Youtube Video von Geekworm</a></p>
-<figure style='
-    display: inline-block; 
-    float: center; 
-    width: 400px !important; 
-    max-width: 100%; 
-    margin: 2rem auto;
-    padding: 0;
-    vertical-align: top;
+<p>Das langfristige Ziel ist die Einrichtung eines <a href="https://en.wikipedia.org/wiki/DNS_sinkhole">DNS-Sinkholes</a>, und zwar dem <a href="https://pi-hole.net/">Pi-hole</a>, in Kombination mit einem lokalen DNS-Resolver <a href="https://docs.pi-hole.net/guides/dns/unbound/">Unbound</a>. Damit blockieren wir Werbung und Tracking Netzwerkweit auf Systemebene, was nicht nur die Privatsphäre schützt, sondern auch die Ladezeiten beim Surfen verbessert -&gt; solange die Seite schon einmal abgerufen wurde und im lokalen Cache liegt. Also ab der zweiten Anfrage der Seite. Heute aber ertseinmal nur die Grundeinrichtung des Raspberry Pi&rsquo;s. <figure style='
+display: inline-block; 
+float: right; 
+width: 150px !important; 
+max-width: 100%; 
+margin: 0.5rem 0 1rem 1.5rem;
+padding: 0;
+vertical-align: top;
 '>
-    <a href="" target="_blank" title="In voller Größe öffnen">
-        <img src="" 
-             alt="Bild-Platzhalter Armor" 
-             title="Bild-Platzhalter Armor"
-             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
-    </a>
+<a href="../../images/raspberry-pi/pi4-board2.jpg" target="_blank" title="In voller Größe öffnen">
+<img src="../../images/raspberry-pi/pi4-board2.jpg" 
+alt="Kontaktplättchen auf korrekten Chips platzieren" 
+title="Kontaktplättchen auf korrekten Chips platzieren"
+style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+</a></p>
 </figure>
 <div style="clear: none;"></div>
+Nach dem aufkleben der korrekten Kühlplättchen auf die entsprechenden Chips und verschrauben des Kühlers kann es auch schon losgehen. 
+<p>Dazu hier ein kleines <a href="https://www.youtube.com/watch?v=tWb03sZk4lI">Youtube Video von Geekworm</a>.</p>
 
     </div>
 </div>
@@ -191,8 +191,7 @@ Nach dem aufkleben der korrekten Kühlplättchen auf die entsprechenden Chips un
     <summary style="cursor: pointer; font-weight: bold; font-size: 1.1rem; padding: 0.5rem 0; border-bottom: 1px solid #eee;">
         Benötigte Hardware
     </summary>
-    <div class="table-wrapper">
-  <table>
+    <table>
   <thead>
       <tr>
           <th style="text-align: left">Komponente</th>
@@ -218,14 +217,13 @@ Nach dem aufkleben der korrekten Kühlplättchen auf die entsprechenden Chips un
       </tr>
   </tbody>
 </table>
-</div>
 
 </details>
 
 <h2 id="den-raspberry-pi-imager-vorbereiten">Den Raspberry Pi Imager vorbereiten</h2>
 <p>Zuerst laden wir das offizielle Tool von der <a href="https://www.raspberrypi.com/software/">Raspberry Pi Webseite</a> herunter. Da ich ein Arch-Linux-System (CachyOS) nutze, lade ich das AppImage herunter. Damit die Datei ausgeführt werden kann, müssen die entsprechenden  Berechtigungen im Terminal angepasst werden</p>
 <p>Terminal  öffnen (<strong>STRG+ALT+T</strong>):</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># In das Verzeichnis mit der heruntergeladenen Datei wechseln</span>
 </span></span><span style="display:flex;"><span>cd Downloads/
 </span></span><span style="display:flex;"><span>
@@ -298,44 +296,67 @@ In der grafischen Oberfläche des Imagers wählen wir nun die passenden Einstell
 Wir entscheiden uns wie gesagt für eine Installation ohne dieses Feature und bestätigen die Formatierung des Mediums.
 Dies sollte nach einigen Sekunden bis zu wenigen Minuten abgeschlossen sein.</p>
 <h2 id="feste-ip-und-erste-verbindung">Feste IP und erste Verbindung</h2>
-<p>Für einen Server ist eine gleichbleibende Erreichbarkeit essenziell. Bevor der Pi nun weiter Konfiguriert wird, empfiehlt es sich, im Router (z. B. in der Fritz!Box) eine feste IPv4-Adresse für das Gerät zu reservieren. Eine flüchtige IP-Adresse kann dazu führen, dass die Geräte später das RAspberry-Pi nicht korrekt identifizieren können und die spätere Pi-Hole konfiguration somit umgehen.
-Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router verbunden werden. Die nötigen Eisntellungen sind dann in der Fritz!box unter <em>Netzwerkeinstellungen</em> zu finden. Andere Routerhersteller haben eventuell abweichende Namen für die Einstellungen. Es sollte allerdings ungefähr so heißen und aussehen wie hier
-<figure style='
+<p>Für einen Server ist eine gleichbleibende Erreichbarkeit essenziell. Bevor der Pi nun weiter Konfiguriert wird, empfiehlt es sich, im Router (z. B. in der Fritz!Box) eine feste IPv4-Adresse für das Gerät zu reservieren. Eine flüchtige IP-Adresse kann dazu führen, dass die Geräte später das RAspberry-Pi nicht korrekt identifizieren können und die spätere Pi-Hole konfiguration somit umgehen. <figure style='
     display: inline-block; 
-    float: center; 
-    width: 400px !important; 
+    float: right; 
+    width: 300px !important; 
     max-width: 100%; 
-    margin: 2rem auto;
+    margin: 0.5rem 0 1rem 1.5rem;
     padding: 0;
     vertical-align: top;
 '>
-    <a href="" target="_blank" title="In voller Größe öffnen">
-        <img src="" 
-             alt="Bild-Platzhalter Interface" 
-             title="Bild-Platzhalter Interface"
+    <a href="../../images/raspberry-pi/sameIp.png" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/raspberry-pi/sameIp.png" 
+             alt="Festsetzen der Raspi IPv4-Adresse" 
+             title="Festsetzen der Raspi IPv4-Adresse"
              style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
     </a>
     
     
+        <figcaption style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.6rem; font-style: italic; line-height: 1.3; display: block;">
+            Festsetzen der Raspi IPv4-Adresse
+        </figcaption>
+    
 </figure>
 
-<div style="clear: none;"></div></p>
+<div style="clear: none;"></div>
+Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router verbunden werden. Die nötigen Eisntellungen sind dann in der Fritz!box unter <em>Netzwerkeinstellungen</em> zu finden. Andere Routerhersteller haben eventuell abweichende Namen für die Einstellungen.  Es sollte allerdings ungefähr so heißen und aussehen wie hier abgebildet.</p>
 <p>Sobald der Pi hochgefahren ist, öffnen wir am PC ein Terminal und bauen eine Secure-Shell-Verbindung auf:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># verbinden mit Gerätenamen</span>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># verbinden mit Gerätenamen</span>
 </span></span><span style="display:flex;"><span>ssh dein-nutzername@raspServ.local
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># oder mit der festgelegten IPv4 Adresse</span>
 </span></span><span style="display:flex;"><span>ssh dein-nutzername@&lt;IPv4 Adresse im format www.xxx.yyy.zzz&gt;
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Beispiel</span>
 </span></span><span style="display:flex;"><span>ssh piUser@192.168.121.66
-</span></span></code></pre></div><p>Beim ersten Verbindungsaufbau muss die Echtheit des Hosts durch die Eingabe von yes bestätigt werden. Nach der Eingabe des Passworts bist du erfolgreich mit deinem Raspberry Pi verbunden. Die weitere Konfiguration von Pi-Hole und unbound stelle ich in den nächsten Blog-Einträgen vor.</p>
+</span></span></code></pre></div><p>Beim ersten Verbindungsaufbau muss die Echtheit des Hosts durch die Eingabe von yes bestätigt werden. <figure style='
+    display: inline-block; 
+    float: center; 
+    width: 600px !important; 
+    max-width: 100%; 
+    margin: 2rem auto;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="../../images/raspberry-pi/sshFirst.png" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/raspberry-pi/sshFirst.png" 
+             alt="Erster erfolgreicher Verbindungsaufbau mit SHA 256 fingerprint" 
+             title="Erster erfolgreicher Verbindungsaufbau mit SHA 256 fingerprint"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+    
+    
+        <figcaption style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.6rem; font-style: italic; line-height: 1.3; display: block;">
+            Erster erfolgreicher Verbindungsaufbau mit SHA 256 fingerprint
+        </figcaption>
+    
+</figure>
+
+<div style="clear: none;"></div> Nach der Eingabe des Passworts bist du erfolgreich mit deinem Raspberry Pi verbunden. Die weitere Konfiguration von Pi-Hole und unbound stelle ich in den nächsten Blog-Einträgen vor.</p>
 <h3 id="sinnvolle-idee-zum-abschluss">Sinnvolle Idee zum Abschluss</h3>
 <p>Nachdem das Basissystem läuft, ist es ratsam, direkt ein System-Update durchzuführen, um auf dem neuesten Stand zu sein. Befehle variieren hier, je nach Betriebssystem und Distribution. Diese heir gelten für Arch-Linux</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-Bash" data-lang="Bash"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>sudo apt update <span style="color:#ff7b72;font-weight:bold">&amp;&amp;</span> sudo apt upgrade -y
 </span></span></code></pre></div><hr>
-<p><strong>Wer Tips und Tricks hat, schreibt es gerne in die Kommentare!</strong></p>
-<p>Vielen Dank fürs Lesen</p>
-<p>Euer Keeks</p>
 <ul class="pa0">
   
    <li class="list di">

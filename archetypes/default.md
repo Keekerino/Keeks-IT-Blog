@@ -17,8 +17,5 @@ Hier könnte deine Beschreibung stehen
 
 <!--more-->
 
-**Wer Tips und Tricks hat, schreibt es gerne in die Kommentare!**
 
-Vielen Dank fürs Lesen
-
-Euer Keeks
+---

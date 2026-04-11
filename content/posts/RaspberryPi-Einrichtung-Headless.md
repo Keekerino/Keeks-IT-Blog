@@ -1,5 +1,5 @@
 ---
-title: "RaspberryPi Installation"
+title: "RaspberryPi OS-Lite (64-bit) Installation"
 date: 2026-04-10T09:57:53Z
 draft: true
 author: "Keeks"
@@ -18,15 +18,19 @@ Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.
 <!--more-->
 
 
-Das langfristige Ziel ist die Einrichtung eines [DNS-Sinkholes](https://en.wikipedia.org/wiki/DNS_sinkhole), und zwar dem [Pi-hole](https://pi-hole.net/), in Kombination mit einem lokalen DNS-Resolver [Unbound](https://docs.pi-hole.net/guides/dns/unbound/). Damit blockieren wir Werbung und Tracking Netzwerkweit auf Systemebene, was nicht nur die Privatsphäre schützt, sondern auch die Ladezeiten beim Surfen verbessert -> solange die Seite schon einmal abgerufen wurde und im lokalen Cache liegt. Also ab der zweiten Anfrage der Seite. Heute aber ertseinmal nur die Grundeinrichtung des Raspberry Pi's. 
-Nach dem aufkleben der korrekten Kühlplättchen auf die entsprechenden Chips und verschrauben des Kühlers kann es auch schon losgehen. Dazu hier ein kleines [Youtube Video von Geekworm](https://www.youtube.com/watch?v=tWb03sZk4lI)
-{{< image src="" alt="Bild-Platzhalter Armor" caption="" width="400px" float="center" >}}
+
+Das langfristige Ziel ist die Einrichtung eines [DNS-Sinkholes](https://en.wikipedia.org/wiki/DNS_sinkhole), und zwar dem [Pi-hole](https://pi-hole.net/), in Kombination mit einem lokalen DNS-Resolver [Unbound](https://docs.pi-hole.net/guides/dns/unbound/). Damit blockieren wir Werbung und Tracking Netzwerkweit auf Systemebene, was nicht nur die Privatsphäre schützt, sondern auch die Ladezeiten beim Surfen verbessert -> solange die Seite schon einmal abgerufen wurde und im lokalen Cache liegt. Also ab der zweiten Anfrage der Seite. Heute aber ertseinmal nur die Grundeinrichtung des Raspberry Pi's. {{< image src="/images/raspberry-pi/pi4-board2.jpg" alt="Kontaktplättchen auf korrekten Chips platzieren" caption="" width="150px" float="right" >}}
+Nach dem aufkleben der korrekten Kühlplättchen auf die entsprechenden Chips und verschrauben des Kühlers kann es auch schon losgehen. 
+
+Dazu hier ein kleines [Youtube Video von Geekworm](https://www.youtube.com/watch?v=tWb03sZk4lI).
+
+
 
 {{< /notice >}}
 
 {{< expand "Benötigte Hardware" >}}
 
-{{% table %}}
+
 
 | Komponente | Details |
 | :--- | :--- |
@@ -35,7 +39,7 @@ Nach dem aufkleben der korrekten Kühlplättchen auf die entsprechenden Chips un
 | **Speicher** | SanDisk 32 GB Micro-SD-Karte und ein USB 3.0 Stick mit 64 GB |
 | **Kühlung** | Passivkühler „Armor Case“ von BerryBase |
 
-{{% /table %}}
+
 
 {{< /expand >}}
 
@@ -89,9 +93,8 @@ Dies sollte nach einigen Sekunden bis zu wenigen Minuten abgeschlossen sein.
 
 ## Feste IP und erste Verbindung
 
-Für einen Server ist eine gleichbleibende Erreichbarkeit essenziell. Bevor der Pi nun weiter Konfiguriert wird, empfiehlt es sich, im Router (z. B. in der Fritz!Box) eine feste IPv4-Adresse für das Gerät zu reservieren. Eine flüchtige IP-Adresse kann dazu führen, dass die Geräte später das RAspberry-Pi nicht korrekt identifizieren können und die spätere Pi-Hole konfiguration somit umgehen. 
-Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router verbunden werden. Die nötigen Eisntellungen sind dann in der Fritz!box unter *Netzwerkeinstellungen* zu finden. Andere Routerhersteller haben eventuell abweichende Namen für die Einstellungen. Es sollte allerdings ungefähr so heißen und aussehen wie hier 
-{{< image src="" alt="Bild-Platzhalter Interface" caption="" width="400px" float="center" >}}
+Für einen Server ist eine gleichbleibende Erreichbarkeit essenziell. Bevor der Pi nun weiter Konfiguriert wird, empfiehlt es sich, im Router (z. B. in der Fritz!Box) eine feste IPv4-Adresse für das Gerät zu reservieren. Eine flüchtige IP-Adresse kann dazu führen, dass die Geräte später das RAspberry-Pi nicht korrekt identifizieren können und die spätere Pi-Hole konfiguration somit umgehen. {{< image src="/images/raspberry-pi/sameIp.png" alt="Festsetzen der Raspi IPv4-Adresse" caption="Festsetzen der Raspi IPv4-Adresse" width="300px" float="right" >}}
+Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router verbunden werden. Die nötigen Eisntellungen sind dann in der Fritz!box unter *Netzwerkeinstellungen* zu finden. Andere Routerhersteller haben eventuell abweichende Namen für die Einstellungen.  Es sollte allerdings ungefähr so heißen und aussehen wie hier abgebildet.
 
 Sobald der Pi hochgefahren ist, öffnen wir am PC ein Terminal und bauen eine Secure-Shell-Verbindung auf:
 
@@ -104,7 +107,7 @@ ssh dein-nutzername@<IPv4 Adresse im format www.xxx.yyy.zzz>
 ssh piUser@192.168.121.66
 ```
 
-Beim ersten Verbindungsaufbau muss die Echtheit des Hosts durch die Eingabe von yes bestätigt werden. Nach der Eingabe des Passworts bist du erfolgreich mit deinem Raspberry Pi verbunden. Die weitere Konfiguration von Pi-Hole und unbound stelle ich in den nächsten Blog-Einträgen vor. 
+Beim ersten Verbindungsaufbau muss die Echtheit des Hosts durch die Eingabe von yes bestätigt werden. {{< image src="/images/raspberry-pi/sshFirst.png" alt="Erster erfolgreicher Verbindungsaufbau mit SHA 256 fingerprint" caption="Erster erfolgreicher Verbindungsaufbau mit SHA 256 fingerprint" width="600px" float="center" >}} Nach der Eingabe des Passworts bist du erfolgreich mit deinem Raspberry Pi verbunden. Die weitere Konfiguration von Pi-Hole und unbound stelle ich in den nächsten Blog-Einträgen vor. 
 
 ### Sinnvolle Idee zum Abschluss
 
@@ -117,9 +120,3 @@ sudo apt update && sudo apt upgrade -y
 
 ---
 
-
-**Wer Tips und Tricks hat, schreibt es gerne in die Kommentare!**
-
-Vielen Dank fürs Lesen
-
-Euer Keeks

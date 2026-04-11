@@ -19,7 +19,7 @@ Hinweis: Diese Konfiguration ist nur für lokale Netzwerke geeignet. Sobald man 
 
     
 ">
-    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Hugo 0.160.0">
     
     
     
@@ -105,13 +105,13 @@ Hinweis: Diese Konfiguration ist nur für lokale Netzwerke geeignet. Sobald man 
         <ul class="pl0 mr3">
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="../../posts/" title="Blog page">
+            <a class="hover-white white-90 no-underline" href="../../posts/" title="Blog Seite">
               Blog
             </a>
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="../../about/" title="About page">
+            <a class="hover-white white-90 no-underline" href="../../about/" title="About Seite">
               About
             </a>
           </li>
@@ -192,13 +192,13 @@ Hinweis: Diese Konfiguration ist nur für lokale Netzwerke geeignet. Sobald man 
         <ol>
 <li>Terminal öffnen ( Strg + Alt + t )</li>
 <li>OPENSSH installieren über Terminal
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S openssh
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo pacman -S openssh
 </span></span></code></pre></div></li>
 <li>SSH-Dienst starten
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl start sshd
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl start sshd
 </span></span></code></pre></div></li>
 <li>Autostart des Dienstes bei Systemstart aktivieren
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl enable sshd
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo systemctl enable sshd
 </span></span></code></pre></div></li>
 </ol>
 
@@ -218,11 +218,11 @@ Hinweis: Diese Konfiguration ist nur für lokale Netzwerke geeignet. Sobald man 
         <ol>
 <li>Falls eine Firewall genutzt wird (dringend empfohlen!), muss noch eine Ausnahme für den Zugriff auf TCP Port 22 erstellt werden. Sollte eine andere Firewall als UFW genutzt werden, muss das Kommando entsprechend angepasst werden.</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    sudo ufw allow 22/tcp
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    sudo ufw allow 22/tcp
 </span></span></code></pre></div><ol start="2">
 <li>Beispiel für eine Firewalld-Konfiguration</li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    sudo firewall-cmd --permanent --add-service<span style="color:#ff7b72;font-weight:bold">=</span>ssh
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    sudo firewall-cmd --permanent --add-service<span style="color:#ff7b72;font-weight:bold">=</span>ssh
 </span></span><span style="display:flex;"><span>    sudo firewall-cmd --reload
 </span></span></code></pre></div>
     </div>
@@ -239,13 +239,13 @@ Hinweis: Diese Konfiguration ist nur für lokale Netzwerke geeignet. Sobald man 
 
     <div class="notice-content">
         <p>Nun kann man sich von einem anderen Rechner, der sich im gleichen loaklen Netz befindet, verbinden. Dazu muss ein Terminal geöffnet werden und mit der richtigen IP-Adresse verbunden werden. Die IP-Adresse findet man so heraus:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    ip addr show
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    ip addr show
 </span></span><span style="display:flex;"><span>    <span style="color:#8b949e;font-style:italic"># oder einfach</span>
 </span></span><span style="display:flex;"><span>    ip a
 </span></span></code></pre></div><p>Dort nach der Zeile, die mit <strong>inet</strong> beginnt suchen -&gt; dahinter steht die IP-Adresse</p>
 <p>Um nun die Verbindung von einem anderen Unix-basierten System zu starten folgendes in das Terminal eintippen und bestätigen. Dabei Benutzername durch den tatsächlichen Benutzernamen auf der Zielmaschine ersetzen und die eben ermittelte IP-Adresse hinter dem <strong>@</strong> einfügen.
 Nach Aufforderungsdialog Passwort eingeben.</p>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    ssh benutzername@ip-adresse
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>    ssh benutzername@ip-adresse
 </span></span></code></pre></div>
     </div>
 </div>

@@ -5,6 +5,7 @@ baseURL = "https://keeks-it-blog.de/"
 title = "Keeks IT-Blog"
 theme = "ananke"
 languageCode = "de-de"
+defaultContentLanguage = 'de'
 since = 2026
 relativeURLs = true
 canonifyURLs = true
@@ -21,7 +22,7 @@ hidecolorschemetoggle = false
 # INHALTS-STEUERUNG (MARKUP & PAGINATION)
 # ==========================================
 [pagination]
-  pagerSize = 20
+  pagerSize = 10
 
 [markup.goldmark.renderer]
   # Erlaubt HTML in Markdown (Wichtig für deine Shortcodes!)

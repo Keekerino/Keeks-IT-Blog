@@ -10,7 +10,7 @@
   <div class="pa3 pa4-ns w-100 mw8 center">
 
     <!-- =========================
-         🆕 NEUESTE BEITRÄGE
+         NEUESTE BEITRÄGE
     ========================== -->
     <h1 class="f2 fw8 mb4 {{ $.Param "text_color" | default "mid-gray" }}">
       Neueste Blog Beiträge
@@ -49,7 +49,7 @@
     <hr class="mv4 b--light-gray">
 
     <!-- =========================
-         🧭 WEITERE THEMEN
+         WEITERE THEMEN
     ========================== -->
     {{ if ge $section_count 5 }}
       <section>
@@ -78,7 +78,7 @@
     {{ end }}
 
     <!-- =========================
-         🔗 RESSOURCEN CTA
+          RESSOURCEN CTA
     ========================== -->
     <section class="tc mt5">
       <h2 class="f3 fw7 mb3">Nützliche Ressourcen & Tools</h2>
@@ -95,7 +95,7 @@
   </div>
 
   <!-- =========================
-       📄 OPTIONAL: SEO CONTENT
+       OPTIONAL: SEO CONTENT
   ========================== -->
   {{ if .Content }}
     <article class="cf ph3 ph5-l pv4 f4 center measure-wide lh-copy nested-links {{ $.Param "text_color" | default "mid-gray" }}">
