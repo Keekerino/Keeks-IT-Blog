@@ -91,3 +91,19 @@ hidecolorschemetoggle = false
   name = "About"
   weight = 2
   url = "/about/"
+
+
+# ==========================================
+# Related LINKS
+# ==========================================
+
+  [related]
+  includeNewer = true
+  threshold = 0
+  toLower = true
+  [[related.indices]]
+    name = "tags"
+    weight = 100
+  [[related.indices]]
+    name = "date"
+    weight = 10

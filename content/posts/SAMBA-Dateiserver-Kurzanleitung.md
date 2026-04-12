@@ -5,7 +5,7 @@ draft: false
 author: "Keeks"
 description: "Wie man SAMBA einrichtet um im lokalen Netzwerk Dateien Freizugeben"
 featured_image: "/images/generic/Keeks4.png"
-tags: [Samba, Linux, RaspberrPi, Kurzanleitung]
+tags: [Samba, Linux, RaspberryPi, Kurzanleitung]
 categories: []
 ---
 

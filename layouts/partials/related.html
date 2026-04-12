@@ -1,0 +1,15 @@
+{{ $related := site.RegularPages.Related . | first 5 }}
+{{ with $related }}
+<div class="mt4 pb3">
+  <h2 class="f4 b mb3">Ähnliche Beiträge:</h2>
+  <ul class="list pl0">
+    {{ range . }}
+    <li class="mb2">
+      <a href="{{ .RelPermalink }}" class="link db blue hover-dark-gray">
+        {{ .LinkTitle }}
+      </a>
+    </li>
+    {{ end }}
+  </ul>
+</div>
+{{ end }}
