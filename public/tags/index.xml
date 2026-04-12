@@ -6,33 +6,26 @@
     <description>Recent content in Tags on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
-    <lastBuildDate>Sun, 12 Apr 2026 11:58:35 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 10 Apr 2026 09:57:53 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Automation</title>
-      <link>http://localhost:1313/tags/automation/</link>
-      <pubDate>Sun, 12 Apr 2026 11:58:35 +0200</pubDate>
-      <guid>http://localhost:1313/tags/automation/</guid>
-      <description></description>
-    </item>
     <item>
       <title>DIY</title>
       <link>http://localhost:1313/tags/diy/</link>
-      <pubDate>Sun, 12 Apr 2026 11:58:35 +0200</pubDate>
+      <pubDate>Fri, 10 Apr 2026 09:57:53 +0000</pubDate>
       <guid>http://localhost:1313/tags/diy/</guid>
       <description></description>
     </item>
     <item>
       <title>Projekte</title>
       <link>http://localhost:1313/tags/projekte/</link>
-      <pubDate>Sun, 12 Apr 2026 11:58:35 +0200</pubDate>
+      <pubDate>Fri, 10 Apr 2026 09:57:53 +0000</pubDate>
       <guid>http://localhost:1313/tags/projekte/</guid>
       <description></description>
     </item>
     <item>
       <title>RaspberryPi</title>
       <link>http://localhost:1313/tags/raspberrypi/</link>
-      <pubDate>Sun, 12 Apr 2026 11:58:35 +0200</pubDate>
+      <pubDate>Fri, 10 Apr 2026 09:57:53 +0000</pubDate>
       <guid>http://localhost:1313/tags/raspberrypi/</guid>
       <description></description>
     </item>
@@ -156,10 +149,31 @@
       <description></description>
     </item>
     <item>
-      <title>Raspberry</title>
-      <link>http://localhost:1313/tags/raspberry/</link>
+      <title>Automation</title>
+      <link>http://localhost:1313/tags/automation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/raspberry/</guid>
+      <guid>http://localhost:1313/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kurzanleitung</title>
+      <link>http://localhost:1313/tags/kurzanleitung/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/kurzanleitung/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RaspberrPi</title>
+      <link>http://localhost:1313/tags/raspberrpi/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/raspberrpi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Samba</title>
+      <link>http://localhost:1313/tags/samba/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/samba/</guid>
       <description></description>
     </item>
   </channel>
