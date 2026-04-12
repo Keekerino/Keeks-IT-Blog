@@ -6,8 +6,36 @@
     <description>Recent content in Tags on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
-    <lastBuildDate>Fri, 10 Apr 2026 09:57:53 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 12 Apr 2026 12:24:59 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kurzanleitung</title>
+      <link>http://localhost:1313/tags/kurzanleitung/</link>
+      <pubDate>Sun, 12 Apr 2026 12:24:59 +0200</pubDate>
+      <guid>http://localhost:1313/tags/kurzanleitung/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Sun, 12 Apr 2026 12:24:59 +0200</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RaspberrPi</title>
+      <link>http://localhost:1313/tags/raspberrpi/</link>
+      <pubDate>Sun, 12 Apr 2026 12:24:59 +0200</pubDate>
+      <guid>http://localhost:1313/tags/raspberrpi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Samba</title>
+      <link>http://localhost:1313/tags/samba/</link>
+      <pubDate>Sun, 12 Apr 2026 12:24:59 +0200</pubDate>
+      <guid>http://localhost:1313/tags/samba/</guid>
+      <description></description>
+    </item>
     <item>
       <title>DIY</title>
       <link>http://localhost:1313/tags/diy/</link>
@@ -41,13 +69,6 @@
       <link>http://localhost:1313/tags/cockpit/</link>
       <pubDate>Wed, 08 Apr 2026 11:20:48 +0000</pubDate>
       <guid>http://localhost:1313/tags/cockpit/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
-      <pubDate>Wed, 08 Apr 2026 11:20:48 +0000</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
     </item>
     <item>
@@ -156,24 +177,31 @@
       <description></description>
     </item>
     <item>
-      <title>Kurzanleitung</title>
-      <link>http://localhost:1313/tags/kurzanleitung/</link>
+      <title>Automatisierung</title>
+      <link>http://localhost:1313/tags/automatisierung/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/kurzanleitung/</guid>
+      <guid>http://localhost:1313/tags/automatisierung/</guid>
       <description></description>
     </item>
     <item>
-      <title>RaspberrPi</title>
-      <link>http://localhost:1313/tags/raspberrpi/</link>
+      <title>Backup</title>
+      <link>http://localhost:1313/tags/backup/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/raspberrpi/</guid>
+      <guid>http://localhost:1313/tags/backup/</guid>
       <description></description>
     </item>
     <item>
-      <title>Samba</title>
-      <link>http://localhost:1313/tags/samba/</link>
+      <title>Cronjob</title>
+      <link>http://localhost:1313/tags/cronjob/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/samba/</guid>
+      <guid>http://localhost:1313/tags/cronjob/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Security</title>
+      <link>http://localhost:1313/tags/security/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/security/</guid>
       <description></description>
     </item>
   </channel>
