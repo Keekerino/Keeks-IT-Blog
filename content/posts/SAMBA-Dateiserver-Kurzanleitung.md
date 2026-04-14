@@ -49,7 +49,7 @@ sudo smbpasswd -a <dein_nutzername>
 sudo systemctl restart smbd
 ```
 
-## Besitzer des Ordners auf gewählten Nutzer setzen und Schreibrechte für den Besitzer vergeben
+3. Besitzer des Ordners auf gewählten Nutzer setzen und Schreibrechte für den Besitzer vergeben
 
 
 
@@ -58,7 +58,7 @@ sudo systemctl restart smbd
 sudo mkdir /mnt/dein_pfad
 
 # Besitzer setzen
-sudo chown -R <dein_nutzername>:<dein_nutzername> /mnt/dein_pfad
+sudo chown -R dein_nutzername:dein_nutzername /mnt/dein_pfad
 
 # Schreibrechte für Besitzer vergeben
 sudo chmod -R 755 /mnt/dein_pfad
