@@ -12,7 +12,7 @@ categories: []
 
 
 {{< notice "SAMBA Dateiserver leicht gemacht" >}}
-In dieser Kurzanleitung erkläre ich wie man sich eine Dateifreigabe unter Samba einrichtet. Dies wird später noch sehr nützlich sein, um unsere Backups des Raspberry Pi im lokalen Netz zu sichern.
+In dieser Kurzanleitung erkläre ich wie man sich eine Dateifreigabe unter Samba einrichtet. Dies wird später noch sehr nützlich sein,  Backups von z.B. einem Raspberry Pi im lokalen Netz zu sichern.
 {{< /notice >}}
 
 <!--more-->
@@ -72,8 +72,8 @@ Nun kann im Dolphin Dateimanager, oder ähnlichen Dateiexplorer den Pfad der Fre
 **\\<name_deines_pi>\Pi-Media** (Windows)
 
 {{< image src="/images/raspberry-pi/12.04.26-Backups/sambaFreigabe.png" alt="Samba Freigabe" caption="Beispiel Dolphin Explorer" width="400px" float="center" >}}
-die Datei zu "meinen Orten” hinzugefügt werden, womit der Ordner dauerhaft im Dateimanager angezeigt wird und verfügbar ist. 
-Auch über alle anderen Geräte ist nun ein **Lesezugriff** auf die freigabe möglich.
+dDie Freigabe kann anschließend zu „Meinen Orten“ hinzugefügt werden. So bleibt der Ordner dauerhaft im Dateimanager sichtbar und ist jederzeit verfügbar.
+Ab sofort steht der freigegebene Ordner im gesamten Netzwerk für Lesezugriffe auf anderen Geräten bereit – einfach, schnell und zuverlässig.
 
 
 
