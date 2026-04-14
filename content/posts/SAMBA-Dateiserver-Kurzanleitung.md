@@ -41,7 +41,7 @@ sudo nano /etc/samba/smb.conf
     public = no
 ```
 
-Passwort für Netzzugriff setzen
+3. Passwort für Netzzugriff setzen
 
 ```bash
 
@@ -49,7 +49,7 @@ sudo smbpasswd -a <dein_nutzername>
 sudo systemctl restart smbd
 ```
 
-3. Besitzer des Ordners auf gewählten Nutzer setzen und Schreibrechte für den Besitzer vergeben
+4. Besitzer des Ordners auf gewählten Nutzer setzen und Schreibrechte für den Besitzer vergeben
 
 
 
