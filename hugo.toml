@@ -25,7 +25,7 @@ hidecolorschemetoggle = false
   pagerSize = 10
 
 [markup.goldmark.renderer]
-  # Erlaubt HTML in Markdown (Wichtig für deine Shortcodes!)
+  # Erlaubt HTML in Markdown 
   unsafe = true
 
 [markup.highlight]

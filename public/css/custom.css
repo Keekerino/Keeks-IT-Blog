@@ -74,10 +74,10 @@ body {
     font-size: 1.25rem !important;
     font-weight: 700 !important;
     display: block;
-    line-height: 1.2 !important; /* Sorgt für sauberen Zeilenabstand bei langen Titeln */
-    margin-bottom: 0.2rem !important; /* Ein winziger, fester Abstand zum Datum */
+    line-height: 1.2 !important; 
+    margin-bottom: 0.2rem !important; 
 }
-/* Wir überschreiben zusätzlich die Standard-Abstände vom Theme */
+/*überschreiben zusätzlich die Standard-Abstände vom Theme */
 .card-title {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
