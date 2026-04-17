@@ -13,18 +13,15 @@ description: "Über mich"
 
 
 
-**Schön, dass Sie hier sind.** Als angehender Systemintegrator beschäftige ich mich intensiv mit der Administration von Linux-Systemen und der Frage, wie man Hardware durch gezieltes Upcycling länger und effizienter nutzen kann. 
-Auf diesem Blog dokumentiere ich einige meiner Projekte und Troubleshooting-Prozesse.
-{{< image src="/images/generic/Me2.jpg" alt="Keeks" caption="Das bin ich" width="200px" float="left" >}}
+Hi! Ich bin Keeks, angehender Fachinformatiker für Systemintegration. Die meiste Zeit verbringe ich damit, Linux-Systeme zu administrieren und alte Hardware vor dem Schrottplatz zu retten.
+{{< image src="/images/generic/Me2.jpg" alt="Keeks" caption="Das bin ich (links)" width="200px" float="left" >}}
 
-Persönliche Interessen und das Bedürfnis mich beruflich weiterzuentwickeln haben mich nun, im Mittelpunkt meines Lebens, dazu gebracht den Einstieg in die professionelle IT-Welt zu wagen und ich könnte bisher nicht glücklicher darüber sein.
-Ich freue mich auf spannende Projekte und die damit in Verbindung stehenden Menschen kennen zu lernen.
+Auf diesem Blog dokumentiere ich meine Troubleshooting-Prozesse, teile funktionierende Lösungen und sammle interessante Links.. Vielleicht erspart es ja jemandem da draußen ein paar Stunden Fehlersuche und inspiriert den ein oder anderen.
 
-Vielleicht arbeiten Sie und ich schon bald zusammen an einem Projekt!
 
 *Sebastian (Keeks) F.*
 
-{{< email >}}
+{{< email >}}  
 
 ---
 

@@ -2,16 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/tags/kurzanleitung/</loc>
-    <lastmod>2026-04-12T12:24:59+02:00</lastmod>
+    <loc>http://localhost:1313/tags/automation/</loc>
+    <lastmod>2026-04-14T11:58:35+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/diy/</loc>
+    <lastmod>2026-04-14T11:58:35+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/linux/</loc>
-    <lastmod>2026-04-12T12:24:59+02:00</lastmod>
+    <lastmod>2026-04-14T11:58:35+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/mail/</loc>
+    <lastmod>2026-04-14T11:58:35+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/mail-transfer-agent-nutzen/</loc>
+    <lastmod>2026-04-14T11:58:35+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-04-12T12:24:59+02:00</lastmod>
+    <lastmod>2026-04-14T11:58:35+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/projekte/</loc>
+    <lastmod>2026-04-14T11:58:35+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/raspberrypi/</loc>
+    <lastmod>2026-04-14T11:58:35+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-04-14T11:58:35+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/kurzanleitung/</loc>
     <lastmod>2026-04-12T12:24:59+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/samba/</loc>
@@ -19,15 +37,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/samba-dateiserver-kurzanleitung/</loc>
     <lastmod>2026-04-12T12:24:59+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
-    <lastmod>2026-04-12T12:24:59+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/diy/</loc>
-    <lastmod>2026-04-10T09:57:53+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/projekte/</loc>
-    <lastmod>2026-04-10T09:57:53+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/raspberrypi-einrichtung-headless/</loc>
     <lastmod>2026-04-10T09:57:53+00:00</lastmod>
@@ -88,18 +97,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/secure-shell-unter-cachyos/</loc>
     <lastmod>2026-03-28T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/active-directory/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/ad-ds-2026/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/projekt/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/windows/</loc>
-    <lastmod>2026-03-19T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2026-03-18T10:49:15+00:00</lastmod>
