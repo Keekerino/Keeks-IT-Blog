@@ -16,7 +16,10 @@
       <div class="nested-copy-line-height lh-copy f4 nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
         {{ .Content }}
         
-        {{ partial "related.html" . }}
+        {{/* Prüft, ob der Artikeltyp in den 'mainSections' der Config steht */}}
+        {{ if in site.Params.mainSections .Type }}
+          {{ partial "related.html" . }}
+        {{ end }}
       </div>
     </article>
   </div>
