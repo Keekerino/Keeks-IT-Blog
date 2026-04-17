@@ -83,14 +83,19 @@ hidecolorschemetoggle = false
 # HAUPTMENÜ (NAVIGATION)
 # ==========================================
 [[menu.main]]
-  name = "Blog"
+  name = "Posts"
   weight = 1
   url = "/posts/"
 
 [[menu.main]]
-  name = "About"
-  weight = 2
+  name = "AboutMe"
+  weight = 3
   url = "/about/"
+
+[[menu.main]]
+  name = "Links & Tools"
+  weight = 2
+  url = "/links/"
 
 
 # ==========================================
