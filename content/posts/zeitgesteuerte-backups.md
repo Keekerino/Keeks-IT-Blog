@@ -1,10 +1,10 @@
 ---
 title: "Zeitgesteuerte Backups  auf dem RaspberryPi"
 date: 2026-04-18T08:33:13+02:00
-draft: true
+draft: false
 author: "Keeks"
 description: "Cronjobs für Automatisierung nutzen"
-featured_image: "/images/generic/Raspberry_Pi_Logo.svg"
+featured_image: "/images/raspberry-pi/backup.svg"
 tags: [Backup, RaspberryPi, Projekte]
 categories: []
 ---
@@ -13,13 +13,13 @@ categories: []
 
 {{< notice "" >}}
 
-Der RaspberryPi ist schon ein tolles Gerät. Damit man auch lange freude daran hat und im Notfall seine Daten gesichert hat sehen wir uns hier heute mal die Möglichkeit von inkrementellen Backups mittels *rsync* an.
+Der RaspberryPi ist schon ein tolles Gerät!  Damit man auch lange Freude an seinen konfigurierten Einstellungen hat und diese im Notfall gesichert sind, sehen wir uns hier heute mal die Möglichkeit von inkrementellen Backups mittels *rsync* an. Als Sahnehäubchen obendrauf wird das ganze dann mit den zeitgesteuerten Aufgaben, den *Cronjobs* automatisiert.
 
 {{< /notice >}}
 
  <!--more-->
 
-In der IT gibt es zwei Arten von Menschen: Diejenigen, die bereits Daten verloren haben, und diejenigen, denen es noch bevorsteht. 
+
 
 Da unser Betriebssystem in diesem Setup auf dem USB-Stick läuft, wird die SD-Karte kaum noch durch Schreibzugriffe belastet. Sie dient nur noch als ruhiger Lagerplatz für unsere rsync-Sicherungen und hält dadurch deutlich länger.
 
@@ -54,10 +54,13 @@ Der Hauptbefehl mit rsync wird mit dem absoluten Pfad angegeben, um auch in mini
 **Warum schließen wir so viel mit (--exclude) aus?**
 
 
-Ein laufendes Linux-System enthält Ordner, die keine echten Dateien auf der Festplatte sind, sondern virtuelle Schnittstellen zum Kernel oder zum Arbeitsspeicher (wie /dev, /proc, /sys). Würden wir diese mitkopieren, käme es zu Fehlern oder riesigen, unbrauchbaren Datenmengen. Auch unseren freigegebenen Backup-Ordner für den [SAMBA-Server]({{< ref "posts/SAMBA-Dateiserver-Kurzanleitung.md" >}}) schließen wir aus (/mnt/* und /dein_pfad/*), damit rsync nicht versucht, das Backup in einer Endlosschleife in sich selbst zu sichern.
-Inhalt des Scripts mit E-Mail
+Ein laufendes Linux-System enthält Ordner, die keine echten Dateien auf der Festplatte sind, sondern virtuelle Schnittstellen zum Kernel oder zum Arbeitsspeicher (wie /dev, /proc, /sys). Würden wir diese mitkopieren, käme es zu Fehlern oder riesigen, unbrauchbaren Datenmengen. Auch unseren freigegebenen Backup-Ordner für den [SAMBA-Server]({{< ref "posts/SAMBA-Dateiserver-Kurzanleitung.md" >}}) schließen wir folgenden Pfade aus, damit rsync nicht versucht, das Backup in einer Endlosschleife in sich selbst zu sichern.  
 
-Dies sind zwei Varianten eines simplen Scripts, welches in der ersten Konfiguration auch Meldungen über Erfolg oder Misserfolg des Backups an den konfigurierten E-Mail-Account oder eine andere App weiterleiten kann. Die Konfiguration eines dafür benötigten App-Passworts und das Einrichten des Dienstes habe ich [hier übersichtlich erklärt]({{< ref "posts/mail-transfer-agent-nutzen.md" >}}).
+ /dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/mnt/*,/dein_pfad/*,/lost+found  
+
+# Scripte erstellen
+
+Dies sind zwei Varianten eines simplen Scripts, welches Meldungen über Erfolg oder Misserfolg des Backups an den konfigurierten E-Mail-Account oder eine andere eingerichtete App weiterleitet. Diese Meldungen decken allerdings nur einen kleine Teil der möglichen Fehler ab. Für eine komplette Fehleranalyse des Backups muss man dem Script noch einige Prüfungen hinzufügen. Darauf verzichte ich hier der Einfachheit halber und um den Rahmen des Blog Posts nicht zu sprengen. Die Konfiguration eines für den autmomatischen E-Mail versands benötigten *App-Passworts* und das Einrichten des Dienstes *msmtp* habe ich [in diesem Post übersichtlich erklärt]({{< ref "posts/mail-transfer-agent-nutzen.md" >}}).
 
 
 ## Inhalt des Scripts mit E-Mail
@@ -112,19 +115,19 @@ Sollte er nicht aktiv sein, starten wir ihn mit:
 sudo systemctl enable --now cron
 ```
 
-Dann öffnen wir die Crontab-Konfigurationsdatei und tragen unseren Cronjob ein:
+Dann öffnen wir die Crontab-Konfigurationsdatei und tragen unseren Cronjob ein. Unbedingt darauf achten mit sudo den Crontab zu öffnen, da man ansonsten *nicht* die Cronjobs des angemeldeten Nutzers bearbeitet und dieser hat nicht die nötigen Rechte, um unser Script auszuführen:
 
 ```Bash
 sudo crontab -e
 ```
 
-Eintrag in der Crontab-Konfigurationsdatei:
+Eintrag in der Crontab-Konfigurationsdatei. Hier eingestellt ist ein Backup der Daten an jedem Sonntag um 3:00 Uhr:
 
 ```Bash
 0 3 * * 0 /usr/local/bin/pi_backup.sh
 ```
 Die interaktive Web-Anwendung namens [Crontab-Guru](https://crontab.guru/) eignet sich hier gut zum Visualisieren und besseren Verständnis sowie dem Planen der Parameter.
-Hier eingestellt ist ein Backup der Daten an jedem Sonntag um 3:00 Uhr.
+
 
 
 # Funktionstest
