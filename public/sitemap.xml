@@ -122,6 +122,8 @@
   </url><url>
     <loc>http://localhost:1313/links/censys/</loc>
   </url><url>
+    <loc>http://localhost:1313/links/ettercap/</loc>
+  </url><url>
     <loc>http://localhost:1313/links/exploitdb/</loc>
   </url><url>
     <loc>http://localhost:1313/links/ipv64/</loc>

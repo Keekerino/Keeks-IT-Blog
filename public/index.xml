@@ -100,6 +100,13 @@
       <description>&lt;p&gt;Sucht Hosts, Websites und Zertifikate.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Ettercap</title>
+      <link>http://localhost:1313/links/ettercap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/ettercap/</guid>
+      <description>&lt;p&gt;Erkunden von Man-in-the-middle Angriffen mit vielen Funktionen.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Exploit Database</title>
       <link>http://localhost:1313/links/exploitdb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

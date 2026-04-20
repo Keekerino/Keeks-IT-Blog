@@ -22,6 +22,27 @@
       <description>&lt;p&gt;Sucht Hosts, Websites und Zertifikate.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Css ZenGarden</title>
+      <link>http://localhost:1313/links/css-zengarden/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/css-zengarden/</guid>
+      <description>&lt;p&gt;Die Hauptseite von CSS Zen Garden ist ein legendäres Web-Projekt, das als „Garten der Erleuchtung“ für Webdesign gilt&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Digitalcourage</title>
+      <link>http://localhost:1313/links/digitalcourage/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/digitalcourage/</guid>
+      <description>&lt;p&gt;Digitalcourage (vormals: der FoeBuD) setzt sich  in Deutschland seit 1987 für Grundrechte und Datenschutz ein.&#xA;Ebenfalls mit eigenem DNS-Server Angebot. Ideal für kompromisslose Privatsphäre, da diese deutsche NGO einen komplett zensurfreien DNS-Server ohne jegliche Datenprotokollierung betreibt.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ettercap</title>
+      <link>http://localhost:1313/links/ettercap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/ettercap/</guid>
+      <description>&lt;p&gt;Erkunden von Man-in-the-middle Angriffen mit vielen Funktionen.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Exploit Database</title>
       <link>http://localhost:1313/links/exploitdb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -33,7 +54,7 @@
       <link>http://localhost:1313/links/ipv64/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/links/ipv64/</guid>
-      <description>&lt;p&gt;Deutscher Dyn-DNS-Server mit Werbefilter.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Ein vielseitiges Projekt aus Deutschland, das individuell anpassbare DNS-Filter gegen Werbung und Tracking mit DynDNS-Funktionen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Golem</title>
@@ -57,11 +78,32 @@
       <description>&lt;p&gt;Linux wissen und komplette kostenlose Bücher zum Thema.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>MediathekView</title>
+      <link>http://localhost:1313/links/mediathekview/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/mediathekview/</guid>
+      <description>&lt;p&gt;Durchsuchen und Aufzeichnen der öffentlich-rechtlichen Mediatheken (ARD,ZDF,Arte, 3Sat, SWR, BR, MDR, NDR, WDR, HR, RBB, ORF, SRF).&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>monkey.org</title>
       <link>http://localhost:1313/links/monkey.org/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/links/monkey.org/</guid>
       <description>&lt;p&gt;Sammlung an Werkzeugen für Netzwerküberwachung und Penetration-Testing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quad9Ch</title>
+      <link>http://localhost:1313/links/quad9ch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/quad9ch/</guid>
+      <description>&lt;p&gt;Schweizer Non-Profit-Dienst. Blockiert automatisch Malware und Phishing-Seiten, ohne Nutzerdaten zu sammeln.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Rheinwerk Verlag</title>
+      <link>http://localhost:1313/links/rheinwerk-verlag/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/rheinwerk-verlag/</guid>
+      <description>&lt;p&gt;Open Books vom Rheinwerkverlag mit einer Auswahl von kostenlos lesbaren Fachbüchern.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SELF-HTML</title>
@@ -76,6 +118,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/links/shodan/</guid>
       <description>&lt;p&gt;Suchmaschine für das Internet der Dinge.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Think Python</title>
+      <link>http://localhost:1313/links/think-python/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/think-python/</guid>
+      <description>&lt;p&gt;Eines DER Bücher, wenn es darum geht die Denkweise hinter dem Programmieren zu verstehen. Auch für nicht-Anwendungsentwickler sehr zu empfehlen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Too Long, Didn&#39;t Read</title>

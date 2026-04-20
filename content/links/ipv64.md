@@ -1,6 +1,6 @@
 ---
 title: "Free DynDNS2"
 link: "https://ipv64.net/"
-category: "Weitere Tools"
+category: "DNS Alternativen"
 ---
-Deutscher Dyn-DNS-Server mit Werbefilter.
+Ein vielseitiges Projekt aus Deutschland, das individuell anpassbare DNS-Filter gegen Werbung und Tracking mit DynDNS-Funktionen.
