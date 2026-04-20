@@ -7,7 +7,7 @@
     <title>Troubleshooting: Hugo Extended Setup | Keeks IT-Blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Wie ich Versionskonflikte beim Aufbau meines IT-Blogs gelöst habe.">
-    <meta name="generator" content="Hugo 0.160.1">
+    <meta name="generator" content="Hugo 0.152.2">
     
     
     
@@ -166,16 +166,16 @@
 <ul>
 <li>Manueller Download der Binary von GitHub und Speichern in Codespace</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ wget https://github.com/gohugoio/hugo/releases/download/v0.146.0/hugo_extended_0.146.0_linux-amd64.tar.gz
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ wget https://github.com/gohugoio/hugo/releases/download/v0.146.0/hugo_extended_0.146.0_linux-amd64.tar.gz
 </span></span></code></pre></div><ul>
 <li>Das tar-Archiv entpacken</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ tar -xvf hugo_extended_0.146.0_linux-amd64.tar.gz hugo
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ tar -xvf hugo_extended_0.146.0_linux-amd64.tar.gz hugo
 </span></span></code></pre></div><h3 id="3-ausführung">3. <strong>Ausführung:</strong></h3>
 <ul>
 <li>Start des Servers mit ab jetzt aus dem Hauptverzeichnis heraus mit</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./hugo server
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>./hugo server
 </span></span></code></pre></div><h2 id="fazit">Fazit</h2>
 <p>Wer moderne Hugo-Themes in Cloud-Umgebungen nutzt, muss die Versions-Abhängigkeiten im Blick behalten. Dass die Standard-Installation im Codespace für das Ananke-Theme nicht ausreicht, ließ sich erst durch einen Blick in die Log-Files und den Abgleich der Hugo-Features klären. Die Lösung liegt in der Unabhängigkeit vom System-Repository: Der manuelle Download der Extended-Version ermöglicht die volle Kontrolle über die Build-Pipeline, ungeachtet restriktiver Benutzerrechte.</p>
         

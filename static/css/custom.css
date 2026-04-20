@@ -45,10 +45,10 @@ body {
 /* Bilder in den Karten */
 .card-image, 
 .link-image, 
-.is-section article img {
+.is-section article img:not(.favicon-img) {
     width: 100% !important;
     height: 220px !important;
-    object-fit: contain !important; /* Wichtig für deine Logos! */
+    object-fit: contain !important; 
     background-color: #ffffff !important;
     padding: 15px !important;
     border-bottom: 1px solid rgba(0,0,0,0.1) !important;
@@ -122,21 +122,14 @@ article.pa3.pa4-ns h3 {
    ========================================================================== */
 #back-to-top {
     position: fixed; bottom: 30px; right: 30px;
-    background-color: var(--accent-blue); color: white;
+    background-color: #111111; /* Hier auf Schwarz/Dunkelgrau geändert */
+    color: white;
     padding: 12px 18px; border-radius: 6px; border: none;
+    cursor: pointer; /* Zeigt die typische "Klick-Hand" an, wenn man drüberfährt */
+    transition: background-color 0.2s ease; /* Sorgt für einen weichen Farbübergang */
 }
 
-/* ==========================================================================
-   HAUPTMENÜ ANPASSEN (Gleicher Style wie der Seiten-Titel links)
-   ========================================================================== */
-nav ul li a {
-    font-weight: 300 !important;  /* Macht die Schrift dünn, exakt wie links */
-    color: rgba(255, 255, 255, 0.9) !important; /* Das typische Ananke-Weiß */
-    font-size: 1.25rem !important; /* Passt die Größe an (optional, falls sie dir zu klein sind) */
-    transition: color 0.15s ease-in-out !important;
-}
-
-/* Hover-Effekt: Wenn man mit der Maus drüberfährt, wird es strahlend weiß */
-nav ul li a:hover {
-    color: #ffffff !important; 
+/* Optionaler Hover-Effekt: Wird etwas heller, wenn man mit der Maus drüberfährt */
+#back-to-top:hover {
+    background-color: #333333; 
 }

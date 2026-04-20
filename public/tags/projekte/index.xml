@@ -6,8 +6,22 @@
     <description>Recent content in Projekte on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
-    <lastBuildDate>Fri, 10 Apr 2026 09:57:53 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 08:33:13 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/projekte/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Zeitgesteuerte Backups  auf dem RaspberryPi</title>
+      <link>http://localhost:1313/posts/zeitgesteuerte-backups/</link>
+      <pubDate>Sat, 18 Apr 2026 08:33:13 +0200</pubDate>
+      <guid>http://localhost:1313/posts/zeitgesteuerte-backups/</guid>
+      <description>&lt;div class=&#34;notice-box info&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;&#34;&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        Der RaspberryPi ist schon ein tolles Gerät!  Damit man auch lange Freude an seinen konfigurierten Einstellungen hat und diese im Notfall gesichert sind, sehen wir uns hier heute mal die Möglichkeit von inkrementellen Backups mittels &lt;em&gt;rsync&lt;/em&gt; an. Als Sahnehäubchen obendrauf wird das ganze dann mit den zeitgesteuerten Aufgaben, den &lt;em&gt;Cronjobs&lt;/em&gt; automatisiert.&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
+    <item>
+      <title>Mail Transfer Agent für Raspberry</title>
+      <link>http://localhost:1313/posts/mail-transfer-agent-nutzen/</link>
+      <pubDate>Tue, 14 Apr 2026 11:58:35 +0200</pubDate>
+      <guid>http://localhost:1313/posts/mail-transfer-agent-nutzen/</guid>
+      <description>&lt;div class=&#34;notice-box E-Mail Benachrichtigungen des Pi&amp;#39;s Konfigurieren&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            E-Mail Benachrichtigungen des Pi&amp;#39;s Konfigurieren:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        Dein Raspberry Pi ist ein echtes Arbeitstier, aber leider auch ein ziemlich schweigsames. Er ackert im Hintergrund, und oft erfährst du erst von Problemen, wenn du dich mühsam per SSH einloggst. Warum also nicht den Spieß umdrehen und den Pi dazu bringen, dich bei Statusänderungen einfach anzumailen?&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
     <item>
       <title>RaspberryPi OS-Lite (64-bit) Installation</title>
       <link>http://localhost:1313/posts/raspberrypi-einrichtung-headless/</link>

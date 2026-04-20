@@ -1,6 +1,6 @@
 ---
 title: "Lwn.net"
 link: "https://lwn.net/"
-category: "Linux"
+category: "Lernen"
 ---
 Linux wissen und komplette kostenlose Bücher zum Thema.

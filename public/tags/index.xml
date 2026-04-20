@@ -6,8 +6,57 @@
     <description>Recent content in Tags on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
-    <lastBuildDate>Sun, 12 Apr 2026 12:24:59 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 18 Apr 2026 08:33:13 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Backup</title>
+      <link>http://localhost:1313/tags/backup/</link>
+      <pubDate>Sat, 18 Apr 2026 08:33:13 +0200</pubDate>
+      <guid>http://localhost:1313/tags/backup/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Projekte</title>
+      <link>http://localhost:1313/tags/projekte/</link>
+      <pubDate>Sat, 18 Apr 2026 08:33:13 +0200</pubDate>
+      <guid>http://localhost:1313/tags/projekte/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>RaspberryPi</title>
+      <link>http://localhost:1313/tags/raspberrypi/</link>
+      <pubDate>Sat, 18 Apr 2026 08:33:13 +0200</pubDate>
+      <guid>http://localhost:1313/tags/raspberrypi/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Automation</title>
+      <link>http://localhost:1313/tags/automation/</link>
+      <pubDate>Tue, 14 Apr 2026 11:58:35 +0200</pubDate>
+      <guid>http://localhost:1313/tags/automation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>DIY</title>
+      <link>http://localhost:1313/tags/diy/</link>
+      <pubDate>Tue, 14 Apr 2026 11:58:35 +0200</pubDate>
+      <guid>http://localhost:1313/tags/diy/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Tue, 14 Apr 2026 11:58:35 +0200</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mail</title>
+      <link>http://localhost:1313/tags/mail/</link>
+      <pubDate>Tue, 14 Apr 2026 11:58:35 +0200</pubDate>
+      <guid>http://localhost:1313/tags/mail/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Kurzanleitung</title>
       <link>http://localhost:1313/tags/kurzanleitung/</link>
@@ -16,38 +65,10 @@
       <description></description>
     </item>
     <item>
-      <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
-      <pubDate>Sun, 12 Apr 2026 12:24:59 +0200</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>RaspberryPi</title>
-      <link>http://localhost:1313/tags/raspberrypi/</link>
-      <pubDate>Sun, 12 Apr 2026 12:24:59 +0200</pubDate>
-      <guid>http://localhost:1313/tags/raspberrypi/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Samba</title>
       <link>http://localhost:1313/tags/samba/</link>
       <pubDate>Sun, 12 Apr 2026 12:24:59 +0200</pubDate>
       <guid>http://localhost:1313/tags/samba/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>DIY</title>
-      <link>http://localhost:1313/tags/diy/</link>
-      <pubDate>Fri, 10 Apr 2026 09:57:53 +0000</pubDate>
-      <guid>http://localhost:1313/tags/diy/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Projekte</title>
-      <link>http://localhost:1313/tags/projekte/</link>
-      <pubDate>Fri, 10 Apr 2026 09:57:53 +0000</pubDate>
-      <guid>http://localhost:1313/tags/projekte/</guid>
       <description></description>
     </item>
     <item>

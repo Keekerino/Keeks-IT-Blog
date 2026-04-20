@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Links &amp; Ressourcen on Keeks IT-Blog</title>
+    <title>Links &amp; Tools on Keeks IT-Blog</title>
     <link>http://localhost:1313/links/</link>
-    <description>Recent content in Links &amp; Ressourcen on Keeks IT-Blog</description>
+    <description>Recent content in Links &amp; Tools on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
     <atom:link href="http://localhost:1313/links/index.xml" rel="self" type="application/rss+xml" />
@@ -29,7 +29,7 @@
       <description>&lt;p&gt;Datenbank an bekannten Exploits.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Free DymDNS2</title>
+      <title>Free DynDNS2</title>
       <link>http://localhost:1313/links/ipv64/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/links/ipv64/</guid>
@@ -55,6 +55,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/links/lwn/</guid>
       <description>&lt;p&gt;Linux wissen und komplette kostenlose Bücher zum Thema.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>monkey.org</title>
+      <link>http://localhost:1313/links/monkey.org/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/monkey.org/</guid>
+      <description>&lt;p&gt;Sammlung an Werkzeugen für Netzwerküberwachung und Penetration-Testing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>SELF-HTML</title>
+      <link>http://localhost:1313/links/self-html/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/self-html/</guid>
+      <description>&lt;p&gt;Deutschsprachige Seite mit Kult-Status zum lernen von HTML.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Shodan IO</title>
@@ -83,6 +97,20 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/links/w3schools/</guid>
       <description>&lt;p&gt;Eine der weltweit größten und bekanntesten kostenlosen E-Learning-Plattformen für Webentwicklung und Programmierung.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Windows cmd Cheatsheet</title>
+      <link>http://localhost:1313/links/windows-cmd/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/windows-cmd/</guid>
+      <description>&lt;p&gt;Hilfe mit Windows-Kommandos&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>wireshark</title>
+      <link>http://localhost:1313/links/wireshark/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/wireshark/</guid>
+      <description>&lt;p&gt;Das wohl bekannteste Tool zur Netzwerkanalyse.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

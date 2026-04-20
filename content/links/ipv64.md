@@ -1,6 +1,6 @@
 ---
-title: "Free DymDNS2"
+title: "Free DynDNS2"
 link: "https://ipv64.net/"
-category: "Tools"
+category: "Weitere Tools"
 ---
 Deutscher Dyn-DNS-Server mit Werbefilter.

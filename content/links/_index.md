@@ -1,7 +1,5 @@
 ---
-title: "Links & Ressourcen"
-description: "Hilfreiche Links, nützliche Tools und Ressourcen für die IT-Welt."
+title: "Links & Tools"
+description: "Hilfreiche Links, sowie nützliche Tools rund ums Thema IT"
 featured_image: "/images/generic/Keeks4.png"
 ---
-
-
