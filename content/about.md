@@ -13,10 +13,10 @@ description: "Über mich"
 
 
 
-Hi! Ich bin Keeks, angehender Fachinformatiker für Systemintegration. Ich beschäftige michdamit Linux-Systeme zu administrieren, alte Hardware vor dem Schrottplatz zu retten und vielversprechende Projekte für sicheren Internetzugang sowie effizientere Hardwarenutzung umzusetzen.
+Hi! Ich bin Keeks, angehender Fachinformatiker für Systemintegration. Ich beschäftige mich damit Linux-Systeme zu administrieren, alte Hardware vor dem Schrottplatz zu retten und vielversprechende Projekte für sicheren Internetzugang sowie effizientere Hardwarenutzung umzusetzen.
 {{< image src="/images/generic/Me2.jpg" alt="Keeks" caption="Das bin ich (links)" width="200px" float="left" >}}
 
-Auf diesem Blog dokumentiere ich meine Troubleshooting-Prozesse, teile funktionierende Lösungen und sammle interessante Links.. Vielleicht erspart es ja jemandem da draußen ein paar Stunden Fehlersuche und inspiriert den ein oder anderen.
+Auf diesem Blog dokumentiere ich meine Troubleshooting-Prozesse, teile funktionierende Lösungen und sammle interessante Links. Vielleicht erspart es ja jemandem da draußen ein paar Stunden Fehlersuche und inspiriert den ein oder anderen.
 
 
 *Sebastian (Keeks) F.*
