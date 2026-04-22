@@ -33,8 +33,6 @@ Dazu hier ein kleines [Youtube Video von Geekworm](https://www.youtube.com/watch
 
 {{< expand "Benötigte Hardware" >}}
 
-
-
 | Komponente | Details |
 | :--- | :--- |
 | **Board** | Raspberry Pi 4B |
@@ -42,13 +40,15 @@ Dazu hier ein kleines [Youtube Video von Geekworm](https://www.youtube.com/watch
 | **Speicher** | SanDisk 32 GB Micro-SD-Karte und ein USB 3.0 Stick mit 64 GB |
 | **Kühlung** | Passivkühler „Armor Case“ von BerryBase |
 
-
-
 {{< /expand >}}
+
+{{< image src="/images/raspberry-pi/pi-paket2.jpg" alt="RaspberryPi inklsuive Komponenten" caption="RaspberryPi inklsuive Komponenten" width="200px" float="right" >}}  
+
+
 
 ## Den Raspberry Pi Imager vorbereiten
 
-Zuerst laden wir das offizielle Tool von der [Raspberry Pi Webseite](https://www.raspberrypi.com/software/) herunter. Da ich ein Arch-Linux-System (CachyOS) nutze, lade ich das AppImage herunter. Damit die Datei ausgeführt werden kann, müssen die entsprechenden  Berechtigungen im Terminal angepasst werden 
+Zuerst laden wir das offizielle Tool von der [Raspberry Pi Webseite](https://www.raspberrypi.com/software/) herunter. Da ich ein Arch-Linux-System (CachyOS) nutze, lade ich das AppImage herunter. Damit die Datei ausgeführt werden kann, müssen die entsprechenden  Berechtigungen im Terminal angepasst werden:
 
 Terminal  öffnen (**STRG+ALT+T**):
 
@@ -67,7 +67,8 @@ sudo ./imager_2.0.7_amd64.AppImage
 
 ## Das Betriebssystem konfigurieren
 
-Dazu muss nun das Medium, auf welches das Betriebssystem installiert werden soll im PC eingesteckt sein. In unserem Fall ist das der 64 GB USB 3.0 Stick von SanDisk.
+Dazu muss nun das Medium, auf welches das Betriebssystem installiert werden soll im PC eingesteckt sein. In unserem Fall ist das der 64 GB USB 3.0 Stick von SanDisk.  {{< image src="/images/raspberry-pi/pi-complete.jpg" alt="Zusammengebauter Raspi mit ArmorCase im Betrieb" caption="Zusammengebauter Raspi mit ArmorCase im Betrieb" width="200px" float="right" >}}  
+
 In der grafischen Oberfläche des Imagers wählen wir nun die passenden Einstellungen:
 
 {{% table %}}

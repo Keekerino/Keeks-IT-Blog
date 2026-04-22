@@ -61,7 +61,7 @@
   <meta itemprop="description" content="Headless Installation über Netzwerk">
   <meta itemprop="datePublished" content="2026-04-10T09:57:53+00:00">
   <meta itemprop="dateModified" content="2026-04-10T09:57:53+00:00">
-  <meta itemprop="wordCount" content="671">
+  <meta itemprop="wordCount" content="680">
   <meta itemprop="keywords" content="RaspberryPi,Terminal,DIY,Projekte">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="RaspberryPi OS-Lite (64-bit) Installation">
@@ -212,8 +212,32 @@ Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.<
 
 </details>
 
+<figure style='
+    display: inline-block; 
+    float: right; 
+    width: 200px !important; 
+    max-width: 100%; 
+    margin: 0.5rem 0 1rem 1.5rem;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="../../images/raspberry-pi/pi-paket2.jpg" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/raspberry-pi/pi-paket2.jpg" 
+             alt="RaspberryPi inklsuive Komponenten" 
+             title="RaspberryPi inklsuive Komponenten"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+    
+    
+        <figcaption style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.6rem; font-style: italic; line-height: 1.3; display: block;">
+            RaspberryPi inklsuive Komponenten
+        </figcaption>
+    
+</figure>
+
+<div style="clear: none;"></div>
 <h2 id="den-raspberry-pi-imager-vorbereiten">Den Raspberry Pi Imager vorbereiten</h2>
-<p>Zuerst laden wir das offizielle Tool von der <a href="https://www.raspberrypi.com/software/">Raspberry Pi Webseite</a> herunter. Da ich ein Arch-Linux-System (CachyOS) nutze, lade ich das AppImage herunter. Damit die Datei ausgeführt werden kann, müssen die entsprechenden  Berechtigungen im Terminal angepasst werden</p>
+<p>Zuerst laden wir das offizielle Tool von der <a href="https://www.raspberrypi.com/software/">Raspberry Pi Webseite</a> herunter. Da ich ein Arch-Linux-System (CachyOS) nutze, lade ich das AppImage herunter. Damit die Datei ausgeführt werden kann, müssen die entsprechenden  Berechtigungen im Terminal angepasst werden:</p>
 <p>Terminal  öffnen (<strong>STRG+ALT+T</strong>):</p>
 <div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># In das Verzeichnis mit der heruntergeladenen Datei wechseln</span>
@@ -225,8 +249,31 @@ Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.<
 </span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"># Das Programm mit Root-Rechten starten</span>
 </span></span><span style="display:flex;"><span>sudo ./imager_2.0.7_amd64.AppImage
 </span></span></code></pre></div><h2 id="das-betriebssystem-konfigurieren">Das Betriebssystem konfigurieren</h2>
-<p>Dazu muss nun das Medium, auf welches das Betriebssystem installiert werden soll im PC eingesteckt sein. In unserem Fall ist das der 64 GB USB 3.0 Stick von SanDisk.
-In der grafischen Oberfläche des Imagers wählen wir nun die passenden Einstellungen:</p>
+<p>Dazu muss nun das Medium, auf welches das Betriebssystem installiert werden soll im PC eingesteckt sein. In unserem Fall ist das der 64 GB USB 3.0 Stick von SanDisk.  <figure style='
+    display: inline-block; 
+    float: right; 
+    width: 200px !important; 
+    max-width: 100%; 
+    margin: 0.5rem 0 1rem 1.5rem;
+    padding: 0;
+    vertical-align: top;
+'>
+    <a href="../../images/raspberry-pi/pi-complete.jpg" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/raspberry-pi/pi-complete.jpg" 
+             alt="Zusammengebauter Raspi mit ArmorCase im Betrieb" 
+             title="Zusammengebauter Raspi mit ArmorCase im Betrieb"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
+    
+    
+        <figcaption style="text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.6rem; font-style: italic; line-height: 1.3; display: block;">
+            Zusammengebauter Raspi mit ArmorCase im Betrieb
+        </figcaption>
+    
+</figure>
+
+<div style="clear: none;"></div></p>
+<p>In der grafischen Oberfläche des Imagers wählen wir nun die passenden Einstellungen:</p>
 <div class="table-wrapper">
   <table>
   <thead>
