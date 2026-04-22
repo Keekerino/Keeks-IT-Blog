@@ -168,3 +168,33 @@ article.pa3.pa4-ns h3 {
     font-size: 0.9rem;
     color: var(--text-muted);
 }
+
+
+/* ==========================================================================
+   WORK IN PROGRESS BANNER (STATISCH)
+   ========================================================================== */
+.wip-banner-simple {
+    background: repeating-linear-gradient(45deg, #fffdf2, #fffdf2 10px, #fff9e6 10px, #fff9e6 20px);
+    border: 2px dashed #ffc107;
+    border-radius: 8px;
+    padding: 15px 25px;
+    margin: 20px 0 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.wip-text-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.wip-title { font-size: 1.1rem; font-weight: bold; color: #d35400; margin-bottom: 3px; }
+.wip-desc { font-size: 0.9rem; color: #555; }
+
+@media (max-width: 600px) {
+    .wip-banner-simple { padding: 15px; flex-direction: column; gap: 10px; }
+}
