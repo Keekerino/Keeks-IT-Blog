@@ -9,11 +9,11 @@
     <lastBuildDate>Wed, 22 Apr 2026 06:54:13 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Log2Ram</title>
+      <title>Auslagerung von System-Logs in den Arbeitsspeicher mittels Log2Ram</title>
       <link>http://localhost:1313/posts/log2ram/</link>
       <pubDate>Wed, 22 Apr 2026 06:54:13 +0000</pubDate>
       <guid>http://localhost:1313/posts/log2ram/</guid>
-      <description>&lt;div class=&#34;notice-box Titel2&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            Titel2:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        Hier könnte deine Beschreibung stehen&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+      <description>&lt;div class=&#34;notice-box Lebensversicherung für die SD-Karte&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            Lebensversicherung für die SD-Karte:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        Wer einen Raspberry Pi oder ein ähnliches System auf SD-Karten-Basis betreibt, sollte sich mit einem entscheidenden Nachteil dieser Konfiguration beschäftigen: Schreibzugriffe auf diesen Speicherbaustein sind der Tod auf Raten. Besonders die ständigen System-Protokolle (Log-Files) in /var/log fressen die Speicherzellen regelrecht auf&amp;hellip;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Zeitgesteuerte Backups  auf dem RaspberryPi</title>
