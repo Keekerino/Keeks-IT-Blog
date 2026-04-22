@@ -122,6 +122,10 @@
   </url><url>
     <loc>http://localhost:1313/links/censys/</loc>
   </url><url>
+    <loc>http://localhost:1313/links/css-zengarden/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/digitalcourage/</loc>
+  </url><url>
     <loc>http://localhost:1313/links/ettercap/</loc>
   </url><url>
     <loc>http://localhost:1313/links/exploitdb/</loc>
@@ -130,13 +134,23 @@
   </url><url>
     <loc>http://localhost:1313/links/golem/</loc>
   </url><url>
+    <loc>http://localhost:1313/links/hardware64/</loc>
+  </url><url>
     <loc>http://localhost:1313/links/heise/</loc>
   </url><url>
     <loc>http://localhost:1313/links/</loc>
   </url><url>
     <loc>http://localhost:1313/links/lwn/</loc>
   </url><url>
+    <loc>http://localhost:1313/links/mediathekview/</loc>
+  </url><url>
     <loc>http://localhost:1313/links/monkey.org/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/pi-hole/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/quad9ch/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/rheinwerk-verlag/</loc>
   </url><url>
     <loc>http://localhost:1313/links/self-html/</loc>
   </url><url>
@@ -144,11 +158,15 @@
   </url><url>
     <loc>http://localhost:1313/links/shodan/</loc>
   </url><url>
+    <loc>http://localhost:1313/links/think-python/</loc>
+  </url><url>
     <loc>http://localhost:1313/links/tldr/</loc>
   </url><url>
     <loc>http://localhost:1313/links/virustotal/</loc>
   </url><url>
     <loc>http://localhost:1313/links/w3schools/</loc>
+  </url><url>
+    <loc>http://localhost:1313/links/where-is-my-ram/</loc>
   </url><url>
     <loc>http://localhost:1313/links/windows-cmd/</loc>
   </url><url>

@@ -64,6 +64,13 @@
       <description>&lt;p&gt;Deutsche IT-News, Security-Ticker und Hintergründe aus der Tech-Welt von Golem.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Hardware64</title>
+      <link>http://localhost:1313/links/hardware64/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/hardware64/</guid>
+      <description>&lt;p&gt;Bei Hardware64.de findest du handverlesene und geprüfte Hardware für dein Homelab. Inklusive Installationshinweisen undd Kaufempfehlungen.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Heise Online</title>
       <link>http://localhost:1313/links/heise/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -90,6 +97,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/links/monkey.org/</guid>
       <description>&lt;p&gt;Sammlung an Werkzeugen für Netzwerküberwachung und Penetration-Testing.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pi Hole</title>
+      <link>http://localhost:1313/links/pi-hole/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/pi-hole/</guid>
+      <description>&lt;p&gt;Die perfekte Do-it-yourself-Lösung für die volle Kontrolle, zum Hosten eines eigenen, netzwerkweiten DNS-Filter gegen Werbung und Tracking.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Quad9Ch</title>
@@ -146,6 +160,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/links/w3schools/</guid>
       <description>&lt;p&gt;Eine der weltweit größten und bekanntesten kostenlosen E-Learning-Plattformen für Webentwicklung und Programmierung.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Where Is My Ram</title>
+      <link>http://localhost:1313/links/where-is-my-ram/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/where-is-my-ram/</guid>
+      <description>&lt;p&gt;In Zeiten des RAM-Preis-Wahnsinns geborener Helfer für Kaufentscheidungen&lt;/p&gt;</description>
     </item>
     <item>
       <title>Windows cmd Cheatsheet</title>

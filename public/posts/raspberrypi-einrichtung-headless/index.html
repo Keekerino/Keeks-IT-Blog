@@ -145,6 +145,7 @@
     border-left: 5px solid; 
     background-color: #f9f9f9;
     border-radius: 4px;
+    display: flow-root; /* <-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */
 ">
     
         <strong style="text-transform: uppercase; display: block; margin-bottom: 5px;">
@@ -155,24 +156,25 @@
     <div class="notice-content">
         <p>In diesem ersten Teil meiner neuen Raspberry-Pi-Serie zeige ich euch, wie ihr das System komplett „headless“ – also ohne Monitor und Tastatur – direkt über das Netzwerk aufsetzt, um somit einen möglichst geringen Ressourcenverbrauch des Gerätes sicherzustellen. Außerdem ist dies auch eine gute Übung für die Administration von Geräten über die SSH (Secure Shell).
 Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.</p>
-<p>Das langfristige Ziel ist die Einrichtung eines <a href="https://en.wikipedia.org/wiki/DNS_sinkhole">DNS-Sinkholes</a>, dem <a href="https://pi-hole.net/">Pi-hole</a>, in Kombination mit einem lokalen DNS-Resolver <a href="https://docs.pi-hole.net/guides/dns/unbound/">Unbound</a>. Damit blockieren wir Werbung und Tracking netzwerkweit auf Systemebene. Dies schützt die Privatssphäre und beschleunigt durch lokales Caching die Ladezeiten ab der zweiten Anfrage deutlich. Heute aber erst einmal nur die Grundeinrichtung des Raspberry Pi. <figure style='
-display: inline-block; 
-float: right; 
-width: 150px !important; 
-max-width: 100%; 
-margin: 0.5rem 0 1rem 1.5rem;
-padding: 0;
-vertical-align: top;
+<p>Das langfristige Ziel ist die Einrichtung eines <a href="https://en.wikipedia.org/wiki/DNS_sinkhole">DNS-Sinkholes</a>, dem <a href="https://pi-hole.net/">Pi-hole</a>, in Kombination mit einem lokalen DNS-Resolver <a href="https://docs.pi-hole.net/guides/dns/unbound/">Unbound</a>. Damit blockieren wir Werbung und Tracking netzwerkweit auf Systemebene. Dies schützt die Privatssphäre und beschleunigt durch lokales Caching die Ladezeiten ab der zweiten Anfrage deutlich. Heute aber erst einmal nur die Grundeinrichtung des Raspberry Pi.</p>
+<figure style='
+    display: inline-block; 
+    float: right; 
+    width: 200px !important; 
+    max-width: 100%; 
+    margin: 0.5rem 0 1rem 1.5rem;
+    padding: 0;
+    vertical-align: top;
 '>
-<a href="../../images/raspberry-pi/pi4-board2.jpg" target="_blank" title="In voller Größe öffnen">
-<img src="../../images/raspberry-pi/pi4-board2.jpg" 
-alt="Kontaktplättchen auf korrekten Chips platzieren" 
-title="Kontaktplättchen auf korrekten Chips platzieren"
-style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
-</a></p>
+    <a href="../../images/raspberry-pi/pi4-board2.jpg" target="_blank" title="In voller Größe öffnen">
+        <img src="../../images/raspberry-pi/pi4-board2.jpg" 
+             alt="Kontaktplättchen auf korrekten Chips platzieren" 
+             title="Kontaktplättchen auf korrekten Chips platzieren"
+             style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;">
+    </a>
 </figure>
-<div style="clear: none;"></div>
-Nach dem aufkleben der korrekten Kühlplättchen auf die entsprechenden Chips und verschrauben des Kühlers kann es auch schon losgehen. 
+<div style="clear: none;"></div>  
+<p>Nach dem aufkleben der korrekten Kühlplättchen auf die entsprechenden Chips und verschrauben des Kühlers kann es auch schon losgehen.</p>
 <p>Dazu hier ein kleines <a href="https://www.youtube.com/watch?v=tWb03sZk4lI">Youtube Video von Geekworm</a>.</p>
 
     </div>
@@ -370,6 +372,12 @@ Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router ver
     </li>
     
     <li class="mb2">
+      <a href="../../posts/log2ram/" class="link db blue hover-dark-gray">
+        Log2Ram
+      </a>
+    </li>
+    
+    <li class="mb2">
       <a href="../../posts/samba-dateiserver-kurzanleitung/" class="link db blue hover-dark-gray">
         SAMBA Dateiserver Kurzanleitung
       </a>
@@ -378,12 +386,6 @@ Dazu muss der PI an den Strom angeschlossen und per LAN-Kabel mit dem router ver
     <li class="mb2">
       <a href="../../posts/terminalpersonalisierung/" class="link db blue hover-dark-gray">
         Terminalpersonalisierung
-      </a>
-    </li>
-    
-    <li class="mb2">
-      <a href="../../posts/weboberfl%C3%A4che-cockpit-auf-opensuse-installieren-zur-%C3%BCbersichtlichen-verwaltung-von-systemressourcen/" class="link db blue hover-dark-gray">
-        Cockpit Auf OpenSuse 
       </a>
     </li>
     

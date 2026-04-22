@@ -19,14 +19,17 @@ Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.
 
 
 
-Das langfristige Ziel ist die Einrichtung eines [DNS-Sinkholes](https://en.wikipedia.org/wiki/DNS_sinkhole), dem [Pi-hole](https://pi-hole.net/), in Kombination mit einem lokalen DNS-Resolver [Unbound](https://docs.pi-hole.net/guides/dns/unbound/). Damit blockieren wir Werbung und Tracking netzwerkweit auf Systemebene. Dies schützt die Privatssphäre und beschleunigt durch lokales Caching die Ladezeiten ab der zweiten Anfrage deutlich. Heute aber erst einmal nur die Grundeinrichtung des Raspberry Pi. {{< image src="/images/raspberry-pi/pi4-board2.jpg" alt="Kontaktplättchen auf korrekten Chips platzieren" caption="" width="150px" float="right" >}}
+Das langfristige Ziel ist die Einrichtung eines [DNS-Sinkholes](https://en.wikipedia.org/wiki/DNS_sinkhole), dem [Pi-hole](https://pi-hole.net/), in Kombination mit einem lokalen DNS-Resolver [Unbound](https://docs.pi-hole.net/guides/dns/unbound/). Damit blockieren wir Werbung und Tracking netzwerkweit auf Systemebene. Dies schützt die Privatssphäre und beschleunigt durch lokales Caching die Ladezeiten ab der zweiten Anfrage deutlich. Heute aber erst einmal nur die Grundeinrichtung des Raspberry Pi. 
+
+{{< image src="/images/raspberry-pi/pi4-board2.jpg" alt="Kontaktplättchen auf korrekten Chips platzieren" caption="" width="200px" float="right" >}}  
+
 Nach dem aufkleben der korrekten Kühlplättchen auf die entsprechenden Chips und verschrauben des Kühlers kann es auch schon losgehen. 
 
 Dazu hier ein kleines [Youtube Video von Geekworm](https://www.youtube.com/watch?v=tWb03sZk4lI).
 
+{{< /notice >}}  
 
 
-{{< /notice >}}
 
 {{< expand "Benötigte Hardware" >}}
 
