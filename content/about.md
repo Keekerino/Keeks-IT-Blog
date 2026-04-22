@@ -13,7 +13,7 @@ description: "Über mich"
 
 
 
-Hi! Ich bin Keeks, angehender Fachinformatiker für Systemintegration. Die meiste Zeit verbringe ich damit, Linux-Systeme zu administrieren und alte Hardware vor dem Schrottplatz zu retten.
+Hi! Ich bin Keeks, angehender Fachinformatiker für Systemintegration. Ich beschäftige michdamit Linux-Systeme zu administrieren, alte Hardware vor dem Schrottplatz zu retten und vielversprechende Projekte für sicheren Internetzugang sowie effizientere Hardwarenutzung umzusetzen.
 {{< image src="/images/generic/Me2.jpg" alt="Keeks" caption="Das bin ich (links)" width="200px" float="left" >}}
 
 Auf diesem Blog dokumentiere ich meine Troubleshooting-Prozesse, teile funktionierende Lösungen und sammle interessante Links.. Vielleicht erspart es ja jemandem da draußen ein paar Stunden Fehlersuche und inspiriert den ein oder anderen.
@@ -23,15 +23,33 @@ Auf diesem Blog dokumentiere ich meine Troubleshooting-Prozesse, teile funktioni
 
 {{< email >}}  
 
----
 
-{{< grid >}}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-{{< image src="/images/generic/BudgetBlue.JPG" alt="Budget Gaming PC" caption="Budget Gaming PC " width="200px" >}}
-{{< image src="/images/generic/BudgetGreen.jpg" alt="Budget CAD-PC" caption="CAD Office PC" width="200px" >}}
-{{< image src="/images/generic/BudgetRef.jpg" alt="Budget Gaming PC" caption="Budget Gaming PC" width="200px" >}}
 
-{{< /grid >}}
+ # Gallerie
+
+{{< gallery Gallerie >}}
+
+{{< image src="/images/generic/BudgetBlue.JPG" alt="Budget Gaming PC" caption="Budget Gaming PC" >}}
+
+{{< image src="/images/generic/BudgetGreen.jpg" alt="Budget CAD-PC" caption="CAD Office PC" >}}
+
+{{< image src="/images/generic/BudgetRef.jpg" alt="Budget Gaming PC" caption="Budget Gaming PC" >}}
+
+{{< image src="/images/raspberry-pi/pi-paket3.jpg" alt="RaspberryPi Starter-Set" caption="RaspberryPi Starter-Set" >}}
+
+{{< image src="/images/raspberry-pi/pi-complete.jpg" alt="RaspberryPi mit Armor-Kühlung" caption="RaspberryPi mit Armor-Kühlung" >}}
+
+{{< image src="/images/unsorted/drive-download-20260411T060734Z-3-001/IMG_1743.jpg" alt="Ryzen 7800 3XD" caption="Ryzen 7800 3XD" >}}
+
+{{< /gallery >}}
+
 
 
 ---

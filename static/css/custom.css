@@ -133,3 +133,38 @@ article.pa3.pa4-ns h3 {
 #back-to-top:hover {
     background-color: #333333; 
 }
+
+/* ==========================================================================
+   GALERIE (KORREKTES GRID FÜR HUGO)
+   ========================================================================== */
+.ananke-gallery-grid,
+.ananke-gallery-grid > p {
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 1.5rem !important;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.ananke-gallery-grid figure, 
+.ananke-gallery-grid .img-container {
+    margin: 0 !important;
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+}
+
+.ananke-gallery-grid img {
+    width: 100% !important;
+    height: 200px !important;
+    object-fit: cover !important;
+    border-radius: 8px;
+    display: block;
+}
+
+.ananke-gallery-grid figcaption {
+    margin-top: 0.8rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}

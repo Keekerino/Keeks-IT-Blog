@@ -2,19 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/log2ram/</loc>
+    <lastmod>2026-04-22T06:54:13+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2026-04-22T06:54:13+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-04-22T06:54:13+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ram/</loc>
+    <lastmod>2026-04-22T06:54:13+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/raspberrypi/</loc>
+    <lastmod>2026-04-22T06:54:13+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-04-22T06:54:13+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/backup/</loc>
     <lastmod>2026-04-18T08:33:13+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-04-18T08:33:13+02:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/projekte/</loc>
-    <lastmod>2026-04-18T08:33:13+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/raspberrypi/</loc>
-    <lastmod>2026-04-18T08:33:13+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-04-18T08:33:13+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/zeitgesteuerte-backups/</loc>
@@ -24,9 +33,6 @@
     <lastmod>2026-04-14T11:58:35+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/diy/</loc>
-    <lastmod>2026-04-14T11:58:35+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2026-04-14T11:58:35+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/mail/</loc>
