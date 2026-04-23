@@ -34,9 +34,9 @@ sudo mkdir /mnt/dein_pfad
 sudo chown root:root /mnt/dein_pfad/
 ```
 
-# Script erstellen
 
-Der Befehl rsync in Kombination mit Scripts
+
+# Der Befehl rsync in Kombination mit Scripts
 
 Der Hauptbefehl mit rsync wird mit dem absoluten Pfad angegeben, um auch in minimalistischen Betriebssystemen das Tool korrekt anzusprechen. Die Flags erkläre ich hier kurz:
 
@@ -58,7 +58,7 @@ Ein laufendes Linux-System enthält Ordner, die keine echten Dateien auf der Fes
 
  /dev/*,/proc/*,/sys/*,/tmp/*,/run/*,/mnt/*,/dein_pfad/*,/lost+found  
 
-# Scripte erstellen
+## Scripte erstellen
 
 Dies sind zwei Varianten eines simplen Scripts, welches Meldungen über Erfolg oder Misserfolg des Backups an den konfigurierten E-Mail-Account oder eine andere eingerichtete App weiterleitet. Diese Meldungen decken allerdings nur einen kleine Teil der möglichen Fehler ab. Für eine komplette Fehleranalyse des Backups muss man dem Script noch einige Prüfungen hinzufügen. Darauf verzichte ich hier der Einfachheit halber und um den Rahmen des Blog Posts nicht zu sprengen. Die Konfiguration eines für den autmomatischen E-Mail versands benötigten *App-Passworts* und das Einrichten des Dienstes *msmtp* habe ich [in diesem Post übersichtlich erklärt]({{< ref "posts/mail-transfer-agent-nutzen.md" >}}).
 
@@ -101,7 +101,7 @@ sudo chmod +x /usr/local/bin/pi_backup.sh
 
 
 
-## Cronjob anpassen
+# Cronjob anpassen
 
 Die Verwaltung der zeitgesteuerten Aufträge wird in Linux über die sogenannten Cronjobs erledigt. Zuerst sollte man prüfen, ob der Dienst aktiv ist:
 
