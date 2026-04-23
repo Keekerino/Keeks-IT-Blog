@@ -55,6 +55,7 @@ hidecolorschemetoggle = false
   info = "Systemintegrator"
   description = "Keeks's persönliche Webseite über Systemintegration & Netzwerke"
   keywords = "blog, sysadmin, Leipzig IT, IT, Netzwerke, Systemintegration"
+  favicon = "/favicon.svg"
   
   # Datumsformat für die Anzeige (Deutsch)
   date_format = "02.01.2006"
