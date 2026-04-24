@@ -1,3 +1,11 @@
 public/
 resources/
 entwuerfe/
+
+
+# Binärdateien
+/hugo
+
+# OS-spezifische Metadaten
+.DS_Store
+Thumbs.db
