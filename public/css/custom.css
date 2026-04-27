@@ -1,8 +1,8 @@
 /* ==========================================================================
-   1. GLOBALE FARBEN (HELL & FREUNDLICH)
+   1. GLOBALE FARBEN & GLOBALER HINTERGRUND
    ========================================================================== */
 :root {
-    --page-bg: #f4f4f4;         /* Hellgrauer Hintergrund der Seite */
+    --page-bg: #f4f4f4;         /* Hellgrauer Basis-Hintergrund der Seite */
     --card-bg: #ffffff;         /* Weiße Karten */
     --text-main: #333333;       /* Dunkelgrauer Text für beste Lesbarkeit */
     --text-muted: #666666;      /* Hellerer Text für Beschreibungen */
@@ -13,13 +13,39 @@
 body {
     background-color: var(--page-bg);
     color: var(--text-main);
+    
+    /* Gittermuster auf die gesamte Website anwenden */
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23e0e0e0' stroke-width='0.5'%3E%3Cpath d='M0 0h80v80H0z'/%3E%3Cpath d='M10 0v80M20 0v80M30 0v80M40 0v80M50 0v80M60 0v80M70 0v80M0 10h80M0 20h80M0 30h80M0 40h80M0 50h80M0 60h80M0 70h80'/%3E%3Ccircle fill='%23d0d0d0' cx='10' cy='10' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='30' cy='10' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='50' cy='10' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='70' cy='10' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='10' cy='30' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='30' cy='30' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='50' cy='30' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='70' cy='30' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='10' cy='50' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='30' cy='50' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='50' cy='50' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='70' cy='50' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='10' cy='70' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='30' cy='70' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='50' cy='70' r='1'/%3E%3Ccircle fill='%23d0d0d0' cx='70' cy='70' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-position: center;
 }
 
 /* ==========================================================================
-   2. EINHEITLICHE KARTEN (POSTS & LINKS)
+   2. LAYOUT CONTENT BEREICH (KONTRAST & LESBARKEIT)
    ========================================================================== */
+.center.measure-wide.center.ph3.ph4-ns.mw9, 
+main .ph3.ph4-ns.mw7,                          
+.about-me-container                           
+{
+    background-color: var(--card-bg) !important;
+    background-image: none !important; /* Blockiert das Durchscheinen des Body-Musters */
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.03); 
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
 
-/* Wir zielen auf alle unsere Karten-Typen ab */
+main .measure {
+    max-width: 40rem !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ==========================================================================
+   3. EINHEITLICHE KARTEN (POSTS & LINKS)
+   ========================================================================== */
 .post-card, 
 .link-card, 
 .is-section article {
@@ -42,7 +68,6 @@ body {
     box-shadow: 0 12px 20px rgba(0,0,0,0.1) !important;
 }
 
-/* Bilder in den Karten */
 .card-image, 
 .link-image, 
 .is-section article img:not(.favicon-img) {
@@ -55,7 +80,6 @@ body {
     display: block;
 }
 
-/* Container für den Text */
 .card-content, 
 .link-content, 
 .is-section .pa3 {
@@ -65,7 +89,6 @@ body {
     flex-direction: column !important;
 }
 
-/* Titel-Design */
 .card-title a, 
 .link-title, 
 .is-section h2.f4 a {
@@ -77,7 +100,7 @@ body {
     line-height: 1.2 !important; 
     margin-bottom: 0.2rem !important; 
 }
-/*überschreiben zusätzlich die Standard-Abstände vom Theme */
+
 .card-title {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
@@ -87,7 +110,6 @@ body {
     margin-top: 0 !important;
 }
 
-/* Datum */
 .card-date, 
 .f6.gray {
     font-size: 0.8rem !important;
@@ -95,7 +117,6 @@ body {
     margin-bottom: 0.5rem !important;
 }
 
-/* Zusammenfassung */
 .card-summary, 
 .link-desc, 
 .is-section .f5.lh-copy {
@@ -109,7 +130,7 @@ body {
 }
 
 /* ==========================================================================
-   3. ÜBERSCHRIFTEN IN BLOG-POSTS (LESBARKEIT)
+   4. ÜBERSCHRIFTEN IN BLOG-POSTS (LESBARKEIT)
    ========================================================================== */
 article.pa3.pa4-ns h1, 
 article.pa3.pa4-ns h2, 
@@ -118,24 +139,23 @@ article.pa3.pa4-ns h3 {
 }
 
 /* ==========================================================================
-   4. TABELLEN & BACK-TO-TOP
+   5. TABELLEN & BACK-TO-TOP
    ========================================================================== */
 #back-to-top {
     position: fixed; bottom: 30px; right: 30px;
-    background-color: #111111; /* Hier auf Schwarz/Dunkelgrau geändert */
+    background-color: #111111; 
     color: white;
     padding: 12px 18px; border-radius: 6px; border: none;
-    cursor: pointer; /* Zeigt die typische "Klick-Hand" an, wenn man drüberfährt */
-    transition: background-color 0.2s ease; /* Sorgt für einen weichen Farbübergang */
+    cursor: pointer; 
+    transition: background-color 0.2s ease; 
 }
 
-/* Optionaler Hover-Effekt: Wird etwas heller, wenn man mit der Maus drüberfährt */
 #back-to-top:hover {
     background-color: #333333; 
 }
 
 /* ==========================================================================
-   GALERIE (KORREKTES GRID FÜR HUGO)
+   6. GALERIE (KORREKTES GRID FÜR HUGO)
    ========================================================================== */
 .ananke-gallery-grid,
 .ananke-gallery-grid > p {
@@ -169,9 +189,8 @@ article.pa3.pa4-ns h3 {
     color: var(--text-muted);
 }
 
-
 /* ==========================================================================
-   WORK IN PROGRESS BANNER (STATISCH)
+   7. WORK IN PROGRESS BANNER (STATISCH)
    ========================================================================== */
 .wip-banner-simple {
     background: repeating-linear-gradient(45deg, #fffdf2, #fffdf2 10px, #fff9e6 10px, #fff9e6 20px);
