@@ -2,22 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/adblocker/</loc>
+    <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/netzwerk/</loc>
+    <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/pi-hole/</loc>
+    <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/pi-hole/</loc>
+    <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/raspberrypi/</loc>
+    <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/security/</loc>
+    <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/log2ram/</loc>
     <lastmod>2026-04-22T06:54:13+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2026-04-22T06:54:13+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2026-04-22T06:54:13+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/ram/</loc>
-    <lastmod>2026-04-22T06:54:13+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/raspberrypi/</loc>
-    <lastmod>2026-04-22T06:54:13+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-04-22T06:54:13+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/backup/</loc>
