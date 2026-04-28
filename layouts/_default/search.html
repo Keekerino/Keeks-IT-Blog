@@ -24,7 +24,7 @@
     resultsContainer.innerHTML = '<p>Suche nach <strong>"' + searchQuery + '"</strong>...</p>';
 
     // 2. Unsere in Schritt 1 & 2 generierte index.json laden
-    fetch('/index.json')
+    fetch('/index.json?v=' + new Date().getTime())
       .then(response => response.json())
       .then(data => {
         
