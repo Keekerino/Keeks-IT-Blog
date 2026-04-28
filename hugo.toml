@@ -19,6 +19,13 @@ colorScheme = "auto"
 hidecolorschemetoggle = false
 
 # ==========================================
+# Erlaubt Hugo ebenfalls .JSON zu bauen 
+# ==========================================
+
+[outputs]
+ home = ["HTML", "RSS", "JSON"]
+
+# ==========================================
 # INHALTS-STEUERUNG (MARKUP & PAGINATION)
 # ==========================================
 [pagination]
@@ -40,6 +47,16 @@ hidecolorschemetoggle = false
   series = "series"
   tag = "tags"
   author = "authors"
+
+# ==========================================
+# SEO & CRAWLING KONTROLLE 
+# ==========================================
+# Konfiguration der sitemap.xml für Googlebot
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
+
 
 # ==========================================
 # EXTERNE DIENSTE
@@ -103,13 +120,15 @@ hidecolorschemetoggle = false
 # Related LINKS
 # ==========================================
 
-  [related]
+[related]
   includeNewer = true
   threshold = 0
   toLower = true
-  [[related.indices]]
-    name = "tags"
-    weight = 100
-  [[related.indices]]
-    name = "date"
-    weight = 10
+[[related.indices]]
+  name = "tags"
+  weight = 100
+[[related.indices]]
+  name = "date"
+  weight = 10
+
+
