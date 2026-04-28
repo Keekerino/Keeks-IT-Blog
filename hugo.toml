@@ -7,25 +7,24 @@ theme = "ananke"
 languageCode = "de-de"
 defaultContentLanguage = 'de'
 since = 2026
+
+# Empfehlung: relativeURLs reicht aus. Beides auf "true" führt in Hugo oft zu Konflikten!
 relativeURLs = true
-canonifyURLs = true
+canonifyURLs = false
 
 # SEO & Funktionen (Muss auf der Root-Ebene stehen)
 enableRobotsTXT = true
 enableEmoji = true
 
-# ==========================================
-# Erlaubt Hugo ebenfalls .JSON zu bauen 
-# ==========================================
-
-[outputs]
- home = ["HTML", "RSS", "JSON"]
-
-# Design / Dark Mode (Ananke/Theme spezifisch)
+# Design / Dark Mode (Muss VOR der ersten eckigen Klammer stehen!)
 colorScheme = "auto"
 hidecolorschemetoggle = false
 
-
+# ==========================================
+# Erlaubt Hugo ebenfalls .JSON zu bauen 
+# ==========================================
+[outputs]
+ home = ["HTML", "RSS", "JSON"]
 
 # ==========================================
 # INHALTS-STEUERUNG (MARKUP & PAGINATION)
@@ -58,7 +57,6 @@ hidecolorschemetoggle = false
   changefreq = "weekly"
   filename = "sitemap.xml"
   priority = 0.5
-
 
 # ==========================================
 # EXTERNE DIENSTE
@@ -108,29 +106,27 @@ hidecolorschemetoggle = false
   url = "/posts/"
 
 [[menu.main]]
-  name = "AboutMe"
-  weight = 3
-  url = "/about/"
-
-[[menu.main]]
   name = "Links & Tools"
   weight = 2
   url = "/links/"
 
+[[menu.main]]
+  name = "AboutMe"
+  weight = 3
+  url = "/about/"
 
 # ==========================================
 # Related LINKS
 # ==========================================
-
 [related]
   includeNewer = true
   threshold = 0
   toLower = true
+
 [[related.indices]]
   name = "tags"
   weight = 100
+
 [[related.indices]]
   name = "date"
   weight = 10
-
-
