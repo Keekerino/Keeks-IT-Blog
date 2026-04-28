@@ -1,0 +1,72 @@
+{{ define "main" }}
+<article class="pa3 pa4-ns center w-100 mw7">
+  <header>
+    <h1 class="f2 lh-title">Suchergebnisse</h1>
+  </header>
+  
+  <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray">
+    <div id="search-results">
+      <p>Suche wird geladen...</p>
+    </div>
+  </section>
+</article>
+
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.6.2"></script>
+
+<script>
+  // 1. Suchbegriff aus der URL fischen (z.B. ?q=raspberry)
+  const urlParams = new URLSearchParams(window.location.search);
+  const searchQuery = urlParams.get('q');
+  const resultsContainer = document.getElementById('search-results');
+
+  if (searchQuery) {
+    // Lade-Text anzeigen, falls es einen Bruchteil einer Sekunde dauert
+    resultsContainer.innerHTML = '<p>Suche nach <strong>"' + searchQuery + '"</strong>...</p>';
+
+    // 2. Unsere in Schritt 1 & 2 generierte index.json laden
+    fetch('/index.json')
+      .then(response => response.json())
+      .then(data => {
+        
+        // 3. Fuse.js konfigurieren (Das Hirn der Suche)
+        const fuse = new Fuse(data, {
+          keys: [
+            { name: 'title', weight: 0.7 }, // Titel ist am wichtigsten
+            { name: 'tags', weight: 0.2 },
+            { name: 'content', weight: 0.1 }
+          ],
+          includeMatches: true,
+          threshold: 0.3, // Erlaubt leichte Tippfehler (0.0 ist exakt, 1.0 ist alles)
+          ignoreLocation: true
+        });
+
+        // 4. Die Suche ausführen
+        const results = fuse.search(searchQuery);
+
+        // 5. HTML für die Ergebnisse zusammenbauen
+        if (results.length === 0) {
+          resultsContainer.innerHTML = '<p>Leider keine Treffer für <strong>"' + searchQuery + '"</strong> gefunden.</p>';
+        } else {
+          let html = '<ul class="list pl0 mt0 measure center">';
+          results.forEach(item => {
+            // Tachyons Klassen für eine schicke Listen-Darstellung
+            html += `
+              <li class="flex items-center lh-copy pa3 ph0-l bb b--black-10">
+                <div class="pl3 pl0-l flex-auto">
+                  <a href="${item.item.permalink}" class="f4 fw6 db black link hover-blue">${item.item.title}</a>
+                </div>
+              </li>`;
+          });
+          html += '</ul>';
+          resultsContainer.innerHTML = html;
+        }
+      })
+      .catch(error => {
+        console.error('Fehler beim Laden des Such-Index:', error);
+        resultsContainer.innerHTML = '<p>Fehler beim Laden der Suche. Bitte versuche es später noch einmal.</p>';
+      });
+  } else {
+    resultsContainer.innerHTML = '<p>Bitte gib einen Suchbegriff oben in die Leiste ein.</p>';
+  }
+</script>
+{{ end }}

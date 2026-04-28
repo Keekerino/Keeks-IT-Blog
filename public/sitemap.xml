@@ -4,193 +4,339 @@
   <url>
     <loc>http://localhost:1313/tags/adblocker/</loc>
     <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/netzwerk/</loc>
     <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/pi-hole/</loc>
     <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/pi-hole/</loc>
     <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
     <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/raspberrypi/</loc>
     <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/security/</loc>
     <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2026-04-27T10:00:00+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/log2ram/</loc>
     <lastmod>2026-04-22T06:54:13+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/linux/</loc>
     <lastmod>2026-04-22T06:54:13+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/ram/</loc>
     <lastmod>2026-04-22T06:54:13+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/backup/</loc>
     <lastmod>2026-04-18T08:33:13+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/projekte/</loc>
     <lastmod>2026-04-18T08:33:13+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/zeitgesteuerte-backups/</loc>
     <lastmod>2026-04-18T08:33:13+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/automation/</loc>
     <lastmod>2026-04-14T11:58:35+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/diy/</loc>
     <lastmod>2026-04-14T11:58:35+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/mail/</loc>
     <lastmod>2026-04-14T11:58:35+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/mail-transfer-agent-nutzen/</loc>
     <lastmod>2026-04-14T11:58:35+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/kurzanleitung/</loc>
     <lastmod>2026-04-12T12:24:59+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/samba/</loc>
     <lastmod>2026-04-12T12:24:59+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/samba-dateiserver-kurzanleitung/</loc>
     <lastmod>2026-04-12T12:24:59+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/raspberrypi-einrichtung-headless/</loc>
     <lastmod>2026-04-10T09:57:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/terminal/</loc>
     <lastmod>2026-04-10T09:57:53+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/cockpit/</loc>
     <lastmod>2026-04-08T11:20:48+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/weboberfl%C3%A4che-cockpit-auf-opensuse-installieren-zur-%C3%BCbersichtlichen-verwaltung-von-systemressourcen/</loc>
     <lastmod>2026-04-08T11:20:48+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/opensuse/</loc>
     <lastmod>2026-04-08T11:20:48+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/verwaltung/</loc>
     <lastmod>2026-04-08T11:20:48+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/amd/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/arch-linux/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/cachyos/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/ki/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/llm/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/03.31.26/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/rdna3/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/rx-7900-xt/</loc>
     <lastmod>2026-04-03T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/</loc>
     <lastmod>2026-03-31T23:26:26+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/verzeichnisdienst/</loc>
     <lastmod>2026-03-30T17:00:17+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/03.30.26-ldap/</loc>
     <lastmod>2026-03-30T17:00:17+02:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/tags/guide/</loc>
     <lastmod>2026-03-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/terminalpersonalisierung/</loc>
     <lastmod>2026-03-29T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/secure-shell-unter-cachyos/</loc>
     <lastmod>2026-03-28T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2026-03-18T10:49:15+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
     <lastmod>2026-03-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/categories/projekte/</loc>
     <lastmod>2026-03-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/posts/troubleshooting-hugo-extended/</loc>
     <lastmod>2026-03-15T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/authors/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/borncity/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/censys/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/css-zengarden/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/digitalcourage/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/ettercap/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/exploitdb/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/ipv64/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/golem/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/hardware64/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/heise/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/lwn/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/mediathekview/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/monkey.org/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/pi-hole/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/quad9ch/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/rheinwerk-verlag/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/self-html/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/series/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/shodan/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/think-python/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/tldr/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/virustotal/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/w3schools/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/where-is-my-ram/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/windows-cmd/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url><url>
     <loc>http://localhost:1313/links/wireshark/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
