@@ -14,16 +14,18 @@ canonifyURLs = true
 enableRobotsTXT = true
 enableEmoji = true
 
-# Design / Dark Mode (Ananke/Theme spezifisch)
-colorScheme = "auto"
-hidecolorschemetoggle = false
-
 # ==========================================
 # Erlaubt Hugo ebenfalls .JSON zu bauen 
 # ==========================================
 
 [outputs]
  home = ["HTML", "RSS", "JSON"]
+
+# Design / Dark Mode (Ananke/Theme spezifisch)
+colorScheme = "auto"
+hidecolorschemetoggle = false
+
+
 
 # ==========================================
 # INHALTS-STEUERUNG (MARKUP & PAGINATION)
