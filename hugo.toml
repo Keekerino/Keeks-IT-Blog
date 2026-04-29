@@ -111,7 +111,7 @@ hidecolorschemetoggle = false
   url = "/links/"
 
 [[menu.main]]
-  name = "AboutMe"
+  name = "About"
   weight = 3
   url = "/about/"
 
