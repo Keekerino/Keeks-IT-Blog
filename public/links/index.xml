@@ -2,177 +2,184 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Links &amp; Tools on Keeks IT-Blog</title>
-    <link>http://192.168.189.246:1313/links/</link>
+    <link>http://localhost:1313/links/</link>
     <description>Recent content in Links &amp; Tools on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
-    <atom:link href="http://192.168.189.246:1313/links/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/links/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Born City It Blog</title>
-      <link>http://192.168.189.246:1313/links/borncity/</link>
+      <link>http://localhost:1313/links/borncity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/borncity/</guid>
+      <guid>http://localhost:1313/links/borncity/</guid>
       <description>&lt;p&gt;Immer auf dem neuesten Stand was Windows angeht, ebenfalls mit großem Linux-Wissensfundus auf Borns It blog.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Censys</title>
-      <link>http://192.168.189.246:1313/links/censys/</link>
+      <link>http://localhost:1313/links/censys/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/censys/</guid>
+      <guid>http://localhost:1313/links/censys/</guid>
       <description>&lt;p&gt;Sucht Hosts, Websites und Zertifikate.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Css ZenGarden</title>
-      <link>http://192.168.189.246:1313/links/css-zengarden/</link>
+      <link>http://localhost:1313/links/css-zengarden/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/css-zengarden/</guid>
+      <guid>http://localhost:1313/links/css-zengarden/</guid>
       <description>&lt;p&gt;Die Hauptseite von CSS Zen Garden ist ein legendäres Web-Projekt, das als „Garten der Erleuchtung“ für Webdesign gilt&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digitalcourage</title>
-      <link>http://192.168.189.246:1313/links/digitalcourage/</link>
+      <link>http://localhost:1313/links/digitalcourage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/digitalcourage/</guid>
+      <guid>http://localhost:1313/links/digitalcourage/</guid>
       <description>&lt;p&gt;Digitalcourage (vormals: der FoeBuD) setzt sich  in Deutschland seit 1987 für Grundrechte und Datenschutz ein.&#xA;Ebenfalls mit eigenem DNS-Server Angebot. Ideal für kompromisslose Privatsphäre, da diese deutsche NGO einen komplett zensurfreien DNS-Server ohne jegliche Datenprotokollierung betreibt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ettercap</title>
-      <link>http://192.168.189.246:1313/links/ettercap/</link>
+      <link>http://localhost:1313/links/ettercap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/ettercap/</guid>
+      <guid>http://localhost:1313/links/ettercap/</guid>
       <description>&lt;p&gt;Erkunden von Man-in-the-middle Angriffen mit vielen Funktionen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exploit Database</title>
-      <link>http://192.168.189.246:1313/links/exploitdb/</link>
+      <link>http://localhost:1313/links/exploitdb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/exploitdb/</guid>
+      <guid>http://localhost:1313/links/exploitdb/</guid>
       <description>&lt;p&gt;Datenbank an bekannten Exploits.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Free DynDNS2</title>
-      <link>http://192.168.189.246:1313/links/ipv64/</link>
+      <link>http://localhost:1313/links/ipv64/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/ipv64/</guid>
+      <guid>http://localhost:1313/links/ipv64/</guid>
       <description>&lt;p&gt;Ein vielseitiges Projekt aus Deutschland, das individuell anpassbare DNS-Filter gegen Werbung und Tracking mit DynDNS-Funktionen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Golem</title>
-      <link>http://192.168.189.246:1313/links/golem/</link>
+      <link>http://localhost:1313/links/golem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/golem/</guid>
+      <guid>http://localhost:1313/links/golem/</guid>
       <description>&lt;p&gt;Deutsche IT-News, Security-Ticker und Hintergründe aus der Tech-Welt von Golem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hardware64</title>
-      <link>http://192.168.189.246:1313/links/hardware64/</link>
+      <link>http://localhost:1313/links/hardware64/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/hardware64/</guid>
+      <guid>http://localhost:1313/links/hardware64/</guid>
       <description>&lt;p&gt;Bei Hardware64.de findest du handverlesene und geprüfte Hardware für dein Homelab. Inklusive Installationshinweisen undd Kaufempfehlungen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Heise Online</title>
-      <link>http://192.168.189.246:1313/links/heise/</link>
+      <link>http://localhost:1313/links/heise/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/heise/</guid>
+      <guid>http://localhost:1313/links/heise/</guid>
       <description>&lt;p&gt;Deutsche IT-News, Security-Ticker und Hintergründe aus der Tech-Welt von Heise.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lwn.net</title>
-      <link>http://192.168.189.246:1313/links/lwn/</link>
+      <link>http://localhost:1313/links/lwn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/lwn/</guid>
+      <guid>http://localhost:1313/links/lwn/</guid>
       <description>&lt;p&gt;Linux wissen und komplette kostenlose Bücher zum Thema.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MediathekView</title>
-      <link>http://192.168.189.246:1313/links/mediathekview/</link>
+      <link>http://localhost:1313/links/mediathekview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/mediathekview/</guid>
+      <guid>http://localhost:1313/links/mediathekview/</guid>
       <description>&lt;p&gt;Durchsuchen und Aufzeichnen der öffentlich-rechtlichen Mediatheken (ARD,ZDF,Arte, 3Sat, SWR, BR, MDR, NDR, WDR, HR, RBB, ORF, SRF).&lt;/p&gt;</description>
     </item>
     <item>
       <title>monkey.org</title>
-      <link>http://192.168.189.246:1313/links/monkey.org/</link>
+      <link>http://localhost:1313/links/monkey.org/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/monkey.org/</guid>
+      <guid>http://localhost:1313/links/monkey.org/</guid>
       <description>&lt;p&gt;Sammlung an Werkzeugen für Netzwerküberwachung und Penetration-Testing.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Quad9Ch</title>
-      <link>http://192.168.189.246:1313/links/quad9ch/</link>
+      <title>Pi Hole</title>
+      <link>http://localhost:1313/links/pi-hole/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/quad9ch/</guid>
+      <guid>http://localhost:1313/links/pi-hole/</guid>
+      <description>&lt;p&gt;Die perfekte Do-it-yourself-Lösung für die volle Kontrolle, zum Hosten eines eigenen, netzwerkweiten DNS-Filter gegen Werbung und Tracking.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Quad9Ch</title>
+      <link>http://localhost:1313/links/quad9ch/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/links/quad9ch/</guid>
       <description>&lt;p&gt;Schweizer Non-Profit-Dienst. Blockiert automatisch Malware und Phishing-Seiten, ohne Nutzerdaten zu sammeln.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rheinwerk Verlag</title>
-      <link>http://192.168.189.246:1313/links/rheinwerk-verlag/</link>
+      <link>http://localhost:1313/links/rheinwerk-verlag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/rheinwerk-verlag/</guid>
+      <guid>http://localhost:1313/links/rheinwerk-verlag/</guid>
       <description>&lt;p&gt;Open Books vom Rheinwerkverlag mit einer Auswahl von kostenlos lesbaren Fachbüchern.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SELF-HTML</title>
-      <link>http://192.168.189.246:1313/links/self-html/</link>
+      <link>http://localhost:1313/links/self-html/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/self-html/</guid>
+      <guid>http://localhost:1313/links/self-html/</guid>
       <description>&lt;p&gt;Deutschsprachige Seite mit Kult-Status zum lernen von HTML.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Shodan IO</title>
-      <link>http://192.168.189.246:1313/links/shodan/</link>
+      <link>http://localhost:1313/links/shodan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/shodan/</guid>
+      <guid>http://localhost:1313/links/shodan/</guid>
       <description>&lt;p&gt;Suchmaschine für das Internet der Dinge.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Think Python</title>
-      <link>http://192.168.189.246:1313/links/think-python/</link>
+      <link>http://localhost:1313/links/think-python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/think-python/</guid>
+      <guid>http://localhost:1313/links/think-python/</guid>
       <description>&lt;p&gt;Eines DER Bücher, wenn es darum geht die Denkweise hinter dem Programmieren zu verstehen. Auch für nicht-Anwendungsentwickler sehr zu empfehlen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Too Long, Didn&#39;t Read</title>
-      <link>http://192.168.189.246:1313/links/tldr/</link>
+      <link>http://localhost:1313/links/tldr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/tldr/</guid>
+      <guid>http://localhost:1313/links/tldr/</guid>
       <description>&lt;p&gt;Übersichtlichere Man-Pages für Linux.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Virus Total</title>
-      <link>http://192.168.189.246:1313/links/virustotal/</link>
+      <link>http://localhost:1313/links/virustotal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/virustotal/</guid>
+      <guid>http://localhost:1313/links/virustotal/</guid>
       <description>&lt;p&gt;Analyse von Dateien, Domänen, IPs und URLs auf Viren und Kompromittierung.&lt;/p&gt;</description>
     </item>
     <item>
       <title>W3Schools</title>
-      <link>http://192.168.189.246:1313/links/w3schools/</link>
+      <link>http://localhost:1313/links/w3schools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/w3schools/</guid>
+      <guid>http://localhost:1313/links/w3schools/</guid>
       <description>&lt;p&gt;Eine der weltweit größten und bekanntesten kostenlosen E-Learning-Plattformen für Webentwicklung und Programmierung.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Where Is My Ram</title>
-      <link>http://192.168.189.246:1313/links/where-is-my-ram/</link>
+      <link>http://localhost:1313/links/where-is-my-ram/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/where-is-my-ram/</guid>
+      <guid>http://localhost:1313/links/where-is-my-ram/</guid>
       <description>&lt;p&gt;In Zeiten des RAM-Preis-Wahnsinns geborener Helfer für Kaufentscheidungen&lt;/p&gt;</description>
     </item>
     <item>
       <title>Windows cmd Cheatsheet</title>
-      <link>http://192.168.189.246:1313/links/windows-cmd/</link>
+      <link>http://localhost:1313/links/windows-cmd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/windows-cmd/</guid>
+      <guid>http://localhost:1313/links/windows-cmd/</guid>
       <description>&lt;p&gt;Hilfe mit Windows-Kommandos&lt;/p&gt;</description>
     </item>
     <item>
       <title>wireshark</title>
-      <link>http://192.168.189.246:1313/links/wireshark/</link>
+      <link>http://localhost:1313/links/wireshark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://192.168.189.246:1313/links/wireshark/</guid>
+      <guid>http://localhost:1313/links/wireshark/</guid>
       <description>&lt;p&gt;Das wohl bekannteste Tool zur Netzwerkanalyse.&lt;/p&gt;</description>
     </item>
   </channel>
