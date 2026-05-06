@@ -7,7 +7,7 @@
     <title>Keeks IT-Blog</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Persönliche Dokumentationen, Projekte, Kurzanleitungen sowie hilfreiche Links">
-    <meta name="generator" content="Hugo 0.152.2">
+    <meta name="generator" content="Hugo 0.161.1">
     
     
     
@@ -45,12 +45,12 @@
     
 
     
-      <link rel="canonical" href="http://localhost:1313/">
+      <link rel="canonical" href="http://192.168.189.246:1313/">
     
 
     
     
-    <meta property="og:url" content="http://localhost:1313/">
+    <meta property="og:url" content="http://192.168.189.246:1313/">
   <meta property="og:site_name" content="Keeks IT-Blog">
   <meta property="og:title" content="Keeks IT-Blog">
   <meta property="og:description" content="Persönliche Dokumentationen, Projekte, Kurzanleitungen sowie hilfreiche Links">
@@ -71,7 +71,7 @@
 
   
   
-  <header class="cover bg-top" style="background-image: url('http://localhost:1313/images/generic/Keeks4.png');">
+  <header class="cover bg-top" style="background-image: url('http://192.168.189.246:1313/images/generic/Keeks4.png');">
     
     <div class="bg-black-60">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
@@ -109,8 +109,8 @@
           </li>
           
           <li class="list f5 f4-ns fw4 dib pr3">
-            <a class="hover-white white-90 no-underline" href="./about/" title="AboutMe Seite">
-              AboutMe
+            <a class="hover-white white-90 no-underline" href="./about/" title="About Seite">
+              About
             </a>
           </li>
           
@@ -152,6 +152,49 @@
     </h1>
 
     <div class="flex-l flex-wrap-l ml-n3 mr-n3">
+  
+    <div class="w-100 w-50-l ph3 mb4">
+      <article class="post-card">
+
+        
+          <img src="./images/hugo/hugo-icon.svg" alt="Kurzanleitung" class="card-image">
+        
+
+        <div class="card-content">
+          <h2 class="card-title mt0 mb1">
+            <a href="./posts/code-oss-f%C3%BCr-lokale-web-entwicklung-mit-hugo-und-github-auf-cachyos/">
+              Kurzanleitung
+            </a>
+          </h2>
+
+          <p class="card-date f6 mt0 mb3 gray">
+            06.05.2026
+          </p>
+
+          <p class="card-summary">
+            <div class="notice-box Code - OSS für lokale Web-Entwicklung mit Hugo und GitHub auf CachyOS" style="
+    padding: 15px; 
+    margin: 20px 0; 
+    border-left: 5px solid; 
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    display: flow-root; /* <-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */
+">
+    
+        <strong style="text-transform: uppercase; display: block; margin-bottom: 5px;">
+            Code - OSS für lokale Web-Entwicklung mit Hugo und GitHub auf CachyOS:
+        </strong>
+    
+
+    <div class="notice-content">
+        Wenn man an verschiedenen Rechnern arbeitet und flexibel GitHub-Projekte verwalten möchte, ist es praktisch, die nötigen Schritte für eine erfolgreiche Installation der benötigten Software in einer Datei parat zu haben und nicht jedes Mal zu googeln. In diesem Fall geht es um die korrekte Einbindung des Frameworks Hugo in Code - OSS zum Verwalten der Themes eines Webprojektes.
+    </div>
+</div>
+          </p>
+        </div>
+
+      </article>
+    </div>
   
     <div class="w-100 w-50-l ph3 mb4">
       <article class="post-card">
@@ -278,49 +321,6 @@
       </article>
     </div>
   
-    <div class="w-100 w-50-l ph3 mb4">
-      <article class="post-card">
-
-        
-          <img src="./images/smtp/SMTP-logo-color-2.svg" alt="Mail Transfer Agent für Raspberry" class="card-image">
-        
-
-        <div class="card-content">
-          <h2 class="card-title mt0 mb1">
-            <a href="./posts/mail-transfer-agent-nutzen/">
-              Mail Transfer Agent für Raspberry
-            </a>
-          </h2>
-
-          <p class="card-date f6 mt0 mb3 gray">
-            14.04.2026
-          </p>
-
-          <p class="card-summary">
-            <div class="notice-box E-Mail Benachrichtigungen des Pi&#39;s Konfigurieren" style="
-    padding: 15px; 
-    margin: 20px 0; 
-    border-left: 5px solid; 
-    background-color: #f9f9f9;
-    border-radius: 4px;
-    display: flow-root; /* <-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */
-">
-    
-        <strong style="text-transform: uppercase; display: block; margin-bottom: 5px;">
-            E-Mail Benachrichtigungen des Pi&#39;s Konfigurieren:
-        </strong>
-    
-
-    <div class="notice-content">
-        Dein Raspberry Pi ist ein echtes Arbeitstier, aber leider auch ein ziemlich schweigsames. Er ackert im Hintergrund, und oft erfährst du erst von Problemen, wenn du dich mühsam per SSH einloggst. Warum also nicht den Spieß umdrehen und den Pi dazu bringen, dich bei Statusänderungen einfach anzumailen?
-    </div>
-</div>
-          </p>
-        </div>
-
-      </article>
-    </div>
-  
 </div>
 
     <hr class="mv4 b--light-gray">
@@ -333,6 +333,11 @@
         </h2>
 
         <div class="flex flex-wrap">
+          
+            <a href="./posts/mail-transfer-agent-nutzen/"
+               class="f6 link dim ba ph3 pv2 mr2 mb2 br2 b--light-gray hover-bg-light-gray transition">
+              Mail Transfer Agent für Raspberry
+            </a>
           
             <a href="./posts/samba-dateiserver-kurzanleitung/"
                class="f6 link dim ba ph3 pv2 mr2 mb2 br2 b--light-gray hover-bg-light-gray transition">
@@ -359,11 +364,6 @@
               YaST &amp; LDAP
             </a>
           
-            <a href="./posts/terminalpersonalisierung/"
-               class="f6 link dim ba ph3 pv2 mr2 mb2 br2 b--light-gray hover-bg-light-gray transition">
-              Terminalpersonalisierung
-            </a>
-          
         </div>
 
         <div class="mt3">
@@ -387,7 +387,7 @@
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between items-center">
     <div class="flex items-center">
-      <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://localhost:1313/">
+      <a class="f4 fw4 hover-white white-70 dn dib-ns pv2 ph3 no-underline" href="http://192.168.189.246:1313/">
         &copy;  Keeks IT-Blog 2026 
       </a>
 
