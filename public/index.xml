@@ -2,297 +2,304 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>  on Keeks IT-Blog</title>
-    <link>http://localhost:1313/</link>
+    <link>https://192.168.121.234:1313/</link>
     <description>Recent content in   on Keeks IT-Blog</description>
     <generator>Hugo</generator>
     <language>de-de</language>
-    <lastBuildDate>Wed, 06 May 2026 09:08:06 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 May 2026 09:11:08 +0200</lastBuildDate>
+    <atom:link href="https://192.168.121.234:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lokalen Hugo Webserver Absichern</title>
+      <link>https://192.168.121.234:1313/posts/lokalen-hugo-webserver-absichern/</link>
+      <pubDate>Thu, 07 May 2026 09:11:08 +0200</pubDate>
+      <guid>https://192.168.121.234:1313/posts/lokalen-hugo-webserver-absichern/</guid>
+      <description>&lt;div class=&#34;notice-box Titel2&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            Titel2:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        Hier könnte deine Beschreibung stehen&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
+    </item>
     <item>
       <title>Kurzanleitung</title>
-      <link>http://localhost:1313/posts/code-oss-f%C3%BCr-lokale-web-entwicklung-mit-hugo-und-github-auf-cachyos/</link>
+      <link>https://192.168.121.234:1313/posts/code-oss-f%C3%BCr-lokale-web-entwicklung-mit-hugo-und-github-auf-cachyos/</link>
       <pubDate>Wed, 06 May 2026 09:08:06 +0200</pubDate>
-      <guid>http://localhost:1313/posts/code-oss-f%C3%BCr-lokale-web-entwicklung-mit-hugo-und-github-auf-cachyos/</guid>
+      <guid>https://192.168.121.234:1313/posts/code-oss-f%C3%BCr-lokale-web-entwicklung-mit-hugo-und-github-auf-cachyos/</guid>
       <description>&lt;div class=&#34;notice-box Code - OSS für lokale Web-Entwicklung mit Hugo und GitHub auf CachyOS&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            Code - OSS für lokale Web-Entwicklung mit Hugo und GitHub auf CachyOS:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        Wenn man an verschiedenen Rechnern arbeitet und flexibel GitHub-Projekte verwalten möchte, ist es praktisch, die nötigen Schritte für eine erfolgreiche Installation der benötigten Software in einer Datei parat zu haben und nicht jedes Mal zu googeln. In diesem Fall geht es um die korrekte Einbindung des Frameworks Hugo in Code - OSS zum Verwalten der Themes eines Webprojektes.&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Pi-hole Installation: Das DNS-Sinkhole für ein werbefreies Netz</title>
-      <link>http://localhost:1313/posts/pi-hole/</link>
+      <link>https://192.168.121.234:1313/posts/pi-hole/</link>
       <pubDate>Mon, 27 Apr 2026 10:00:00 +0200</pubDate>
-      <guid>http://localhost:1313/posts/pi-hole/</guid>
+      <guid>https://192.168.121.234:1313/posts/pi-hole/</guid>
       <description>&lt;div class=&#34;notice-box Installation von Pi-hole&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            Installation von Pi-hole:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        In diesem Beitrag zeige ich dir die Installation von Pi-hole, die Einbindung einer leistungsstarken Blockliste und wie wir nebenbei noch den Speicher für Backup-Aufgaben vorbereiten. Somit können wir nun auch endlich Geräte, die keine Installation von Werbeblockern zulassen, effektiv von Werbung abschirmen, das Tracking der Websiten verhindern und durch die geringere Menge an abgerufenen Werbeseiten auch noch Daten sparen. Dies erhöht die Geschwindigkeit des Seitenaufbaus und hilft auch beim Kostenmanagement in  Datenspar-Tarifen.&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Auslagerung von System-Logs in den Arbeitsspeicher mittels Log2Ram</title>
-      <link>http://localhost:1313/posts/log2ram/</link>
+      <link>https://192.168.121.234:1313/posts/log2ram/</link>
       <pubDate>Wed, 22 Apr 2026 06:54:13 +0000</pubDate>
-      <guid>http://localhost:1313/posts/log2ram/</guid>
+      <guid>https://192.168.121.234:1313/posts/log2ram/</guid>
       <description>&lt;div class=&#34;notice-box Lebensversicherung für die SD-Karte&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            Lebensversicherung für die SD-Karte:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        Wer einen Raspberry Pi oder ein ähnliches System auf SD-Karten-Basis betreibt, sollte sich mit einem entscheidenden Nachteil dieser Konfiguration beschäftigen: Schreibzugriffe auf diesen Speicherbaustein sind der Tod auf Raten. Besonders die ständigen System-Protokolle (Log-Files) in /var/log fressen die Speicherzellen regelrecht auf&amp;hellip;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Zeitgesteuerte Backups  auf dem RaspberryPi</title>
-      <link>http://localhost:1313/posts/zeitgesteuerte-backups/</link>
+      <link>https://192.168.121.234:1313/posts/zeitgesteuerte-backups/</link>
       <pubDate>Sat, 18 Apr 2026 08:33:13 +0200</pubDate>
-      <guid>http://localhost:1313/posts/zeitgesteuerte-backups/</guid>
+      <guid>https://192.168.121.234:1313/posts/zeitgesteuerte-backups/</guid>
       <description>&lt;div class=&#34;notice-box info&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        Der RaspberryPi ist schon ein tolles Gerät!  Damit man auch lange Freude an seinen konfigurierten Einstellungen hat und diese im Notfall gesichert sind, sehen wir uns hier heute mal die Möglichkeit von inkrementellen Backups mittels &lt;em&gt;rsync&lt;/em&gt; an. Als Sahnehäubchen obendrauf wird das ganze dann mit den zeitgesteuerten Aufgaben, den &lt;em&gt;Cronjobs&lt;/em&gt; automatisiert.&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Mail Transfer Agent für Raspberry</title>
-      <link>http://localhost:1313/posts/mail-transfer-agent-nutzen/</link>
+      <link>https://192.168.121.234:1313/posts/mail-transfer-agent-nutzen/</link>
       <pubDate>Tue, 14 Apr 2026 11:58:35 +0200</pubDate>
-      <guid>http://localhost:1313/posts/mail-transfer-agent-nutzen/</guid>
+      <guid>https://192.168.121.234:1313/posts/mail-transfer-agent-nutzen/</guid>
       <description>&lt;div class=&#34;notice-box E-Mail Benachrichtigungen des Pi&amp;#39;s Konfigurieren&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            E-Mail Benachrichtigungen des Pi&amp;#39;s Konfigurieren:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        Dein Raspberry Pi ist ein echtes Arbeitstier, aber leider auch ein ziemlich schweigsames. Er ackert im Hintergrund, und oft erfährst du erst von Problemen, wenn du dich mühsam per SSH einloggst. Warum also nicht den Spieß umdrehen und den Pi dazu bringen, dich bei Statusänderungen einfach anzumailen?&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>SAMBA Dateiserver Kurzanleitung</title>
-      <link>http://localhost:1313/posts/samba-dateiserver-kurzanleitung/</link>
+      <link>https://192.168.121.234:1313/posts/samba-dateiserver-kurzanleitung/</link>
       <pubDate>Sun, 12 Apr 2026 12:24:59 +0200</pubDate>
-      <guid>http://localhost:1313/posts/samba-dateiserver-kurzanleitung/</guid>
+      <guid>https://192.168.121.234:1313/posts/samba-dateiserver-kurzanleitung/</guid>
       <description>&lt;div class=&#34;notice-box SAMBA Dateiserver leicht gemacht&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            SAMBA Dateiserver leicht gemacht:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        In dieser Kurzanleitung erkläre ich wie man sich eine Dateifreigabe unter Samba einrichtet. Dies wird später noch sehr nützlich sein,  Backups von z.B. einem Raspberry Pi im lokalen Netz zu sichern.&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>RaspberryPi OS-Lite (64-bit) Installation</title>
-      <link>http://localhost:1313/posts/raspberrypi-einrichtung-headless/</link>
+      <link>https://192.168.121.234:1313/posts/raspberrypi-einrichtung-headless/</link>
       <pubDate>Fri, 10 Apr 2026 09:57:53 +0000</pubDate>
-      <guid>http://localhost:1313/posts/raspberrypi-einrichtung-headless/</guid>
+      <guid>https://192.168.121.234:1313/posts/raspberrypi-einrichtung-headless/</guid>
       <description>&lt;div class=&#34;notice-box Die Reise beginnt&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            Die Reise beginnt:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        &lt;p&gt;In diesem ersten Teil meiner neuen Raspberry-Pi-Serie zeige ich euch, wie ihr das System komplett „headless“ – also ohne Monitor und Tastatur – direkt über das Netzwerk aufsetzt, um somit einen möglichst geringen Ressourcenverbrauch des Gerätes sicherzustellen. Außerdem ist dies auch eine gute Übung für die Administration von Geräten über die SSH (Secure Shell).&#xA;Ein spannendes Thema auf dem Weg zu mehr Privatssphäre und Sicherheit im Netz.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Cockpit Auf OpenSuse </title>
-      <link>http://localhost:1313/posts/weboberfl%C3%A4che-cockpit-auf-opensuse-installieren-zur-%C3%BCbersichtlichen-verwaltung-von-systemressourcen/</link>
+      <link>https://192.168.121.234:1313/posts/weboberfl%C3%A4che-cockpit-auf-opensuse-installieren-zur-%C3%BCbersichtlichen-verwaltung-von-systemressourcen/</link>
       <pubDate>Wed, 08 Apr 2026 11:20:48 +0000</pubDate>
-      <guid>http://localhost:1313/posts/weboberfl%C3%A4che-cockpit-auf-opensuse-installieren-zur-%C3%BCbersichtlichen-verwaltung-von-systemressourcen/</guid>
+      <guid>https://192.168.121.234:1313/posts/weboberfl%C3%A4che-cockpit-auf-opensuse-installieren-zur-%C3%BCbersichtlichen-verwaltung-von-systemressourcen/</guid>
       <description>&lt;div class=&#34;notice-box Gibt es so etwas wie übersichtliche Ressourcenanzeigen in Linux?&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            Gibt es so etwas wie übersichtliche Ressourcenanzeigen in Linux?:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        &lt;p&gt;Heute beschäftige ich mich mal mit dem Tool Cockpit, welches zur Serververwaltung mithilfe einer grafischen Oberfläche im Web-Interface lokal genutzt werden kann. Auch wenn hier schon das Wort “Server” erwähnt wird, so eignet sich das Tool Cockpit jedoch ebenfalls hervorragend für private PC’s.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Lokale KI mit RX 7900 XT</title>
-      <link>http://localhost:1313/posts/03.31.26/</link>
+      <link>https://192.168.121.234:1313/posts/03.31.26/</link>
       <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/03.31.26/</guid>
+      <guid>https://192.168.121.234:1313/posts/03.31.26/</guid>
       <description>&lt;div class=&#34;notice-box In Zeiten der &amp;#39;KI&amp;#39; Begeisterung&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            In Zeiten der &amp;#39;KI&amp;#39; Begeisterung:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        &lt;p&gt;&amp;hellip;scheint es sich doch anzubieten selber, voll lokal und absolut Datenschutzkonform einen eigenen Agenten aufzusetzen, der im täglichen Workflow unterstützt und sensible Daten handlen kann (nein, nicht clawbot).&#xA;Mit meinem momentanen Setup unter Nutzung der RDNA3-Architektur einer AMD RX 7900 XT schien ich bestens vorbereitet.&lt;/p&gt;</description>
     </item>
     <item>
       <title>YaST &amp; LDAP</title>
-      <link>http://localhost:1313/posts/03.30.26-ldap/</link>
+      <link>https://192.168.121.234:1313/posts/03.30.26-ldap/</link>
       <pubDate>Mon, 30 Mar 2026 17:00:17 +0200</pubDate>
-      <guid>http://localhost:1313/posts/03.30.26-ldap/</guid>
+      <guid>https://192.168.121.234:1313/posts/03.30.26-ldap/</guid>
       <description>&lt;div class=&#34;notice-box Totgesagte leben länger&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            Totgesagte leben länger:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        das gilt in der IT oft auch für Software-Tools. Heute schauen wir uns an, wie man trotz des Deprecated-Status von YaST einen LDAP-Server auf OpenSUSE Leap aufsetzt. Auch wenn die offizielle Empfehlung zunehmend Richtung Kommandozeile geht: Die YaST-Module funktionieren weiterhin erstaunlich gut. Ich zeige euch heute den Ablauf und erkläre, an welchen Stellen aufgepasst werden muss, um im Zweifelsfall auf die manuelle Terminal-Konfiguration ausweichen zu können.&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Terminalpersonalisierung</title>
-      <link>http://localhost:1313/posts/terminalpersonalisierung/</link>
+      <link>https://192.168.121.234:1313/posts/terminalpersonalisierung/</link>
       <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/terminalpersonalisierung/</guid>
+      <guid>https://192.168.121.234:1313/posts/terminalpersonalisierung/</guid>
       <description>&lt;div class=&#34;notice-box Wer kennt das nicht beim Remote arbeiten&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            Wer kennt das nicht beim Remote arbeiten:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        &lt;p&gt;Man fährt nach getaner Arbeit wie immer über das Terminal die  Workstation per Befehl  herunter und wundert sich , wieso sich die Gehäuselüfter nicht aufhören zu drehen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Secure Shell Unter CachyOS</title>
-      <link>http://localhost:1313/posts/secure-shell-unter-cachyos/</link>
+      <link>https://192.168.121.234:1313/posts/secure-shell-unter-cachyos/</link>
       <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/secure-shell-unter-cachyos/</guid>
+      <guid>https://192.168.121.234:1313/posts/secure-shell-unter-cachyos/</guid>
       <description>&lt;div class=&#34;notice-box SSH unter Arch Linux Konfigurieren - Eine Kurzanleitung&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            SSH unter Arch Linux Konfigurieren - Eine Kurzanleitung:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        &lt;p&gt;Einrichten von SecureShell, lokal unter der Arch-Linix Distribution CachyOS. Diese Kurzanleitung sollte bei jeder Arc-Linux Variante funktional sein.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Hinweis:&lt;/strong&gt; Diese Konfiguration ist nur für lokale Netzwerke geeignet. Sobald man das Netz verlassen will, oder von außerhaLb zugreifen möchte, sollten weitere Sicherheitsvorkehrungen getroffen werden (SSH-Keys, andere Ports, Fail2Ban,..).&lt;/p&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>About</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://192.168.121.234:1313/about/</link>
       <pubDate>Wed, 18 Mar 2026 10:49:15 +0000</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://192.168.121.234:1313/about/</guid>
       <description>&lt;hr&gt;&#xA;&lt;p&gt;Hi! Ich bin Keeks, angehender Fachinformatiker für Systemintegration. Ich beschäftige mich damit Linux-Systeme zu administrieren, alte Hardware vor dem Schrottplatz zu retten und vielversprechende Projekte für sicheren Internetzugang sowie effizientere Hardwarenutzung umzusetzen.&#xA;&lt;figure style=&#39;&#xA;    display: inline-block; &#xA;    float: left; &#xA;    width: 200px !important; &#xA;    max-width: 100%; &#xA;    margin: 0.5rem 1.5rem 1rem 0;&#xA;    padding: 0;&#xA;    vertical-align: top;&#xA;&#39;&gt;&#xA;    &lt;a href=&#34;./images/generic/Me2.jpg&#34; target=&#34;_blank&#34; title=&#34;In voller Größe öffnen&#34;&gt;&#xA;        &lt;img src=&#34;./images/generic/Me2.jpg&#34; &#xA;             alt=&#34;Keeks&#34; &#xA;             title=&#34;Keeks&#34;&#xA;             style=&#34;width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;&#34;&gt;&#xA;    &lt;/a&gt;&#xA;    &#xA;    &#xA;        &lt;figcaption style=&#34;text-align: center; font-size: 0.85rem; color: #666; margin-top: 0.6rem; font-style: italic; line-height: 1.3; display: block;&#34;&gt;&#xA;            Das bin ich (links)&#xA;        &lt;/figcaption&gt;&#xA;    &#xA;&lt;/figure&gt;&#xA;&#xA;&lt;div style=&#34;clear: none;&#34;&gt;&lt;/div&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Troubleshooting: Hugo Extended Setup</title>
-      <link>http://localhost:1313/posts/troubleshooting-hugo-extended/</link>
+      <link>https://192.168.121.234:1313/posts/troubleshooting-hugo-extended/</link>
       <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/troubleshooting-hugo-extended/</guid>
+      <guid>https://192.168.121.234:1313/posts/troubleshooting-hugo-extended/</guid>
       <description>&lt;div class=&#34;notice-box Projektbeschreibung&#34; style=&#34;&#xA;    padding: 15px; &#xA;    margin: 20px 0; &#xA;    border-left: 5px solid; &#xA;    background-color: #f9f9f9;&#xA;    border-radius: 4px;&#xA;    display: flow-root; /* &lt;-- HIER IST DER FIX FÜR DAS BILD-PROBLEM */&#xA;&#34;&gt;&#xA;    &#xA;        &lt;strong style=&#34;text-transform: uppercase; display: block; margin-bottom: 5px;&#34;&gt;&#xA;            Projektbeschreibung:&#xA;        &lt;/strong&gt;&#xA;    &#xA;&#xA;    &lt;div class=&#34;notice-content&#34;&gt;&#xA;        Beheben der Konfigurationsprobleme mit dem Theme &amp;ldquo;Ananke&amp;rdquo; im Framework Hugo im Codespace von GitHub&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Born City It Blog</title>
-      <link>http://localhost:1313/links/borncity/</link>
+      <link>https://192.168.121.234:1313/links/borncity/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/borncity/</guid>
+      <guid>https://192.168.121.234:1313/links/borncity/</guid>
       <description>&lt;p&gt;Immer auf dem neuesten Stand was Windows angeht, ebenfalls mit großem Linux-Wissensfundus auf Borns It blog.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Censys</title>
-      <link>http://localhost:1313/links/censys/</link>
+      <link>https://192.168.121.234:1313/links/censys/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/censys/</guid>
+      <guid>https://192.168.121.234:1313/links/censys/</guid>
       <description>&lt;p&gt;Sucht Hosts, Websites und Zertifikate.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Css ZenGarden</title>
-      <link>http://localhost:1313/links/css-zengarden/</link>
+      <link>https://192.168.121.234:1313/links/css-zengarden/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/css-zengarden/</guid>
+      <guid>https://192.168.121.234:1313/links/css-zengarden/</guid>
       <description>&lt;p&gt;Die Hauptseite von CSS Zen Garden ist ein legendäres Web-Projekt, das als „Garten der Erleuchtung“ für Webdesign gilt&lt;/p&gt;</description>
     </item>
     <item>
       <title>Digitalcourage</title>
-      <link>http://localhost:1313/links/digitalcourage/</link>
+      <link>https://192.168.121.234:1313/links/digitalcourage/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/digitalcourage/</guid>
+      <guid>https://192.168.121.234:1313/links/digitalcourage/</guid>
       <description>&lt;p&gt;Digitalcourage (vormals: der FoeBuD) setzt sich  in Deutschland seit 1987 für Grundrechte und Datenschutz ein.&#xA;Ebenfalls mit eigenem DNS-Server Angebot. Ideal für kompromisslose Privatsphäre, da diese deutsche NGO einen komplett zensurfreien DNS-Server ohne jegliche Datenprotokollierung betreibt.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ettercap</title>
-      <link>http://localhost:1313/links/ettercap/</link>
+      <link>https://192.168.121.234:1313/links/ettercap/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/ettercap/</guid>
+      <guid>https://192.168.121.234:1313/links/ettercap/</guid>
       <description>&lt;p&gt;Erkunden von Man-in-the-middle Angriffen mit vielen Funktionen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Exploit Database</title>
-      <link>http://localhost:1313/links/exploitdb/</link>
+      <link>https://192.168.121.234:1313/links/exploitdb/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/exploitdb/</guid>
+      <guid>https://192.168.121.234:1313/links/exploitdb/</guid>
       <description>&lt;p&gt;Datenbank an bekannten Exploits.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Free DynDNS2</title>
-      <link>http://localhost:1313/links/ipv64/</link>
+      <link>https://192.168.121.234:1313/links/ipv64/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/ipv64/</guid>
+      <guid>https://192.168.121.234:1313/links/ipv64/</guid>
       <description>&lt;p&gt;Ein vielseitiges Projekt aus Deutschland, das individuell anpassbare DNS-Filter gegen Werbung und Tracking mit DynDNS-Funktionen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Golem</title>
-      <link>http://localhost:1313/links/golem/</link>
+      <link>https://192.168.121.234:1313/links/golem/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/golem/</guid>
+      <guid>https://192.168.121.234:1313/links/golem/</guid>
       <description>&lt;p&gt;Deutsche IT-News, Security-Ticker und Hintergründe aus der Tech-Welt von Golem.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Hardware64</title>
-      <link>http://localhost:1313/links/hardware64/</link>
+      <link>https://192.168.121.234:1313/links/hardware64/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/hardware64/</guid>
+      <guid>https://192.168.121.234:1313/links/hardware64/</guid>
       <description>&lt;p&gt;Bei Hardware64.de findest du handverlesene und geprüfte Hardware für dein Homelab. Inklusive Installationshinweisen undd Kaufempfehlungen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Heise Online</title>
-      <link>http://localhost:1313/links/heise/</link>
+      <link>https://192.168.121.234:1313/links/heise/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/heise/</guid>
+      <guid>https://192.168.121.234:1313/links/heise/</guid>
       <description>&lt;p&gt;Deutsche IT-News, Security-Ticker und Hintergründe aus der Tech-Welt von Heise.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Impressum</title>
-      <link>http://localhost:1313/impressum/</link>
+      <link>https://192.168.121.234:1313/impressum/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/impressum/</guid>
+      <guid>https://192.168.121.234:1313/impressum/</guid>
       <description>&lt;div class=&#34;link-grid-wrapper pv4 mb2&#34;&gt;&#xA;    &lt;h3 class=&#34;f4 ttu tracked mt0 black bb b--black bw1 pb2 mb4&#34;&gt;&lt;/h3&gt;&#xA;    &lt;div class=&#34;flex flex-wrap nl2 nr2&#34;&gt;&#xA;        &#xA;&#xA;&lt;figure style=&#39;&#xA;    display: block; &#xA;    float: none; &#xA;    width: 400px !important; &#xA;    max-width: 100%; &#xA;    margin: 2rem auto;&#xA;    padding: 0;&#xA;    vertical-align: top;&#xA;&#39;&gt;&#xA;    &lt;a href=&#34;./images/generic/impressum.png&#34; target=&#34;_blank&#34; title=&#34;In voller Größe öffnen&#34;&gt;&#xA;        &lt;img src=&#34;./images/generic/impressum.png&#34; &#xA;             alt=&#34;Impressum&#34; &#xA;             title=&#34;Impressum&#34;&#xA;             style=&#34;width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;&#34;&gt;&#xA;    &lt;/a&gt;&#xA;    &#xA;    &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&lt;figure style=&#39;&#xA;    display: block; &#xA;    float: none; &#xA;    width: 400px !important; &#xA;    max-width: 100%; &#xA;    margin: 2rem auto;&#xA;    padding: 0;&#xA;    vertical-align: top;&#xA;&#39;&gt;&#xA;    &lt;a href=&#34;./images/generic/Keeks4.png&#34; target=&#34;_blank&#34; title=&#34;In voller Größe öffnen&#34;&gt;&#xA;        &lt;img src=&#34;./images/generic/Keeks4.png&#34; &#xA;             alt=&#34;Logo&#34; &#xA;             title=&#34;Logo&#34;&#xA;             style=&#34;width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; cursor: zoom-in;&#34;&gt;&#xA;    &lt;/a&gt;&#xA;    &#xA;    &#xA;&lt;/figure&gt;&#xA;&#xA;&#xA;&#xA;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;</description>
     </item>
     <item>
       <title>Lwn.net</title>
-      <link>http://localhost:1313/links/lwn/</link>
+      <link>https://192.168.121.234:1313/links/lwn/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/lwn/</guid>
+      <guid>https://192.168.121.234:1313/links/lwn/</guid>
       <description>&lt;p&gt;Linux wissen und komplette kostenlose Bücher zum Thema.&lt;/p&gt;</description>
     </item>
     <item>
       <title>MediathekView</title>
-      <link>http://localhost:1313/links/mediathekview/</link>
+      <link>https://192.168.121.234:1313/links/mediathekview/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/mediathekview/</guid>
+      <guid>https://192.168.121.234:1313/links/mediathekview/</guid>
       <description>&lt;p&gt;Durchsuchen und Aufzeichnen der öffentlich-rechtlichen Mediatheken (ARD,ZDF,Arte, 3Sat, SWR, BR, MDR, NDR, WDR, HR, RBB, ORF, SRF).&lt;/p&gt;</description>
     </item>
     <item>
       <title>monkey.org</title>
-      <link>http://localhost:1313/links/monkey.org/</link>
+      <link>https://192.168.121.234:1313/links/monkey.org/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/monkey.org/</guid>
+      <guid>https://192.168.121.234:1313/links/monkey.org/</guid>
       <description>&lt;p&gt;Sammlung an Werkzeugen für Netzwerküberwachung und Penetration-Testing.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Pi Hole</title>
-      <link>http://localhost:1313/links/pi-hole/</link>
+      <link>https://192.168.121.234:1313/links/pi-hole/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/pi-hole/</guid>
+      <guid>https://192.168.121.234:1313/links/pi-hole/</guid>
       <description>&lt;p&gt;Die perfekte Do-it-yourself-Lösung für die volle Kontrolle, zum Hosten eines eigenen, netzwerkweiten DNS-Filter gegen Werbung und Tracking.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Quad9Ch</title>
-      <link>http://localhost:1313/links/quad9ch/</link>
+      <link>https://192.168.121.234:1313/links/quad9ch/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/quad9ch/</guid>
+      <guid>https://192.168.121.234:1313/links/quad9ch/</guid>
       <description>&lt;p&gt;Schweizer Non-Profit-Dienst. Blockiert automatisch Malware und Phishing-Seiten, ohne Nutzerdaten zu sammeln.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Rheinwerk Verlag</title>
-      <link>http://localhost:1313/links/rheinwerk-verlag/</link>
+      <link>https://192.168.121.234:1313/links/rheinwerk-verlag/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/rheinwerk-verlag/</guid>
+      <guid>https://192.168.121.234:1313/links/rheinwerk-verlag/</guid>
       <description>&lt;p&gt;Open Books vom Rheinwerkverlag mit einer Auswahl von kostenlos lesbaren Fachbüchern.&lt;/p&gt;</description>
     </item>
     <item>
       <title>SELF-HTML</title>
-      <link>http://localhost:1313/links/self-html/</link>
+      <link>https://192.168.121.234:1313/links/self-html/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/self-html/</guid>
+      <guid>https://192.168.121.234:1313/links/self-html/</guid>
       <description>&lt;p&gt;Deutschsprachige Seite mit Kult-Status zum lernen von HTML.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Shodan IO</title>
-      <link>http://localhost:1313/links/shodan/</link>
+      <link>https://192.168.121.234:1313/links/shodan/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/shodan/</guid>
+      <guid>https://192.168.121.234:1313/links/shodan/</guid>
       <description>&lt;p&gt;Suchmaschine für das Internet der Dinge.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Suchergebnisse</title>
-      <link>http://localhost:1313/search/</link>
+      <link>https://192.168.121.234:1313/search/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/search/</guid>
+      <guid>https://192.168.121.234:1313/search/</guid>
       <description></description>
     </item>
     <item>
       <title>Think Python</title>
-      <link>http://localhost:1313/links/think-python/</link>
+      <link>https://192.168.121.234:1313/links/think-python/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/think-python/</guid>
+      <guid>https://192.168.121.234:1313/links/think-python/</guid>
       <description>&lt;p&gt;Eines DER Bücher, wenn es darum geht die Denkweise hinter dem Programmieren zu verstehen. Auch für nicht-Anwendungsentwickler sehr zu empfehlen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Too Long, Didn&#39;t Read</title>
-      <link>http://localhost:1313/links/tldr/</link>
+      <link>https://192.168.121.234:1313/links/tldr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/tldr/</guid>
+      <guid>https://192.168.121.234:1313/links/tldr/</guid>
       <description>&lt;p&gt;Übersichtlichere Man-Pages für Linux.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Virus Total</title>
-      <link>http://localhost:1313/links/virustotal/</link>
+      <link>https://192.168.121.234:1313/links/virustotal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/virustotal/</guid>
+      <guid>https://192.168.121.234:1313/links/virustotal/</guid>
       <description>&lt;p&gt;Analyse von Dateien, Domänen, IPs und URLs auf Viren und Kompromittierung.&lt;/p&gt;</description>
     </item>
     <item>
       <title>W3Schools</title>
-      <link>http://localhost:1313/links/w3schools/</link>
+      <link>https://192.168.121.234:1313/links/w3schools/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/w3schools/</guid>
+      <guid>https://192.168.121.234:1313/links/w3schools/</guid>
       <description>&lt;p&gt;Eine der weltweit größten und bekanntesten kostenlosen E-Learning-Plattformen für Webentwicklung und Programmierung.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Where Is My Ram</title>
-      <link>http://localhost:1313/links/where-is-my-ram/</link>
+      <link>https://192.168.121.234:1313/links/where-is-my-ram/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/where-is-my-ram/</guid>
+      <guid>https://192.168.121.234:1313/links/where-is-my-ram/</guid>
       <description>&lt;p&gt;In Zeiten des RAM-Preis-Wahnsinns geborener Helfer für Kaufentscheidungen&lt;/p&gt;</description>
     </item>
     <item>
       <title>Windows cmd Cheatsheet</title>
-      <link>http://localhost:1313/links/windows-cmd/</link>
+      <link>https://192.168.121.234:1313/links/windows-cmd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/windows-cmd/</guid>
+      <guid>https://192.168.121.234:1313/links/windows-cmd/</guid>
       <description>&lt;p&gt;Hilfe mit Windows-Kommandos&lt;/p&gt;</description>
     </item>
     <item>
       <title>wireshark</title>
-      <link>http://localhost:1313/links/wireshark/</link>
+      <link>https://192.168.121.234:1313/links/wireshark/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/links/wireshark/</guid>
+      <guid>https://192.168.121.234:1313/links/wireshark/</guid>
       <description>&lt;p&gt;Das wohl bekannteste Tool zur Netzwerkanalyse.&lt;/p&gt;</description>
     </item>
   </channel>
