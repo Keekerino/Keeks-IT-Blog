@@ -11,70 +11,75 @@ categories: []
 
 
 
-{{< notice "SAMBA Dateiserver leicht gemacht" >}}
-In dieser Kurzanleitung erkläre ich wie man sich eine Dateifreigabe unter Samba einrichtet. Dies wird später noch sehr nützlich sein,  Backups von z.B. einem Raspberry Pi im lokalen Netz zu sichern.
+{{< notice "SAMBA Dateiserver" >}}
+Diese Kurzanleitung dokumentiert die Einrichtung einer Dateifreigabe unter Samba. Dies dient als Basis für die Speicherung von Backups eines Raspberry Pi im lokalen Netzwerk.
 {{< /notice >}}
 
 <!--more-->
 
-
-
 ## Samba Server bereitstellen
 
-1. Installieren der Pakete
-
+1. Pakete installieren
 
 ```bash
-
-# installieren der benötigiten pakete
+# Installieren der benötigten Pakete
 sudo apt update && sudo apt install samba -y
 
-# Bearbeiten der Serverkonfiguration
-sudo nano /etc/samba/smb.conf
-```
-2. Diese Konfiguration in die Konfigurationsdatei kopieren und **path** gegebenefalls anpassen 
-```
-    [Pi-Media]
-    path = /mnt/dein_pfad
-    writeable = yes
-    browseable = yes
-    public = no
 ```
 
-3. Passwort für Netzzugriff setzen
+2. Verzeichnis erstellen und Berechtigungen setzen
 
 ```bash
+# Verzeichnis erstellen
+sudo mkdir -p /mnt/dein_pfad
 
-sudo smbpasswd -a <dein_nutzername>
-sudo systemctl restart smbd
-```
-
-4. Besitzer des Ordners auf gewählten Nutzer setzen und Schreibrechte für den Besitzer vergeben
-
-
-
-```bash
-# sollte dein Verzeichnis nicht existieren, erstelle es
-sudo mkdir /mnt/dein_pfad
-
-# Besitzer setzen
+# Besitzer auf den gewählten Nutzer setzen
 sudo chown -R dein_nutzername:dein_nutzername /mnt/dein_pfad
 
-# Schreibrechte für Besitzer vergeben
+# Schreibrechte für den Besitzer vergeben
 sudo chmod -R 755 /mnt/dein_pfad
 
 ```
 
-Nun kann im Dolphin Dateimanager, oder ähnlichen Dateiexplorer den Pfad der Freigabe eingeben.
+3. Serverkonfiguration anpassen
 
-**smb://<name_deines_pi>/Pi-Media** (Linux)
+```bash
+sudo nano /etc/samba/smb.conf
 
-**\\<name_deines_pi>\Pi-Media** (Windows)
+```
+
+Folgende Parameter am Ende der Konfigurationsdatei einfügen und den Wert **path** an die eigene Verzeichnisstruktur anpassen:
+
+```ini
+[Pi-Media]
+path = /mnt/dein_pfad
+writeable = yes
+browseable = yes
+public = no
+
+```
+
+4. Passwort für Netzzugriff setzen und Dienst neu starten
+
+Hinweis: Der hier verwendete Nutzername muss bereits als regulärer Systemnutzer auf dem System existieren.
+
+```bash
+# Samba-Passwort für den Nutzer vergeben
+sudo smbpasswd -a dein_nutzername
+
+# Samba-Dienst neu starten
+sudo systemctl restart smbd
+
+```
+
+5. Netzwerkzugriff
+
+Im Dolphin-Dateimanager oder einem alternativen Dateiexplorer kann nun der Pfad zur Freigabe eingegeben werden:
+
+**Linux:** `smb://<name_deines_pi>/Pi-Media`
+
+**Windows:** `\\<name_deines_pi>\Pi-Media`
 
 {{< image src="/images/raspberry-pi/12.04.26-Backups/sambaFreigabe.png" alt="Samba Freigabe" caption="Beispiel Dolphin Explorer" width="400px" float="center" >}}
-dDie Freigabe kann anschließend zu „Meinen Orten“ hinzugefügt werden. So bleibt der Ordner dauerhaft im Dateimanager sichtbar und ist jederzeit verfügbar.
-Ab sofort steht der freigegebene Ordner im gesamten Netzwerk für Lesezugriffe auf anderen Geräten bereit – einfach, schnell und zuverlässig.
 
-
-
----
+Die Freigabe kann anschließend zu den Lesezeichen (z. B. „Meine Orte“) hinzugefügt werden. So bleibt der Ordner dauerhaft im Dateimanager sichtbar und ist jederzeit verfügbar. Ab sofort steht der freigegebene Ordner im lokalen Netzwerk für Lese- und Schreibzugriffe auf anderen Geräten bereit.
