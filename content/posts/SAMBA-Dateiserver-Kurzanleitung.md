@@ -34,7 +34,7 @@ sudo apt update && sudo apt install samba -y
 sudo mkdir -p /mnt/dein_pfad
 
 # Besitzer auf den gewählten Nutzer setzen
-sudo chown -R dein_nutzername:dein_nutzername /mnt/dein_pfad
+sudo chown -R dein_nutzername:users /mnt/dein_pfad
 
 # Schreibrechte für den Besitzer vergeben
 sudo chmod -R 755 /mnt/dein_pfad
