@@ -1,6 +1,5 @@
 ---
 title: "Pi Hole"
-draft: true
 link: "https://pi-hole.net/"
 category: "RaspberryPi"
 ---
