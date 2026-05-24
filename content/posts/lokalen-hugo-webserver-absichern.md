@@ -1,6 +1,6 @@
 ---
 title: "Lokalen Hugo Webserver Absichern"
-date: 2026-05-07T09:11:08+02:00
+date: 2026-05-24T09:11:08+02:00
 draft: false
 author: "Keeks"
 description: "Kurzanleitung"
