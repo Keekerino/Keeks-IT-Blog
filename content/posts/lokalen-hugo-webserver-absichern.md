@@ -1,7 +1,7 @@
 ---
 title: "Lokalen Hugo Webserver Absichern"
 date: 2026-05-07T09:11:08+02:00
-draft: true
+draft: false
 author: "Keeks"
 description: "Kurzanleitung"
 featured_image: "/images/OfficialMSIcons/Microsoft Entra Verified ID color icon.svg"
@@ -12,7 +12,7 @@ categories: []
 
 
 {{< notice "Eine Kurzanleitung" >}}
-Das Absichern des Netzwerkverkehrs stellt eine immer wichtigere Komponente in lokalen Netzen dar. Heute erläutere ich am Beispiel des Frameworks [Hugo](gohugo.io), wie man den Webserver des Frameworks mit TLS (Transport Layer Security) absichert. Dies entspricht Best Practices in internen Firmenstrukturen und ist in produktiven Netzen zwingend erforderlich. Außerdem gibt es noch einen kleinen Fun-Fact im Artikel. Es lohnt sich also reinzuschauen.
+Das Absichern des Netzwerkverkehrs stellt eine immer wichtigere Komponente in lokalen Netzen dar. Heute erläutere ich am Beispiel des Frameworks [Hugo](https://gohugo.io), wie man den Webserver des Frameworks mit TLS (Transport Layer Security) absichert. Dies entspricht Best Practices in internen Firmenstrukturen und ist in produktiven Netzen zwingend erforderlich. 
 {{< /notice >}}
 
 <!--more-->
