@@ -1,6 +1,6 @@
 ---
 title: "Wireguard Und Open Webui"
-date: 2026-05-22T00:08:39+02:00
+date: 2026-05-26T00:08:39+02:00
 draft: true
 author: "Keeks"
 description: ""
